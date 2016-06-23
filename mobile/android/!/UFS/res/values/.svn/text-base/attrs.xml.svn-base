@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ActionBarUfs">
+        <attr name="left_btn" format="integer" />
+        <attr name="single_text" format="string" />
+        <attr name="top_text" format="string" />
+        <attr name="bottom_text" format="string" />
+        <attr name="right_btn" format="integer" />
+        <attr name="background" format="integer" />
+    </declare-styleable>
+
+</resources>

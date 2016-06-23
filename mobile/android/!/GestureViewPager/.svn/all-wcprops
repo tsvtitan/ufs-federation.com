@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/mobile/!svn/ver/82/android/GestureViewPager
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/1/android/GestureViewPager/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mobile/!svn/ver/1/android/GestureViewPager/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/mobile/!svn/ver/1/android/GestureViewPager/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mobile/!svn/ver/42/android/GestureViewPager/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/mobile/!svn/ver/1/android/GestureViewPager/.classpath
+END

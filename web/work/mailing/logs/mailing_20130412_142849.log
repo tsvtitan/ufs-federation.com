@@ -1,0 +1,19 @@
+12.04.2013 14:28:50.836 I: --------------------------------------------------
+12.04.2013 14:28:50.836 I: Connect to Database ...
+12.04.2013 14:28:50.839 I: Connected.
+12.04.2013 14:28:50.840 I: [Mysql->query] set names utf8
+12.04.2013 14:28:50.849 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+12.04.2013 14:28:50.850 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+12.04.2013 14:28:50.850 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+12.04.2013 14:28:53.404 E: Checking has failed because of 
+12.04.2013 14:28:54.976 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+12.04.2013 14:28:54.977 I: There are 1 patterns.
+12.04.2013 14:28:54.977 I: Process pattern 382 / 1 emails.
+12.04.2013 14:28:54.978 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id=382 ORDER BY created, priority LIMIT 0,3000
+12.04.2013 14:28:54.978 I: There are 1 emails. Sending / transferring ...
+12.04.2013 14:29:08.623 I: Mailing 1193 has transferred successfully at 2013-04-12 14:28:55...
+12.04.2013 14:29:08.987 I: [Mysql->query] UPDATE `mailing` SET `remote_id`='6DCFD61A7ED5BD3AD8F36B60D947BB89',`transferred`='2013-04-12 14:28:55',`sent`=NULL,`result`=NULL WHERE `mailing_id`='1193'
+12.04.2013 14:29:08.989 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+12.04.2013 14:29:10.190 I: Mailing 1193 has updated successfully ...
+12.04.2013 14:29:10.646 I: MaxCounter=1 Counter=1
+12.04.2013 14:29:12.405 I: Execution time is 21.568913936615

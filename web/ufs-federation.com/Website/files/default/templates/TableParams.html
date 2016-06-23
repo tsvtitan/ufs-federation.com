@@ -1,0 +1,19 @@
+<div id="pager" class="pager" style="display:none">
+  <div class="fright">
+    <font th:utext="#{RecordsOnPage}">Записей на странице</font>:&nbsp;<select id="recordsCount" class="pagesize button"> 
+      <option th:each="count:${table.CountOnPage}" th:selected="${count eq table.SelectedCount}" th:value="${count}" th:utext="${count}">5</option> 
+    </select>
+  </div>
+  <button id="first" class="fleft button mini-btn first"><i class="icon ico-prev-first">«</i></button>
+  <button id="prev" class="fleft button mini-btn prev"><i class="icon ico-prev">‹</i></button>
+  <input id="pages" readonly="readonly" type="text" class="fleft pagedisplay mini-btn" style="border: 0; box-shadow: none; background-color: transparent; width: 60px; min-width: 60px; text-align: center"/>
+  <button id="next" class="fleft button mini-btn next"><i class="icon ico-next">›</i></button>
+  <button id="last" class="fleft button mini-btn last"><i class="icon ico-next-last">»</i></button>
+  <input id="allCount" type="hidden" name="allCount" th:value="${table.AllCount}"/>
+  <input id="from" type="hidden" name="from" th:value="${table.From}"/>
+  <input id="maxCount" type="hidden" name="maxCount" th:value="${table.MaxCount}"/>
+  <input id="pageTableId" type="hidden" name="pageTableId" th:value="${table.PageTableId}"/>
+  <input id="template" type="hidden" name="template" th:value="${(table.Template=='')?'Table':table.Template}"/>
+  <input id="autoLoad" type="hidden" name="autoLoad" th:value="${table.AutoLoad}"/>
+  <input id="async" type="hidden" name="async" th:value="${table.Async}"/>
+</div>

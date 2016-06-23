@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B6AAE3E-F46D-16DF-9B79-1E6249D0DA0A" name="ATTACHMENTS">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:43:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ATTACHMENT_ID" id="076ABB37-EB51-99F1-7375-7675D0192C54">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:43:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MESSAGE_ID" id="92CFA4C4-30C1-4458-73E4-0D45A909C5D4">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:45:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>B5428982-A2E0-4CC2-08F6-72934611ACE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2750B28A-9FB6-38D4-F18B-49ABD0DDA2A3" referredColumn="B5428982-A2E0-4CC2-08F6-72934611ACE7"/>
+</associations>
+</Column>
+<Column name="NAME" id="C8BB8FF6-D352-EFF2-692E-48E68C6971EF">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:46:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTENSION" id="C81821C6-2CC6-39C5-76A3-61B45A4924B0">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:47:12 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA" id="4D4AB71C-0734-9102-4CCB-9FA7674EDFB8">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:59:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT_TYPE" id="54EF2673-0F94-8DE2-804C-0CECB4350092">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 12:00:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT_ID" id="78733DEC-2E41-FB61-0F0C-303F75460D94">
+<createdBy>root</createdBy>
+<createdTime>2013-12-19 10:21:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29638C9F-7F5F-B0BE-5349-4178F493484E" name="ATTACHMENTS_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:59:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076ABB37-EB51-99F1-7375-7675D0192C54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F39FD60C-B52A-63F2-A447-4BF8A76839D7" name="ATTACHMENTS_MESSAGES_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:45:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92CFA4C4-30C1-4458-73E4-0D45A909C5D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

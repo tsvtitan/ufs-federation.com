@@ -1,0 +1,49 @@
+//
+//  UFSEmitentsVC.h
+//  UFS
+//
+//  Created by mihail on 16.09.13.
+//  Copyright (c) 2013 Moskovchenko M. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UFSRootVC.h"
+#import "UFSFakeVC.h"
+
+@interface UFSEmitentsVC : UFSRootVC <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate, SWRevealViewControllerDelegate, UIScrollViewDelegate>
+{
+    NSFetchedResultsController *fetchedResultsController;
+    NSInteger currentTable;
+    NSInteger lastSelectedCaption;
+    NSArray *widthForCell;
+    NSMutableArray *widthC;
+    NSMutableArray *buttonsInSection;
+    NSMutableArray *columnsNames;
+    
+    NSMutableArray *valueAll;
+    NSMutableArray *navButtons;
+    NSMutableArray *sectionsNames;
+    NSMutableArray *aligmentArray;
+    /* tsv */ NSMutableArray *buyurlsAll;
+    
+    NSMutableArray *sectionViewArray;
+    UIScrollView *bgScroll;
+    UIView *captionView;
+    BOOL isAscendingFoeSort;
+    UIView *scrennForDescript;
+    UIView *splashView;
+    UIActivityIndicatorView *indicator;
+    UILabel *separatorLine;
+}
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (assign, nonatomic) NSInteger type;
+@property (nonatomic, copy) NSString *titleNavBar;
+@property (strong, nonatomic) UITableView *landscapeTableView;
+@property (nonatomic, assign) NSInteger subcatID;
+
+- (void)setInitialTableView;
+- (void)setCaptionButtons;
+- (void)setWidthForRowsInCells;
+/* tsv */ //- (void)forceLandscapeForView:(UIView *)theView;
+@end

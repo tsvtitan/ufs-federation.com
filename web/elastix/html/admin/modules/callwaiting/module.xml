@@ -1,0 +1,25 @@
+<module>
+	<rawname>callwaiting</rawname>
+	<name>Call Waiting</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<changelog>
+	*2.8.0.0* published 2.8 version
+	*2.7.0.0* localizations
+	*2.6.0.1* Added publisher/lic
+	*2.6.0.0* #3650, #3651, localizations
+	*2.5.0* localization string enclosures
+	*2.4.0* bumped for 2.4
+	*1.1.2.2* changed categories
+	*1.1.2.1* bump for rc1
+	*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
+	*1.1.1* Fixed typo Provdes to Provides*
+	*1.1* First release for 2.2
+	</changelog>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<description>Provides an option to turn on/off call waiting</description>
+	<location>release/2.7/callwaiting-2.7.0.0.tgz</location>
+	<md5sum>e58b5ea3f6f34aee8cedf46b5e95f455</md5sum>
+</module>

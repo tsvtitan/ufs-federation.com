@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ENT-0D334C95-AACA-4CA3-906C-146D8C1DDC89_00000000" name="Публикации">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ид картинки" id="E13A3BF2-5486-8BA5-EF0B-DBD733EFCA17">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:19:35 UTC</createdTime>
+<generatorID>0EA829F4-D8F4-7140-F4D9-75866C1A88F7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ATT-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Дата размещения" id="ATT-10CBC8C3-1681-4258-B508-0D215FE130D2_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+</Attribute>
+<Attribute name="Выдержка" id="ATT-21CECAD1-D12E-4F78-94AF-89292D591246_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="HTML" id="ATT-04C47CB7-EC32-4C40-840A-D617D6E5560B_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Прикрепленная до" id="2F31DE13-4FE2-21E8-B42B-82265426C618">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:21:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+</Attribute>
+<Attribute name="Ид источника" id="4F01C0BF-501D-0405-81F0-DCDEFFDE2F14">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:23:30 UTC</createdTime>
+<generatorID>32B85B7C-3FB0-2B57-38F2-D98C481231A7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>87052776-13E1-7C81-44EE-F0AF9699224C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Ид страницы" id="9EEE7DF6-722A-3E6C-9D9E-668795D4493F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<generatorID>REL-E8E7948A-F4A1-44AA-BE75-DEAD47A22854_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<referedAttribute>ATT-87D56C14-1995-4A54-8E04-88FF556DC265_00000000</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CKY-0C840DEA-E224-4D00-9D15-B44B52A76FC8_00000000" name="XPKНовости">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>REL-E8E7948A-F4A1-44AA-BE75-DEAD47A22854_00000000</newElementsIDs>
+</identifier>
+</identifiers>
+</Entity>

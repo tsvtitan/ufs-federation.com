@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[UFSEmitentsVC setWidthForRowsInCells]:UFSEmitentsVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[CoreDataManager object:withIdentifier:inMainContext:]:CoreDataManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DataTransformOperation setNews:]:DataTransformOperation.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "newsDB.keywords.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UFSMainNewsVC reloadVC]:UFSMainNewsVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UFSDebtMarketVC tableView:didSelectRowAtIndexPath:]:UFSDebtMarketVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "db.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UICheckButtonList touchUpInside:]:UICheckButtonList.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.listDelegate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__25-[UFSMainNewsVC reloadVC]_block_invoke:UFSMainNewsVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UFSDetailVC viewDidLoad]:UFSDetailVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UFSContactsVC viewDidLoad]:UFSContactsVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UICheckButtonList makeNinePatchImage:frame:]:UICheckButtonList.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[UIScreen mainScreen].scale">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UFSActionsDetailVC viewDidLoad]:UFSActionsDetailVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.height">
+            </PersistentString>
+            <PersistentString
+               value = "textForStock">
+            </PersistentString>
+            <PersistentString
+               value = "fetchedResultsController.fetchedObjects.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DataTransformOperation setHTMLData:]:DataTransformOperation.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UFSEmitentsVC tableView:cellForRowAtIndexPath:]:UFSEmitentsVC.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

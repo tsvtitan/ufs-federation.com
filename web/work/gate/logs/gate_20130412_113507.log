@@ -1,0 +1,8 @@
+12.04.2013 11:35:07.185 I: --------------------------------------------------
+12.04.2013 11:35:07.185 I: Reading data ...
+12.04.2013 11:35:07.187 I: Connect to Database ...
+12.04.2013 11:35:07.187 I: Connected.
+12.04.2013 11:35:07.188 I: [Mysql->query] set names utf8
+12.04.2013 11:35:07.188 I: Method is checkMails
+12.04.2013 11:35:07.189 I: [Mysql->query] SELECT * FROM MAILING WHERE MAILING_ID IN ('A9364C3AECA5E1F4F583D0A730D94064')
+12.04.2013 11:35:07.225 I: Execution time is 0.039989948272705

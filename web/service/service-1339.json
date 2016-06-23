@@ -1,0 +1,27 @@
+{
+  "apps": [{
+   
+    "name": "service-1339",
+    "script": "/Users/tsv/Projects/web/service/app.js",
+    "instances": 1,
+    "max_memory_restart": "200M",
+    "merge_logs": true,
+    "exec_mode": "cluster_mode",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": false,
+      "GRUNT": false,
+      "CONFIG": {
+        "jobs": {
+          "acs": {
+            "AbsenceDays": true
+          },
+          "Mailings": true
+        },
+        "events": {
+          "Mailings": false
+        }
+      }
+    }
+  }]
+}

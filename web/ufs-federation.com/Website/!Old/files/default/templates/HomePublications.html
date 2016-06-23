@@ -1,0 +1,39 @@
+<a th:if="${publications.size() gt 0}" th:href="${path.getBasePath(publications[0].PATH)}" href="#" class="item item-x2">
+  <div th:if="${publications[0].IMAGE_PATH!='' and publications[0].SOURCE_IMAGE_PATH!=''}" class="label">
+    <img th:src="${path.getBasePath(publications[0].SOURCE_IMAGE_PATH)}" class="img-responsive"/>
+  </div>
+  <div th:if="${publications[0].IMAGE_PATH!=''}" class="img-zoom" th:style="${'background-image: url('+path.getBasePath(publications[0].IMAGE_PATH)+'); position: relative;'}">
+    <p class="headline" th:utext="${publications[0].TITLE}"/>
+  </div>
+  <div class="item-inner"> 
+    <p class="date" th:utext="${publications[0].getPosted($PublicationPostedFormat)}"/>
+    <p th:if="${publications[0].SOURCE_NAME!=''}" class="label-text" th:utext="${publications[0].SOURCE_NAME}"/>
+    <p class="description" th:utext="${publications[0].EXCERPT}"/>
+  </div>
+</a>  
+<div id="publications" th:if="${publications.count>publications.next}" th:value="${publications.count}" class="row clearfix">
+  <div th:replace="PublicationsBlock(publications=${publications},start=1)"/>
+</div>
+<div th:if="${publications.count>publications.next}" class="pagination">
+  <button id="showmore" th:utext="#{ButtonShowMore.Caption}">Показать еще</button>
+</div>
+<script th:if="${publications.count>publications.next}" th:inline="javascript">
+  $(document).ready(function(){
+    $('#showmore').click(function(e){
+      e.preventDefault();
+      var p = $('#publications');
+      var f = $('#publications a').size() + 2;
+      var m = parseInt(p.attr('value'));
+      if (m>=f) {
+        getTemplate('PublicationsBlock',{from:f,count:2},function(data){
+          p.append(data);
+          var pa = $('#publications a');
+          if ((pa.size()+1)>=m) {
+            $('#showmore').hide();
+          }
+          $(window).scrollTop(pa[pa.size()-1].offsetTop);  
+        });
+      }
+    });
+  });
+</script>

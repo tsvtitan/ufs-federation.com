@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ENT-05AFDE94-5F01-48DA-8E45-0D426C582A77_00000000" name="Страницы по умолчанию">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ид страницы по умолчанию" id="3B7AAE70-A8A2-0ECB-5CB2-8002679473C1">
+<createdBy>root</createdBy>
+<createdTime>2013-11-14 10:56:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Ид учетной записи" id="ATT-6D89B7B3-9A1A-4C07-A16D-92697E75ED86_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>REL-4AC29146-B5EF-443F-BEAF-D3184B8A4E2C_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<referedAttribute>ATT-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Действие" id="ATT-5464F471-6997-4CF8-8910-BF1146A625D5_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Ид страницы" id="3771AAD9-6C89-5FA5-29BF-22469A3A9492">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<generatorID>REL-012BE8E1-B1C1-4350-8913-B0400E680FD9_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<referedAttribute>ATT-87D56C14-1995-4A54-8E04-88FF556DC265_00000000</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CKY-4E0F490E-E4F5-4CEF-B4C4-D9C11DD6DD8E_00000000" name="XPKСтраницы по умолчанию">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>ATT-5464F471-6997-4CF8-8910-BF1146A625D5_00000000,REL-4AC29146-B5EF-443F-BEAF-D3184B8A4E2C_00000000,REL-012BE8E1-B1C1-4350-8913-B0400E680FD9_00000000,3B7AAE70-A8A2-0ECB-5CB2-8002679473C1</newElementsIDs>
+<usedAttributes>
+<attributeRef>ATT-5464F471-6997-4CF8-8910-BF1146A625D5_00000000</attributeRef>
+<attributeRef>ATT-6D89B7B3-9A1A-4C07-A16D-92697E75ED86_00000000</attributeRef>
+<attributeRef>3771AAD9-6C89-5FA5-29BF-22469A3A9492</attributeRef>
+<attributeRef>3B7AAE70-A8A2-0ECB-5CB2-8002679473C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

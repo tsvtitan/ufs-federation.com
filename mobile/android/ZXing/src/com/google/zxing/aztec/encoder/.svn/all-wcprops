@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder
+END
+Encoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/Encoder.java
+END
+HighLevelEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/HighLevelEncoder.java
+END
+Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/Token.java
+END
+BinaryShiftToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/BinaryShiftToken.java
+END
+SimpleToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/SimpleToken.java
+END
+AztecCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/AztecCode.java
+END
+State.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/aztec/encoder/State.java
+END

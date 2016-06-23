@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX phpagi\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-17 11:36+0200\n"
+"PO-Revision-Date: 2008-09-28 00:33+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:35
+msgid "Error writing the phpagi.conf file."
+msgstr "Fel vid skrivning till filen phpagi.conf"
+
+#: page.phpagiconf.php:72
+msgid "PHPAGI Config:"
+msgstr "Konfiguration för PHPAGI:"
+
+#: page.phpagiconf.php:77
+msgid "Main config:"
+msgstr "Huvudkonfiguration:"
+
+#: page.phpagiconf.php:80
+msgid "Debug:"
+msgstr "Avlusning:"
+
+#: page.phpagiconf.php:80
+msgid "Enable PHPAGI debugging."
+msgstr "Aktivera avlusning för PHPAGI."
+
+#: page.phpagiconf.php:82
+#: page.phpagiconf.php:89
+#: page.phpagiconf.php:124
+msgid "false"
+msgstr "Ja"
+
+#: page.phpagiconf.php:83
+#: page.phpagiconf.php:90
+#: page.phpagiconf.php:125
+msgid "true"
+msgstr "Nej"
+
+#: page.phpagiconf.php:87
+msgid "Error handler:"
+msgstr "Felhanterare:"
+
+#: page.phpagiconf.php:87
+msgid "Use internal error handler."
+msgstr "Använd den interna felhanteraren."
+
+#: page.phpagiconf.php:94
+msgid "Mail errors to:"
+msgstr "E-posta fel till:"
+
+#: page.phpagiconf.php:94
+msgid "Email where the errors will be sent."
+msgstr "E-postadressen felen ska skickas till."
+
+#: page.phpagiconf.php:98
+msgid "Hostname of the server:"
+msgstr "Datornamnet för servern:"
+
+#: page.phpagiconf.php:98
+msgid "Hostname of this server."
+msgstr "Datornamnet för denna server."
+
+#: page.phpagiconf.php:102
+msgid "Temporary directory:"
+msgstr "Temporär katalog:"
+
+#: page.phpagiconf.php:102
+msgid "Temporary directory for storing temporary output."
+msgstr "Temporär katalog för lagring av temporära filer."
+
+#: page.phpagiconf.php:105
+msgid "Festival config:"
+msgstr "Konfiguration för Festival:"
+
+#: page.phpagiconf.php:107
+msgid "Path to text2wave:"
+msgstr "Sökväg till text2wave:"
+
+#: page.phpagiconf.php:107
+msgid "Path to text2wave binary."
+msgstr "Sökvägen till programmet text2wave."
+
+#: page.phpagiconf.php:110
+msgid "Asterisk API settings:"
+msgstr "Inställningar för Asterisk API:"
+
+#: page.phpagiconf.php:112
+msgid "Server:"
+msgstr "Server:"
+
+#: page.phpagiconf.php:112
+msgid "Server to connect to."
+msgstr "Server att koppla upp mot."
+
+#: page.phpagiconf.php:116
+msgid "Port:"
+msgstr "Port:"
+
+#: page.phpagiconf.php:116
+msgid "Port to connect to manager."
+msgstr "Den port som ska användas för att koppla mot hanteraren."
+
+#: page.phpagiconf.php:120
+msgid "Fast AGI config:"
+msgstr "Konfiguration för Fast AGI:"
+
+#: page.phpagiconf.php:122
+msgid "setuid:"
+msgstr "setuid:"
+
+#: page.phpagiconf.php:122
+msgid "Drop privileges to owner of script."
+msgstr "Sätt rättighet till ägaren av skriptet."
+
+#: page.phpagiconf.php:129
+msgid "Basedir:"
+msgstr "Baskatalog:"
+
+#: page.phpagiconf.php:129
+msgid "Path to AGI scripts folder."
+msgstr "Sökväg till mappen för AGI-skripten."
+
+#: page.phpagiconf.php:132
+msgid "Cepstral config:"
+msgstr "Konfiguration för Cepstral:"
+
+#: page.phpagiconf.php:134
+msgid "Swift path:"
+msgstr "Sökväg för Swift:"
+
+#: page.phpagiconf.php:134
+msgid "Path to cepstral TTS binary."
+msgstr "Sökväg till programmet cepstral TTS."
+
+#: page.phpagiconf.php:138
+msgid "Cepstral voice:"
+msgstr "Röst för Cepstral:"
+
+#: page.phpagiconf.php:138
+msgid "TTS Voice used."
+msgstr "Den TTS-röst som ska användas."
+
+#: page.phpagiconf.php:142
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: module.xml
+msgid "PHPAGI Config"
+msgstr "Konfiguration för PHPAGI"
+

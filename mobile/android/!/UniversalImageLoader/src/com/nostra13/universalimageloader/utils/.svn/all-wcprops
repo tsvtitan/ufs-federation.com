@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils
+END
+MemoryCacheUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils/MemoryCacheUtils.java
+END
+L.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils/L.java
+END
+IoUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils/IoUtils.java
+END
+StorageUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils/StorageUtils.java
+END
+ImageSizeUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils/ImageSizeUtils.java
+END
+DiscCacheUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/utils/DiscCacheUtils.java
+END

@@ -1,0 +1,20 @@
+<div class="scroll">
+  <table class="table1"> 
+    <thead>
+      <tr class="acenter">
+        <th th:utext="Наименование"/>
+        <th th:utext="Путь"/>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="record:${table.Records}">
+        <!--/*/<th:block th:with="f=${record.find('NAME')}">/*/--><td th:utext="${f.Text}"/><!--/*/</th:block>/*/-->
+        <!--/*/<th:block th:with="f=${record.find('PATH')}">/*/--><td th:utext="${f.Text}"/><!--/*/</th:block>/*/-->
+        <!--/*/<th:block th:with="f=${record.find('CREATED')}">/*/--><td th:utext="${f.Text}"/><!--/*/</th:block>/*/-->
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+</div>  
+<div th:replace="TableParams"/>

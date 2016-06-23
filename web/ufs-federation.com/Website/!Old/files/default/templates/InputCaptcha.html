@@ -1,0 +1,16 @@
+<h4><a th:id="${'a'+path.newJsIdent('a')}" href="#" tabindex="-1"><img th:src="${path.getRootPath('/captcha/'+field.Id)}" th:alt="${field.Caption}"/></a></h4><input type="text" th:class="${field.Error}?'acenter error':'acenter'" th:name="${field.Name}" th:value="${field.Value}" th:maxlength="${field.MaxLength}" th:placeholder="${field.PlaceHolder}" th:style="${field.Style}"/>
+<script th:inline="javascript">
+  $(document).ready(function(){
+    $([['#a'+${path.lastJsIdent('a')}]]).click(function(e){
+      e.preventDefault();
+      ts = new Date().getTime();
+      o = $([['#a'+${path.lastJsIdent('a')+' img'}]]);
+      src = o.attr('src');
+      pos = src.indexOf('?');
+      if(pos!==-1) {
+        src = src.substring(0,pos);
+      }
+      o.attr('src',src+'?'+ts);
+    });
+  });
+</script>

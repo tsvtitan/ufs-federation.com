@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter
+END
+PrematureDataEndException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/PrematureDataEndException.java
+END
+ChunkedDataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/ChunkedDataException.java
+END
+GZIPInputFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/GZIPInputFilter.java
+END
+ContentLengthFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/ContentLengthFilter.java
+END
+InflaterInputFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/InflaterInputFilter.java
+END
+ChunkedInputFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/ChunkedInputFilter.java
+END
+ChunkedOutputFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/ChunkedOutputFilter.java
+END
+DataRemainingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/filter/DataRemainingException.java
+END

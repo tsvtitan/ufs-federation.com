@@ -1,0 +1,19 @@
+08.04.2013 12:44:46.542 I: --------------------------------------------------
+08.04.2013 12:44:46.847 I: Connect to Database ...
+08.04.2013 12:44:47.770 I: Connected.
+08.04.2013 12:44:48.073 I: [Mysql->query] set names utf8
+08.04.2013 12:44:48.074 I: [Mysql->query] 1 records
+08.04.2013 12:44:48.370 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+08.04.2013 12:44:48.372 I: [Mysql->query] 1 records
+08.04.2013 12:44:48.884 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+08.04.2013 12:44:48.884 I: [Mysql->query] 1 records
+08.04.2013 12:44:50.304 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+08.04.2013 12:44:50.305 I: [Mysql->query] 1 records
+08.04.2013 12:45:43.544 E: Mailing 1189 has not sent. Error is  ...
+08.04.2013 12:45:44.287 I: [Mysql->query] UPDATE `mailing` SET `sent`=NULL,`result`=NULL WHERE `remote_id`='02A37066641414B0D2D424637454C548'
+08.04.2013 12:45:44.298 I: [Mysql->query] Rows matched: 1  Changed: 0  Warnings: 0
+08.04.2013 12:45:45.451 I: Mailing 1189 has updated successfully ...
+08.04.2013 12:45:46.673 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+08.04.2013 12:45:46.675 I: [Mysql->query] 1 records
+08.04.2013 12:45:48.221 I: There is nothing to worry about
+08.04.2013 12:45:49.861 I: Execution time is 63.612253904343

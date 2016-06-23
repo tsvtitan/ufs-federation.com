@@ -1,0 +1,88 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for irc
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Online Support"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid ""
+"This module lets you connect to the IRC network where developers and other "
+"users chat. You can chat to the developers live, if you have problems"
+msgstr ""
+
+msgid ""
+"What nickname would you like to use? If you leave this blank, a nick will be "
+"automatically generated for you."
+msgstr ""
+
+msgid "Start IRC"
+msgstr ""
+
+msgid "Online Resources"
+msgstr ""
+
+msgid ""
+"When you connect, you will be automatically be named 'FreePBX' and a random "
+"4 digit number, eg, FreePBX3486."
+msgstr ""
+
+msgid ""
+"If you wish to change this to your normal nickname, you can type '<b>/nick "
+"yournickname</b>', and your nick will change. This is an ENGLISH ONLY "
+"support channel. Sorry."
+msgstr ""
+
+msgid "This allows you to contact the FreePBX channel on IRC."
+msgstr ""
+
+msgid ""
+"As IRC is an un-moderated international medium, AMP, FreePBX, Coalescent "
+"Systems, or any other party can not be held responsible for the actions or "
+"behavior of other people on the network"
+msgstr ""
+
+msgid ""
+"When you connect to IRC, to assist in support, the IRC client will "
+"automatically send the following information to everyone in the #freepbx "
+"channel:"
+msgstr ""
+
+msgid "Your Linux Distribution:"
+msgstr ""
+
+msgid "Your FreePBX version:"
+msgstr ""
+
+msgid ""
+"If you do not want this information to be made public, please use another "
+"IRC client, or contact a commercial support provider"
+msgstr ""

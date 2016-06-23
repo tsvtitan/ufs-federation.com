@@ -1,0 +1,22 @@
+<module>
+	<rawname>phpinfo</rawname>
+	<name>PHP Info</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* localizations
+		*2.6.0.0* misc
+		*2.4.0* bump for 2.4
+		*1.1.0.1* bump for rc1
+		*1.1.0* #1442 remove access problem and iframe
+	</changelog>
+	<type>tool</type>
+	<category>System Administration</category>
+	<menuitems>
+		<phpinfo>PHP Info</phpinfo>
+	</menuitems>
+	<location>release/2.7/phpinfo-2.7.0.0.tgz</location>
+	<md5sum>b884625fba678524d81a725a3d9175c6</md5sum>
+</module>

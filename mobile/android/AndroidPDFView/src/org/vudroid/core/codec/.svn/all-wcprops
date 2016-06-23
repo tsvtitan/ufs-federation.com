@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/codec
+END
+CodecContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/codec/CodecContext.java
+END
+CodecPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/codec/CodecPage.java
+END
+CodecDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/codec/CodecDocument.java
+END

@@ -1,0 +1,15 @@
+05.04.2013 15:10:52.456 I: --------------------------------------------------
+05.04.2013 15:10:52.456 I: Connect to Database ...
+05.04.2013 15:10:52.460 I: Connected.
+05.04.2013 15:10:52.460 I: [Mysql->query] set names utf8
+05.04.2013 15:10:52.462 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+05.04.2013 15:10:52.463 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL);
+05.04.2013 15:10:52.464 I: [Mysql->query] SELECT remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+05.04.2013 15:10:52.466 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+05.04.2013 15:10:52.467 I: There are 1 patterns.
+05.04.2013 15:10:52.467 I: Process pattern NULL / 1 emails.
+05.04.2013 15:10:52.467 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id IS NULL ORDER BY created, priority LIMIT 0,10
+05.04.2013 15:10:52.468 I: There are 1 emails. Sending ...
+05.04.2013 15:10:57.298 I: Mailing 1184 has transferred successfully at 2013-04-05 15:10:56...
+05.04.2013 15:10:57.687 I: [Mysql->query] UPDATE `mailing` SET `remote_id`='CA65266F55C1062B1E4A020C945636BE',`transferred`='2013-04-05 15:10:52',`sent`=NULL,`result`=NULL WHERE `mailing_id`='1184'
+05.04.2013 15:10:57.697 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0

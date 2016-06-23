@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="F2CF8C3D-E519-0583-D57F-814B529300AA" name="MOBILE_FILES_TOKENS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-26 06:43:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<containerWithKeyObject>31614786-57B0-9C4E-C82A-9B64126D3B91</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>86CC2108-19E1-8C5F-EA5B-D367F1677104</localFKIndex>
+<keyObject>3ECA6349-1C62-BDAD-CCBE-CD3C8CB4B3A8</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

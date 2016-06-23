@@ -1,0 +1,222 @@
+//
+//  UFSRegistrationVC.m
+//  UFS
+//
+//  Created by Sergei Tomilov on 4/16/15.
+//  Copyright (c) 2015 UFS Investment Company. All rights reserved.
+//
+
+#import "UFSRegistrationVC.h"
+#import "UFSQRCodeVC.h"
+#import "UFSPromotionVC.h"
+
+@implementation UFSRegistrationVC
+
+- (id)initWithPromotion:(NSDictionary*)promotion titleParent:(NSString *)titleParent
+{
+    self = [super init];
+    if (self) {
+        
+        self.titleParent = titleParent;
+        self.titleNavBar = @"Регистрация";
+        self.promotion = promotion;
+        
+        self.timers = [[NSMutableDictionary alloc] init];
+        
+        self.products = [[NSMutableArray alloc] init];
+        NSArray *arr = ((NSArray*)[promotion objectForKey:@"products"]);
+         
+        if (arr.count>0) {
+            for (int i=0; i<arr.count;i++) {
+         
+                NSMutableDictionary *obj = [(NSDictionary*)[arr objectAtIndex:i] mutableCopy];
+                [self.products addObject:obj];
+            }
+        }
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.view setBackgroundColor:RGBA(238, 241, 243, 1.0f)];
+    
+    UIImage *imgBtn = [UIImage imageNamed:@"icn_nav_back"];
+    UIButton *backbutton = [[UIButton alloc] initWithFrame:CGRectMake(5.0f, (self.view.frame.size.height - 30)/2.0f, 30.0f, 30.0f)];
+    [backbutton setBackgroundImage:imgBtn forState:UIControlStateNormal];
+    [backbutton addTarget:self action:@selector(backButtonTouch:) forControlEvents:UIControlEventTouchUpInside];
+    [backbutton.titleLabel setTextAlignment:NSTextAlignmentCenter];
+    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backbutton] autorelease];
+    [backbutton release];
+    
+    self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapAnywhere:)];
+    self.tapRecognizer.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:self.tapRecognizer];
+    
+    NSDictionary *registration = ((NSDictionary *)[self.promotion objectForKey:@"registration"]);
+    if (registration) {
+        
+        nameEdit.text = ((NSString*)[registration objectForKey:@"name"]);
+        phoneEdit.text = ((NSString*)[registration objectForKey:@"phone"]);
+        emailEdit.text = ((NSString*)[registration objectForKey:@"email"]);
+        
+        self.brokerageChecked = [[registration objectForKey:@"brokerage"] boolValue];
+        brokerageCheck.selected = self.brokerageChecked;
+        [self updateBrokerage];
+        
+        self.yieldChecked = [[registration objectForKey:@"yield"] boolValue];
+        yieldCheck.selected = self.yieldChecked;
+        [self updateYield];
+    }
+    
+    nameEdit.delegate = self;
+    phoneEdit.delegate = self;
+    emailEdit.delegate = self;
+    
+    self.titleText = _titleNavBar;
+}
+
+- (void)backButtonTouch: (UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)didTapAnywhere:(UITapGestureRecognizer *) sender
+{
+    [self.view endEditing:YES];
+}
+
+- (void)dealloc {
+    [nameLabel release];
+    [nameEdit release];
+    [phoneLabel release];
+    [phoneEdit release];
+    [emailLabel release];
+    [emailEdit release];
+    [nextButton release];
+    [scrollView release];
+    [super dealloc];
+}
+ 
+- (void)viewDidUnload {
+    [super viewDidUnload];
+}
+
+- (void)viewDidLayoutSubviews {
+    
+    scrollView.contentSize = CGSizeMake(self.view.frame.size.width,nextButton.frame.origin.y+nextButton.frame.size.height + 100);
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    CGPoint scrollPoint = CGPointMake(0, textField.frame.origin.y - 40);
+    [scrollView setContentOffset:scrollPoint animated:YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [scrollView setContentOffset:CGPointZero animated:YES];
+}
+
+- (IBAction)nextButtonTouch:(id)sender
+{
+    BOOL checked = [self checkFields];
+    if (checked) {
+        UFSPromotionVC *promotion = [[UFSPromotionVC alloc] initWithProductsEx:self.products
+                                                                        timers:self.timers
+                                                                         title:((NSString*)[self.promotion objectForKey:@"title"])
+                                                                   titleParent:self.titleParent
+                                                                       regName:nameEdit.text
+                                                                      regPhone:phoneEdit.text
+                                                                      regEmail:emailEdit.text
+                                                                  regBrokerage:self.brokerageChecked
+                                                                      regYield:self.yieldChecked];
+        [self.navigationController pushViewController:promotion animated:YES];
+        [promotion release];
+    }
+}
+
+- (void)updateBrokerage {
+    
+    UIImage *image = (self.brokerageChecked)?[UIImage imageNamed:@"checkbox-checked"]:[UIImage imageNamed:@"checkbox"];
+    [brokerageCheck setImage:image forState:UIControlStateDisabled];
+}
+
+- (IBAction)brokerageCheckTouch:(id)sender {
+    
+    brokerageCheck.selected = !self.brokerageChecked;
+    self.brokerageChecked = brokerageCheck.selected;
+    [self updateBrokerage];
+}
+
+- (void)updateYield {
+    UIImage *image = (self.yieldChecked)?[UIImage imageNamed:@"checkbox-checked"]:[UIImage imageNamed:@"checkbox"];
+    [yieldCheck setImage:image forState:UIControlStateDisabled];
+}
+
+- (IBAction)yieldCheckTouch:(id)sender {
+    
+    yieldCheck.selected = !self.yieldChecked;
+    self.yieldChecked = yieldCheck.selected;
+    [self updateYield];
+}
+
+- (void)showMessage:(NSString *)message {
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Сообщение"
+                                                        message:message
+                                                       delegate:self
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+    [alertView show];
+    [alertView release];
+}
+
+- (BOOL)stringIsEmpty:(NSString *)string {
+    
+    NSString *s = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    return [s length] == 0;
+}
+
+- (BOOL)stringIsPhone:(NSString *)string {
+    
+    return ![self stringIsEmpty:string];
+}
+
+- (BOOL)stringIsEmail:(NSString *)string {
+    
+    BOOL stricterFilter = NO; 
+    NSString *stricterFilterString = @"[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}";
+    NSString *laxString = @".+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*";
+    NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:string];
+}
+
+- (BOOL)checkFields {
+    
+    if ([self stringIsEmpty:nameEdit.text]) {
+        [self showMessage:@"Укажите ваше имя."];
+        return false;
+    }
+    
+    if (![self stringIsPhone:phoneEdit.text]) {
+        [self showMessage:@"Укажите контактный телефон."];
+        return false;
+    }
+    
+    if (![self stringIsEmail:emailEdit.text]) {
+        [self showMessage:@"Укажите электронный адрес."];
+         return false;
+    }
+    
+    return true;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+@end

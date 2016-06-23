@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download
+END
+ImageDownloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download/ImageDownloader.java
+END
+BaseImageDownloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download/BaseImageDownloader.java
+END
+HttpClientImageDownloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download/HttpClientImageDownloader.java
+END
+NetworkDeniedImageDownloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download/NetworkDeniedImageDownloader.java
+END
+TrustAllSSLSocketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download/TrustAllSSLSocketFactory.java
+END
+SlowNetworkImageDownloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/download/SlowNetworkImageDownloader.java
+END

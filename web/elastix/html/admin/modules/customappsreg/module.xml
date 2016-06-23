@@ -1,0 +1,40 @@
+<module>
+	<rawname>customappsreg</rawname>
+	<name>Custom Applications</name>
+	<version>2.8.0.1</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>
+		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
+	</description>
+	<menuitems>
+		<customextens>Custom Extensions</customextens>
+		<customdests>Custom Destinations</customdests>
+	</menuitems>
+	<changelog>
+		*2.8.0.1* #4618 XSS patch
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* localizations
+		*2.6.0.2* localizations
+		*2.6.0.1* localizations, misc
+		*2.6.0.0* stoped harmless php warning msg
+		*2.5.0.4* #3263, localization fixes
+		*2.5.0.3* localizations fixes
+		*2.5.0.2* localization, Swedish
+		*2.5.0.1* #3003 spelling
+		*2.5.0* #2845 tabindex
+		*2.4.0.5* #2843 Russian Translation
+		*2.4.0.4* #2700 block editing of destination field when once other modules are using it
+		*2.4.0.3* added depends on 2.4.0
+		*2.4.0.2* #2558 can't edit/del custom extension
+		*2.4.0.1* Fix typo in install script, non-existent primary key
+		*2.4.0* First release of module
+	</changelog>
+	<depends>
+		<version>2.4.0</version>
+	</depends>
+	<location>release/2.8/customappsreg-2.8.0.0.tgz</location>
+	<md5sum>9c35cea0178fdf94d1932f0998d0855e</md5sum>
+</module>

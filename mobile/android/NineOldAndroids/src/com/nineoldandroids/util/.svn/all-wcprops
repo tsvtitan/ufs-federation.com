@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/util
+END
+ReflectiveProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/util/ReflectiveProperty.java
+END
+Property.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/util/Property.java
+END
+IntProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/util/IntProperty.java
+END
+NoSuchPropertyException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/util/NoSuchPropertyException.java
+END
+FloatProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/util/FloatProperty.java
+END

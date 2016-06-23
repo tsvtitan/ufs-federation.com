@@ -1,0 +1,137 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for phpagiconf
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Error writing the phpagi.conf file."
+msgstr ""
+
+msgid "PHPAGI Config:"
+msgstr ""
+
+msgid "Main config:"
+msgstr ""
+
+msgid "Debug:"
+msgstr ""
+
+msgid "Enable PHPAGI debugging."
+msgstr ""
+
+msgid "false"
+msgstr ""
+
+msgid "true"
+msgstr ""
+
+msgid "Error handler:"
+msgstr ""
+
+msgid "Use internal error handler."
+msgstr ""
+
+msgid "Mail errors to:"
+msgstr ""
+
+msgid "Email where the errors will be sent."
+msgstr ""
+
+msgid "Hostname of the server:"
+msgstr ""
+
+msgid "Hostname of this server."
+msgstr ""
+
+msgid "Temporary directory:"
+msgstr ""
+
+msgid "Temporary directory for storing temporary output."
+msgstr ""
+
+msgid "Festival config:"
+msgstr ""
+
+msgid "Path to text2wave:"
+msgstr ""
+
+msgid "Path to text2wave binary."
+msgstr ""
+
+msgid "Asterisk API settings:"
+msgstr ""
+
+msgid "Server:"
+msgstr ""
+
+msgid "Server to connect to."
+msgstr ""
+
+msgid "Port:"
+msgstr ""
+
+msgid "Port to connect to manager."
+msgstr ""
+
+msgid "Fast AGI config:"
+msgstr ""
+
+msgid "setuid:"
+msgstr ""
+
+msgid "Drop privileges to owner of script."
+msgstr ""
+
+msgid "Basedir:"
+msgstr ""
+
+msgid "Path to AGI scripts folder."
+msgstr ""
+
+msgid "Cepstral config:"
+msgstr ""
+
+msgid "Swift path:"
+msgstr ""
+
+msgid "Path to cepstral TTS binary."
+msgstr ""
+
+msgid "Cepstral voice:"
+msgstr ""
+
+msgid "TTS Voice used."
+msgstr ""
+
+msgid "Submit Changes"
+msgstr ""
+
+msgid "PHPAGI Config"
+msgstr ""
+
+msgid "System Administration"
+msgstr ""

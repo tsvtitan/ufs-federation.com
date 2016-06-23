@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b9c3671d-bcd4-4ab9-98c7-6143888a2cfb++5326",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b9c3671d-bcd4-4ab9-98c7-6143888a2cfb++5326" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b9c3671d-bcd4-4ab9-98c7-6143888a2cfb++5326" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DCA9D09C-6878-47DB-A3A1-1D8B6DBF1E6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b9c3671d-bcd4-4ab9-98c7-6143888a2cfb++5326" : "ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UFS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UFS\/UFS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/ru.ufs-federation.com\/svn\/mobile",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b9c3671d-bcd4-4ab9-98c7-6143888a2cfb++5326"
+    }
+  ]
+}

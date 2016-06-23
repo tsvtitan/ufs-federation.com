@@ -1,0 +1,207 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 12:13+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Misc Destination: %s"
+msgstr "Destinazione: %s"
+
+#: page.miscdests.php:69
+#: page.miscdests.php:114
+#: page.miscdests.php:122
+msgid "Add Misc Destination"
+msgstr "Aggiungi Destinazione"
+
+#: page.miscdests.php:83
+msgid "Misc Destination"
+msgstr "Destinazione"
+
+#: page.miscdests.php:83
+msgid "deleted"
+msgstr "eliminata"
+
+#: page.miscdests.php:94
+msgid "Misc Destinations are for adding destinations that can be used by other FreePBX modules, generally used to route incoming calls. If you want to create feature codes that can be dialed by internal users and go to various destinations, please see the <strong>Misc Applications</strong> module."
+msgstr "Le Destinazioni Varie sono utili per aggiungere destinazioni che possono essere utilizzate da altri moduli FreePBX, in generale per instradare le chiamate in ingresso. Se invece si vuole creare una destinazione da poter essere utilizzata dagli interni, vedere il modulo <strong>Applicazioni Varie</strong>"
+
+#: page.miscdests.php:99
+msgid "Misc Destination:"
+msgstr "Destinazione:"
+
+#: page.miscdests.php:103
+#, php-format
+msgid "Delete Misc Destination %s"
+msgstr "Elimina Destinazione: %s"
+
+#: page.miscdests.php:122
+msgid "Edit Misc Destination"
+msgstr "Modifica Destinazione"
+
+#: page.miscdests.php:127
+msgid "Description:"
+msgstr "Descrizione:"
+
+#: page.miscdests.php:127
+msgid "Give this Misc Destination a brief name to help you identify it."
+msgstr "Dare alla Destinazione un nome breve per una facile identificazione."
+
+#: page.miscdests.php:131
+msgid "Dial:"
+msgstr "Chiama:"
+
+#: page.miscdests.php:131
+msgid "Enter the number this destination will simulate dialing, exactly as you would dial it from an internal phone. When you route a call to this destination, it will be as if the caller dialed this number from an internal phone."
+msgstr "Immettere il numero per questa destinazione. Quando si dirotta una chiamata verso questa destinazione, è come se fosse stato chiamato il numero da un telefono interno."
+
+#: page.miscdests.php:136
+msgid "featurecode shortcuts"
+msgstr "Collegamento veloce Codice Servizio"
+
+#: page.miscdests.php:151
+msgid "Submit Changes"
+msgstr "Conferma Cambiamenti"
+
+#: page.miscdests.php:168
+msgid "Please enter a valid Description"
+msgstr "Prego immettere una Deescrizione valida"
+
+#: page.miscdests.php:169
+msgid "Please enter a valid Dial string"
+msgstr "Prego immettere una stringa di chiamata valida"
+
+#: module.xml
+msgid "Misc Destinations"
+msgstr "Destinazioni Varie"
+
+#~ msgid "Blacklist a number"
+#~ msgstr "Inserisce un numero in Blacklist"
+#~ msgid "Blacklist the last caller"
+#~ msgstr "Inserisce l'ultimo chiamante in Blacklist"
+#~ msgid "Remove a number from the blacklist"
+#~ msgstr "Rimuove un numero dalla Blacklist"
+#~ msgid "Call Forward"
+#~ msgstr "Trasferimeto di chiamata"
+#~ msgid "Call Forward All Activate"
+#~ msgstr "Attiva Trasferimento di Chiamata Incondizionato"
+#~ msgid "Call Forward All Deactivate"
+#~ msgstr "Disattiva Trasferimento di Incondizionato"
+#~ msgid "Call Forward All Prompting Deactivate"
+#~ msgstr "Disattiva Trasferimento di Incondizionato (chiede dettagli)"
+#~ msgid "Call Forward Busy Activate"
+#~ msgstr "Attiva Trasferimento di Chiamata su Occupato"
+#~ msgid "Call Forward Busy Deactivate"
+#~ msgstr "Disattiva Trasferimento di Chiamata su Occupato"
+#~ msgid "Call Forward Busy Prompting Deactivate"
+#~ msgstr "Disattiva Trasferimento di Chiamata su Occupato (chiede dettagli)"
+#~ msgid "Call Forward No Answer/Unavailable Activate"
+#~ msgstr "Attiva Trasferimento su Nessuna Risposta/Non disponibile"
+#~ msgid "Call Forward No Answer/Unavailable Deactivate"
+#~ msgstr "Disattiva Trasferimento su Nessuna Risposta/Non disponibile"
+#~ msgid "Call Waiting"
+#~ msgstr "Avviso di Chiamata"
+#~ msgid "Call Waiting - Activate"
+#~ msgstr "Attiva Avviso di Chiamata"
+#~ msgid "Call Waiting - Deactivate"
+#~ msgstr "Disattiva Avviso di Chiamata"
+#~ msgid "Core"
+#~ msgstr "Sistema"
+#~ msgid "Call Pickup (Can be used with GXP-2000)"
+#~ msgstr "Call Pickup"
+#~ msgid "Simulate Incoming Call"
+#~ msgstr "Simulazione chiamata in entrata"
+#~ msgid "Simulate Incoming FAX Call"
+#~ msgstr "Simulazione chiamata FAX in entrata"
+#~ msgid "User Logoff"
+#~ msgstr "Disconessione Utente"
+#~ msgid "User Logon"
+#~ msgstr "Connessione Utente"
+#~ msgid "Dictation"
+#~ msgstr "Dettatura"
+#~ msgid "Email completed dictation"
+#~ msgstr "Invio Email a Dettatura completata"
+#~ msgid "Perform dictation"
+#~ msgstr "Esecuzione Dettatura"
+#~ msgid "Do-Not-Disturb (DND)"
+#~ msgstr "Non Disturbare (DND)"
+#~ msgid "DND Activate"
+#~ msgstr "Attiva Non Disturbare"
+#~ msgid "DND Deactivate"
+#~ msgstr "Disattiva Non Disturbare"
+#~ msgid "Info Services"
+#~ msgstr "Servizi di informazione"
+#~ msgid "Call Trace"
+#~ msgstr "Ultimi numeri chiamati"
+#~ msgid "Directory"
+#~ msgstr "Elenco Telefonico"
+#~ msgid "Echo Test"
+#~ msgstr "Test dell'Eco"
+#~ msgid "Speak Your Exten Number"
+#~ msgstr "Riproduzione Numero Interno"
+#~ msgid "Speaking Clock"
+#~ msgstr "Ora e Data"
+#~ msgid "Misc Applications"
+#~ msgstr "Applicazioni Varie"
+#~ msgid "Paging and Intercom"
+#~ msgstr "Paging e Intercom"
+#~ msgid "Intercom prefix"
+#~ msgstr "Prefisso Intercom"
+#~ msgid "User Intercom Allow"
+#~ msgstr "Permetti Intercom"
+#~ msgid "User Intercom Disallow"
+#~ msgstr "Non permettere Intercom"
+#~ msgid "Phonebook Directory"
+#~ msgstr "Rubrica telefonica"
+#~ msgid "Phonebook dial-by-name directory"
+#~ msgstr "Rubrica telefonica (chiama-per-nome)"
+#~ msgid "Recordings"
+#~ msgstr "Registrazioni"
+#~ msgid "Check Recording"
+#~ msgstr "Controllo registrazione"
+#~ msgid "Save Recording"
+#~ msgstr "Registrazione"
+#~ msgid "Speed dial functions"
+#~ msgstr "Funzioni Selezione breve"
+#~ msgid "Set user speed dial"
+#~ msgstr "Imposta numero in Selezione breve"
+#~ msgid "Speeddial prefix"
+#~ msgstr "Prefisso Selezione breve"
+#~ msgid "Dial Voicemail"
+#~ msgstr "Menu Casella Vocale"
+#~ msgid "My Voicemail"
+#~ msgstr "Menu propria Casella Vocale"
+#~ msgid "Extension"
+#~ msgstr "Interno"
+#~ msgid "Day Night Control"
+#~ msgstr "Servizio Giorno Notte"
+#~ msgid "Day/Night Control Toggle"
+#~ msgstr "Codice Servizio Giorno/Notte"
+#~ msgid "Instructions"
+#~ msgstr "Istruzioni"
+#~ msgid "Used as Destination by %s %s"
+#~ msgstr "Usato come Destinazione da %s %s"
+#~ msgid "Silent Monitor"
+#~ msgstr "Ascolto Chiamate"
+#~ msgid "Silent Monitor Private Whisper Mode"
+#~ msgstr "Ascolto Chiamate Modalità Private Whisper"
+#~ msgid "Silent Monitor Whisper Mode"
+#~ msgstr "Ascolto Chiamate Modalità Whisper"
+#~ msgid "Dial System FAX"
+#~ msgstr "Chiamata FAX di Sistema"
+#~ msgid "In-Call Asterisk Blind Transfer"
+#~ msgstr "Trasferimento diretto durante la chiamata"
+#~ msgid "In-Call Asterisk Toggle Call Recording"
+#~ msgstr "Attiva Registrazione durante la chiamata"
+#~ msgid "In-Call Asterisk Attended Transfer"
+#~ msgstr "Trasferimento assistito durante la chiamata"
+

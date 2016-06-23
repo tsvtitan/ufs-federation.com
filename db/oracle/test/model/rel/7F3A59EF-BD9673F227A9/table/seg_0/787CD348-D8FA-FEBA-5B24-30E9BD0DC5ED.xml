@@ -1,0 +1,308 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="787CD348-D8FA-FEBA-5B24-30E9BD0DC5ED" name="MESSAGES">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:39:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MESSAGE_ID" id="B5428982-A2E0-4CC2-08F6-72934611ACE7">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:39:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARENT_ID" id="F4757E96-EEA8-F17D-0F48-88AD47C04213">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:00:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>B5428982-A2E0-4CC2-08F6-72934611ACE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B5DC1F0-F884-4899-6D9C-4CA5DE491657" referredColumn="B5428982-A2E0-4CC2-08F6-72934611ACE7"/>
+</associations>
+</Column>
+<Column name="CREATED" id="67C4A2BA-2F0E-22C6-D201-8E9672B44CA9">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:40:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATOR_ID" id="5897037E-EE2E-0738-B7D9-D9B15953D822">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:40:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58F32E67-D588-DD26-024D-4A648B3DF55C" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="SENDER_ID" id="FD151A2F-0D7C-230E-BA94-7915E9D23E99">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:44:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABBDE68B-ABD5-C003-C391-6F04FB1D2721" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="SENDER_CONTACT" id="558CE1C3-D257-87A8-FA2A-AA273B16D4DB">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:45:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SENDER_NAME" id="EA4E4DEE-2F6A-54CF-EDF2-0201F275F1AD">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 08:32:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECIPIENT_ID" id="41975141-7CFE-77F2-9610-4D747113538F">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:43:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECIPIENT_CONTACT" id="2B6E5456-0A52-7A5A-C357-665E939D4207">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:43:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBJECT" id="37C14FC0-C950-07B0-6B2D-CDB9EE6725C3">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:46:12 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BODY" id="872216A9-5A3B-4676-3B51-6B502C0AA1B4">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:54:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SENT" id="A2CBACDA-058D-ACBE-3CC6-E4FE02183B59">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:55:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ERROR" id="4AD9ADC2-2AED-D316-E02B-33DCAE91B39F">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:02:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEGIN" id="C7048C30-3F60-FEB5-7CCF-E2D7AB0B17BA">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:58:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END" id="2D68C181-7E60-E413-F272-1DCA2F0AEA00">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:58:25 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="B809C816-9147-86A0-BE2B-71433745E620">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:04:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DELIVERED" id="7C6B63F7-0A72-A047-29D3-1774F7B3109A">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:04:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_ID" id="BF6FA6F1-3CE8-EF27-691B-22504A199695">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:27:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>196EF8A1-103B-A9CD-81BB-AD99D500ADEC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DABD69CC-E281-933D-9D2C-73475D297F5D" referredColumn="196EF8A1-103B-A9CD-81BB-AD99D500ADEC"/>
+</associations>
+</Column>
+<Column name="PATTERN_ID" id="64B4DE76-E2B8-5A92-2EF0-D68D4D74FCC2">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:51:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>C06A09E7-34F3-CB15-BFDE-A8DCDB30DEF9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FB5BEF9-1193-CEF5-D78D-B12C766622A9" referredColumn="C06A09E7-34F3-CB15-BFDE-A8DCDB30DEF9"/>
+</associations>
+</Column>
+<Column name="HEADERS" id="069CF793-CB29-7D13-2A9A-753E035820A2">
+<createdBy>tsv</createdBy>
+<createdTime>2014-09-19 06:41:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="4C0BA401-3A99-655F-B022-7D5C96E7EB07">
+<createdBy>tsv</createdBy>
+<createdTime>2014-09-19 06:42:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="621A129B-20F9-3482-69F6-BA96683CBCE6" name="MESSAGES_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:39:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5428982-A2E0-4CC2-08F6-72934611ACE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C590283C-9104-707E-B146-EAD80443A172" name="MESSAGES_ACCOUNTS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:40:49 UTC</createdTime>
+<generatorID>CKY-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5897037E-EE2E-0738-B7D9-D9B15953D822"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3039DDE2-43FA-CD2D-CE8C-07081E09D28A" name="MESSAGES_ACCOUNTS_FKv1">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 06:44:50 UTC</createdTime>
+<generatorID>CKY-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD151A2F-0D7C-230E-BA94-7915E9D23E99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB9D2A5A-FC7D-C146-D014-557F56AB263B" name="MESSAGES_MESSAGES_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:00:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4757E96-EEA8-F17D-0F48-88AD47C04213"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6C86ECA-3FC2-C0D6-EDAF-6656C3151AD1" name="MESSAGES_CHANNELS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:27:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF6FA6F1-3CE8-EF27-691B-22504A199695"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44961962-DAE6-7C5F-7629-4102B48DC34B" name="MESSAGES_PATTERNS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:51:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64B4DE76-E2B8-5A92-2EF0-D68D4D74FCC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

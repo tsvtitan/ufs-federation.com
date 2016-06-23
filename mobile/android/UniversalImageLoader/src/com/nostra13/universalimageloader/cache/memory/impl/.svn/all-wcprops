@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl
+END
+LimitedAgeMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/LimitedAgeMemoryCache.java
+END
+FuzzyKeyMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/FuzzyKeyMemoryCache.java
+END
+WeakMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/WeakMemoryCache.java
+END
+LRULimitedMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache.java
+END
+LargestLimitedMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/LargestLimitedMemoryCache.java
+END
+FIFOLimitedMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/FIFOLimitedMemoryCache.java
+END
+UsingFreqLimitedMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/UsingFreqLimitedMemoryCache.java
+END
+LruMemoryCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache.java
+END

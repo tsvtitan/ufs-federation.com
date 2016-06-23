@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="MENUS" directorySegmentName="seg_0" id="TAB-3D799BE1-83E2-4E57-B905-F0E7EA80788E_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPTION" id="COL-2F4B456E-0CCC-4798-A416-37967C412EFB_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY" id="COL-4660DEAD-6EE3-4C05-9D41-F399B287DB18_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="COL-53CF763C-1F5E-4260-995E-6BEA3AA668D9_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="COL-5B27E120-E571-4507-9B93-AB6C7E7DA1BC_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MENU_ID" id="COL-65189518-C1FC-4534-A457-2BCDEEA0C81C_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PARENT_ID" id="COL-86C5A71C-3F1A-415F-AEB7-FB85F1A9EDDC_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INVISIBLE" id="COL-CB815CAE-60DF-4436-BF89-14F9646930D6_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEW_UP_TO" id="COL-D27C5624-A3AB-4D55-BA3D-7FE1680390D7_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PATH_ID" id="COL-D77EE10D-06A3-4BC7-88CB-D34CCE1DB8FF_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LANG_ID" id="COL-E14A6826-7947-4068-864D-333635A9EB01_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROMO_IMAGE" id="COL-E5B32808-3643-4B43-AB42-BA6000982097_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ICON_IMAGE" id="COL-F335F0A2-A3B5-4D5E-8EE4-C44F58FC2853_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R/52" id="59D0B2B3-E4B1-9490-5691-5D5B8EC28FBC">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R/68" id="DB86FCCA-5CDC-28A1-6F26-8B0E8C6DFE43">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R/56" id="DEE03205-A385-CAD2-DF6D-3607F1B3A132">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="XPKМеню" id="XPK-D085563E-2E18-4D83-A127-333ECF3A96CC_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

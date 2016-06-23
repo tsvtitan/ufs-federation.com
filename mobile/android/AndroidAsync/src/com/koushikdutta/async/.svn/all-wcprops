@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/124/android/AndroidAsync/src/com/koushikdutta/async
+END
+AsyncDatagramSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncDatagramSocket.java
+END
+AsyncSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncSocket.java
+END
+FilteredDataEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/FilteredDataEmitter.java
+END
+AsyncSemaphore.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncSemaphore.java
+END
+DataEmitterReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/DataEmitterReader.java
+END
+ArrayDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/ArrayDeque.java
+END
+ByteBufferList.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/ByteBufferList.java
+END
+BufferedDataEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/BufferedDataEmitter.java
+END
+DataEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/DataEmitter.java
+END
+AsyncSSLSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncSSLSocket.java
+END
+Deque.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/Deque.java
+END
+AsyncSSLException.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncSSLException.java
+END
+ZipDataSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/ZipDataSink.java
+END
+BufferedDataSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/BufferedDataSink.java
+END
+LineEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/LineEmitter.java
+END
+FilteredDataSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/FilteredDataSink.java
+END
+DatagramChannelWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/DatagramChannelWrapper.java
+END
+ChannelWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/ChannelWrapper.java
+END
+HostnameResolutionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/HostnameResolutionException.java
+END
+AsyncSSLSocketWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/124/android/AndroidAsync/src/com/koushikdutta/async/AsyncSSLSocketWrapper.java
+END
+DataTrackingEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/DataTrackingEmitter.java
+END
+TapCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/TapCallback.java
+END
+FileDataEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/FileDataEmitter.java
+END
+ThreadQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/ThreadQueue.java
+END
+ServerSocketChannelWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/ServerSocketChannelWrapper.java
+END
+AsyncNetworkSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncNetworkSocket.java
+END
+SocketChannelWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/SocketChannelWrapper.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/Util.java
+END
+AsyncServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncServer.java
+END
+DataSink.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/DataSink.java
+END
+PushParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/PushParser.java
+END
+NullDataCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/NullDataCallback.java
+END
+DataEmitterBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/DataEmitterBase.java
+END
+SelectorWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/SelectorWrapper.java
+END
+AsyncServerSocket.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/AsyncServerSocket.java
+END

@@ -1,0 +1,287 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95F423BB-AE06-7C75-C4A4-9D8D90FC953E" name="PAGE_FORMS">
+<createdBy>root</createdBy>
+<createdTime>2013-12-23 07:22:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAGE_FORM_ID" id="972E9453-4F67-844C-3148-988EC92FD91C">
+<createdBy>root</createdBy>
+<createdTime>2013-12-23 07:23:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAGE_ID" id="6DB2EAD4-4924-07B3-51FB-86F7C69A6C8D">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:15:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-87D56C14-1995-4A54-8E04-88FF556DC265_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C14C148A-A4CE-1489-F747-98B52972F36F" referredColumn="COL-87D56C14-1995-4A54-8E04-88FF556DC265_00000000"/>
+</associations>
+</Column>
+<Column name="LANG_ID" id="4342BC81-50DA-8FB2-BF68-5C58E7B7325E">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:16:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB76870B-B1AF-1705-1467-2CE70149E3D4" referredColumn="COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000"/>
+</associations>
+</Column>
+<Column name="TEMPLATE_ID" id="E32738F8-A941-7A16-F1A6-DAA2451E1FBE">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:45:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-9C6740E2-6F48-4697-8549-561C50C15B8A_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EA83C70-B3F4-A716-68A8-D2D4582EC835" referredColumn="COL-9C6740E2-6F48-4697-8549-561C50C15B8A_00000000"/>
+</associations>
+</Column>
+<Column name="NAME" id="EAF5C00C-FECC-C441-B5E4-6C46526CF530">
+<createdBy>root</createdBy>
+<createdTime>2013-12-23 07:23:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="19DB18AA-180B-4D87-300C-BE5F68814D4A">
+<createdBy>root</createdBy>
+<createdTime>2013-12-23 07:23:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROC_NAME" id="B7C408E5-D564-AE34-B326-98DE6F0E0555">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:40:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIELDS" id="7F7C33B4-6DAC-7B35-8FBD-423DB81FDDD5">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:41:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="3BBCA3A1-4FC9-8AFE-4B67-55809820DD4B">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:41:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ASYNC" id="A4D3EC54-BC3A-AFB6-4001-D7BFD1A64FA3">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:34:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFAULTS" id="C4976F1F-E3F2-FC42-1D48-5E33C5B2D19B">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:35:12 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REQUIREMENTS" id="05248D78-5745-AE3E-9E68-871BABFCBBA9">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:35:28 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLACEHOLDERS" id="3F7805C1-C157-8BC6-34DC-435FCE2DF783">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:35:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUTTONS" id="B0EA4976-7419-A8B7-E130-FAF9BBE01156">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:36:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_LENGTHS" id="1BC98287-CE54-81F0-F57C-90201E6C0CF6">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:36:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LISTS" id="F7611DCA-FC58-C1D3-27B9-F8D0333612C6">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:37:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STYLES" id="8BAC8C90-6E62-FD5A-C53D-0DEC0CB9C66D">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:37:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TRANSFORMS" id="8E885752-2170-6728-69CA-D4E126AFBFFC">
+<createdBy>root</createdBy>
+<createdTime>2014-02-10 05:41:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARENT_ID" id="AE2BDA04-78EC-FC7D-5644-B40A02CF4BD2">
+<createdBy>root</createdBy>
+<createdTime>2014-02-07 14:15:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>972E9453-4F67-844C-3148-988EC92FD91C</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B1B1924-1FCC-86AC-D954-22828A6A6F21" referredColumn="972E9453-4F67-844C-3148-988EC92FD91C"/>
+</associations>
+</Column>
+<Column name="CAPTCHA_TYPE" id="EA0B5161-CFA9-9D43-2337-042C3F08C480">
+<createdBy>root</createdBy>
+<createdTime>2014-02-18 07:29:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6102C8F-ED63-0318-F41D-B2E0132432FF" name="TABLES_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-23 07:23:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="972E9453-4F67-844C-3148-988EC92FD91C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B793EE9-8C87-E725-7568-AD43C4987738" name="PAGE_FORMS_PAGES_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:15:53 UTC</createdTime>
+<generatorID>CKY-66EF86F8-4624-4278-B1DB-8B5BE2EF15A0_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DB2EAD4-4924-07B3-51FB-86F7C69A6C8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9694EFE9-F4E9-EB77-85E0-227929D2361C" name="PAGE_FORMS_LANGS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:16:22 UTC</createdTime>
+<generatorID>CKY-7420FDEA-99B9-424A-9E40-179A7C9DF201_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4342BC81-50DA-8FB2-BF68-5C58E7B7325E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A907F7FD-53D4-259C-7B44-C7AB151EA92F" name="PAGE_FORMS_TEMPLATES_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-01-17 06:45:37 UTC</createdTime>
+<generatorID>CKY-F87ACEA5-B955-4C90-94F8-A95059CE8098_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E32738F8-A941-7A16-F1A6-DAA2451E1FBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DA79ADC-0A6B-66B1-6191-A18D92B066C9" name="PAGE_FORMS_PAGE_FORMS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-07 14:15:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE2BDA04-78EC-FC7D-5644-B40A02CF4BD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+  <jdbc-resource enabled="true" jndi-name="jdbc/work" object-type="user" pool-name="WorkPool"/>
+  <jdbc-connection-pool allow-non-component-callers="false" 
+                        associate-with-thread="false" 
+                        connection-creation-retry-attempts="0" 
+                        connection-creation-retry-interval-in-seconds="10" 
+                        connection-leak-reclaim="false" 
+                        connection-leak-timeout-in-seconds="0" 
+                        connection-validation-method="auto-commit" 
+                        datasource-classname="oracle.jdbc.pool.OracleDataSource" 
+                        fail-all-connections="false" 
+                        is-connection-validation-required="false" 
+                        is-isolation-level-guaranteed="true" 
+                        lazy-connection-association="false" 
+                        lazy-connection-enlistment="false" 
+                        match-connections="false" 
+                        name="WorkPool" 
+                        non-transactional-connections="false" 
+                        ping="false" 
+                        pooling="true" 
+                        res-type="javax.sql.DataSource" 
+                        statement-cache-size="0" 
+                        statement-leak-reclaim="false" 
+                        statement-leak-timeout-in-seconds="0" 
+                        statement-timeout-in-seconds="-1" 
+                        steady-pool-size="8" 
+                        idle-timeout-in-seconds="15"
+                        max-wait-time-in-millis="60000"
+                        max-connection-usage-count="0" 
+                        max-pool-size="128"
+                        pool-resize-quantity="1"
+                        validate-atmost-once-period-in-seconds="0" 
+                        wrap-jdbc-objects="false">
+    <property name="URL" value="jdbc:oracle:thin:@//db1:1521/test"/>
+    <property name="User" value="ufs"/>
+    <property name="Password" value="XIqGeug9"/>
+  </jdbc-connection-pool>
+  <custom-resource enabled="true" jndi-name="MessageGate" res-type="java.util.Properties" factory-class="org.glassfish.resources.custom.factory.PropertiesFactory">
+    <property name="Provider.Jndi" value="jdbc/work"/>
+    <property name="Provider.Class" value="ufsic.providers.OracleProvider"/>
+    <property name="Application.Id" value="MessageGate"/>
+    <property name="OutgoingChannels.Count" value="5"/>
+    <property name="Scheme.PatternDir" value="/Users/tsv/Projects/web/ufs-federation.com/Website/files/default/patterns"/>
+    <property name="IncomingTimer.Expression" value="10"/>
+    <property name="OutgoingTimer.Expression" value="*/20"/>
+    <property name="StatusesTimer.Expression" value="30 */2"/>
+  </custom-resource>
+</resources>

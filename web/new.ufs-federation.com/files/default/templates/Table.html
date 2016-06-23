@@ -1,0 +1,20 @@
+<div class="scroll">
+  <table class="table1">
+    <thead>
+      <tr th:each="header:${table.Headers}" class="acenter">
+        <th th:each="column:${header.Columns}" th:utext="${column.Title}" th:rowspan="${column.RowSpan}" th:colspan="${column.ColSpan}"/>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="record:${table.Records}">
+        <td th:each="field:${record}" th:class="${field.Alignment}" th:utext="${field.Text}"/>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr th:each="footer:${table.Footers}">
+        <td th:each="field:${footer}" th:class="${field.Alignment}" th:utext="${field.Text}"/>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<div th:replace="TableParams"/>

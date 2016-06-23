@@ -1,0 +1,33 @@
+<module>
+	<rawname>asterisk-cli</rawname>
+	<name>Asterisk CLI</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>Provides an interface allowing you to run a command as if it was typed into Asterisk CLI</description>
+	<menuitems>
+		<cli>Asterisk CLI</cli>
+	</menuitems>
+	<depends>
+		<engine>asterisk</engine>
+	</depends>
+	<location>release/2.7/asterisk-cli-2.7.0.0.tgz</location>
+	<md5sum>23d372f67a86d8e4a6a6f4686085c4b7</md5sum>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* spelling fixes, localization updates
+		*2.6.0.0* localizations, misc
+		*2.5.0.2* description added to xml
+		*2.5.0.1* r6547 Swedish Translations
+		*2.5.0* #2917 execute CLI command direct through manager to remove vulnerabilities
+		*2.4.0* 2.4 branch (added IT translations also)
+		*1.1.2.1* bump for rc1
+		*1.1.2* fix syntax error, extra =
+		*1.1.1* #2070 fix proper use of script tags
+		*1.1* #2006 Fixed display on systems with colored asterisk console
+		*1.0* Fixed security issue, first release in 2.2
+		*0.001* Original Release
+	</changelog>
+</module>

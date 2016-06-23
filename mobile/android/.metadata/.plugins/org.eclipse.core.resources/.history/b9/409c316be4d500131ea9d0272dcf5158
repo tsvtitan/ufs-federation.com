@@ -1,0 +1,95 @@
+package ru.ideast.ufs.activities;
+
+/* tsv */
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ru.ideast.ufs.R;
+import ru.ideast.ufs.beans.QRCodeBean.Promotion;
+import ru.ideast.ufs.beans.QRCodeBean.Promotion.Product;
+import ru.ideast.ufs.widgets.ActionBarUfs;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
+
+
+public class PromotionActivity extends FragmentActivity implements OnItemSelectedListener {
+
+	public static final String PROMOTION = "promotion";
+	
+	private Promotion promotion;
+	private Spinner productNames;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.promotion_activity);
+		
+		Bundle bundle = getIntent().getExtras();
+		if (bundle == null || !bundle.containsKey(PROMOTION)) {
+			finish();
+			return;
+		}
+		
+		setWidgets(bundle);
+	}
+
+	private void setWidgets(Bundle bundle) {
+		
+		promotion = (Promotion)bundle.getSerializable(PROMOTION);
+		if (promotion!=null) {
+			
+			ActionBarUfs actionBar = (ActionBarUfs) findViewById(R.id.pr_action_bar);
+			actionBar.setSingleText(promotion.getTitle());
+			actionBar.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					finish();
+				}
+			});
+		
+			productNames = (Spinner)findViewById(R.id.pr_product_names);
+		    
+			List<String> list = new ArrayList<String>();
+			
+			ArrayList<Product> products = promotion.getProducts();
+			if (products!=null) {
+				for (Product product: products) {
+					list.add(product.getName());
+				}
+			}
+			
+			ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,list);
+			productNames.setAdapter(adapter);
+			productNames.setOnItemSelectedListener(this);
+			
+		}
+	}
+	
+	
+	@Override
+	public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+		
+		Toast.makeText(parent.getContext(), 
+                "On Item Select : \n" + parent.getItemAtPosition(pos).toString(),
+                Toast.LENGTH_LONG).show();
+	}
+
+	@Override
+	public void onNothingSelected(AdapterView<?> arg0) {
+		//
+	}
+
+	
+}

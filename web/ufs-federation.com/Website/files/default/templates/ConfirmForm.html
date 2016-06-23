@@ -1,0 +1,40 @@
+<div th:if="${form.Redirect}"><div th:replace="Redirect(url=${form.Redirect})"/></div>
+<div class="panel bgcolor5 norightmargin" style="margin: 1em auto 0;">
+  <div class="caption" th:if="${form.Name!=''}" th:utext="${form.Name}"/>
+  <div th:replace="FormErrors"/>
+  <div class="callout cl-green content acenter" th:if="${EmailOrPhone}" th:utext="#{ConfirmForm.MessageHasSent(${EmailOrPhone})}"/>
+  <div class="content">
+    <div class="half" style="margin: auto"><!--/*/<th:block th:each="field:${form.Fields}" th:with="temp=${(field.Template==null)?'InputText':field.Template}">/*/-->
+      <div th:replace="${temp}"/>
+      <br/><!--/*/</th:block>/*/--><br/><!--/*/<th:block th:each="button:${form.Buttons}" th:with="temp=${(button.Template==null)?'InputSubmit':button.Template}">/*/-->
+      <div th:replace="${temp}"/><!--/*/</th:block>/*/-->
+      <br/>
+    </div>
+  </div>
+  <div class="callout cl-red content" th:if="${form.TimerSeconds}">
+    <div class="half"><span th:utext="#{ConfirmForm.Countdown}"/>&nbsp;<b><span th:id="${'span'+path.newJsIdent('span')}" th:value="${form.TimerSeconds}" th:utext="${utils.toMMSS(form.TimerSeconds)}"/></b></div>
+  </div>
+</div>
+<div th:replace="FormParams"/>
+<input type="hidden" name="confirmId" th:value="${form.ConfirmId}"/>
+<script th:inline="javascript" th:if="${form.TimerSeconds}">
+  $(document).ready(function(){
+    
+    var d;
+    d = setInterval(function(){
+      o = $([['#span'+${path.lastJsIdent('span')}]]);
+      s = $(o).attr('value');
+      t = parseInt(s);
+      t = t-1;
+      if (t>=0) {
+        $(o).attr('value',t);
+        $(o).text(t.toString().toMMSS());
+      } else {
+        clearInterval(d);
+        f = getObject([[${form.PageFormId}]]);
+        $(f).find(':input:not(:disabled)').prop('disabled',true);
+      }
+    },1000);
+    
+  });
+</script>

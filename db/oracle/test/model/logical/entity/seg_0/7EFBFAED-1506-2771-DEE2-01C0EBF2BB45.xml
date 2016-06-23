@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7EFBFAED-1506-2771-DEE2-01C0EBF2BB45" name="Паттерны">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:08:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ид паттерна" id="F4E58F85-4029-2C05-6169-8DAD19E72ECE">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:09:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Наименование" id="0B325F4A-5D9C-3177-F019-B1B465B93BC1">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:10:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Описание" id="BC8067BA-603B-F630-49A4-5D878BFBB7BF">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:10:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Тип паттерна" id="9A0DFE40-20F2-F485-7B0B-70123B836A3E">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:37:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Тема" id="702C88C6-2B87-FF2E-155D-F18D70AE721F">
+<createdBy>root</createdBy>
+<createdTime>2014-02-21 05:27:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Тело" id="CDD40E2D-8E9B-A11B-6D49-D7A476CA5F3B">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:11:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Порядок" id="6354F516-95B2-41CA-D2B0-E05191AE2766">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:10:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Блокировка" id="8CB8165C-D853-5FA8-524B-6722BEEA6A18">
+<createdBy>root</createdBy>
+<createdTime>2014-02-21 05:32:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="63859B9E-F39E-ADC4-8F48-BD653664099A" name="Паттерны PK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-13 06:09:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>F4E58F85-4029-2C05-6169-8DAD19E72ECE</newElementsIDs>
+<usedAttributes>
+<attributeRef>F4E58F85-4029-2C05-6169-8DAD19E72ECE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

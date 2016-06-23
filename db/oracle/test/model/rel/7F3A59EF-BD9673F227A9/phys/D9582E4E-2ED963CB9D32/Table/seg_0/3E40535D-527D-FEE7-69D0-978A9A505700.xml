@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="PROMOTION_PRODUCTS" directorySegmentName="seg_0" id="3E40535D-527D-FEE7-69D0-978A9A505700">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRIORITY" id="0CCD6E13-E197-62AF-517D-121ABA2E751A">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCKED" id="29F0E76A-31D7-04B6-50A9-F4F341612771">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROMOTION_TYPE_ID" id="5C758919-00B6-C7F6-F658-B3131BF5A5FA">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEGIN" id="62884A2D-021E-A125-FB2B-8518EC2682F1">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END" id="8FBAA1D0-87F5-BEA6-6F75-63090A1A4771">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROMOTION_PRODUCT_ID" id="A0DBD1D1-45CA-72C4-7E89-9D429C7B1AD7">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="C0D73127-EDD9-BD21-5894-D6D1A9DF4953">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROMOTION_COMPANY_ID" id="C8067531-C4AA-8749-D962-E7EDEE527A98">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIMEOUT" id="F9133F48-964D-DD53-DF74-3491A32E1571">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PROMOTION_PRODUCTS_PROMOTION_TYPES_FK" id="3FD693EC-AF9B-C109-C2EC-E0674DA68296">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PROMOTION_PRODUCTS_PROMOTION_COMPANIES_FK" id="F58C4D47-0A67-7B01-3D23-D79ED4EC86BA">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PROMOTION_PRODUCTS_PK" id="A2D3B622-396A-C644-AC60-E65CDD909626">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

@@ -1,0 +1,22 @@
+{
+  "apps": [{
+   
+    "name": "service-mailings",
+    "script": "/home/www/service/app.js",
+    "instances": 1,
+    "max_memory_restart": "300M",
+    "cron_restart": "20 3 * * *",
+    "merge_logs": true,
+    "exec_mode": "cluster_mode",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": false,
+      "GRUNT": false,
+      "CONFIG": {
+        "jobs": {
+    	  "Mailings": true
+        }
+      }
+    }
+  }]
+}

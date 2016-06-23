@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="download_no_network_and_data">Для работы раздела необходимо подключение к интернету</string>
+    <string name="download_no_network">Нет интернета\nБудет показана только закэшированная информация</string>
+    <string name="file_sub_title">Прикрепленные файлы</string>
+    <string name="file_dialog_title">Предупреждение</string>
+    <string name="file_dialog_message">Вы действительно хотите загрузить файл размером %s?</string>
+    <string name="file_dialog_message_wo_size">Вы действительно хотите загрузить файл?</string>
+    <string name="file_failed">Загрузка файла не удалась</string>
+    <string name="tables_dialog_title">Описание</string>
+    <string name="calendar_title">Календарь</string>
+    <string name="group_detail_review">Обзоры по этой теме:</string>
+    <string name="subcategory_all">Всего материалов</string>
+    <string name="subcategory_actual">Из них актуальных</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="promotion_agreement_yes">ДА</string>
+    <string name="promotion_agreement_no">нет</string>
+    <string name="promotion_accept">Большое спасибо!</string>
+    <string name="promotion_reject">Извините, мне отказали :(</string>
+    <string name="promotion_agreement">Условия проведения</string>
+    <string name="promotion_sorry">Извините, в акции можно участвовать только один раз.</string>
+    <string name="subscribe">Подписать</string>
+    <string name="subscription">Управление подпиской</string>
+    <string name="subscription_new_keywords">Новая</string>
+    <string name="subscription_all_keywords">Вся подписка</string>
+    <string name="subscription_only_app">только на приложение</string>
+    <string name="subscription_app_and_email">на приложение и электронную почту</string>
+    <string name="itemdeleted">Элемент удален</string>
+    <string name="taptoundo">Отменить</string>
+    <string name="apply">Применить</string>
+    <string name="email_hint">электронный адрес</string>
+    <string name="email_validate">проверить</string>
+    <string name="button_ok">ОК</string>
+    <string name="button_cancel">Отменить</string>
+    <string name="input_email_code">Введите код из электронной почты</string>
+    <string name="input_email_code_wrong">Неправильный код</string>
+    <string name="list_empty">Список пуст</string>
+    <string name="please_wait">Пожалуйста подождите</string>
+    <string name="elements_removing">Удаление элементов ...</string>
+    <string name="subscribing">Идет подписка ...</string>
+    <string name="registration_name">Ваше имя</string>
+    <string name="registration_phone">Контактный телефон</string>
+    <string name="registration_email">Электронный адрес</string>
+    <string name="registration_brokerage">Брокерское обслуживание на ММВБ</string>
+    <string name="registration_yield">Консервативная доходность 20% с облигациями</string>
+    <string name="registration_next">Далее</string>
+    <string name="registration">Регистрация</string>
+    <string name="input_name">Укажите ваше имя</string>
+    <string name="input_phone">Укажите контактный телефон</string>
+    <string name="input_email">Укажите электронный адрес</string>
+    
+</resources>

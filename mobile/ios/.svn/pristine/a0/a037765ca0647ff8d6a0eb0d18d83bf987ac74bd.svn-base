@@ -1,0 +1,236 @@
+//
+//  UFSQRCodeVC.m
+//  UFS
+//
+//  Created by Sergei Tomilov on 5/12/14.
+//  Copyright (c) 2014 UFS Investment Company. All rights reserved.
+//
+
+#import "UFSQRCodeVC.h"
+#import "UFSPromotionVC.h"
+#import "UFSRegistrationVC.h"
+#import "AnalyticsCounter.h"
+
+#import "ZBarReaderView.h"
+#import "ZBarReaderViewController.h"
+
+@implementation UFSQRCodeVC
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afterQRCode:) name:kNotificationQRCode object:nil];
+    
+    [self.view setBackgroundColor:RGBA(238, 241, 243, 1.0f)];
+    
+    SWRevealViewController *revealController = [self revealViewController];
+    self.revealViewController.delegate = self;
+    
+    UIButton *menu = [[UIButton alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 44)/2.0f, 44, 44.0f)];
+    [menu setImage:[UIImage imageNamed:@"icn_nav_menu"] forState:UIControlStateNormal];
+    [menu addTarget:revealController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *revealButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:menu] autorelease];
+    [menu release];
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
+    
+    viewHeight = self.view.height;
+    
+    self.readerView = [ZBarReaderView new];
+    self.readerView.frame = CGRectMake(0,0,self.view.width,self.view.height);
+    self.readerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.readerView.readerDelegate = self;
+    self.readerView.tracksSymbols = NO;
+    [self.view addSubview:self.readerView];
+    
+    
+    self.titleText = _titleNavBar;
+    
+    // without camera
+    // [self requestData:@"http://app.lk/BLC?x=f"];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+- (void) cleanup
+{
+    self.readerView.readerDelegate = nil;
+    [self.readerView release];
+    self.readerView = nil;
+}
+
+- (void) dealloc
+{
+    [self cleanup];
+    [super dealloc];
+}
+
+- (void) viewDidUnload
+{
+    [self cleanup];
+    [super viewDidUnload];
+}
+
+- (void) viewDidAppear: (BOOL) animated
+{
+    [self.readerView start];
+}
+
+- (void) viewWillDisappear: (BOOL) animated
+{
+    [self.readerView stop];
+}
+
+#pragma -mark Slide menu Delegate
+- (void)revealController:(SWRevealViewController *)revealController willMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionLeft)
+    {
+        [self.readerView start];
+        [((UIButton *)self.navigationItem.leftBarButtonItem.customView) setImage:[UIImage imageNamed:@"icn_nav_menu"] forState:UIControlStateNormal];
+    }
+    else if (position==FrontViewPositionRight)
+    {
+        [self.readerView stop];
+        [((UIButton *)self.navigationItem.leftBarButtonItem.customView) setImage:[UIImage imageNamed:@"btn_nav_menu_yellow"] forState:UIControlStateNormal];
+    }
+}
+
+- (void) showIndicator
+{
+    self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    self.indicator.color = RGBA(0, 0, 0, 1.0f);
+    self.indicator.center = CGPointMake(self.view.width/2, viewHeight/2-self.indicator.frame.size.height/2);
+    [self.view addSubview:self.indicator];
+    [self.indicator startAnimating];
+    [self.indicator release];
+}
+
+- (void) hideIndicator
+{
+    if (self.indicator)
+    {
+        [self.indicator stopAnimating];
+        self.indicator = nil;
+    }
+}
+
+- (void) readerView: (ZBarReaderView*) view
+     didReadSymbols: (ZBarSymbolSet*) syms
+          fromImage: (UIImage*) img
+{
+    BOOL exists = false;
+    NSString *str;
+    for (ZBarSymbol *sym in syms) {
+        
+        str = [sym.data stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if (str.length && !exists) {
+            self.lastBarcode = str;
+            exists = true;
+        }
+        break;
+    }
+    if (exists) {
+        [AnalyticsCounter eventScreen:self.titleText category:self.lastBarcode action:nil value:nil];
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        [self.readerView stop];
+        [self showIndicator];
+        [self requestData:self.lastBarcode];
+    }
+}
+
+- (void) requestData: (NSString*) barcode
+{
+    if ([UFSLoader reachable]) {
+    
+        [UFSLoader requestPostAuth:@"" andWidth:@""];
+        [UFSLoader requestPostQRCode:barcode];
+    }
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView==self.alertViewMessage) {
+        [self.readerView start];
+    }
+}
+
+- (void) showPromotion: (NSDictionary*) dictionary
+{
+    BOOL registered = [[dictionary objectForKey:@"registered"] boolValue];
+    if (registered) {
+        UFSPromotionVC *promotion = [[UFSPromotionVC alloc] initWithPromotion:dictionary title:self.titleText];
+        [self.navigationController pushViewController:promotion animated:YES];
+        [promotion release];
+    } else {
+        UFSRegistrationVC *registration = [[UFSRegistrationVC alloc] initWithPromotion:dictionary title:self.titleText];
+        [self.navigationController pushViewController:registration animated:YES];
+        [registration release];
+    }
+}
+
+-(void) afterQRCode: (NSNotification *) notify
+{
+    if ([notify.object isKindOfClass:[NSDictionary class]]){
+        
+        NSDictionary *obj = ((NSDictionary *)notify.object);
+        
+        NSDictionary *result = ((NSDictionary*)[obj objectForKey:@"result"]);
+        
+        NSString *kind = ((NSString*)[result objectForKey:@"kind"]);
+        
+        if ([kind isEqualToString:@"message"]) {
+            
+            NSDictionary *message = ((NSDictionary *)[result objectForKey:@"message"]);
+            if (message) {
+                
+                NSString *text = ((NSString*)[message objectForKey:@"text"]);
+                if (text.length>0) {
+                    [AnalyticsCounter eventScreen:self.titleText category:text action:nil value:nil];
+                    self.alertViewMessage = [[UIAlertView alloc] initWithTitle:@"Сообщение" message:text delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                    [self.alertViewMessage show];
+                    [self.alertViewMessage release];
+                }
+            }
+            
+        } else if ([kind isEqualToString:@"redirection"]) {
+            
+            NSDictionary *redirection = ((NSDictionary *)[result objectForKey:@"redirection"]);
+            if (redirection) {
+                
+                NSString *url = ((NSString*)[redirection objectForKey:@"url"]);
+                if (url.length>0) {
+                    [AnalyticsCounter eventScreen:self.titleText category:url action:nil value:nil];
+                    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+                }
+            }
+            
+        } else if ([kind isEqualToString:@"promotion"]) {
+            
+            NSDictionary *promotion = ((NSDictionary *)[result objectForKey:@"promotion"]);
+            if (promotion) {
+                
+                [AnalyticsCounter eventScreen:self.titleText category:((NSString *)[promotion objectForKey:@"title"]) action:nil value:nil];
+                [self showPromotion:promotion];
+            }
+        }
+        
+    }
+    [self hideIndicator];
+
+}
+
+@end

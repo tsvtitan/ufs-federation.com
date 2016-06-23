@@ -1,0 +1,30 @@
+<module>
+	<rawname>phpagiconf</rawname>
+	<name>PHPAGI Config</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<menuitems>
+		<phpagiconf>PHPAGI Config</phpagiconf>
+	</menuitems>
+	<depends>
+		<module>manager ge1.0.4</module>
+	</depends> 
+	<changelog>
+		*2.8.0.0* #4309
+		*2.7.0.0* localizations
+		*2.6.0.0* misc
+		*2.5.0.2* #3191 uninitialized vars
+		*2.5.0.1* #2987 sqlite3 install script
+		*2.5.0* #1779, #2845 tabindex
+		*2.4.0* bump for 2.4
+		*1.2.2* Changed categories
+		*1.2.1* Fixed javascript error, removed unused script, bump for rc1
+		*1.2* Create tmp files in /etc/asterisk, fixes ticket:1910
+		*1.1* Removed old dependancy checking code, first 2.2 release
+	</changelog>
+	<location>release/2.7/phpagiconf-2.7.0.0.tgz</location>
+	<md5sum>87eaa3ff591a18e70259d3c830292ed5</md5sum>
+</module>

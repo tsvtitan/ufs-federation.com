@@ -1,0 +1,14 @@
+15.05.2013 17:20:47.168 I: --------------------------------------------------
+15.05.2013 17:20:47.168 I: Connect to Database ...
+15.05.2013 17:20:47.171 I: Connected.
+15.05.2013 17:20:47.171 I: [Mysql->query] set names utf8
+15.05.2013 17:20:47.171 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY);
+15.05.2013 17:20:47.172 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing);
+15.05.2013 17:20:47.172 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+15.05.2013 17:20:47.250 I: Mailing 1216 has sent successfully at 2013-05-15 17:20:44...
+15.05.2013 17:20:47.261 I: [Mysql->query] UPDATE `mailing` SET `sent`='2013-05-15 17:20:44',`result`=NULL WHERE `mailing_id`='1216' AND `remote_id`='218ACEF9946A567527DB5E07784A7811'
+15.05.2013 17:20:47.262 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+15.05.2013 17:20:47.262 I: Mailing 1216 has updated successfully ...
+15.05.2013 17:20:47.263 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+15.05.2013 17:20:47.263 I: There is nothing to worry about
+15.05.2013 17:20:47.264 I: Execution time is 0.095650196075439

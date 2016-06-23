@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop
+END
+DraggableManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/DraggableManager.java
+END
+DragAndDropListViewWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/DragAndDropListViewWrapper.java
+END
+HoverDrawable.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/HoverDrawable.java
+END
+DragAndDropHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/DragAndDropHandler.java
+END
+GripView.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/GripView.java
+END
+OnItemMovedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/OnItemMovedListener.java
+END
+TouchViewDraggableManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/TouchViewDraggableManager.java
+END
+BitmapUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/BitmapUtils.java
+END
+DynamicListViewWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/dragdrop/DynamicListViewWrapper.java
+END

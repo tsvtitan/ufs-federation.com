@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="CONFIRMS" directorySegmentName="seg_0" id="5EBDD580-0DCD-2E22-40ED-656F227E24FA">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SESSION_ID" id="038FD36F-21A2-501F-3BA4-567C2B4339D3">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONFIRM_ID" id="0D442315-A21B-F9D2-9F40-62CA1DF07AFC">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="20075F5D-51CC-C11E-C490-351C6D161597">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PATH_ID" id="306C702E-DD67-8F04-E13C-482120C25B2D">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONFIRMED" id="49401422-008B-BA03-50E5-9D2A42681EF8">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PARAMS" id="4E657687-C835-D51B-25F9-DB854EA06369">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ID" id="561E489F-DA9A-85FA-D9E5-587E9E7A0DBC">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONFIRM_TYPE" id="7ECCF1BB-B94B-41A0-29F7-0218EA80F9C5">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MESSAGE_ID" id="96103405-1738-DA63-4484-33D0A886FFBB">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEGIN" id="ACC90706-6761-EC58-4800-798F75AC014F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END" id="B308DA02-3059-6DFC-09F6-D9A5D24F9D74">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="B728DA81-52B0-8A7A-A3D9-6A906951EE32">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCKED" id="FF09309E-818C-ADD2-DAE7-6645A8BBB4F5">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONFIRMS_PATHS_FK" id="644398B6-CEAF-6F5C-B399-B2D705989C76">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONFIRMS_MESSAGES_FK" id="9EF44A52-0562-0ECE-88F7-0F9237372B3E">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONFIRMS_ACCOUNTS_FK" id="DA3D3844-87B0-0294-CA1E-D84AA7473252">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CONFIRMS_SESSIONS_FK" id="DDBB1347-BAA8-6B2E-3134-5242CF373ED7">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev10g>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/models
+END
+ZoomModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/models/ZoomModel.java
+END
+CurrentPageModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/models/CurrentPageModel.java
+END
+DecodingProgressModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/models/DecodingProgressModel.java
+END

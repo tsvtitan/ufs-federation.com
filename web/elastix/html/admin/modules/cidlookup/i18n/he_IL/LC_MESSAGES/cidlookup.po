@@ -1,0 +1,239 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Hebrew version for CID Lookup FreePBX Module.
+# Copyright (C) 2006
+# This file is distributed under the same license as the PACKAGE package.
+# Shimi <shimi@shimi.net>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
+"PO-Revision-Date: 2010-01-23 00:00+0300\n"
+"Last-Translator: Shimi <shimi@shimi.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Caller ID Lookup"
+msgstr ""
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Allows Caller ID Lookup of incoming calls against different sources (MySQL, "
+"HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
+msgid "CallerID Lookup Sources"
+msgstr ""
+
+msgid "CID Lookup Source"
+msgstr "מקור חיפוש זיהוי שיחה"
+
+msgid "Source"
+msgstr "מקור"
+
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr "מקורות ניתן להוסיף בחלק מקורות חיפוש שם המתקשר"
+
+msgid "None"
+msgstr "אף אחד"
+
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr ""
+
+msgid "FATAL: failed to transform old routes: "
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Removing deprecated channel field from incoming.."
+msgstr ""
+
+msgid "ERROR: failed: "
+msgstr ""
+
+msgid "Not Needed"
+msgstr ""
+
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr ""
+
+msgid "not present"
+msgstr ""
+
+msgid "removed"
+msgstr ""
+
+msgid "Add CID Lookup Source"
+msgstr "הוסף מקור חיפוש זיהוי שיחה"
+
+msgid "CID Lookup source"
+msgstr "מקור חיפוש זיהוי שיחה"
+
+msgid "deleted"
+msgstr "נמחק"
+
+msgid "Delete CID Lookup source"
+msgstr "מחק מקור חיפוש זיהוי שיחה"
+
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "מקור: %s (id %s)"
+
+msgid "Add Source"
+msgstr "הוסף מקור"
+
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric caller IDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with informations taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"מקור חיפוש מאפשר לך לציין מקור לתרגום מספרים ממערכת זיהוי השיחה של שיחות "
+"נכנסות, כך שתוכל לקשר נתיב שיחה נכנסת למקור שיחה מסויים. פעולה זו יכולה גם "
+"ליצור דוחות שיחה מפורטים יותר באמצעות נתונים הנלקחים ישירות מה CRM שלך. אתה "
+"יכול גם להתקין את מודול ספר הטלפונים כדי שיהיה לך שיוך קטן של מספר טלפון >-< "
+"שם. שים לב, חיפוש שמות עשוי להאט את המרכזיה שלך!"
+
+msgid "Edit Source"
+msgstr "ערוך מקור"
+
+msgid "Source Description:"
+msgstr "תיאור המקור:"
+
+msgid "Enter a description for this source."
+msgstr "הכנס תיאור עבור מקור זה."
+
+msgid "Source type:"
+msgstr "סוג המקור:"
+
+msgid ""
+"Select the source type, you can choose between:<ul><li>Internal: use astdb "
+"as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
+"to lookup caller names, it uses ENUM lookup zones as configured in enum."
+"conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
+"argument to retrieve the correct name</li><li>MySQL: It queries a MySQL "
+"database to retrieve caller name</li></ul>"
+msgstr ""
+"הכנס את סוג המקור, אתה יכול לבחור בין:<ul><li>פנימי: השתמש ב astdb בתור מקור "
+"החיפוש, והשתמש במודול ספר הטלפונים כדי לשנות בו נתונים</li><li>ENUM: שימוש ב "
+"DNS כדי לחפש שמות מתקשרים, פעולה זו משתמשת באיזור חיפוש ENUM כפי שמוגדרים ב "
+"enum.conf</li><li>HTTP: מבצע פעולת HTTP GET המעבירה את מספר המתקשר בתור "
+"ארגומנט כדי לקבל את השם הנכון</li>li>MySQL: מבצע שאילתה על מסד נתונים מסוג "
+"MySQL כדי למשוך את שם המשתמש</li></ul>"
+
+msgid "Internal"
+msgstr ""
+
+msgid "Cache results:"
+msgstr "שמור תוצאות במטמון:"
+
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+"החלט אם לשמור או לא לשמור את התוצאות ב astDB; פעולה זו תדרוס ערכים קיימים. "
+"היא אינה משפיעה על התנהגות המקורות הפנימיים"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "Host:"
+msgstr "שם מחשב מארח:"
+
+msgid "Host name or IP address"
+msgstr "שם מחשב מארח או כתובת IP"
+
+msgid "Port:"
+msgstr "יציאה:"
+
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "יציאה (פורט) שבו שרת ה HTTP מאזין (בברירת מחדל 80)"
+
+msgid "Username:"
+msgstr "שם משתמש:"
+
+msgid "Username to use in HTTP authentication"
+msgstr "שם משתמש שבו יש להשתמש באימות HTTP"
+
+msgid "Password:"
+msgstr "סיסמא:"
+
+msgid "Password to use in HTTP authentication"
+msgstr "סיסמא שבה יש להשתמש באימות HTTP"
+
+msgid "Path:"
+msgstr "נתיב:"
+
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "נתיב לקובץ שיועבר לפקודה GET<br />לדוגמא: /cidlookup.php"
+
+msgid "Query:"
+msgstr "שאילתא:"
+
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+"מחרוזת השאילתא. הטוקן המיוחד '[NUMBER]' יוחלף עם מספר הטלפון של המתקשר<br /"
+">לדוגמא: number=[NUMBER]&source=crm"
+
+msgid "MySQL"
+msgstr "MySQL"
+
+msgid "MySQL Host"
+msgstr "כתובת המארח של MySQL"
+
+msgid "Database:"
+msgstr "מסד הנתונים:"
+
+msgid "Database name"
+msgstr "שם מסד הנתונים"
+
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"שאילתא, כאשר הטוקן המיוחד '[NUMBER]' יוחלף במספר הטלפון של המתקשר<br /"
+">לדוגמא: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+
+msgid "MySQL Username"
+msgstr "שם משתמש ב MySQL"
+
+msgid "MySQL Password"
+msgstr "סיסמת משתמש ב MySQL"
+
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+msgid "Not yet implemented"
+msgstr ""
+
+msgid "Submit Changes"
+msgstr ""

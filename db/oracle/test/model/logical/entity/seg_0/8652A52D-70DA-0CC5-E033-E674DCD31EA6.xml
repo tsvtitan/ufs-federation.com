@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8652A52D-70DA-0CC5-E033-E674DCD31EA6" name="Компании продвижения">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:07:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ид компании" id="2238DFFC-1149-500C-5B79-E8CD9789DD39">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:40:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Ид родителя" id="BB88B9D9-87F2-DD5D-0681-709EC71CBF0B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:41:16 UTC</createdTime>
+<generatorID>543D6CD4-D713-09F9-6C43-1EB5B4F9A642</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2238DFFC-1149-500C-5B79-E8CD9789DD39</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Наименование" id="B33F5394-94C5-4278-53C4-FA182E2C6021">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:41:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Описание" id="CF03F888-767A-86EF-7F2C-87815984920F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:41:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Линк" id="047015FE-20BD-03DD-30EC-A4543BE82428">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:41:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Дата блокировки" id="74C1BC50-B45E-AD49-9845-6F4A9995FB6F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:42:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FF2770B7-7303-C82D-EA90-6C29B2F73D2B" name="Компании продвижения PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:41:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2238DFFC-1149-500C-5B79-E8CD9789DD39</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

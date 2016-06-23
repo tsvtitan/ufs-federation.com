@@ -1,0 +1,8 @@
+<div class="panel bgcolor5 norightmargin hor-form">
+  <div class="content">
+    <!--/*/<th:block th:with="f=${form.findField('FROM_DATE')}">/*/--><div th:replace="${f.Template}(field=${f})"/><!--/*/</th:block>/*/-->
+    <!--/*/<th:block th:with="f=${form.findField('TILL_DATE')}">/*/--><div th:replace="${f.Template}(field=${f})"/><!--/*/</th:block>/*/-->
+    <!--/*/<th:block th:with="b=${form.findButton('SUBMIT')}">/*/--><div th:replace="${b.Template}(button=${b})"/><!--/*/</th:block>/*/-->
+  </div>
+</div>
+<div th:replace="FormParams"/>

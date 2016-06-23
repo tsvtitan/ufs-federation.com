@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDEB7F6D-C0FB-1041-19ED-68AC909DBB4A" name="DEVICES">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:11:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEVICE_ID" id="5490EF18-204B-4755-B8E3-B9E7E4C60E38">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:12:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="026C4EC1-BC8B-0858-D800-962F29D81322">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-22 05:18:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="A386A0D0-E043-2844-7FA3-0C5118E4CFA3">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-22 05:18:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANUFACTURER" id="C3ADDB96-8910-6810-E39C-2250B13D95C9">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:16:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODEL" id="301627A6-5DDA-B0A5-4E1E-9DDAB3C75873">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:16:35 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OS" id="BFA6D97D-5A4A-7AC5-76F5-CCE2ECFA6190">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:16:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCREEN_SIZE" id="27D09E52-0560-C065-83B5-3B5E035EB97F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:17:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="80EB33D6-6AF7-5790-3AAD-D4C15DEC500C">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:17:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERSION" id="D1C4EA07-7C1D-61D1-98EF-2A6302B5E58F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-10 07:53:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMPANY" id="D7405B92-0BE6-408F-0107-4B316620CCF3">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-26 11:59:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="291D1EFA-E84F-F00F-26E6-1904DE985D13" name="DEVICES_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:12:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5490EF18-204B-4755-B8E3-B9E7E4C60E38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,583 @@
+#!/usr/bin/php -q
+<?php
+//This file is part of FreePBX.
+//
+//    FreePBX is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 2 of the License, or
+//    (at your option) any later version.
+//
+//    FreePBX is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+//    
+//    Copyright 2008 Philippe Lindheimer
+
+	require_once "phpagi.php";
+	require_once "phpagi-asmanager.php";
+
+	/* Usage:
+	 *
+	 * AGI(user_login_out.agi,login|logout,[user])
+	 *
+	 * ARG1: action
+	 * ARG2: device
+	 * ARG3: user
+	 *
+	 * login:
+	 * Login the requested user and set hints appropriately as well as adjust
+	 * hints on any previous user that was logged in.
+	 *
+	 * logout:
+	 * Logout the current user and set hints appropriately for that user
+	 * as well as logging in the default user (if applicable) and set hints
+	 * accordingly
+	 */
+	
+	$agi = new AGI();
+
+	// get manager credentials out of the channel
+	//
+	$ampmgruser   = get_var( "AMPMGRUSER" );
+	$ampmgrpass   = get_var( "AMPMGRPASS" );
+	$astspooldir  = get_var( "ASTSPOOLDIR" );
+	$ast_version  = get_var("ASTVERSION");
+	$dnd_devstate = get_var( "DNDDEVSTATE" ) == "TRUE" ? true : false;
+	$cf_devstate = get_var( "CFDEVSTATE" ) == "TRUE" ? true : false;
+	$fm_devstate  = get_var( "FMDEVSTATE" ) == "TRUE" ? true : false;
+	$que_devstate = get_var( "QUEDEVSTATE" ) == "TRUE" ? true : false;
+	$intercom_code = get_var( "INTERCOMCODE" );
+
+	$ast_version14 = version_compare($ast_version, "1.4", "ge");
+
+	$DEVSTATE = version_compare($ast_version, "1.6", "ge") ? "DEVICE_STATE" : "DEVSTATE";
+
+	/*
+	$ampmgruser  = 'admin';
+	$ampmgrpass  = 'amp111';
+	*/
+	$astman = new AGI_AsteriskManager( );	
+	if (!$astman->connect("127.0.0.1", $ampmgruser , $ampmgrpass)) {
+		exit (1);
+	}
+
+	$action      = get_action();
+	$this_device = get_this_device();
+
+	switch ($action) {
+		case 'login':
+		case 'logon':
+			$new_user = get_login_user();
+			debug("Logging in user $new_user to device $this_device");
+			user_login($this_device, $new_user);
+			break;
+		case 'logout':
+			debug("Logging out current user from device $this_device");
+			user_logout($this_device);
+			break;
+		default:
+			debug("Got unknown action: $action, exiting");
+	}
+	exit;
+
+	/*
+exten => s,n,System(rm -f ${ASTSPOOLDIR}/voicemail/device/${CALLERID(number)})
+exten => s,n,System(/bin/ln -s ${ASTSPOOLDIR}/voicemail/${DB(AMPUSER/${AMPUSER}/voicemail)}/${AMPUSER}/ ${ASTSPOOLDIR}/voicemail/device/${CALLERID(number)})
+*/
+
+
+	// Get the requested action (login or logout)
+	//
+	function get_action() {
+		global $argv;
+		return strtolower(trim($argv['1']));
+		//return get_var('ARG1');
+	}
+
+	// Get the device passed in (basically CID)
+	//
+	function get_this_device() {
+		global $argv;
+		return trim($argv['2']);
+		//return get_var('ARG2');
+	}
+
+	// Get the user to login to a device
+	//
+	function get_login_user() {
+		global $argv;
+		return trim($argv['3']);
+		//return get_var('ARG3');
+	}
+
+	// Login a new user to a device. If there is a current user
+	// log them out first.
+	//
+	function user_login($this_device, $new_user) {
+		debug("user_login: this_device: $this_device, new_user: $new_user",8);
+
+		$current_user = get_logged_in_user($this_device);
+		if ($current_user != $new_user) {
+			if ($current_user != '') {
+				debug("Logging out current user $current_user from device $this_device so $new_user can login",5);
+				remove_user($this_device);
+			}
+			insert_user($new_user, $this_device);
+		} else {
+			debug("User $new_user is already logged into device $this_device",5);
+		}
+	}
+
+	// Logout the current user. If device has a default user, log
+	// them in.
+	//
+	function user_logout($this_device) {
+		debug("user_logout: this_device: $this_device",8);
+
+		$current_user = get_logged_in_user($this_device);
+		$default_user = get_default_user($this_device);
+
+		debug("current_user: $current_user, default_user: $default_user",8);
+
+		if ($current_user != $default_user) {
+			remove_user($this_device);
+			if ($default_user != '') {
+				debug("Logging in default user $default_user to device $this_device",5);
+				insert_user($default_user, $this_device);
+			}
+		}
+	}
+
+	// Insert a specificed user into a specified device and then
+	// update the hint for that user to reflect the new device(s)
+	// and update the voicemial link
+	//
+	function insert_user($user, $device) {
+		debug("insert_user: user: $user, device: $device",8);
+		global $agi;
+		global $astspooldir;
+		global $fm_devstate;
+		global $dnd_devstate;
+		global $cf_devstate;
+		global $que_devstate;
+		global $DEVSTATE;
+
+		set_device_user($device, $user);
+		$previous_devices = get_devices($user);
+		$new_devices = insert_device($previous_devices,$device);
+		debug("insert_user: Setting user $user to devices $new_devices",5);
+		set_user_devices($user, $new_devices);
+		set_hint($user, $new_devices);
+		if(version_compare(get_var("ASTVERSION"), "1.6.1", "ge")) {
+ 			$user_event_body = "\"UserDeviceAdded|Data: {$user}\\,{$device}\"";
+ 		} else if(version_compare(get_var("ASTVERSION"), "1.6.0", "ge")) {
+ 			$user_event_body = "UserDeviceAdded,\"Data: {$user}\\\\,{$device}\"";
+ 		} else {
+ 			$user_event_body = "\"UserDeviceAdded|Data: {$user},{$device}\"";
+ 		}
+ 
+    $agi->exec("UserEvent", $user_event_body);
+
+		if ($fm_devstate) {
+			debug("insert_user: Setting FollowMe DEVSTATES for device $device",5);
+			$agi->set_variable($DEVSTATE.'(Custom:FOLLOWME'.$device.')',get_followme_state($user));
+		}
+		if ($que_devstate) {
+			debug("insert_user: Setting queue DEVSTATES for device $device and user $user",5);
+			set_queue_states($user,$device,'on');
+		}
+		if ($dnd_devstate) {
+			debug("insert_user: Setting DND DEVSTATES for device $device",5);
+			$agi->set_variable($DEVSTATE.'(Custom:DEVDND'.$device.')',get_dnd_state($user));
+		}
+		if ($cf_devstate) {
+			debug("insert_user: Setting CF DEVSTATES for device $device",5);
+			$agi->set_variable($DEVSTATE.'(Custom:DEVCF'.$device.')',get_cf_state($user));
+		}
+
+		$vmcontext = get_voicemail_context($user);
+		if ($vmcontext != 'novm') {
+			exec("/bin/ln -s {$astspooldir}/voicemail/{$vmcontext}/{$user}/ {$astspooldir}/voicemail/device/$device", $output, $ret);
+			if ($ret) {
+				debug("Got Return code: $ret trying to: /bin/ln -s {$astspooldir}/voicemail/{$vmcontext}/{$user}/ {$astspooldir}/voicemail/device/$device",5);
+			}
+		}
+	}
+
+	// Remove the current user from a device and then update
+	// the hint of that current user to reflect their current devices
+	//
+	function remove_user($device) {
+		debug("remove_user: device: $device",8);
+		global $agi;
+		global $astspooldir;
+		global $fm_devstate;
+		global $dnd_devstate;
+		global $cf_devstate;
+		global $que_devstate;
+		global $DEVSTATE;
+
+		$current_user = get_user($device);
+		if ($current_user != '') {
+			$current_devices = get_devices($current_user);
+			$new_devices = remove_device($current_devices,$device);
+			debug("remove_user: Setting user $current_user to devices $new_devices",5);
+			set_user_devices($current_user, $new_devices);
+			set_hint($current_user, $new_devices);
+			
+			if(version_compare(get_var("ASTVERSION"), "1.6.1", "ge")) {
+				$user_event_body = "\"UserDeviceRemoved|Data: {$current_user}\\,{$device}\"";
+ 			} else if(version_compare(get_var("ASTVERSION"), "1.6.0", "ge")) {
+ 				$user_event_body = "UserDeviceRemoved,\"Data: {$current_user}\\\\,{$device}\"";
+ 			} else {
+ 				$user_event_body = "\"UserDeviceRemoved|Data: {$current_user},{$device}\"";
+ 			}
+ 
+     	$agi->exec("UserEvent", $user_event_body);
+     	
+			exec("/bin/rm -f {$astspooldir}/voicemail/device/$device",$output, $ret);
+
+			debug("Setting device $device states to INVALID before deleting them",5);
+			if ($fm_devstate) {
+				debug("Setting device $device FollowMe state to INVALID before deleting",5);
+				$agi->set_variable($DEVSTATE.'(Custom:FOLLOWME'.$device.')','INVALID');
+			}
+			if ($que_devstate) {
+                        	debug("remove_user: Setting queue DEVSTATES for device $device and user $user",5);
+				set_queue_states($user,$device,'off');
+                	}
+			if ($dnd_devstate) {
+				debug("Setting device $device DND state to INVALID before deleting",5);
+				$agi->set_variable($DEVSTATE.'(Custom:DEVDND'.$device.')','NOT_INUSE');
+			}
+			if ($cf_devstate) {
+				debug("Setting device $device CF state to INVALID before deleting",5);
+				$agi->set_variable($DEVSTATE.'(Custom:DEVCF'.$device.')','NOT_INUSE');
+			}
+			// I thought they should then be deleted, but they still end up there probably because setting them to invalid re-creates them
+			//
+			//$agi->database_deltree('CustomDevstate','FOLLOWME'.$device);
+			//$agi->database_deltree('CustomDevstate','DEVDND'.$device);
+			if ($ret) {
+				debug("Got Return code: $ret trying to remove: {$astspooldir}/voicemail/device/$device",5);
+			}
+			set_device_user($device, 'none');
+		}
+	}
+
+	// Set the hint for a user based on the devices in their AMPUSER object
+	//
+	function set_hint($user, $devices) {
+		debug("set_hint: user: $user, devices: $devices",8);
+		global $astman;
+		global $agi;
+		global $dnd_devstate;
+		global $intercom_code;
+		global $ast_version14;
+
+		// If Asterisk version >= 1.4, syntax change is 'dialplan add extension ...' vs. 'add extension ...'
+		$dp_pre = ($ast_version14) ? 'dialplan ' : '';
+
+		if ($devices) {
+			$dial_string = get_dial_string($devices);
+			if ($dnd_devstate) {
+				$dial_string .= "&Custom:DND$user";
+			}
+			debug("Setting user $user hint to $dial_string",5);
+			$response = $astman->send_request('Command',array('Command'=>$dp_pre."add extension {$user},hint,{$dial_string} into ext-local replace"));
+			if ($intercom_code != 'nointercom' && $intercom_code != '') {
+				$response = $astman->send_request('Command',array('Command'=>$dp_pre."add extension {$intercom_code}{$user},hint,{$dial_string} into ext-local replace"));
+			}
+		} else {
+			debug("Removing hint for user $user",5);
+			$response = $astman->send_request('Command',array('Command'=>$dp_pre."remove extension {$user}@ext-local hint"));
+			if ($intercom_code != 'nointercom' && $intercom_code != '') {
+				$response = $astman->send_request('Command',array('Command'=>$dp_pre."remove extension {$intercom_code}{$user}@ext-local hint"));
+			}
+		}
+	}
+
+	// Get the actual technology dialstrings from the DEVICE objects (used
+	// to create proper hints)
+	//
+	function get_dial_string($devices) {
+		$dialstring = "";
+
+		debug("get_dial_string: devices: $devices",8);
+		global $agi;
+
+		$device_array = explode( '&', $devices );
+		foreach ($device_array as $adevice) {
+			$dds = $agi->database_get('DEVICE',$adevice.'/dial');
+			$dialstring .= $dds['data'].'&';
+		}
+		return trim($dialstring," &");
+	}
+
+	// Insert a new device into a devices string and return the new string
+	//
+	function insert_device($devices, $new_device) {
+		debug("insert_device: devices: $devices, new_device: $new_device",8);
+
+		// We could just append it but this assures no bugs duplicate the device
+		//
+		if (trim($new_device) != '') {
+			$device_arr = explode('&',$devices);
+			$device_arr[] = $new_device;
+			$device_arr = array_unique($device_arr);
+			return trim(implode('&',$device_arr),'&');
+		} else {
+			return $devices;
+		}
+	}
+
+	// Remove a new device from a devices string and return the new string
+	//
+	function remove_device($devices, $remove_device) {
+		debug("remove_device: devices: $devices, remove_device: $remove_device",8);
+
+		$device_arr = explode('&',$devices);
+		$device_arr_hash = array_flip($device_arr);
+		unset($device_arr_hash[$remove_device]);
+		$new_device_arr = array_flip($device_arr_hash);
+		$new_devices  = implode('&', $new_device_arr);
+		return $new_devices;
+	}
+
+	// Get the currently logged in user of a device returning blank
+	// in no logins
+	//
+	function get_logged_in_user($device) {
+		debug("get_logged_in_user: device: $device",8);
+		global $agi;
+
+		$user = $agi->database_get('DEVICE',$device.'/user');
+		if ($user['result'] == 1 && trim($user['data']) != 'none') {
+			debug("get_logged_in_user: got user: ".$user['data'],8);
+			return trim($user['data']);
+		}
+		return '';
+	}
+
+	// Get the designated default user for the device or blank if none
+	//
+	function get_default_user($device) {
+		debug("get_default_user: device: $device",8);
+		global $agi;
+
+		$default_user = $agi->database_get('DEVICE',$device.'/default_user');
+		if ($default_user['result'] == 1 && trim($default_user['data']) != 'none') {
+			return trim($default_user['data']);
+		}
+		return '';
+	}
+
+	// Get the list of current devices for this user
+	//
+	function get_devices($user) {
+		debug("get_devices: user: $user", 8);
+		global $agi;
+
+		$devices = $agi->database_get('AMPUSER',$user.'/device');
+		if ($devices['result'] == 1) {
+			debug("get_devices: got: ".$devices['data'], 8);
+			return trim($devices['data']);
+		}
+		return '';
+	}
+
+	// Get the voicemail context for this user
+	//
+	function get_voicemail_context($user) {
+		debug("get_voicemail_context: user: $user", 8);
+		global $agi;
+
+		$devices = $agi->database_get('AMPUSER',$user.'/voicemail');
+		if ($devices['result'] == 1) {
+			return trim($devices['data']);
+		}
+		return 'novm';
+	}
+
+	// Get the user currently associated with this device or blank if none
+	//
+	function get_user($device) {
+		debug("get_user: device: $device", 8);
+		global $agi;
+
+		$user = $agi->database_get('DEVICE',$device.'/user');
+		if ($user['result'] == 1 && trim($user['data']) != 'none') {
+			debug("get_user: got: ".$user['data'], 8);
+			return trim($user['data']);
+		}
+		debug("get_user: no user found", 8);
+		return '';
+	}
+
+	function get_followme_state($user) {
+		global $agi;
+
+		$fm_state = $agi->database_get('AMPUSER',$user.'/followme/ddial');
+		if ($fm_state['result'] != 1) {
+			$ret = 'INVALID';
+		} else {
+			switch (trim($fm_state['data'])) {
+				case 'EXTENSION':
+					$ret = 'NOT_INUSE';
+					break;
+				case 'DIRECT':
+					$ret = 'INUSE';
+					break;
+				default:
+					$ret = 'INVALID';
+			}
+		}
+		debug("get_followme_state: user $user got state ".$fm_state['data']." returning $ret",8);
+		return $ret;
+	}
+
+	function get_dnd_state($user) {
+		global $agi;
+
+		$dnd_state = $agi->database_get('DND',$user);
+		if ($dnd_state['result'] != 1) {
+			$ret = 'NOT_INUSE';
+		} else {
+			if (strtoupper(trim($dnd_state['data'])) == 'YES') {
+				$ret = 'INUSE';
+			} else {
+				$ret = 'NOT_INUSE';
+			}
+		}
+		debug("get_dnd_state: user $user got state ".$dnd_state['data']." returning $ret",8);
+		return $ret;
+	}
+
+	function get_cf_state($user) {
+		global $agi;
+
+		$cf_state = $agi->database_get('CF',$user);
+		if ($cf_state['result'] != 1) {
+			$ret = 'NOT_INUSE';
+		} else {
+			if (trim($cf_state['data']) == '') {
+				$ret = 'NOT_INUSE';
+			} else {
+				$ret = 'INUSE';
+			}
+		}
+		debug("get_cf_state: user $user got state ".$cf_state['data']." returning $ret",8);
+		return $ret;
+	}
+
+	// Inserts device info into AMPUSER object for specificed user
+	//
+	function set_user_devices($user, $devices) {
+		debug("set_user_devices: user: $user,  devices: $devices", 8);
+		global $agi;
+		if (empty($devices)) {
+			debug("No more devices associated with $user, deletting /device key", 8);
+			$agi->database_del('AMPUSER',$user.'/device');
+		} else {
+			debug("set_user_devices: assigning $devices to $user /device key", 8);
+			$agi->database_put('AMPUSER',$user.'/device',$devices);
+		}
+	}
+
+	// Inserts user into DEVICE object for specified device
+	//
+	function set_device_user($device, $user) {
+		debug("set_device_user: device: $device,  user: $user", 8);
+		global $agi;
+		$agi->database_put('DEVICE',$device.'/user',$user);
+	}
+
+	// Get a channel variable
+	//
+	function get_var($value) {
+		global $agi;
+
+		$r = $agi->get_variable( $value );
+		if ($r['result'] == 1) {
+			$result = $r['data'];
+			return trim($result);
+		}
+		return '';
+	}
+
+	function debug($string, $level=3) {
+		global $agi;
+		$agi->verbose($string, $level);
+	}
+	
+	// Set States for queues
+	function set_queue_states($user,$device,$onoroff='on') {
+		global $agi;
+		global $astman;
+		global $DEVSTATE;
+		$response = $astman->send_request('Command',array('Command'=>"queue show"));
+		$response1=explode("\n",trim($response['data']));
+		// Lets try and process our results here.
+		$inqueue='false';
+		debug("User is $user");
+		foreach ($response1 as $item) {
+			$item1=trim($item);
+			if ($inqueue == 'false') {
+				if (ereg('(\\d+)',$item1)) {
+					preg_match_all ("/(\\d+)/is", $item1,$matches);
+					if ($matches[1][0] != '') {
+						$queues[]=$matches[1][0];
+						$inqueue=$matches[1][0];
+						$logged_agents_array[$inqueue][]='';
+					}
+				}
+			} else {
+				// We should test to see if the item is an Agent description
+				if (ereg('Local',$item1)) {
+					preg_match_all ("/(Local).*?(\\d+)/is", $item1, $matches);
+					$loggedagent=$matches[2][0];
+					$item1='ADD';
+				}
+
+				switch ($item1) {
+					case '':
+						break;
+					case '\n':
+						break;
+
+					case 'No Members':
+						debug("Queue $inqueue has no one logged in");
+						$inqueue='false';
+						break;
+
+					case 'No Callers':
+					case 'Callers':
+						debug("Finished processing members for $inqueue");
+						$inqueue='false';
+						break;
+					case 'ADD':
+						$logged_agents_array[$inqueue][]=$loggedagent;
+						debug("Agent $loggedagent in queue $inqueue");
+					break;
+					default:
+						debug("No Matches");
+
+				}
+			}
+		}
+		debug("Finished sorting");
+		foreach ($queues as $queueno) {
+			debug("Agent is $user");
+			if ($onoroff=='on'){
+				$queuestat=(array_search(trim($user),$logged_agents_array[$queueno]))?'INUSE':'NOT_INUSE';
+			} else {
+				$queuestat=(array_search(trim($user),$logged_agents_array[$queueno]))?'INUSE':'NOT_INUSE';
+			}
+			$agi->set_variable($DEVSTATE.'(Custom:QUEUE'.$device.'*'.$queueno.')',$queuestat);
+		}
+	}
+		

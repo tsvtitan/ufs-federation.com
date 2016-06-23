@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android
+END
+FlingListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/FlingListener.java
+END
+FlingAnimationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/FlingAnimationListener.java
+END
+GestureImageViewTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/GestureImageViewTouchListener.java
+END
+GestureImageViewListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/GestureImageViewListener.java
+END
+MathUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/MathUtils.java
+END
+FlingAnimation.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/FlingAnimation.java
+END
+Animator.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/Animator.java
+END
+GestureImageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/GestureImageView.java
+END
+DoubleTapListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/DoubleTapListener.java
+END
+GestureViewPager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/GestureViewPager.java
+END
+GesturePagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/GesturePagerAdapter.java
+END
+Animation.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/Animation.java
+END
+VectorF.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/1/android/GestureViewPager/src/com/polites/android/VectorF.java
+END

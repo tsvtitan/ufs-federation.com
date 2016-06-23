@@ -1,0 +1,56 @@
+@font-face {font-family: 'Myriad Pro'; src: url('/fonts/MyriadPro-Cond.eot');}
+@font-face {font-family: 'Adobe Garamond Pro'; src: url('/fonts/agaramondpro-regular-webfont.eot');}
+@font-face {font-family: 'Myriad Pro'; src: url('/fonts/MyriadPro-Cond.otf');}
+@font-face {font-family: 'Adobe Garamond Pro'; src: url('/fonts/AGaramondPro-Regular.otf');}
+
+#container {
+    width: 100%;
+    height: 130px;
+    margin-top: 0;
+    margin: auto;
+    background:    #eff2f3;
+/*        transparent url('/img/bg_conference.png') no-repeat 100% 50%;*/
+}
+#countbox {
+    padding-top: 12px;
+    color: #08509d; 
+    font-family: Myriad Pro,Helvetica,sans-serif;
+    font-size: 36px;
+    margin: 0 0 0 0px;
+    line-height: 44px;
+    height: 96px;
+   
+}
+
+#days, #hours, #mins, #secs {
+    float: left;
+    width: 47px;
+    height: 45px;
+    text-align: center;
+    background: transparent url('/img/_flip.png') no-repeat 50% 50%;
+    margin: 0 3px;
+    z-index: 1;
+}
+#days div, #hours div, #mins div, #secs div {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+
+#days_text, #hours_text, #mins_text, #secs_text {
+    position: absolute;
+    width: 47px;
+    text-align: center;
+    
+}
+
+#days span, #hours span, #mins span , #secs span {
+    background: transparent url('/img/_flip_gradient.png') no-repeat 50% 50%;
+    position: absolute;
+    display: block;
+    height: 45px;
+    width: 47px;
+}
+
+
+

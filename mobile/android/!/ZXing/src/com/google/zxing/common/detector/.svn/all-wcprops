@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/detector
+END
+WhiteRectangleDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/detector/WhiteRectangleDetector.java
+END
+MathUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/detector/MathUtils.java
+END
+MonochromeRectangleDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/detector/MonochromeRectangleDetector.java
+END

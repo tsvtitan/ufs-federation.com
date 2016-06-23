@@ -1,0 +1,116 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 12:13+0200\n"
+"PO-Revision-Date: 2009-04-20 22:24+0100\n"
+"Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
+"Language-Team: Français <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Misc Destination: %s"
+msgstr "Destination : %s"
+
+#: page.miscdests.php:69 page.miscdests.php:114 page.miscdests.php:122
+msgid "Add Misc Destination"
+msgstr "Ajouter Destination"
+
+#: page.miscdests.php:83
+msgid "Misc Destination"
+msgstr "Destination"
+
+#: page.miscdests.php:83
+msgid "deleted"
+msgstr "supprimé"
+
+#: page.miscdests.php:94
+msgid ""
+"Misc Destinations are for adding destinations that can be used by other "
+"FreePBX modules, generally used to route incoming calls. If you want to "
+"create feature codes that can be dialed by internal users and go to various "
+"destinations, please see the <strong>Misc Applications</strong> module."
+msgstr ""
+"Les Destinations Diverses sont faites pour ajouter des destinations qui "
+"peuvent être utilisées par d'autres modules de FreePBX, généralement utilisés "
+"pour router les appels entrants. Si vous voulez créer des codes de caractéristique "
+"qui peuvent être numérotés par les utilisateurs internes et peuvent aller vers diverses "
+"destinations, veuillez vous référer au module <strong>Applications Diverses</strong>."
+
+#: page.miscdests.php:99
+msgid "Misc Destination:"
+msgstr "Destination :"
+
+#: page.miscdests.php:103
+#, php-format
+msgid "Delete Misc Destination %s"
+msgstr "Supprimer Destination %s"
+
+#: page.miscdests.php:122
+msgid "Edit Misc Destination"
+msgstr "Editer Destination"
+
+#: page.miscdests.php:127
+msgid "Description:"
+msgstr "Description :"
+
+#: page.miscdests.php:127
+msgid "Give this Misc Destination a brief name to help you identify it."
+msgstr "Donnez un nom court à cette Destination pour vous aider à l'identfier."
+
+#: page.miscdests.php:131
+msgid "Dial:"
+msgstr "Composer :"
+
+#: page.miscdests.php:131
+msgid ""
+"Enter the number this destination will simulate dialing, exactly as you "
+"would dial it from an internal phone. When you route a call to this "
+"destination, it will be as if the caller dialed this number from an internal "
+"phone."
+msgstr ""
+"Entrez le numéro dont cette destination simulera la numérotation, exactement "
+"comme si vous la numérotiez d'un téléphone interne. Lorsque vous routez un appel "
+"vers cette destination, ce sera comme si l'appelant avait composé ce numéro à "
+"partir d'un téléphone interne."
+
+#: page.miscdests.php:136
+msgid "featurecode shortcuts"
+msgstr "Raccourcis de Code de Caractéristique"
+
+#: page.miscdests.php:151
+msgid "Submit Changes"
+msgstr "Appliquer les Modifications"
+
+#: page.miscdests.php:168
+msgid "Please enter a valid Description"
+msgstr "Veuillez entrer une Description valide"
+
+#: page.miscdests.php:169
+msgid "Please enter a valid Dial string"
+msgstr "Veuillez entrer une chaîne de Numérotation valide"
+
+#: module.xml
+msgid "Misc Destinations"
+msgstr "Destinations Diverses"

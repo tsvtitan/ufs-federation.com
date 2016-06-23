@@ -1,0 +1,241 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for directory
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-22 22:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Directory"
+msgstr ""
+
+msgid "Inbound Call Control"
+msgstr ""
+
+#, php-format
+msgid "Delete Directory %s"
+msgstr ""
+
+msgid "Directory Name"
+msgstr ""
+
+msgid "Name of this directory."
+msgstr ""
+
+msgid "Directory Description"
+msgstr ""
+
+msgid "Description of this directory."
+msgstr ""
+
+msgid "Directory Options"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Announcement"
+msgstr ""
+
+msgid "Greeting to be played on entry to the directory"
+msgstr ""
+
+msgid "CallerID Name Prefix"
+msgstr ""
+
+msgid "Prefix to be appended to current CallerID Name."
+msgstr ""
+
+msgid "Alert Info"
+msgstr ""
+
+msgid ""
+"ALERT_INFO to be sent when called from this Directory. Can be used for "
+"ditinctive ring for SIP devices."
+msgstr ""
+
+msgid "Invalid Retries"
+msgstr ""
+
+msgid ""
+"Number of times to retry when receiving an invalid/unmatched response from "
+"the caller"
+msgstr ""
+
+msgid "Invalid Retry Recording"
+msgstr ""
+
+msgid ""
+"Prompt to be played when an invalid/unmatched response is received, before "
+"prompting the caller to try again"
+msgstr ""
+
+msgid "Invalid Recording"
+msgstr ""
+
+msgid ""
+"Prompt to be played before sending the caller to an alternate destination "
+"due to the caller pressing 0 or receiving the maximum amount of invalid/"
+"unmatched responses (as determined by Invalid Retries)"
+msgstr ""
+
+msgid "Invalid Destination"
+msgstr ""
+
+msgid "Destination to send the call to after Invalid Recording is played."
+msgstr ""
+
+msgid "Return to IVR"
+msgstr ""
+
+msgid ""
+"When selected, if the call passed through an IVR that had \"Return to IVR\" "
+"selected, the call will be returned there instead of the Invalid destination."
+msgstr ""
+
+msgid "Announce Extension"
+msgstr ""
+
+msgid ""
+"When checked, the extension number being transfered to will be announced "
+"prior to the transfer"
+msgstr ""
+
+msgid "Default Directory"
+msgstr ""
+
+msgid ""
+"When checked, this becomes the default directory and replaces any other "
+"directory as the default directory. This has the effect of exposing entries "
+"for this directory into the Extension/User page"
+msgstr ""
+
+msgid "Directory&nbsp;Entries"
+msgstr ""
+
+msgid "Choose One"
+msgstr ""
+
+msgid "All Users"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "Add new entry."
+msgstr ""
+
+msgid "Voicemail Greeting"
+msgstr ""
+
+msgid "Text to Speech"
+msgstr ""
+
+msgid "Spell Name"
+msgstr ""
+
+msgid "System Recordings:"
+msgstr ""
+
+#, php-format
+msgid "Edit %s: %s"
+msgstr ""
+
+msgid "remove"
+msgstr ""
+
+msgid "Click here to remove this entry"
+msgstr ""
+
+msgid "Exclude"
+msgstr ""
+
+msgid "Include"
+msgstr ""
+
+msgid "Default Group Inclusion"
+msgstr ""
+
+msgid ""
+"You can include or exclude this extension/user from being part of the "
+"default directory when creating or editing."
+msgstr ""
+
+#, php-format
+msgid "Directory: %s "
+msgstr ""
+
+#, php-format
+msgid "Directory %s: "
+msgstr ""
+
+#, php-format
+msgid "Directory: %s"
+msgstr ""
+
+msgid "Adding directory_details table if needed..."
+msgstr ""
+
+msgid "failed"
+msgstr ""
+
+msgid "Can not create `directory_details` table: "
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "Adding directory_entries table if needed..."
+msgstr ""
+
+msgid "Can not create `directory_entries` table: "
+msgstr ""
+
+msgid "adding say_extension field to directory_details.."
+msgstr ""
+
+msgid "fatal error"
+msgstr ""
+
+msgid "dropping valid_details field.."
+msgstr ""
+
+msgid "no valid_recording field???"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Add a new Directory"
+msgstr ""
+
+msgid "Add Directory"
+msgstr ""
+
+msgid "An Error occurred trying to contact the server adding a row, no reply."
+msgstr ""
+
+msgid "dropping directory_details, directory_entries.."
+msgstr ""

@@ -1,0 +1,44 @@
+<head>
+  <title th:text="${page.TITLE}"/>
+  <meta name="description" th:content="${page.DESCRIPTION}"/>
+  <meta th:charset="${page.Charset}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+  <link th:href="${path.proto}+'://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'" rel="stylesheet" type="text/css"/>
+  <link th:href="${path.proto}+'://fonts.googleapis.com/css?family=Roboto:400,300,100,500&amp;subset=latin,cyrillic'" rel="stylesheet" type="text/css"/>
+  <!--<link rel="stylesheet" th:href="${page.CssPath}"/>-->
+  <link rel="stylesheet" th:href="${path.getRootPath('/css/style.css')}"/>
+  <link rel="stylesheet" th:href="${path.getRootPath('/css/jquery-ui-1.10.3.custom.css')}"/>
+  <link rel="stylesheet" th:href="${path.getRootPath('/css/dialog.css')}"/>
+  <link rel="stylesheet" th:href="${path.getRootPath('/css/jquery.bxslider.css')}"/>
+  
+  <script th:src="${path.getRootPath('/js/jquery-1.11.0.min.js')}"/>
+  <script th:src="${path.getRootPath('/js/jquery-ui.min.js')}"/>
+  <script th:src="${path.getRootPath('/js/ufsic.js')}"/>
+  <script th:src="${path.getRootPath('/js/json2.js')}"/>
+  <!--<script type="text/javascript" th:src="${page.JsPath}"/>-->
+  <!--<link th:href="${path.getRootPath('/customIcon.png')}" rel="apple-touch-icon" href="/customIcon.png"/>-->
+  <script th:src="${path.getRootPath('/js/modernizr.min.js')}"></script>
+  <script th:src="${path.getRootPath('/js/jquery.bxslider.js')}"/>
+  
+  <!-- 
+  
+  Женя не пиши здесь обращение к http://test.ufs-federationc.com  !!!
+  
+  Я замучался исправлять. Проще закинуть скрипты/стили в папки js/css
+  
+  -->
+  
+  <script>
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: false,
+      mode: 'fade',
+      speed: 0,
+      pause: 6000,
+      useCSS: true
+    });
+  });
+  </script>
+</head> 

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities
+END
+CalendarActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/CalendarActivity.java
+END
+SubscriptionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/SubscriptionActivity.java
+END
+MapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/MapActivity.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/MainActivity.java
+END
+RegistrationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/RegistrationActivity.java
+END
+FileSelectActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/FileSelectActivity.java
+END
+WebActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/WebActivity.java
+END
+BranchDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/BranchDetailActivity.java
+END
+GalleryActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/GalleryActivity.java
+END
+PdfActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/PdfActivity.java
+END
+GroupDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/GroupDetailActivity.java
+END
+QRCodeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/QRCodeActivity.java
+END
+GroupFullListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/GroupFullListActivity.java
+END
+SplashActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/SplashActivity.java
+END
+TablesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/TablesActivity.java
+END
+NewsDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/NewsDetailActivity.java
+END
+PromotionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/activities/PromotionActivity.java
+END

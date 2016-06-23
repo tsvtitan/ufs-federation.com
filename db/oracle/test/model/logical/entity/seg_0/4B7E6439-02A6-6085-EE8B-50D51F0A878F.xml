@@ -1,0 +1,275 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B7E6439-02A6-6085-EE8B-50D51F0A878F" name="Меню МП">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 12:47:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ид меню" id="351147DD-19FD-1CDE-E8B5-25DCD0AF5437">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:14:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Ид родителя" id="684AD762-E625-EE54-A6A8-E5571525774F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:14:47 UTC</createdTime>
+<generatorID>93ED419B-0BE3-0AD8-7F95-403CA3957150</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>351147DD-19FD-1CDE-E8B5-25DCD0AF5437</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Ид языка" id="439A6885-56EF-75A4-7243-AA24AED1B4BF">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:17:16 UTC</createdTime>
+<generatorID>81A92D27-D76A-2403-2EB1-18E653B752A4</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<referedAttribute>ATT-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Дата блокировки" id="AD72C23F-5A6B-AC68-57B9-8A978C25ED60">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:17:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+</Attribute>
+<Attribute name="Наименование" id="6D05A9DA-D01B-D78B-7F98-455D42130DE8">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:17:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Описание" id="DE2FB518-46F9-B211-9901-1D76A86382BA">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:18:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Тип меню" id="6940CF21-44E5-BFF1-8DE3-4DF963A4285B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:18:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Порядок" id="33FA1573-EE9F-BE35-A8F0-53542C536CAF">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:18:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Картинка по умолчанию" id="015AE762-1782-EC16-0220-FDEB9865349B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:18:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Картинка подсветка" id="93337425-C7BA-E970-46C0-69B2A7D5B2C2">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:19:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Запрос новостей" id="0D70DE35-CE76-5143-796F-18E2AAB58ABB">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:19:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Запрос кол-ва новостей" id="8C6C3475-EC5C-6445-9D7F-68C2BBFE1941">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:20:07 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Запрос кол-ва актуальных новостей" id="D17A450F-A45A-0DB3-509B-1DE738871720">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:20:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Запрос файлов" id="6F7B62CC-E6B7-98F1-CC97-08705B8F7D37">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:20:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Запрос групп" id="78FFA979-5270-F834-5416-0086CB376D86">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:21:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Запрос ссылок" id="A8B60D8D-D60E-B8E4-6626-09648AA7A490">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:21:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Html" id="787601A4-DB75-4949-808F-75DB36B8FE0B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:22:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+<Attribute name="Компания UFS" id="DE1E3066-AD92-3E56-8FF1-28DAEFEB4D71">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-24 11:43:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Компания Premier" id="340C22A5-3B94-87AB-DB1F-D581D0E09B4D">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-24 11:46:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+</Attribute>
+<Attribute name="Замена" id="C4EC473A-0C57-F36A-EE12-28D513AEE40F">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-26 09:27:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FB767938-FD88-E8AD-23E7-90D3A1424BE8" name="Меню МП PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 13:14:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>351147DD-19FD-1CDE-E8B5-25DCD0AF5437</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

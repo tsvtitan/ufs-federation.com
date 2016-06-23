@@ -1,0 +1,169 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for parking
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Parking Lot"
+msgstr ""
+
+msgid "day"
+msgstr ""
+
+msgid "hour"
+msgstr ""
+
+msgid "hours"
+msgstr ""
+
+msgid "minute"
+msgstr ""
+
+msgid "minutes"
+msgstr ""
+
+msgid "second"
+msgstr ""
+
+msgid "seconds"
+msgstr ""
+
+msgid "Migrating recordings if needed.."
+msgstr ""
+
+msgid "fatal error"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "not needed"
+msgstr ""
+
+msgid "Parking Lot Configuration"
+msgstr ""
+
+msgid "Parking Lot Options"
+msgstr ""
+
+msgid "Enable Parking Lot Feature"
+msgstr ""
+
+msgid "Check this box to enable the parking feature"
+msgstr ""
+
+msgid "Parking Lot Extension:"
+msgstr ""
+
+msgid "This is the extension where you will transfer a call to park it."
+msgstr ""
+
+msgid "Number of Slots:"
+msgstr ""
+
+msgid ""
+"The total number of parking lot spaces to configure. Example, if 70 is the "
+"extension and 8 slots are configured, the parking slots will be 71-78"
+msgstr ""
+
+msgid "Parking Timeout:"
+msgstr ""
+
+msgid ""
+"The timeout period that a parked call will attempt to ring back the original "
+"parker if not answered"
+msgstr ""
+
+msgid "Parking Lot Context:"
+msgstr ""
+
+msgid ""
+"This is the parking lot context. You should not change it from the default "
+"unless you know what you are doing."
+msgstr ""
+
+msgid "Actions for Timed-Out Orphans"
+msgstr ""
+
+msgid "Parking Alert-Info:"
+msgstr ""
+
+msgid ""
+"Alert-Info to put in channel before going to defined destination below. This "
+"can create distinct rings on some SIP phones and can serve to alert the "
+"recipients that the call is from an Orphaned parked call"
+msgstr ""
+
+msgid "CallerID Prepend:"
+msgstr ""
+
+msgid ""
+"String to pre-pend to the current Caller-ID associated with this call (if "
+"any), before going to defined destination below. This can serve to alert the "
+"recipients that the call is from an Orphaned parked call"
+msgstr ""
+
+msgid "Announcement:"
+msgstr ""
+
+msgid ""
+"Optional message to be played to the orphaned caller prior to going on the "
+"to supplied destination below.<br><br>To add additional recordings please "
+"use the \"System Recordings\" MENU to the left"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid ""
+"Optional message to be played to the orphaned caller prior to going on to "
+"the supplied destination below.<br><br>You must install and enable the "
+"\"Systems Recordings\" Module to edit this option"
+msgstr ""
+
+msgid "Destination for Orphaned Parked Calls"
+msgstr ""
+
+msgid "Submit Changes"
+msgstr ""
+
+msgid "Please enter a valid numeric parking lot extension"
+msgstr ""
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid ""
+"Manages parking lot extensions and other options.\tParking is a way of "
+"putting calls "
+msgstr ""
+
+msgid ", and then picking them up from any extension."
+msgstr ""

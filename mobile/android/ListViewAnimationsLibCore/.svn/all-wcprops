@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/mobile/!svn/ver/215/android/ListViewAnimationsLibCore
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/.classpath
+END

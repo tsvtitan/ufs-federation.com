@@ -1,0 +1,13 @@
+28.06.2013 12:02:24.564 I: --------------------------------------------------
+28.06.2013 12:02:24.855 I: Connect to Database ...
+28.06.2013 12:02:25.813 I: Connected.
+28.06.2013 12:02:26.128 I: [Mysql->query] set names utf8
+28.06.2013 12:02:26.438 I: [Mysql->query] select * from portfolios where locked is null order by created
+28.06.2013 12:02:28.329 I: Portfolios are found (3)
+28.06.2013 12:02:29.318 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=3) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=3 and t.cnt>0 order by ph.created desc 
+28.06.2013 12:02:36.939 I: Portfolio history id is 44.
+28.06.2013 12:02:38.330 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=4) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=4 and t.cnt>0 order by ph.created desc 
+28.06.2013 12:02:39.455 I: Portfolio history is not found.
+28.06.2013 12:02:40.585 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=5) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=5 and t.cnt>0 order by ph.created desc 
+28.06.2013 12:02:41.685 I: Portfolio history is not found.
+28.06.2013 12:02:42.268 I: Execution time is 18.004722118378

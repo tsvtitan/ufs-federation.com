@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="ERwin_domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Blob" id="DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000">
+         <createdBy>root</createdBy>
+         <createdTime>2013-11-07 08:01:17 UTC</createdTime>
+         <ownerDesignName>model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>ERwin_domains</fileName>
+         <logicalDatatype>LOGDT029</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Number" id="DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000">
+         <createdBy>root</createdBy>
+         <createdTime>2013-11-07 08:01:17 UTC</createdTime>
+         <ownerDesignName>model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>ERwin_domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="String" id="DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000">
+         <createdBy>root</createdBy>
+         <createdTime>2013-11-07 08:01:17 UTC</createdTime>
+         <ownerDesignName>model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>20</dataTypeSize>
+         <fileName>ERwin_domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Datetime" id="DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000">
+         <createdBy>root</createdBy>
+         <createdTime>2013-11-07 08:01:17 UTC</createdTime>
+         <ownerDesignName>model</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>ERwin_domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

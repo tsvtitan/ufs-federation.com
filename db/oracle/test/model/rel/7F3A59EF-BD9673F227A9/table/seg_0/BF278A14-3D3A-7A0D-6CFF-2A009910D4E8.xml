@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF278A14-3D3A-7A0D-6CFF-2A009910D4E8" name="SYSTEMS">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:24:25 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SYSTEM_ID" id="FD6D38FC-D9C7-99BC-73EA-AA9EB8CD10CC">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:25:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="B6B1594A-6864-2E9D-637C-D19C8F7C3968">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:25:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="41B74B71-90AA-B2C8-38ED-1F536BE8D686">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:25:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_LINK" id="E87845BD-520E-7667-972A-FC02E503D561">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:25:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47CD0704-CCB5-3EC2-D5F0-A62AF6E37F1C" name="SYSTEMS_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:25:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD6D38FC-D9C7-99BC-73EA-AA9EB8CD10CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

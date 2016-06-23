@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX queueprio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-06 00:00+0200\n"
+"PO-Revision-Date: 2008-10-11 18:32+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDED\n"
+
+#: functions.inc.php:34
+#: functions.inc.php:134
+#, php-format
+msgid "Queue Priority: %s"
+msgstr "Köprioritet: %s"
+
+#: page.queueprio.php:52
+#: page.queueprio.php:75
+msgid "Add Queue Priority"
+msgstr "Lägg till köprioritet"
+
+#: page.queueprio.php:73
+msgid "Edit: "
+msgstr "Redigera:"
+
+#: page.queueprio.php:78
+msgid "Queue Priority allows you to set a caller's priority in a queue. By default, a caller's priority is set to 0. Setting a higher priority will put the caller ahead of other callers already in a queue. The priority will apply to any queue that this caller is eventually directed to. You would typically set the destination to a queue, however that is not necessary. You might set the destination of a priority customer DID to an IVR that is used by other DIDs, for example, and any subsequent queue that is entered would be entered with this priority"
+msgstr "Köprioritet ger dig en möjlighet att sätta en prioritet på ett samtal. Som standard är köprioriteten 0. Genom att sätta ett högre värde kommer samtalet att läggas före andra samtal som befinner sig i kön. Prioriteten kommer att vara aktiv på den kö samtalet styrs till. Typiskt kommer destinationen att vara en kö, men det är inte nödvändigt. Du kanske väljer att sätta en inkommande väg med numret för en viktig kund till denna prioritet, prioritetens destination kan sättas till en IVR som har ett val till en kö, när samtalet hamnar i kön har prioriteten följt med och samtalet hamnar först i kön."
+
+#: page.queueprio.php:87
+msgid "Edit Queue Priority Instance"
+msgstr "Redigera köprioritet"
+
+#: page.queueprio.php:87
+msgid "Add Queue Priority Instance"
+msgstr "Lägg till köprioritet"
+
+#: page.queueprio.php:89
+msgid "Description"
+msgstr "Beskrivning"
+
+#: page.queueprio.php:89
+msgid "The descriptive name of this Queue Priority instance."
+msgstr "Skriv in en kortfattad beskrivning för denna köprioritet."
+
+#: page.queueprio.php:93
+msgid "Priority"
+msgstr "Prioritet"
+
+#: page.queueprio.php:93
+msgid "The Queue Priority to set"
+msgstr "Välj vilken köprioritet som ska användas"
+
+#: page.queueprio.php:104
+msgid "Destination"
+msgstr "Destination"
+
+#: page.queueprio.php:112
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: page.queueprio.php:113
+msgid "Delete"
+msgstr "Ta bort"
+
+#: page.queueprio.php:136
+msgid "Invalid description specified"
+msgstr "Ogiltig beskrivning"
+
+#: module.xml
+msgid "Queue Priorities"
+msgstr "Köprioriteter"
+

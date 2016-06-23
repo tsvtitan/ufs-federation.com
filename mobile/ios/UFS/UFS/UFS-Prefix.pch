@@ -1,0 +1,68 @@
+//
+// Prefix header for all source files of the 'UFS' target in the 'UFS' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <QuartzCore/CALayer.h>
+    #import <QuartzCore/CAGradientLayer.h>
+    #import <CoreGraphics/CoreGraphics.h>
+    #import <ImageIO/ImageIO.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import "UFSAppDelegate.h"
+    #import "UFSMainNewsVC.h"
+    #import "AFNetworking.h"
+    #import "UFSSplashVC.h"
+    #import "UFSLoader.h"
+    #import "Helper.h"
+    #import "NSStringHtmlToUnicode.h"
+    #import "CoreDataManager.h"
+    #import "DataTransformOperation.h"
+    #import "UFSDetailVC.h"
+    #import "SWRevealViewController.h"
+    #import "SlideMenuViewController.h"
+    #import "FileSystem.h"
+    #import "ReaderViewController.h"
+    #import "SmartImageView.h"
+    #import "UFSEmitentsVC.h"
+    #import "UFSContactsVC.h"
+    /* tsv */
+    #import <AudioToolbox/AudioServices.h>
+    #import "UFSQRCodeVC.h"
+    /* tsv */
+    #import "ActionsDB.h"
+    #import "HTMLDataDB.h"
+
+
+#define animationTime 10.0f
+#define backgroundScale 50.0f
+
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define SAFE_KILL(a) if (a) {[a release]; a = nil;}
+#define RGBA(a,b,c,f) [UIColor colorWithRed:a/255.0f green:b/255.0f blue:c/255.0f alpha:f]
+#define y_offset(r) (r.originY+r.height)
+#define x_offset(r) (r.originX+r.width)
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define APP_DELEGATE (UFSAppDelegate *)[[UIApplication sharedApplication] delegate]
+#define RETINA ([UIScreen instancesRespondToSelector:@selector(scale)] ? ([[UIScreen mainScreen] scale] > 1.1 ? YES : NO) : NO)
+
+#define DLog(fmt, ...) NSLog((@"[%p|%@|%@] " fmt), self, NSStringFromClass([self class]), NSStringFromSelector(_cmd), ##__VA_ARGS__)
+
+
+#endif

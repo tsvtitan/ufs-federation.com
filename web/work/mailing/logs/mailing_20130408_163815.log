@@ -1,0 +1,18 @@
+08.04.2013 16:38:15.980 I: --------------------------------------------------
+08.04.2013 16:38:16.225 I: Connect to Database ...
+08.04.2013 16:38:16.987 I: Connected.
+08.04.2013 16:38:17.250 I: [Mysql->query] set names utf8
+08.04.2013 16:38:17.251 I: [Mysql->query] 1 records
+08.04.2013 16:38:17.526 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+08.04.2013 16:38:17.527 I: [Mysql->query] 1 records
+08.04.2013 16:38:17.761 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+08.04.2013 16:38:17.762 I: [Mysql->query] 1 records
+08.04.2013 16:38:23.442 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+08.04.2013 16:38:23.444 I: [Mysql->query] 1 records
+08.04.2013 16:38:24.705 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+08.04.2013 16:38:24.706 I: [Mysql->query] 1 records
+08.04.2013 16:38:36.270 I: There are 1 patterns.
+08.04.2013 16:38:41.490 I: Process pattern NULL / 1 emails.
+08.04.2013 16:38:42.492 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id IS NULL ORDER BY created, priority LIMIT 0,10
+08.04.2013 16:38:42.493 I: [Mysql->query] 1 records
+08.04.2013 16:38:43.088 I: There are 1 emails. Sending / transferring ...

@@ -1,0 +1,4 @@
+01.04.2013 14:13:13.307 I: --------------------------------------------------
+01.04.2013 14:13:13.701 I: Connecting to Google ...
+01.04.2013 14:14:38.544 E: Error fetching OAuth2 access token, message: 'invalid_request'
+01.04.2013 14:14:38.546 I: Execution time is 85.510903120041

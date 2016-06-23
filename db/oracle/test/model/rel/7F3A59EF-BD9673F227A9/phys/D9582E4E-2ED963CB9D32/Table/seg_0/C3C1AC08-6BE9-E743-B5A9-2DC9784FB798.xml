@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="BRANCHES" directorySegmentName="seg_0" id="C3C1AC08-6BE9-E743-B5A9-2DC9784FB798">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LATITUDE" id="46B9D925-4545-3FB6-BACF-BED75ED6D384">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY" id="4D7F9F07-9800-D6D8-8E7B-E65E32621495">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE" id="508578B2-E5F2-F37B-EF1B-B362798A4BF7">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTACTS" id="5285348E-C368-6FC9-580B-D32BA8D1D3E9">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BRANCH_ID" id="65F831CA-34CE-1005-64AF-074EBFD75E7C">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY" id="6BA844B7-1269-D04F-5DB8-0179792EE891">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="7B4F88F6-DBEF-D1CB-A05D-334A2B3F8B01">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="7E3F9A5B-3252-9C35-B728-3852D5687749">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION" id="94B8EF3C-D8B7-E30A-FB49-0C927944FCF8">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCKED" id="A4CD7F27-25C9-A365-B372-A87ED81A6B50">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="A719B58D-02E9-5264-30AA-6CA7933F972A">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LANG_ID" id="C7D14606-B7B5-0C2C-ACF1-2D5F5FAF3AE3">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="C8AB039D-0363-BFA9-A9EA-ADA2D2138133">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MAP" id="FDCE3B5F-515A-3E77-C58C-51422586A7CE">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BRANCHES_LANGS_FK" id="79ABA55C-992A-541F-01DE-16FB524DEED5">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BRANCHES_PK" id="B97A7683-4C6D-4359-8F5C-54E2599F81DE">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

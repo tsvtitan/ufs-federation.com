@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="ACCOUNTS" directorySegmentName="seg_0" id="TAB-09CF3E38-DAC2-421F-860F-6027CC1440F3_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="COL-329ADC49-25A1-4E37-B647-33B07B46A750_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPTION" id="COL-47D4C6C8-FD2A-4726-8E6C-EE8C9606EEC2_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCK_REASON" id="COL-55895E2B-1771-418D-8B7D-7EC99BC020D5_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PASS" id="COL-5AAE07A2-E582-4E88-A440-C49066140743_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOGIN" id="COL-750DCD30-C39B-4B6D-BB3A-6D0D61DB048A_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ID" id="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE" id="COL-7934E27F-9F39-44DD-87A9-32BE61702A49_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IS_ROLE" id="COL-79C7744F-D850-47B6-B658-7A4BE0BE3CF1_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="COL-A0AF1493-82BC-44EB-95D9-20283BAE209D_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCKED" id="COL-A48E8AF9-2810-487E-BD47-145FAC97925D_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PATRONYMIC" id="COL-C79AFF82-B92B-4ED5-BB3C-225D630D8C37_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="COL-CE082917-1CB5-47AA-942B-AA32346371C6_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SURNAME" id="COL-CEF5A858-70E9-4701-92D3-8961F35F6026_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="XPKУчетные записи" id="XPK-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

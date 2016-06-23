@@ -1,0 +1,7 @@
+<!--/*/<th:block th:if="${scheme.LANG=='RU'}">/*/-->
+Имя: <b th:utext="${name}"/><br/>
+Телефон: <b th:utext="${phone}"/><br/>
+Электронный адрес: <b th:utext="${email}"/><br/>
+Брокерское обслуживание: <b th:if="${brokerage}" th:utext="да"/><b th:if="${!brokerage}" th:utext="нет"/><br/>
+Консервативная доходность: <b th:if="${yield}" th:utext="да"/><b th:if="${!yield}" th:utext="нет"/><br/>
+<!--/*/</th:block>/*/-->

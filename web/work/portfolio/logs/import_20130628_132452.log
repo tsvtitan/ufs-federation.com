@@ -1,0 +1,12 @@
+28.06.2013 13:24:53.098 I: --------------------------------------------------
+28.06.2013 13:24:53.267 I: Connect to Database ...
+28.06.2013 13:24:54.237 I: Connected.
+28.06.2013 13:24:54.544 I: [Mysql->query] set names utf8
+28.06.2013 13:24:55.133 I: [Mysql->query] select * from params where ident='PREV_CLOSE_VAL' limit 1
+28.06.2013 13:24:55.412 I: [Mysql->query] select * from portfolios where locked is null order by created
+28.06.2013 13:24:55.959 I: Portfolios are found (3)
+28.06.2013 13:24:56.738 I: Portfolio name is Модельный портфель and id is 3.
+28.06.2013 13:24:57.634 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=3) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=3 and t.cnt>0 order by ph.created desc 
+28.06.2013 13:24:59.925 I: Portfolio history id is 44.
+28.06.2013 13:25:03.572 I: [Mysql->query] select t.*, i.currency_id from (select instrument_id, operation, position, value, max(instrument_value_id) as instrument_value_id, max(exchange_rate_id) as exchange_rate_id, sum(amount) as amount from (select instrument_id, "keep" as operation, position, value, instrument_value_id, exchange_rate_id, amount from portfolio_history_parts where portfolio_history_id=44 and operation in ("keep","buy")) t group by 1,2,3,4) t join instruments i on i.instrument_id=t.instrument_id 
+28.06.2013 13:25:12.887 I: [Mysql->query] INSERT INTO `portfolio_history` (`portfolio_id`,`method`,`rest`) VALUES ('3','auto',NULL)

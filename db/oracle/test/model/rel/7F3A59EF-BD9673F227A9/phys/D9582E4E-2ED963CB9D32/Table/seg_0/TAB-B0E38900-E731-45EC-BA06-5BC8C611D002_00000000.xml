@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="SESSIONS" directorySegmentName="seg_0" id="TAB-B0E38900-E731-45EC-BA06-5BC8C611D002_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="APPLICATION_ID" id="70537DC6-753B-A79A-0B7B-5A2034839FB8">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREATED" id="COL-3AB00DC5-14BF-4D64-B2D1-E5264477A946_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACCOUNT_ID" id="COL-4399A925-E053-4F2A-94DB-6DB60E0AE6AF_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SESSION_ID" id="COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCK_REASON" id="COL-7B021760-2CF0-4FC6-A087-620D45E1CE86_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXPIRED" id="COL-A698E65B-35B1-4129-B14A-4F3A5A6ECBF2_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCKED" id="COL-AB0721A6-DCCF-4AD5-94BA-76523F76882F_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AGENT" id="COL-D0C48DA5-F93C-453C-8844-34BBF44468CD_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NEED_COMMS" id="COL-D306757B-BBA9-408B-8183-E6C68D98BCE5_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IP_HOST" id="COL-DBE35112-2A56-4931-917D-47384DC4E456_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="R/3" id="176D8B1C-0BC4-CF25-59CC-3316B70A04A0">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SESSIONS_ACCOUNTS_FK" id="B2562368-1F93-C4A0-E487-FB970B672090">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-24 08:33:00 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="XPKСессии" id="XPK-DADC0A28-9BA0-4AE2-8BDB-92320E2B3381_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

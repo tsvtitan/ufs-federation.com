@@ -1,0 +1,3 @@
+<img th:if="${publication.SOURCE_IMAGE_PATH!=''}" th:src="${path.getBasePath(publication.SOURCE_IMAGE_PATH)}"/>
+<img th:if="${publication.IMAGE_PATH!=''}" th:src="${path.getBasePath(publication.IMAGE_PATH)}" class="img-responsive"/>
+<p th:utext="${publication.EXCERPT}"/>

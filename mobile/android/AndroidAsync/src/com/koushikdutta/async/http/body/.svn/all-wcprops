@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body
+END
+FilePart.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/FilePart.java
+END
+FileBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/FileBody.java
+END
+AsyncHttpRequestBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/AsyncHttpRequestBody.java
+END
+DocumentBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/DocumentBody.java
+END
+MultipartFormDataBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/MultipartFormDataBody.java
+END
+JSONObjectBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/JSONObjectBody.java
+END
+UrlEncodedFormBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/UrlEncodedFormBody.java
+END
+StringPart.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/StringPart.java
+END
+StreamPart.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/StreamPart.java
+END
+StringBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/StringBody.java
+END
+JSONArrayBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/JSONArrayBody.java
+END
+Part.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/Part.java
+END
+StreamBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/body/StreamBody.java
+END

@@ -1,0 +1,247 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2009 Juan Asensio Sánchez <okelet@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX - módulo cidlookup module spanish translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
+"PO-Revision-Date: 2010-01-23 00:00+0100\n"
+"Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
+"Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Caller ID Lookup"
+msgstr "Búsqueda de identificador de llamante"
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Allows Caller ID Lookup of incoming calls against different sources (MySQL, "
+"HTTP, ENUM, Phonebook Module)"
+msgstr ""
+
+msgid "CallerID Lookup Sources"
+msgstr "Búsqueda de llamantes"
+
+msgid "CID Lookup Source"
+msgstr "Búsqueda de CID"
+
+msgid "Source"
+msgstr "Fuente"
+
+msgid "Sources can be added in Caller Name Lookup Sources section"
+msgstr ""
+"Se pueden añadir fuentes en la sección de Fuentes de búsqueda de nombres de "
+"llamantes"
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "Migrating channel routing to Zap DID routing.."
+msgstr "Migrando enrutamiento del canal a enrutamiento DID Zap..."
+
+msgid "FATAL: failed to transform old routes: "
+msgstr "FATAL: No se pudieron transformar las rutas antiguas:"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Removing deprecated channel field from incoming.."
+msgstr "Eliminando campo de canal obsoleto de entrantes..."
+
+msgid "ERROR: failed: "
+msgstr "ERROR:"
+
+msgid "Not Needed"
+msgstr "No es necesario"
+
+msgid "Checking for cidlookup field in core's incoming table.."
+msgstr "Comprobando el campo cidlookup en la table entrante del núcleo"
+
+msgid "not present"
+msgstr "no está presente"
+
+msgid "removed"
+msgstr "eliminado"
+
+msgid "Add CID Lookup Source"
+msgstr "Añadir fuente de búsqueda de CID"
+
+msgid "CID Lookup source"
+msgstr "Fuente de búsqueda de CID"
+
+msgid "deleted"
+msgstr "eliminado"
+
+msgid "Delete CID Lookup source"
+msgstr "Eliminar fuente de búsqueda de CID"
+
+#, php-format
+msgid ""
+"There are %s DIDs using this source that will no longer have lookups if "
+"deleted."
+msgstr ""
+
+#, php-format
+msgid "Source: %s (id %s)"
+msgstr "Fuente: %s (id %s)"
+
+msgid "Add Source"
+msgstr "Añadir fuente"
+
+msgid ""
+"A Lookup Source let you specify a source for resolving numeric caller IDs of "
+"incoming calls, you can then link an Inbound route to a specific CID source. "
+"This way you will have more detailed CDR reports with informations taken "
+"directly from your CRM. You can also install the phonebook module to have a "
+"small number <-> name association. Pay attention, name lookup may slow down "
+"your PBX"
+msgstr ""
+"Una fuente de búsqueda le permite utilizar una fuente para identificar el "
+"número de la persona que llama en las llamadas entrantes. De esta forma "
+"tendrá informes más detallados con la información extraida de su CRM. Puede "
+"instalar también el módulo \"Listín telefónico\" para tener una relación "
+"número <-> nombre. Tenga cuidado, ya que la búsqueda de nombres puede "
+"penalizar el rendimiento de su PBX"
+
+msgid "Edit Source"
+msgstr "Editar fuente"
+
+msgid "Source Description:"
+msgstr "Descripción de la fuente:"
+
+msgid "Enter a description for this source."
+msgstr "Introduzca una descripción para este origen."
+
+msgid "Source type:"
+msgstr "Tipo de fuente:"
+
+msgid ""
+"Select the source type, you can choose between:<ul><li>Internal: use astdb "
+"as lookup source, use phonebook module to populate it</li><li>ENUM: Use DNS "
+"to lookup caller names, it uses ENUM lookup zones as configured in enum."
+"conf</li><li>HTTP: It executes an HTTP GET passing the caller number as "
+"argument to retrieve the correct name</li><li>MySQL: It queries a MySQL "
+"database to retrieve caller name</li></ul>"
+msgstr ""
+"Seleccione el tipo de fuente. Puede elegir entre:<ul><li>Interno: utiliza "
+"astdb como fuente de búsqueda, utiliza el modulo \"Listín telefónico\".</"
+"li><li>ENUM: Utiliza DNS para buscar los nombres de las personas que llaman. "
+"ENUM utiliza como zonas de búsqueda las configuradas en enum.conf.</"
+"li><li>HTTP: ejecuta una solictud  HTTP GET pasando el número de la persona "
+"que llama como argumento para recuperar el nombre de la persona a la que "
+"pertenece.</li><li>MySQL: consulta una base de datos MySQL para extraer el "
+"nombre de la persona que llama.</li></ul>"
+
+msgid "Internal"
+msgstr ""
+
+msgid "Cache results:"
+msgstr "Resultados de la caché:"
+
+msgid ""
+"Decide whether or not cache the results to astDB; it will overwrite present "
+"values. It does not affect Internal source behavior"
+msgstr ""
+"Decide si se ponen los resultados de astDB en cache o no; sobrescribira los "
+"valores actuales. No afecta el comportamiento de la fuente interna."
+
+msgid "HTTP"
+msgstr "HTTP:"
+
+msgid "Host:"
+msgstr "Servidor:"
+
+msgid "Host name or IP address"
+msgstr "Nombre del servidor o IP"
+
+msgid "Port:"
+msgstr "Puerto:"
+
+msgid "Port HTTP server is listening at (default 80)"
+msgstr "Puerto en el que servidor HTTP está escuchando (normalmente es el 80)"
+
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+msgid "Username to use in HTTP authentication"
+msgstr "Nombre de usuario que se usará en la autentificación HTTP"
+
+msgid "Password:"
+msgstr "Contraseña:"
+
+msgid "Password to use in HTTP authentication"
+msgstr "Contraseña que se usará en la autentificación HTTP"
+
+msgid "Path:"
+msgstr "Ruta:"
+
+msgid "Path of the file to GET<br/>e.g.: /cidlookup.php"
+msgstr "Ruta del archivo a obtener<br/>Por ejemplo, /cidlookup.php"
+
+msgid "Query:"
+msgstr "Consulta:"
+
+msgid ""
+"Query string, special token '[NUMBER]' will be replaced with caller "
+"number<br/>e.g.: number=[NUMBER]&source=crm"
+msgstr ""
+"Cadena de la consulta, el campo \"[NUMBER]\" sera sustituido con el número "
+"de la persona que llama.<br/>Por ejemplo, number=[NUMBER]&source=crm"
+
+msgid "MySQL"
+msgstr "MySQL"
+
+msgid "MySQL Host"
+msgstr "Servidor MySQL"
+
+msgid "Database:"
+msgstr "Base de datos:"
+
+msgid "Database name"
+msgstr "Nombre de la base de datos"
+
+msgid ""
+"Query, special token '[NUMBER]' will be replaced with caller number<br/>e."
+"g.: SELECT name FROM phonebook WHERE number LIKE '%[NUMBER]%'"
+msgstr ""
+"Cadena de la consulta, el campo \"[NUMBER]\" sera sustituido con el número "
+"de la persona que llama.<br/>Por ejemplo, SELECT name FROM phonebook WHERE "
+"number LIKE '%[NUMBER]%'"
+
+msgid "MySQL Username"
+msgstr "Nombre de usuario MySQL:"
+
+msgid "MySQL Password"
+msgstr "Contraseña MySQL:"
+
+msgid "SugarCRM"
+msgstr "SugarCRM"
+
+msgid "Not yet implemented"
+msgstr "Este método no se ha implementado todavía."
+
+msgid "Submit Changes"
+msgstr "Enviar cambios"
+

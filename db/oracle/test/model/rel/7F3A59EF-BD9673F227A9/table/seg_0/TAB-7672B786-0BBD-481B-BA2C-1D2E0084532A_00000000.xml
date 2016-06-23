@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="TAB-7672B786-0BBD-481B-BA2C-1D2E0084532A_00000000" name="COMMS">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ENT-7672B786-0BBD-481B-BA2C-1D2E0084532A_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COMM_ID" id="COL-7CE9B609-0841-47C6-BC06-42E8C5AD9737_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-7CE9B609-0841-47C6-BC06-42E8C5AD9737_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LANG_ID" id="COL-8A5174DD-6CB8-4601-A7D4-8A2786AB2D88_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-8A5174DD-6CB8-4601-A7D4-8A2786AB2D88_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-3B7FFE53-CC96-42E3-BC58-4B2A924BB64E_00000000" referredColumn="COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000"/>
+</associations>
+</Column>
+<Column name="PATH_ID" id="COL-0BC85798-E20B-4A24-9FAF-3EF63F621139_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-0BC85798-E20B-4A24-9FAF-3EF63F621139_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-3F1E1102-C032-46DA-B11C-2DC12BD1295A_00000000" referredColumn="COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000"/>
+</associations>
+</Column>
+<Column name="SESSION_ID" id="COL-612143B7-6129-4DDA-8A6C-93AC85042D5A_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-612143B7-6129-4DDA-8A6C-93AC85042D5A_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-B8E61477-051C-4239-9CE9-C1FD5E375B36_00000000" referredColumn="COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000"/>
+</associations>
+</Column>
+<Column name="CREATED" id="COL-6F4AE8F4-2936-4616-BB95-823FF7C9BA58_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-6F4AE8F4-2936-4616-BB95-823FF7C9BA58_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FINISHED" id="COL-8ED61056-1CCE-4368-81E2-DF70E3F1617E_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-8ED61056-1CCE-4368-81E2-DF70E3F1617E_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURATION" id="COL-1A1C4BAA-B09F-417D-AE5E-8ADBA5E322B0_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-1A1C4BAA-B09F-417D-AE5E-8ADBA5E322B0_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IN_DATA" id="COL-3A8FA9AD-EB70-4122-849E-CA0B46019AF1_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-3A8FA9AD-EB70-4122-849E-CA0B46019AF1_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OUT_DATA" id="COL-91242EC2-498E-482D-BA09-F6CBF46D5124_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-91242EC2-498E-482D-BA09-F6CBF46D5124_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IN_HEADERS" id="COL-C40D82F8-BA00-41B4-B96D-1C29D1F652E9_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-C40D82F8-BA00-41B4-B96D-1C29D1F652E9_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OUT_HEADERS" id="COL-A914C826-0534-4A90-8907-71C5AB7877D8_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>ATT-A914C826-0534-4A90-8907-71C5AB7877D8_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="XPK-A355A2A9-0A36-4BEA-A472-0BD2CFCD7528_00000000" name="XPKОбмен">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:16 UTC</createdTime>
+<generatorID>CKY-A355A2A9-0A36-4BEA-A472-0BD2CFCD7528_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-7CE9B609-0841-47C6-BC06-42E8C5AD9737_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29960F80-482E-B228-A3FD-482DC797BCEF" name="R/6">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-B8E61477-051C-4239-9CE9-C1FD5E375B36_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-612143B7-6129-4DDA-8A6C-93AC85042D5A_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B2F520B-6E52-1A23-5831-0EC9ABE990FB" name="R/29">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-3F1E1102-C032-46DA-B11C-2DC12BD1295A_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-0BC85798-E20B-4A24-9FAF-3EF63F621139_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="569E7B12-7A48-AF97-AE3D-94C43D545340" name="R/49">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-3B7FFE53-CC96-42E3-BC58-4B2A924BB64E_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-8A5174DD-6CB8-4601-A7D4-8A2786AB2D88_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

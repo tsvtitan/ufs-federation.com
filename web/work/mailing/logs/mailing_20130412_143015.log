@@ -1,0 +1,11 @@
+12.04.2013 14:30:17.618 I: --------------------------------------------------
+12.04.2013 14:30:17.894 I: Connect to Database ...
+12.04.2013 14:30:18.714 I: Connected.
+12.04.2013 14:30:19.007 I: [Mysql->query] set names utf8
+12.04.2013 14:30:19.260 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+12.04.2013 14:30:19.543 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+12.04.2013 14:30:20.053 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+12.04.2013 14:30:33.674 E: Checking has failed because of 
+12.04.2013 14:30:35.513 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+12.04.2013 14:30:35.515 I: There is nothing to worry about
+12.04.2013 14:30:35.516 I: Execution time is 18.148763895035

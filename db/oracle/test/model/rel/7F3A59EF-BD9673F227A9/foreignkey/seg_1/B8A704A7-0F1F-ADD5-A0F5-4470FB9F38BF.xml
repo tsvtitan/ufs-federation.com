@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="B8A704A7-0F1F-ADD5-A0F5-4470FB9F38BF" name="MOBILE_MENU_LANGS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:49:20 UTC</createdTime>
+<generatorID>CKY-7420FDEA-99B9-424A-9E40-179A7C9DF201_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<containerWithKeyObject>D467BE7D-C87F-7591-CF95-AFAC4808435F</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>5AF790EF-5BD9-7ABA-062C-7444A16A888C</localFKIndex>
+<keyObject>XPK-7420FDEA-99B9-424A-9E40-179A7C9DF201_00000000</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

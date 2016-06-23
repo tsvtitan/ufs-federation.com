@@ -1,0 +1,23 @@
+<body>
+
+  <div class="header">
+    <div th:replace="Toolbar"/>
+    <!--<div th:replace="Menu"/>-->
+  </div>
+
+  <div class="page bgcolor10 width">
+    <div class="row clearfix">
+      <div class="g1176 content">
+        <div class="pad">
+          <div th:replace="${page.SelfTemplateId}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!--<div th:replace="Sitemap"/>-->
+    <div th:replace="Copyright"/>
+  </footer>
+
+</body>

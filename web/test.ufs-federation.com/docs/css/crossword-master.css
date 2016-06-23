@@ -1,0 +1,663 @@
+/* == reset */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* == main */
+#wedge h3 {
+    color:#fff;
+}
+
+.hide {
+	display:none;
+}
+.clear {
+	clear:both;
+}
+.error {
+	color:#dc2310;
+	font-weight:bold;
+}
+.success {
+	color:#008800;
+	font-weight:bold;
+}
+p.error { 
+	margin-bottom:10px;
+}
+#tiny-options {
+	font-size:12px;
+	margin-top:15px;
+}
+#tiny-options a:link, #tiny-options a:visited, #tiny-options a:hover {
+	background:none;
+	color:#009adb;
+	text-decoration:underline;
+	font-size:12px;
+	padding:0;
+}
+#tiny-options a:hover {
+	text-decoration:none;
+}
+#stage-1, #stage-2 {
+	clear:both;
+}
+#build-crossword {
+	background-color:#38341c;
+	float:left;
+	
+	padding:20px 25px;
+}
+
+#build-crossword label {
+	color:#FFFFFF;
+	display:block;
+	font-size:18px;
+	margin-bottom:5px;
+	line-height:normal;
+}
+
+#build-crossword a:link, #build-crossword a:visited, #build-crossword a:hover {
+	color:#b2ba97;
+	text-decoration:underline;
+}
+
+#build-crossword a:hover {
+	color:#b2ba97;
+	text-decoration:none;
+}
+
+#build-crossword textarea {
+	width:100%;
+	height:400px;
+	font-family:'open sans',"Courier New", Courier, monospace;
+}
+
+/* #build-crossword input {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+} */
+
+#crossword-title {
+	margin-bottom:20px;
+	font-size:18px;
+	width:100%;
+	display:block;
+}
+
+#crossword-data {
+	margin-bottom:10px;
+}
+
+#wedge {
+	width:283px;
+	padding:40px 0 0px 10px;
+	background-repeat:no-repeat;
+	float:right;
+	margin-top:10px;
+}
+
+#in-wedge {
+	padding-right:20px;
+}
+
+#tagline {
+	margin-bottom:5px;
+}
+
+#password {
+	width:170px;
+}
+
+#wedge p {
+	font-size:14px;
+	color:#FFFFFF;
+	line-height:normal;
+}
+
+#wedge li {
+	font-size:12px;
+	line-height:normal;
+}
+
+
+#wedge a:link, #wedge a:visited, #wedge a:hover {
+	text-decoration:underline;
+	color:#FFFFFF;
+}
+
+#wedge a:hover {
+	text-decoration:none;
+}
+
+#little-crossword {
+	float:left;
+	width:49px;
+	display:block;
+	padding-right:10px;
+}
+
+#samples {
+	margin-left:5px;
+	margin-top:10px;
+	padding-bottom:20px;
+}
+
+#samples ul {
+    list-style-type:none;
+}
+
+#samples ul li {
+    font-size:12px;
+    margin-bottom:3px;
+}
+
+#menu {
+	margin-left:5px;
+	margin-top:10px;
+	padding-bottom:20px;
+}
+
+#menu ul {
+    list-style-type:circle;
+    color:#fff;
+}
+
+#menu ul li {
+    font-size:12px;
+    margin-bottom:3px;
+}
+
+#stage-2 {
+	padding:0;
+	display:none;
+  padding-right: 1px;
+  background-color: #f0f0f0;
+  
+  background-image: url('/img/crossword/dot.png'), url('/img/crossword/bg.jpg');
+  
+  padding: 20px 10px 20px 8px;
+  margin-bottom: 2em;
+  background-position: 50% 50%;
+}
+
+
+#stage-2 h2  {
+	text-align:left;
+}
+
+#finish-up {
+	text-align:right;
+	float:right;
+}
+
+#fail p {
+	margin-top:10px;
+}
+
+ol#results {
+	list-style-type:decimal;
+	margin-left:25px;
+	margin-top:10px;
+}
+
+#results li {
+	margin-bottom:5px;
+	font-size:14px;
+}
+
+#results a:link, #results a:visited, #results a:hover {
+	font-weight:bold;
+
+}
+
+#search-box {
+	width:250px;
+}
+
+#search {
+	margin-top:10px;
+	margin-bottom:30px;
+}
+
+#freeloader {
+	width:400px;
+	float:left;
+	border-right:1px solid #38341c;
+
+}
+
+#supporter {
+	width:375px;
+	float:right;
+}
+
+#supporter ul {
+	margin-top:15px;	
+}
+
+#supporter ul li {
+	margin-bottom:5px;
+}
+
+#freeloader h2, #supporter h2 {
+	font-size:18px;
+}
+
+#freeloader h2 small {
+	color:#333;
+	font-style: italic;
+	font-size:14px;
+}
+
+#security {
+    float:right;
+    width:250px;
+}
+
+#payment-errors {
+    font-size:14px;
+    color:#ff0000;
+    padding-top:10px;
+}
+
+div#register {
+	margin:auto;
+	width:400px;
+}
+
+#settings {
+	width:400px;	
+}
+
+.errorlist {
+	color:#ff0000;
+	margin-left:0px;
+	font-size:10px;
+	list-style-type:none;
+    margin-bottom:0;
+    padding-bottom:0px;
+}
+
+.errorlist li {
+	font-size:10px;
+	margin-left:0;
+    margin-bottom:0;
+    padding-bottom:0px;
+}
+
+#freeloader input, #register input, #payment-form input, #settings input, #settings select {
+    display:block;
+    margin-bottom:10px;
+}
+
+#public-list {
+    border:5px solid #38341c;
+	margin:auto;
+	width:400px;
+    padding:10px;
+}
+
+#public-list ol {
+    margin-left:25px;
+    list-style-type:decimal;
+}
+
+#template-list {
+	margin-top:10px;	
+	margin-bottom:10px;	
+}
+
+#template-list thead th 
+{
+	font-size:16px;
+	font-weight:bold;
+	padding-left:10px;
+	padding-right:10px;
+	border-bottom:3px solid #38341c;
+	border-top:0px solid #38341c;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+#template-list td 
+{
+	font-size:14px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+#template-list td.counter
+{
+	font-size:10px;
+	font-weight:bold
+}
+
+#template-list tr.odd td {
+	background-color:#efefef;
+}
+
+#tooltip{
+	position:absolute;
+	border:1px solid #333;
+	background:#000;
+	padding:2px 5px;
+	color:#fff;
+	display:none;
+	max-width:300px;
+	font-size:12px;
+}
+
+.help {
+	color:#d630c1;
+	font-weight:bold;
+	font-size:12px;
+}
+/* == crossword */
+
+/* brown: 38341c
+red ab0d0d
+*/
+
+#clues h5 {
+	font-size:18px;
+	margin: 1em 0 !important;
+  font-weight: normal;
+  font-family: open sans;
+  border-bottom: 2px solid #ccc;
+}
+
+#crossword {
+	text-align:center;
+}
+
+.crossword {
+	border-collapse:collapse;
+	font-family:'open sans',"Courier New", Courier, monospace;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	margin:0;
+	border: 0;
+}
+
+.crossword td {
+  background-color: #fff;
+	border:1px solid #464646;
+	padding:0;
+	margin:0;
+	vertical-align:middle;
+	padding:0;
+	text-align:center;
+	width:28px;
+	height:28px;
+}
+
+.crossword .no-border {
+	border:none;
+  background-color: transparent;
+}
+
+#clues ol {
+	list-style-type:none;	
+	padding-top:0;
+}
+
+#clues li, #clues p {
+	margin-bottom:5px;
+}
+
+/*
+
+#across-box {
+	float:left;
+	width:45%;
+}
+
+#down-box {
+	float:right;
+	width:45%;
+}
+*/
+li, ol {
+	margin:0;
+	padding:0;
+}
+
+h2 {
+	text-align:center;
+}
+
+.ms-word {
+	padding-top:10px;
+	width:100%;
+}
+
+.ms-word td {
+	vertical-align:top;
+	padding:5px;
+	width:45%;
+}
+
+td.ms-word-cell {
+	vertical-align:bottom;
+}
+
+.crossword div {
+	font-size:10px;
+	text-align:left;
+	display:block;
+
+}
+
+
+.ms-word td p {
+	margin-bottom:5px;
+	margin-top:0px;
+}
+/* == play */
+/* interactive */
+#clues {
+  width:252px;
+	margin:10px auto 100px;
+  float: left;
+  padding-left: 18px;
+/* 	position:fixed;
+	bottom:0px; 
+	left:0;
+	width:100%;	*/
+	background-color:#fff;
+	/* border:1px solid white; */
+	/* margin-left:-1px; */
+
+}
+
+#clues-inner {
+	
+}
+
+/* #clues ol {
+	overflow:auto;
+	height:240px;
+} */
+
+#clues ol li {
+  line-height:normal;
+  padding:6px 8px;
+}
+
+#crossword {
+	/* margin-bottom:210px; */
+}
+
+#clues li.active {
+	background-color:#f1c40f;
+  color:#111;
+}
+
+#stage-2 {
+	border-bottom:none;
+}
+
+.crossword td.wrong input {
+  font-weight:bold;
+  color:#ab0d0d;
+}
+
+.crossword td.correct input {
+  font-weight:bold;
+  color:#009900;
+}
+.crossword td.highlighted  {
+	background-color:#f1c40f; /* 006a97; */
+  color:#000;
+}
+
+.crossword td.highlighted input {
+  color:#000;
+	background-color:#f1c40f; /* 006a97; */
+  background-color:rgba(1,1,1,0.0);
+}
+
+.crossword td.active {
+	background-color:#ffef87; /* 009adb; */
+	font-weight:bold;
+  color:#000;
+}
+.crossword td.active input {
+  color:#000;
+	background-color:#ffef87; /* 009adb; */
+  background-color:rgba(1,1,1,0.0);
+}
+
+.crossword .hidden-field {
+  border:none;
+  width:20px;
+  height:20px;
+  outline:0 none;
+  /*background-color:#000;*/
+  background-color:rgba(1,1,1,0.0);
+  text-align:center;
+  vertical-align:middle;
+  font-family:'open sans',"Courier New", Courier, monospace;
+  width:13px;
+  border: 0;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+
+
+/* custom */
+#down-box ol li span, #across-box ol li span {
+  display: inline-block;
+  min-width: 24px;
+  font-weight: bold;
+}
+.crossword textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {
+  outline: none;
+}
+.splash {
+  margin-top: 22px;
+  border: 1px solid #f7f7f7;
+  box-shadow: #999 0 0 6px;
+  padding: 10px;
+  margin-bottom: 2em;
+  padding: 1.3em 22px;
+  
+  background: -moz-linear-gradient(top, #fff, #e0e0e0); /* Firefox 3.6+ */
+	/* Chrome 1-9, Safari 4-5 */
+	background: -webkit-gradient(linear, left top, left bottom, 
+	            color-stop(0%,#fff), color-stop(100%,#e0e0e0));
+	/* Chrome 10+, Safari 5.1+ */
+	background: -webkit-linear-gradient(top, #fff, #e0e0e0);
+	background: -o-linear-gradient(top, #fff, #e0e0e0); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fff, #e0e0e0); /* IE10 */
+	background: linear-gradient(top, #fff, #e0e0e0); /* CSS3 */
+	text-shadow: #fff 0 1px 0;
+  position: relative;
+}
+#thanks {
+  color: #2ecc71 !important;
+  border: 2px solid #2ecc71;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 2em !important;
+}
+.splash, .panel, input[type="submit"], input[type="reset"], button, .button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.panel {
+  margin: 1em 0;
+  padding: 1em !important;
+  background-image: none;
+  background-color: #edf3f7;
+}
+input.flat-ui {
+  border: 1px solid #d4d4d4;
+  /* border-radius: 4px; */
+  box-shadow: inset 0 0 6px #d4d5d6;
+  color: #454545;
+  background-color: #f6f6f6;
+  transition: all 0.1s ease-in-out;
+  padding: 0.5em;
+  display: block;
+}
+input.flat-ui[type="text"]:focus, input.flat-ui[type="email"]:focus, input.flat-ui[type="password"]:focus, textarea.flat-ui:focus {
+  background-color: #fff;
+  border-color: #55c1e9;
+  transition: all 0.1s ease-in-out;
+  box-shadow: /* inset 0 0 6px #92cbe0, */ 0 0 6px #92cbe0;
+  color: #222;
+  outline: none;
+}
+.panel, input.mini, input.flat-ui {
+  font-size: 16px;
+}
+.fright {
+  float: right;
+}
+input.flat-ui[type="submit"] {
+  display: block;
+  padding: 0.6em 14px;
+  border: 0;
+  color: #fff;
+  background: #09395d;
+  outline: none;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+input[type="submit"], input[type="reset"], button, .button {
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: open sans;
+}
+.container540 {
+  width: 540px;
+}

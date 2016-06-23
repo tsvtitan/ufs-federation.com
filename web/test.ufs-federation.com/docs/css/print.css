@@ -1,0 +1,132 @@
+﻿@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+img {border: 0; padding: 0; font-size: 100%; background: transparent;}
+dfn,var {font-style: normal;}
+
+/* Disable a deprecated */
+font,basefont {color: inherit; font: inherit; font-size: 100%;}
+center {text-align: inherit;}
+s,strike,u {text-decoration: inherit;}
+
+/*************** Fonts & Graphics ***************/
+@page {}
+body {font: 12pt Constantia, Cambria, Georgia, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif; color: black}
+code,pre {color: #c33; font: normal 1em/1.4 "Consolas","Lucida Console", Monaco, "Courier New", Courier, monospace;}
+
+#footer {font: italic normal 10pt "Trebuchet MS", Helvetica, sans-serif}
+
+h1,h2,h3,h4,h5,h6 {margin: 2em 0 1em;}
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child {margin-top: 0 !important;}
+h1 {font-size: 2em; color: #555;}
+h2 {font-size: 1.5em; color: #444;}
+h3 {font-size: 1.17em; color: #333;}
+h4 {font-size: 1em; color: #222;}
+h5 {font-size: .83em; color: #111;}
+h6 {font-size: .75em; color: #000;}
+
+p {margin: 1em 0;}
+p:first-child {margin-top: 0 !important;}
+p+ul, p+ol {margin-top: -0.5em;}
+
+       /* ++ Standard elements ++ */
+a {color: black; text-decoration: none}
+
+input,select,textarea,button {margin: 0; font-size: 92%;}
+fieldset {padding: 0.5em; border: solid 1px #dcdcdc;}
+legend   {color: #ccc;}
+  input[type="text"],input[type="password"] {padding: 2px; border: 1px solid #ccc; background: #fff;}
+        input.text,input.password {padding: 2px; border: 1px solid #ccc; background: #fff;}
+  input[type="hidden"] {display: none !important;}
+        input.hidden {display: none !important;}
+  input[type="image"],input[type="checkbox"],input[type="radio"] {width: auto !important;}
+        input.image,input.checkbox,input.radio {width: auto !important;}
+textarea {padding: 0.5em; border: 1px solid #ccc; background: #fff;}
+input,label,select {vertical-align: middle;}
+select {background: #fff;}
+applet,object,iframe {overflow: hidden;}
+
+hr    {clear: both; border: none; color: #ccc; background-color: #ccc; height: 1px; width: 100%; margin: 20px 0; padding: 0;}
+* html hr {margin: 13px 0}
+* + html hr {margin: 13px 0}
+
+table {margin: 1em 0; border-collapse: collapse; table-layout: auto; border-spacing: 0; empty-cells: show; border: 1px solid #ccc;}
+    table th {padding: 0.5em; text-align: center; vertical-align: middle; font-weight: bold;}
+    table td {padding: 0.5em; vertical-align: top;}
+    table caption {caption-side: top; text-align: center;}
+
+       /* -- List's -- */
+ul {margin: 1em 0; padding: 0;}
+   ul li {margin: 0.2em 0; padding: 0;}
+   li ul {margin: 0 0 0 1.5em;}
+ol {margin: 1em 0; padding: 0; list-style-position: inside;}
+   ol li {margin: 0.2em 0; padding: 0;}
+   li ol {margin: 0 0 0 1.5em;}
+dl {margin: 1em 0; padding: 0;}
+   dl dt {margin: 0 0 0.5em 0; padding: 0;}
+   dl dd {margin: 0.5em 0 1.5em 1.5em; padding: 0;}
+
+       /* -- Images -- */
+img {display: block; border: none; vertical-align: middle; font: normal 0.75em Tahoma; color: #aaa;}
+#footer img,#bottom img,p img {display: inline;}
+img[border="1"],img[border="2"] {border: 1px solid #000;}
+
+       /* -- Text -- */
+blockquote {margin: 1em 0 1em 1.5em; padding: 0.5em 1em; quotes: none; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; color: #666;}
+blockquote:before, blockquote:after {content: ''; content: none;}
+blockquote q {text-indent: -0.8em;}
+html:lang(en) q, html body q[lang="en"] {quotes: "\201e" "\201c" "\2018" "\2019";}
+html:lang(en-us) q, html body q[lang="en-us"] {quotes: "\201c" "\201d" "\2018" "\2019";}
+html:lang(ru) q,html:lang(ua) q, html body q[lang="ru"], html body q[lang="ua"] {quotes: "\00ab" "\00bb" "\201e" "\201c";}
+cite  {font-style: italic;}
+
+small {font-size: 85%;}
+big   {font-size: 125%;}
+sup   {vertical-align: text-top; font-size: 65%;}
+sub   {vertical-align: text-bottom; font-size: 65%;}
+ins   {text-decoration: underline;}
+del   {text-decoration: line-through;}
+pre   {word-wrap: break-word; white-space: -pre-wrap; white-space: -o-pre-wrap; white-space: -moz-pre-wrap; white-space: pre-wrap;}
+
+abbr {text-transform: uppercase; text-decoration: none;}
+acronym {font-variant: small-caps; text-transform: none; text-decoration: none;}
+abbr[title],acronym[title],dfn[title] {cursor: help; border-bottom: 1px dotted #f0f0f0;}
+
+
+/*************** Print styles ***************/
+a[href]:after {content: " ( " attr(href) " ) "; font: italic normal 50% Georgia !important; color: #808080 !important}
+a[href^="/"]:after {content: " (http://SITE-NAME/" attr(href) ") "}
+abbr:after,acronym:after {content: ' ('attr(title)') '}
+
+.noprint {display: none !important}
+object,embed,.mobile,#mobile-nav,.wai,#lightwindow_overlay,#lightwindow,#LG_overlay,#LG_container {display: none}
+
+#bottom {display: none}
+address.vcard .country-name, .geo, a.yandex-map {display: none}
+address.vcard a.hcard-download:after {content: ' '}
+.hentry abbr:after {content: ' '}
+
+h1,h2,h3,h4,h5,h6 {page-break-after: avoid;}
+p {widows: 2;}
+tr {page-break-inside: avoid;}
+
+/* Hide unnecessary */
+#x {display: none}
+
+/* Hide bullets in semantic lists */
+ul.x {list-style-type: none;}

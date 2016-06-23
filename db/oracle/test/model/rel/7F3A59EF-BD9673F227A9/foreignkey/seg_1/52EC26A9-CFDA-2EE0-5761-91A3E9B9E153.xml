@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="52EC26A9-CFDA-2EE0-5761-91A3E9B9E153" name="PROMOTIONS_DEVICES_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 10:00:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<containerWithKeyObject>32244E04-AC7A-B96D-2171-5D068F6F6CFD</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>9F6F7690-9AB8-0076-650F-59BE4F509710</localFKIndex>
+<keyObject>291D1EFA-E84F-F00F-26E6-1904DE985D13</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

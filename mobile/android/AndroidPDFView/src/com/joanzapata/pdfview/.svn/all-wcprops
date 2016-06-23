@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview
+END
+CacheManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/CacheManager.java
+END
+AnimationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/AnimationManager.java
+END
+SpiralLoopManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/SpiralLoopManager.java
+END
+PDFView.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/PDFView.java
+END
+DragPinchManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/DragPinchManager.java
+END
+DecodingAsyncTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/DecodingAsyncTask.java
+END
+RenderingAsyncTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/RenderingAsyncTask.java
+END

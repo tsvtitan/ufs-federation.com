@@ -1,0 +1,29 @@
+<module>
+	<rawname>weakpasswords</rawname>
+	<name>Weak Password Detection</name>
+	<version>2.8.0.0</version>
+	<publisher>Schmoozecom.com</publisher>
+	<license>GPLv2</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<changelog>
+		*2.8.0.0* #4309
+		*2.7.0.0* spelling, localizations
+		*2.6.0.1* #3735
+		*2.6.0.0* misc
+		*2.5.0.3* #3663
+		*2.5.0.2* changes to warning msg, moved to Tools tab, System Administration
+		*2.5.0.1* Consolidated individual security notices to a single notice with all details in extended text
+		*2.5.0.0* Initial release
+	</changelog>
+	<depends>
+		<version>2.5.0</version>
+	</depends>
+	<description>This module detects weak SIP secrets and sets security notifications accordingly
+	</description>
+	<menuitems>
+		<weakpasswords>Weak Password Detection</weakpasswords>
+	</menuitems>
+	<location>release/2.7/weakpasswords-2.7.0.0.tgz</location>
+	<md5sum>45d3f8eb1856eb7c50b0cc2f959f94b5</md5sum>
+</module>

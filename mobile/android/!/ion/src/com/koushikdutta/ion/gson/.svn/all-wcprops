@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/gson
+END
+GsonSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/gson/GsonSerializer.java
+END
+GsonBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/gson/GsonBody.java
+END
+GsonParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/gson/GsonParser.java
+END
+PojoBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/gson/PojoBody.java
+END

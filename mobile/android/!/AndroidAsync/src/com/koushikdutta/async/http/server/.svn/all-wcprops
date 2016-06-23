@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server
+END
+StreamSkipException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/StreamSkipException.java
+END
+MalformedRangeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/MalformedRangeException.java
+END
+HttpServerRequestCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/HttpServerRequestCallback.java
+END
+AsyncHttpServerRequestImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/AsyncHttpServerRequestImpl.java
+END
+AsyncHttpServerResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/AsyncHttpServerResponse.java
+END
+AsyncHttpServerResponseImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/AsyncHttpServerResponseImpl.java
+END
+AsyncHttpServerRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/AsyncHttpServerRequest.java
+END
+MimeEncodingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/MimeEncodingException.java
+END
+AsyncHttpServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/AsyncHttpServer.java
+END
+UnknownRequestBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/UnknownRequestBody.java
+END
+BoundaryEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/server/BoundaryEmitter.java
+END

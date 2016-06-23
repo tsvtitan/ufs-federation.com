@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss
+END
+OnDismissCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/OnDismissCallback.java
+END
+SwipeDismissAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/SwipeDismissAdapter.java
+END
+DismissableManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/DismissableManager.java
+END
+SwipeTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/SwipeTouchListener.java
+END
+SwipeDismissTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/SwipeDismissTouchListener.java
+END

@@ -1,0 +1,26 @@
+12.04.2013 10:56:50.819 I: --------------------------------------------------
+12.04.2013 10:56:50.819 I: Connect to Database ...
+12.04.2013 10:56:50.825 I: Connected.
+12.04.2013 10:56:50.825 I: [Mysql->query] set names utf8
+12.04.2013 10:56:50.827 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+12.04.2013 10:56:50.828 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+12.04.2013 10:56:50.831 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+12.04.2013 10:56:50.833 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+12.04.2013 10:56:50.835 I: There are 1 patterns.
+12.04.2013 10:56:50.835 I: Process pattern 382 / 3 emails.
+12.04.2013 10:56:50.835 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id=382 ORDER BY created, priority LIMIT 0,3000
+12.04.2013 10:56:50.838 I: There are 3 emails. Sending / transferring ...
+12.04.2013 10:58:01.041 E: Mailing 1193 has not . Error is transferred ...
+12.04.2013 10:58:01.042 I: [Mysql->query] UPDATE `mailing` SET `remote_id`=NULL,`transferred`=NULL,`sent`=NULL,`result`=NULL WHERE `mailing_id`='1193'
+12.04.2013 10:58:01.053 I: [Mysql->query] Rows matched: 1  Changed: 0  Warnings: 0
+12.04.2013 10:58:01.054 I: Mailing 1193 has updated successfully ...
+12.04.2013 10:58:01.054 E: Mailing 1194 has not . Error is transferred ...
+12.04.2013 10:58:01.055 I: [Mysql->query] UPDATE `mailing` SET `remote_id`=NULL,`transferred`=NULL,`sent`=NULL,`result`=NULL WHERE `mailing_id`='1194'
+12.04.2013 10:58:01.056 I: [Mysql->query] Rows matched: 1  Changed: 0  Warnings: 0
+12.04.2013 10:58:01.056 I: Mailing 1194 has updated successfully ...
+12.04.2013 10:58:01.056 E: Mailing 1195 has not . Error is transferred ...
+12.04.2013 10:58:01.057 I: [Mysql->query] UPDATE `mailing` SET `remote_id`=NULL,`transferred`=NULL,`sent`=NULL,`result`=NULL WHERE `mailing_id`='1195'
+12.04.2013 10:58:01.058 I: [Mysql->query] Rows matched: 1  Changed: 0  Warnings: 0
+12.04.2013 10:58:01.059 I: Mailing 1195 has updated successfully ...
+12.04.2013 10:58:01.059 I: MaxCounter=3 Counter=9
+12.04.2013 10:58:01.060 I: Execution time is 70.240710020065

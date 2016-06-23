@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="main_view" objectID="1562C973-2E67-609A-3233-3AB406A2F44F" name="Logical" visible="true"/>
+   <object objectType="sub_view" objectID="38B2865F-64B2-FB95-5E4F-475A30C8AAB3" name="Мобильное приложение (МП)" visible="true"/>
+   <object objectType="sub_view" objectID="C8EF4667-9E00-8110-3535-A1C5820AA261" name="Сообщения" visible="false"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

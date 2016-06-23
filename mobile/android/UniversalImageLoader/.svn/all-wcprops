@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mobile/!svn/ver/82/android/UniversalImageLoader
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/192/android/UniversalImageLoader/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mobile/!svn/ver/192/android/UniversalImageLoader/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/192/android/UniversalImageLoader/.classpath
+END

@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX - módulo miscdests module spanish translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 12:13+0200\n"
+"PO-Revision-Date: 2009-01-22 01:48+0100\n"
+"Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
+"Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Misc Destination: %s"
+msgstr "Destino: %s"
+
+#: page.miscdests.php:69
+#: page.miscdests.php:114
+#: page.miscdests.php:122
+msgid "Add Misc Destination"
+msgstr "Añadir destino"
+
+#: page.miscdests.php:83
+msgid "Misc Destination"
+msgstr "Destinos varios"
+
+#: page.miscdests.php:83
+msgid "deleted"
+msgstr "eliminado"
+
+#: page.miscdests.php:94
+msgid "Misc Destinations are for adding destinations that can be used by other FreePBX modules, generally used to route incoming calls. If you want to create feature codes that can be dialed by internal users and go to various destinations, please see the <strong>Misc Applications</strong> module."
+msgstr "Los destinos varios se utilizan para añadir destinos que puedan ser usados por otros módulos de FreePBX, que se usan generalmente para enrutar llamadas internas. Si desea crear códigos de características que puedan ser marcados por usuarios internos y que vayan a varios destinos, utilice el módulo de <strong>Aplicaciones varias</strong>."
+
+#: page.miscdests.php:99
+msgid "Misc Destination:"
+msgstr "Destino:"
+
+#: page.miscdests.php:103
+#, php-format
+msgid "Delete Misc Destination %s"
+msgstr "Eliminar destino %s"
+
+#: page.miscdests.php:122
+msgid "Edit Misc Destination"
+msgstr "Editar destino"
+
+#: page.miscdests.php:127
+msgid "Description:"
+msgstr "Descripción:"
+
+#: page.miscdests.php:127
+msgid "Give this Misc Destination a brief name to help you identify it."
+msgstr "Asigne al destino un breve nombre que le ayude a identificarlo."
+
+#: page.miscdests.php:131
+msgid "Dial:"
+msgstr "Marcar:"
+
+#: page.miscdests.php:131
+msgid "Enter the number this destination will simulate dialing, exactly as you would dial it from an internal phone. When you route a call to this destination, it will be as if the caller dialed this number from an internal phone."
+msgstr "Introduzca el número que simulará este destino, de la misma forma en la que se marcaría desde un teléfono interno. Cuando se enrute una llamada a este destino, será tratada como si se hubiera llamado desde el teléfono interno."
+
+#: page.miscdests.php:136
+msgid "featurecode shortcuts"
+msgstr "Accesos rápidos a códigos de características"
+
+#: page.miscdests.php:151
+msgid "Submit Changes"
+msgstr "Enviar cambios"
+
+#: page.miscdests.php:168
+msgid "Please enter a valid Description"
+msgstr "Por favor, introduzca una descripción válida"
+
+#: page.miscdests.php:169
+msgid "Please enter a valid Dial string"
+msgstr "Por favor, introduzca una cadena de marcación válida"
+
+#: module.xml
+msgid "Misc Destinations"
+msgstr "Destinos varios"
+

@@ -1,0 +1,6 @@
+// UserController
+
+module.exports = {
+	
+};
+

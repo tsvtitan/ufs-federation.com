@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback
+END
+CompletedCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/CompletedCallback.java
+END
+ConnectCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/ConnectCallback.java
+END
+DataCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/DataCallback.java
+END
+ContinuationCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/ContinuationCallback.java
+END
+ListenCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/ListenCallback.java
+END
+WritableCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/WritableCallback.java
+END
+ResultCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/callback/ResultCallback.java
+END

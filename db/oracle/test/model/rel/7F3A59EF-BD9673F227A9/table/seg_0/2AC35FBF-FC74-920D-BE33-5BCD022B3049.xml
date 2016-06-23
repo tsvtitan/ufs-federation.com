@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2AC35FBF-FC74-920D-BE33-5BCD022B3049" name="PROMOTION_COMPANIES">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:53:28 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROMOTION_COMPANY_ID" id="D5A7F6E3-773D-FCFD-A828-F6D4B782C4F3">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:54:01 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARENT_ID" id="0825D68E-BF1C-7672-F959-2618F21CC3F6">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:54:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>D5A7F6E3-773D-FCFD-A828-F6D4B782C4F3</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="858B5EB8-1AEB-B906-344D-C2FD77115EBE" referredColumn="D5A7F6E3-773D-FCFD-A828-F6D4B782C4F3"/>
+</associations>
+</Column>
+<Column name="NAME" id="6CE99C4D-CB22-A4B3-99B4-BC1F8404F290">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:55:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="1223E7FE-E006-2313-D164-BD2A8BB22F29">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:55:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APP_LINK" id="64CDAFB6-36A1-665D-534E-44E4A62BEEFC">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:55:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="2C49B2DD-FEDC-AD4C-9D10-6ADE71CE8B62">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:56:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08313EDD-A8A4-C334-E918-4C6E94D4E263" name="PROMOTION_COMPANIES_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:54:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5A7F6E3-773D-FCFD-A828-F6D4B782C4F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12B5966C-4057-5E29-6A9C-666F1692DD75" name="PROMOTION_COMPANIES_PROMOTION_COMPANIES_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:54:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0825D68E-BF1C-7672-F959-2618F21CC3F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

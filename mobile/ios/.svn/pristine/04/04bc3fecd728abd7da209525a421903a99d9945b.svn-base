@@ -1,0 +1,25 @@
+//
+//  UFSMenuCell.h
+//  UFS
+//
+//  Created by mihail on 26.08.13.
+//  Copyright (c) 2013 Moskovchenko M. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UFSMenuCell : UITableViewCell
+
+@property (strong, nonatomic) UILabel *caption;
+@property (strong, nonatomic) UIImageView *bgImageView;
+@property (strong, nonatomic) SmartImageView *imageViewSC;
+@property (strong, nonatomic) NSString *imageOfSubcategory;
+@property (strong, nonatomic) NSString *selectedImageOfSubcategory;
+@property (strong, nonatomic) NSString *nameForImage;
+/* tsv */
+@property (nonatomic, retain) NSNumber *type;
+/* tsv */
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier type:(NSNumber *)type;
+
+@end

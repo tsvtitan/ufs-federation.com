@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="015E4243-D44E-E999-5C11-5DCE8319F2A0" name="SOURCES">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:48:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOURCE_ID" id="3ACE5A05-0A57-1AD9-90E4-63174BF723B2">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:50:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="FD0E6FC8-84EF-54E8-63DE-587CA815EFAA">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:50:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINK" id="BE4015AD-6661-9784-7B74-061E218C595F">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:50:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGE_ID" id="2FA6EED2-82F9-61DE-A600-0C720FC0CC45">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:51:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF04BFA1-31DE-9466-4556-7EF5E92A8702" referredColumn="COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03DF6A4E-BDE3-A478-2B15-690C35C19285" name="SOURCES_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:50:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3ACE5A05-0A57-1AD9-90E4-63174BF723B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB4ED620-533D-558E-0AEE-E93D2AF4FCA6" name="IMAGE_ID">
+<createdBy>root</createdBy>
+<createdTime>2013-11-18 11:51:51 UTC</createdTime>
+<generatorID>CKY-DB00817D-6782-4E62-9013-1052A2FD3490_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FA6EED2-82F9-61DE-A600-0C720FC0CC45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

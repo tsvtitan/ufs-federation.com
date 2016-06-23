@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/util
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/util/Constants.java
+END
+DragPinchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/util/DragPinchListener.java
+END
+ArrayUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/util/ArrayUtils.java
+END
+NumberUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/util/NumberUtils.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/com/joanzapata/pdfview/util/FileUtils.java
+END

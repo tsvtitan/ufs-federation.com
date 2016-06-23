@@ -1,0 +1,46 @@
+10
+
+dir
+214
+https://ru.ufs-federation.com/svn/mobile/android/ListViewAnimationsLibCoreSlh/res
+https://ru.ufs-federation.com/svn/mobile
+
+
+
+2014-10-22T13:21:20.887499Z
+214
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+values
+dir
+

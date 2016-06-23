@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6F74878-D082-75CD-D936-219EAEEF3D32" name="TOKENS">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:28:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TOKEN_ID" id="15FBCD83-5EA3-8F6C-D053-BD895E951869">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:28:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SESSION_ID" id="99290CC4-1418-1473-C7D8-773D692FF604">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:28:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFE7277D-9936-3659-507C-5E6E259B42A3" referredColumn="COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000"/>
+</associations>
+</Column>
+<Column name="DEVICE_ID" id="FFD89A5A-8774-6017-3376-89F1128F2C12">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:29:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>5490EF18-204B-4755-B8E3-B9E7E4C60E38</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD3520B8-02A2-68E3-FA04-6F3D154318A8" referredColumn="5490EF18-204B-4755-B8E3-B9E7E4C60E38"/>
+</associations>
+</Column>
+<Column name="CREATED" id="D98F3D42-D79F-4934-1800-5D7FE7F24FAB">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:30:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXPIRED" id="42C4918F-E36B-5385-2A0F-F8321411C9B7">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:30:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3ECA6349-1C62-BDAD-CCBE-CD3C8CB4B3A8" name="TOKENS_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:29:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15FBCD83-5EA3-8F6C-D053-BD895E951869"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BDA616A-BA40-B311-14DB-18E36DCA9EF4" name="DEVICE_TOKENS_SESSIONS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:28:30 UTC</createdTime>
+<generatorID>CKY-DADC0A28-9BA0-4AE2-8BDB-92320E2B3381_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99290CC4-1418-1473-C7D8-773D692FF604"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A025790E-2591-1465-508F-00056418E440" name="TOKENS_DEVICES_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 07:29:52 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFD89A5A-8774-6017-3376-89F1128F2C12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B23C136-8FA3-D21C-0724-3E1E01BFDD0C" name="PAGE_TABLE_FORMS">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:37:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAGE_TABLE_ID" id="6694B30E-83F9-115B-8A42-272FA2D02883">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:38:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>2CC29E5C-A37B-D0A2-8ED5-1253B43D2586</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="110A324F-9221-2B7A-27BE-E70ADEAF6897" referredColumn="2CC29E5C-A37B-D0A2-8ED5-1253B43D2586"/>
+</associations>
+</Column>
+<Column name="PAGE_FORM_ID" id="B8B61589-A5B9-4FB1-1346-97A70DDC5104">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:38:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>972E9453-4F67-844C-3148-988EC92FD91C</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1EC47BCD-659F-0DA7-0A21-E050CA27ED25" referredColumn="972E9453-4F67-844C-3148-988EC92FD91C"/>
+</associations>
+</Column>
+<Column name="FILTERS" id="326BB45F-E947-996D-20BB-4772D2A5A830">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:40:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARAMS" id="3A075B19-05BC-D2D4-3BDE-0766E33D08B0">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:40:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="C15BB15E-4DEB-F533-C95E-1624D02573FF">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:41:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1286FD71-3284-4DAE-CCB5-2A38BE680DEA" name="PAGE_TABLE_FORMS_PK">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:39:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6694B30E-83F9-115B-8A42-272FA2D02883"/>
+<colUsage columnID="B8B61589-A5B9-4FB1-1346-97A70DDC5104"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5390D32-EFA2-9772-3C21-A922313A4633" name="PAGE_TABLE_FORMS_PAGE_FORMS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:38:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8B61589-A5B9-4FB1-1346-97A70DDC5104"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F3099A3-B264-2493-05FB-421FC5AF8492" name="PAGE_TABLE_FORMS_PAGE_TABLES_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-01-23 10:38:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6694B30E-83F9-115B-8A42-272FA2D02883"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

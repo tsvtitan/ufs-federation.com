@@ -1,0 +1,11 @@
+<div class="panel subscribe">
+  <div class="caption" th:utext="#{ResearchSubscribeTitle}">Подписка на аналитику</div>
+  <div class="content bgcolor2">
+    <p th:utext="#{ResearchSubscribeDesc}">Подпишитесь на нашу рассылку аналитических материалов.</p>
+    <form action="#">
+      <input type="text" value="" placeholder="Укажите вашу электронную почту"/>
+      <p class="error">Пожалуйста, укажите корректный email.</p>
+      <input class="button black" type="submit" th:value="#{ButtonSubscribe.Caption}" value="Подписаться"/>
+    </form>
+  </div>
+</div>

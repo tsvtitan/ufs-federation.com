@@ -1,0 +1,61 @@
+10
+
+dir
+130
+https://ru.ufs-federation.com/svn/mobile/android/UFS/src/ru/ideast/ufs
+https://ru.ufs-federation.com/svn/mobile
+
+
+
+2014-06-23T14:03:42.333534Z
+130
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+activities
+dir
+
+adapters
+dir
+
+beans
+dir
+
+db
+dir
+
+exceptions
+dir
+
+fragments
+dir
+
+loaders
+dir
+
+managers
+dir
+
+utils
+dir
+
+views
+dir
+
+widgets
+dir
+

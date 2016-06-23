@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ufs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ca_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ufsic.core.widgets.ActionBarUfs
+        android:id="@+id/ca_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        ufs:left_btn="@drawable/btn_back_selector"
+        ufs:single_text="@string/calendar_title" />
+
+</LinearLayout>

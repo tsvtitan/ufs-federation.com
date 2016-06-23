@@ -1,0 +1,30 @@
+<body>
+
+  <div class="header">
+    <div th:replace="Toolbar"/>
+  </div>
+
+  <div class="width">
+    <div th:replace="NestedPromoBanner"/>
+  </div>  
+
+  <div class="page bgcolor1 width">
+    <div th:replace="BreadCrumb"/>
+    <div class="row clearfix">
+      <div class="g294"> 
+        <div th:replace="PageMenu"/>
+      </div>  
+      <div class="g882 content">
+        <div class="pad">
+          <h1 th:utext="${page.TITLE}"/>
+          <div th:replace="${page.SelfTemplateId}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div th:replace="Copyright"/>
+  </footer>
+
+</body>

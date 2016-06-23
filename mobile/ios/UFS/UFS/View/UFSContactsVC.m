@@ -1,0 +1,464 @@
+//
+//  UFSContactsVC.m
+//  UFS
+//
+//  Created by mihail on 07.11.13.
+//  Copyright (c) 2013 Moskovchenko M. All rights reserved.
+//
+
+#import "UFSContactsVC.h"
+#import "AnalyticsCounter.h"
+
+@interface UFSContactsVC ()
+{
+    UIPanGestureRecognizer *customRecognizer;
+}
+
+@end
+
+@implementation UFSContactsVC
+@synthesize fetchedResultsController;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        if ([UFSLoader reachable])
+        {
+            
+            
+            [UFSLoader requestPostContacts];
+        }
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    if (self.navigationController.viewControllers.count>1)
+    {
+        self.navigationController.viewControllers = @[self.navigationController.topViewController];
+    }
+
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachOn:) name:kReachableOk object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachOff:) name:kNotReachable object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadFaild:) name:kNotificationRequestFaild object:nil];
+
+    SWRevealViewController *revealController = [self revealViewController];
+    self.revealViewController.delegate = self;
+    self.view.backgroundColor = [UIColor whiteColor];
+   
+    UIButton *menu = [[UIButton alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.height - 44)/2.0f, 44, 44.0f)];
+    [menu setImage:[UIImage imageNamed:@"icn_nav_menu"] forState:UIControlStateNormal];
+    [menu addTarget:revealController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *revealButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:menu] autorelease];
+    [menu release];
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
+     self.titleText = @"Контакты";
+    _contactsTableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 0, self.view.width-20, self.view.height) style:UITableViewStylePlain];
+    _contactsTableView.delegate = self;
+    _contactsTableView.dataSource = self;
+    _contactsTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //    [_newsTableView setBackgroundColor:RGBA(235, 238, 240, 1.0f)];
+    _contactsTableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    UIView *footerview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 10)];
+    [_contactsTableView setTableFooterView:footerview];
+    [footerview release];
+    [_contactsTableView setBackgroundColor:[UIColor clearColor]];
+    [_contactsTableView setScrollsToTop:YES];
+    [self.view addSubview:_contactsTableView];
+    [_contactsTableView release];
+    
+    indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    indicator.color = RGBA(3, 68, 124, 1.0f);
+    //indicator.center = CGPointMake(self.view.width/2, self.view.center.y-44.0f);
+    /* tsv */indicator.center = CGPointMake(self.view.width/2, self.view.height/2-indicator.frame.size.height/2);
+    [self.view addSubview:indicator];
+    [indicator startAnimating];
+    [indicator release];
+    
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    }
+    if (fetchedResultsController.fetchedObjects.count)
+    {
+        [indicator stopAnimating];
+        indicator = nil;
+    }
+        else if (![UFSLoader reachable])
+    {
+        if (indicator)
+        {
+            [indicator stopAnimating];
+            indicator = nil;
+            imageForNotReachble = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icn_logo"]];
+            [imageForNotReachble setCenter:CGPointMake(self.view.center.x, (self.view.height-imageForNotReachble.height/2.0f)/2.0f)];
+            [self.view addSubview:imageForNotReachble];
+            [imageForNotReachble release];
+        }
+    }
+
+
+	// Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    customRecognizer = [[[UIPanGestureRecognizer alloc] initWithTarget:[self revealViewController] action:@selector(_handleRevealGesture:)] autorelease];
+    [self.navigationController.navigationBar addGestureRecognizer:customRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
+}
+
+-(void) viewWillDisappear:(BOOL)animated
+{
+     [self.navigationController.navigationBar removeGestureRecognizer:customRecognizer];
+    [super viewWillDisappear:animated];
+   
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    fetchedResultsController.delegate = nil;
+    SAFE_KILL(fetchedResultsController);
+    [super dealloc];
+}
+#pragma -mark TableView Delegate & DataSource
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   NSArray *contactsArr = [fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index==%d",indexPath.row]];
+    if (indexPath.row==0)
+        return 40.0f;
+    else if (indexPath.row==contactsArr.count)
+    {
+        return 48.0f;
+//        _contactsTableView.contentSize = CGSizeMake(_contactsTableView.contentSize.width, _contactsTableView.contentSize.height+5);
+    }
+    return 43.0f;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10.0f;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (fetchedResultsController.fetchedObjects.count)
+    {
+
+        NSArray *contactsArr = [fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index==%d",section]];
+//    _contactsTableView.frame =  CGRectMake(10, 0, self.view.width-20.0f, self.view.height+(contactsArr.count+1)*3);
+    return (contactsArr.count+1);
+    }
+    return 0;
+    
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    if (fetchedResultsController.fetchedObjects.count)
+    {
+        ContactsDB *lastContact = ((ContactsDB *)[fetchedResultsController.fetchedObjects objectAtIndex:fetchedResultsController.fetchedObjects.count-1]);
+      
+        return [lastContact.index intValue]+1;
+    }
+    return 0;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *cellId = [NSString stringWithFormat:@"%d %d", indexPath.row, indexPath.section];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (cell==nil)
+    {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId] autorelease];
+        
+        
+        // Configuring cell
+        
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        
+        
+        //    [cell.contentView removeAllSubviews];
+        NSArray *contactsArr = [fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index==%d",indexPath.section]];
+        contactsArr = [contactsArr sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"identifier" ascending:YES]]];
+
+        if (indexPath.row==0)
+        {
+            NSString *str =  ((ContactsDB *)[contactsArr objectAtIndex:indexPath.row]).region;
+            UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.width, 40)];
+            UIImageView *imageBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, bgView.width, 40)];
+            [imageBg setImage:[[UIImage imageNamed:@"bg_table_top_light"] stretchableImageWithLeftCapWidth:10 topCapHeight:0]];
+            [bgView addSubview:imageBg];
+            [imageBg release];
+            UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, tableView.width-20, bgView.height)];
+            [titleLable setBackgroundColor:[UIColor clearColor]];
+            [titleLable setFont:[UIFont fontWithName:@"Helvetica-Bold" size:16]];
+            [titleLable setTextColor:RGBA(3, 68, 124, 1.0f)];
+            [titleLable setText:str];
+            [bgView addSubview:titleLable];
+            [titleLable release];
+            [cell.contentView addSubview:bgView];
+            [bgView release];
+        }
+        else
+        {
+            NSInteger heigth = 43;
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            UIImageView *acces = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icn_arrow"]];
+            cell.accessoryView = acces;
+            [acces release];
+            UIImage *btnImage =  [[UIImage imageNamed:@"bg_table_middle_cell"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 10, 5, 10)];
+            if (indexPath.row==contactsArr.count)
+            {
+                btnImage = [[UIImage imageNamed:@"bg_table_medium_cell"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 12, 10, 12)];
+                heigth = 48;
+                
+            }
+            UIImageView *imageForCell = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.contactsTableView.width, heigth)];
+            [imageForCell setImage:btnImage];
+            [cell.contentView addSubview:imageForCell];
+            [imageForCell release];
+            UILabel *dateLable = [[UILabel alloc] initWithFrame:CGRectMake(30, 3, 220, 20)];
+            dateLable.text = ((ContactsDB *)[contactsArr objectAtIndex:indexPath.row-1]).city;
+            [dateLable setBackgroundColor:[UIColor clearColor]];
+            [dateLable setFont:[UIFont fontWithName:@"Helvetica" size:12]];
+            
+            [dateLable setTextColor:RGBA(142, 163, 188, 1.0f)];
+            [cell.contentView addSubview:dateLable];
+            [dateLable release];
+            
+            UILabel *nameLable = [[UILabel alloc] initWithFrame:CGRectMake(30, 17, 220, 20)];
+            nameLable.text = ((ContactsDB *)[contactsArr objectAtIndex:indexPath.row-1]).name;
+            [nameLable setBackgroundColor:[UIColor clearColor]];
+            [nameLable setFont:[UIFont fontWithName:@"Helvetica" size:15]];
+            
+            [nameLable setTextColor:RGBA(2, 69, 125, 1.0f)];
+            [cell.contentView addSubview:nameLable];
+            [nameLable release];
+        }
+    }
+    return cell;
+}
+-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *bgView = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.contactsTableView.width, 10)]autorelease];
+    [bgView setBackgroundColor:[UIColor clearColor]];
+    return bgView;
+    
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row)
+    {
+        NSArray *contactsArr = [fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index==%d",indexPath.section]];
+        contactsArr = [contactsArr sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"identifier" ascending:YES]]];
+        ContactsDB *contactObj = [contactsArr objectAtIndex:indexPath.row-1];
+        
+        /* tsv */[AnalyticsCounter eventScreens:self.titles category:contactObj.address action:nil value:nil];
+        
+        ContactDetailVC *detailVC = [[ContactDetailVC alloc] initWithContact:contactObj];
+        [self.navigationController pushViewController:detailVC animated:YES];
+        [detailVC release];
+    }
+}
+#pragma -mark FetchResult Delegate
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    if (fetchedResultsController.fetchedObjects.count)
+    {
+        if (indicator)
+        {
+            [indicator stopAnimating];
+            indicator = nil;
+        }
+        if (imageForNotReachble)
+        {
+            [imageForNotReachble removeFromSuperview];
+            imageForNotReachble=nil;
+        }
+
+    }
+    //    id object = (self.fetchedResultsController.fetchedObjects.count > 0) ? [self.fetchedResultsController.fetchedObjects objectAtIndex:0] : nil;
+    //    [menuTableView setActionDate:[(NewsDB *)object date]];
+    //    [UFSLoader requestPostMainNews:@"" CategoryId:@"" andSubCategoryId:[NSString stringWithFormat:@"%d",_subCatId] andNewsID:@""];
+    [_contactsTableView reloadData];
+    
+}
+
+
+
+- (NSFetchedResultsController *)fetchedResultsController {
+    
+    if (fetchedResultsController != nil) {
+        return fetchedResultsController;
+    }
+    
+    /*
+	 Set up the fetched results controller.
+     */
+    NSString *entityName = @"ContactsDB";
+    NSString *sortDescr = @"identifier";
+    BOOL isACS = true;
+	// Create the fetch request for the entity.
+	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+	// Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:CoreDataManager.shared.managedObjectContext];
+    
+	[fetchRequest setEntity:entity];
+	
+	// Set the batch size to a suitable number.
+	[fetchRequest setFetchBatchSize:20];
+    [fetchRequest setFetchLimit:20];
+    
+	// Sort using the timeStamp property..
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:sortDescr ascending:isACS];
+    
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor,nil];
+    
+    
+    //    NSPredicate * predicatForResult = [NSPredicate predicateWithFormat:@"%K == %d",predicateFormat,_subCatId?_subCatId:_catId];
+    [fetchRequest setPredicate : nil];
+	[fetchRequest setSortDescriptors:sortDescriptors];
+	
+    // Use the sectionIdentifier property to group into sections.
+	
+    NSFetchedResultsController *localFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:CoreDataManager.shared.managedObjectContext sectionNameKeyPath:nil  cacheName:nil];
+    localFetchedResultsController.delegate = self;
+	self.fetchedResultsController = localFetchedResultsController;
+	
+	[localFetchedResultsController release];
+	[fetchRequest release];
+	[sortDescriptor release];
+	[sortDescriptors release];
+    
+    return fetchedResultsController;
+}
+
+#pragma -mark Supported Inteface Orientation
+-(BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+   	return  (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+#pragma -mark Slide menu Delegate
+- (void)revealController:(SWRevealViewController *)revealController willMoveToPosition:(FrontViewPosition)position
+{
+    if (position == FrontViewPositionLeft)
+    {
+        [_contactsTableView setUserInteractionEnabled:YES];
+        [((UIButton *)self.navigationItem.leftBarButtonItem.customView) setImage:[UIImage imageNamed:@"icn_nav_menu"] forState:UIControlStateNormal];
+    }
+    else if (position==FrontViewPositionRight)
+    {
+        [_contactsTableView setUserInteractionEnabled:NO];
+        [((UIButton *)self.navigationItem.leftBarButtonItem.customView) setImage:[UIImage imageNamed:@"btn_nav_menu_yellow"] forState:UIControlStateNormal];
+    }
+}
+#pragma -mark Reach Methods
+- (void) reachOn: (NSNotification *)notif
+{
+    
+    
+    if (imageForNotReachble)
+    {
+        [imageForNotReachble removeFromSuperview];
+        imageForNotReachble = nil;
+    }
+    
+    if (!fetchedResultsController.fetchedObjects.count)
+    {
+        indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        indicator.color = RGBA(3, 68, 124, 1.0f);
+        //indicator.center = CGPointMake(self.view.width/2, self.view.center.y-(IS_IPHONE_5?60.0f:10.0f));
+        indicator.center = CGPointMake(self.view.width/2, self.view.height/2-indicator.frame.size.height/2);
+        
+        [self.view addSubview:indicator];
+        [indicator startAnimating];
+        [indicator release];
+        
+        [UFSLoader requestPostAuth:@"" andWidth:@""];
+        [UFSLoader requestPostContacts];
+    }
+    
+    
+}
+- (void) reachOff: (NSNotification *)notif
+{
+    NSLog(@"reach no contacts");
+    if (indicator)
+    {
+        [indicator stopAnimating];
+        indicator = nil;
+        imageForNotReachble = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icn_logo"]];
+        [imageForNotReachble setCenter:CGPointMake(self.view.center.x, (self.view.height-imageForNotReachble.height/2.0f)/2.0f)];
+        [self.view addSubview:imageForNotReachble];
+        [imageForNotReachble release];
+    }
+}
+-(void)loadFaild: (NSNotification *) notify
+{
+           if ([indicator isAnimating])
+        {
+            [indicator stopAnimating];
+            //            indicator = nil;
+        }
+        
+      NSString *messageNotify = @"Загрузка не удалась. Попробуйте позже";
+    if (((NSString *)notify.object).length)
+    {
+        messageNotify = ((NSString *)notify.object);
+        NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+        [userDef setValue:@"" forKey:kTokenForSession];
+        [userDef setValue:@(0) forKey:kTokenExpiredTime];
+        [userDef synchronize];
+    }
+    
+        if ([UFSLoader reachable])
+        {
+            UIAlertView *alertFaild = [[UIAlertView alloc] initWithTitle:@"Внимание" message:messageNotify delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alertFaild show];
+            [alertFaild release];
+            
+            [UFSLoader requestPostAuth:@"" andWidth:@""];
+            double delayInSeconds = 2.0;
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                 [UFSLoader requestPostContacts];
+            });
+        }
+        else
+        {
+            if (!fetchedResultsController.fetchedObjects.count)
+            {
+                if (!imageForNotReachble)
+                {
+                    imageForNotReachble = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icn_logo"]];
+                    [imageForNotReachble setCenter:CGPointMake(self.view.center.x, (self.view.height-imageForNotReachble.height/2.0f)/2.0f)];
+                    [self.view addSubview:imageForNotReachble];
+                    [imageForNotReachble release];
+                }
+            }
+        }
+    
+    ((UIButton *)self.navigationItem.rightBarButtonItem.customView).hidden = true;
+}
+
+@end

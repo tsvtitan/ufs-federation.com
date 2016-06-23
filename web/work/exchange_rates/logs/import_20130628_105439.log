@@ -1,0 +1,7 @@
+28.06.2013 10:54:41.235 I: --------------------------------------------------
+28.06.2013 10:54:41.538 I: Connect to Database ...
+28.06.2013 10:54:42.420 I: Connected.
+28.06.2013 10:54:42.885 I: [Mysql->query] set names utf8
+28.06.2013 10:54:58.843 I: [Mysql->query] INSERT INTO `exchange_rates` (`from_currency_id`,`from_value`,`to_currency_id`,`to_value`) VALUES ('USD','1','RUR','32.8766')
+28.06.2013 10:55:16.158 I: [Mysql->query] INSERT INTO `exchange_rates` (`from_currency_id`,`from_value`,`to_currency_id`,`to_value`) VALUES ('EUR','1','RUR','42.8349')
+28.06.2013 10:55:28.950 I: Execution time is 48.016918897629

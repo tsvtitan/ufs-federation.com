@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future
+END
+FutureRunnable.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/FutureRunnable.java
+END
+TransformFuture.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/TransformFuture.java
+END
+FutureThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/FutureThread.java
+END
+HandlerFuture.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/HandlerFuture.java
+END
+DependentCancellable.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/DependentCancellable.java
+END
+Cancellable.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/Cancellable.java
+END
+SimpleCancellable.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/SimpleCancellable.java
+END
+FutureCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/FutureCallback.java
+END
+Continuation.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/Continuation.java
+END
+SimpleFuture.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/SimpleFuture.java
+END
+Future.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/Future.java
+END
+DependentFuture.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/future/DependentFuture.java
+END

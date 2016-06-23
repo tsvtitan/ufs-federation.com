@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/mobile/!svn/ver/291/android/PREMIER
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mobile/!svn/ver/317/android/PREMIER/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/289/android/PREMIER/project.properties
+END
+PREMIER.apk
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mobile/!svn/ver/318/android/PREMIER/PREMIER.apk
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mobile/!svn/ver/289/android/PREMIER/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/mobile/!svn/ver/289/android/PREMIER/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mobile/!svn/ver/289/android/PREMIER/.classpath
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio
+END
+ConnectCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/ConnectCallback.java
+END
+EventCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/EventCallback.java
+END
+ErrorCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/ErrorCallback.java
+END
+JSONCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/JSONCallback.java
+END
+Acknowledge.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/Acknowledge.java
+END
+ReconnectCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/ReconnectCallback.java
+END
+SocketIOConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/SocketIOConnection.java
+END
+SocketIOException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/SocketIOException.java
+END
+StringCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/StringCallback.java
+END
+SocketIORequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/SocketIORequest.java
+END
+SocketIOClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/SocketIOClient.java
+END
+EventEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/EventEmitter.java
+END
+ExceptionCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/ExceptionCallback.java
+END
+DisconnectCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/DisconnectCallback.java
+END

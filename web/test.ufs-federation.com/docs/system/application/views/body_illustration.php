@@ -1,0 +1,1 @@
+<div class="illustration" style="background-image: url(<? echo($this->base_url.'/img/'.(isset($img)?$img:'body-illustration-3.jpg')); ?>)"><div class="fd"></div></div>

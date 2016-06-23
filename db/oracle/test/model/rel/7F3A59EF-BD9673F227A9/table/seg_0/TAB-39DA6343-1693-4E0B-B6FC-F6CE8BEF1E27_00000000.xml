@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="TAB-39DA6343-1693-4E0B-B6FC-F6CE8BEF1E27_00000000" name="DIRS">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ENT-39DA6343-1693-4E0B-B6FC-F6CE8BEF1E27_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DIR_ID" id="COL-802928E6-4348-47C5-9371-C878098B298B_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-802928E6-4348-47C5-9371-C878098B298B_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-A80A7B77-90F5-43C1-8EA1-F92A49D62B7D_00000000" referredColumn="COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000"/>
+</associations>
+</Column>
+<Column name="DESCRIPTION" id="COL-692BD8F0-5652-4718-95D0-76752434712B_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-692BD8F0-5652-4718-95D0-76752434712B_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION" id="COL-57E2D8BA-CC58-4F8A-946D-ED5F851C9D5C_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-57E2D8BA-CC58-4F8A-946D-ED5F851C9D5C_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="XPK-5B8A8C53-5653-418D-9B13-69B0DE5EDD76_00000000" name="XPKДиректории">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>CKY-5B8A8C53-5653-418D-9B13-69B0DE5EDD76_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-802928E6-4348-47C5-9371-C878098B298B_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DADE48D2-5182-226A-96FB-2DA53F5C3593" name="R/57">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-A80A7B77-90F5-43C1-8EA1-F92A49D62B7D_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-802928E6-4348-47C5-9371-C878098B298B_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+  <jdbc-resource enabled="true" jndi-name="jdbc/work" object-type="user" pool-name="WorkPool"/>
+  <jdbc-connection-pool allow-non-component-callers="false" 
+                        associate-with-thread="false" 
+                        connection-creation-retry-attempts="0" 
+                        connection-creation-retry-interval-in-seconds="10" 
+                        connection-leak-reclaim="false" 
+                        connection-leak-timeout-in-seconds="0" 
+                        connection-validation-method="auto-commit" 
+                        datasource-classname="oracle.jdbc.pool.OracleDataSource" 
+                        fail-all-connections="false" 
+                        is-connection-validation-required="false" 
+                        is-isolation-level-guaranteed="true" 
+                        lazy-connection-association="false" 
+                        lazy-connection-enlistment="false" 
+                        match-connections="false" 
+                        name="WorkPool" 
+                        non-transactional-connections="false" 
+                        ping="false" 
+                        pooling="true" 
+                        res-type="javax.sql.DataSource" 
+                        statement-cache-size="0" 
+                        statement-leak-reclaim="false" 
+                        statement-leak-timeout-in-seconds="0" 
+                        statement-timeout-in-seconds="-1" 
+                        steady-pool-size="8" 
+                        idle-timeout-in-seconds="15"
+                        max-wait-time-in-millis="60000"
+                        max-connection-usage-count="0" 
+                        max-pool-size="128"
+                        pool-resize-quantity="1"
+                        validate-atmost-once-period-in-seconds="0" 
+                        wrap-jdbc-objects="false">
+    <property name="URL" value="jdbc:oracle:thin:@//db1:1521/test"/>
+    <property name="User" value="ufs"/>
+    <property name="Password" value="XIqGeug9"/>
+  </jdbc-connection-pool>
+  <jdbc-resource enabled="true" jndi-name="jdbc/www" object-type="user" pool-name="WWWPool"/>
+  <jdbc-connection-pool validation-table-name="DUAL" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" res-type="javax.sql.DataSource" name="WWWPool" is-connection-validation-required="true" transaction-isolation-level="read-committed">
+    <property name="URL" value="jdbc:mysql://test/ufs-federation.com"/>
+    <property name="User" value="ufs"/>
+    <property name="Password" value="XIqGeug9"/>
+    <property name="useUnicode" value="true"/>
+    <property name="characterSetResults" value="UTF-8"/>
+    <property name="characterEncoding" value="UTF-8"/>
+  </jdbc-connection-pool>
+  <custom-resource enabled="true" jndi-name="MobileGate" res-type="java.util.Properties" factory-class="org.glassfish.resources.custom.factory.PropertiesFactory">
+    <property name="MessageGate.Jndi" value="java:global/MessageGate/MessageGate!ufsic.gates.IMessageGateRemote"/>
+    <property name="MessageGate.Host" value="localhost"/>
+    <property name="MessageGate.Port" value="3700"/>
+    <property name="Provider.Jndi" value="jdbc/work"/>
+    <property name="Provider.Class" value="ufsic.providers.OracleProvider"/>
+    <property name="Server.Name" value="UFS IC Application Server"/>
+    <property name="Application.Id" value="MobileGate"/>
+    <property name="Scheme.DefaultDir" value="/Users/tsv/Projects/web/ufs-federation.com/MobileGate/files"/>
+    <property name="Scheme.HtmlDir" value="/Users/tsv/Projects/web/ufs-federation.com/Website/files/default"/>
+    <property name="Scheme.CssDir" value="/Users/tsv/Projects/web/ufs-federation.com/Website/files/default/css"/>
+    <property name="Scheme.JsDir" value="/Users/tsv/Projects/web/ufs-federation.com/Website/files/default/js"/>
+    <property name="Scheme.TemplateDir" value="/Users/tsv/Projects/web/ufs-federation.com/Website/files/default/templates"/>
+    <property name="Scheme.PatternDir" value="/Users/tsv/Projects/web/ufs-federation.com/Website/files/default/patterns"/>
+    <property name="Logger.Output" value="browser"/>
+    <property name="Token.Timeout" value="86400"/>
+    <property name="BaseHandler.FilesPath" value="/files"/>
+    <property name="BaseHandler.DefaultLocation" value="/Volumes/www/ufs-federation.com/docs"/>
+    <property name="BaseHandler.WWWProvider.Jndi" value="jdbc/www"/>
+    <property name="BaseHandler.MaxCacheSize" value="1048576"/>
+    <property name="AuthHandler.DefaultMenuId" value="34"/>
+    <property name="AuthHandler.DefaultMenuDelay" value="1500"/>
+    <property name="AuthHandler.UfsMenuId" value="30"/>
+    <property name="AuthHandler.PremierMenuId" value="3"/>
+    <property name="PromotionHandler.Email" value="digital@ufs-federation.com"/>
+  </custom-resource>
+</resources>

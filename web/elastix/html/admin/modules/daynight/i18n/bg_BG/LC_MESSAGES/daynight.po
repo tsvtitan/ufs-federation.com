@@ -1,0 +1,218 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2008 Chavdar Iliev <chavdar_75@yahoo.com>
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX v2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-26 07:00+0200\n"
+"PO-Revision-Date: 2008-11-05 14:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:153
+#, php-format
+msgid "Day/Night (%s) : %s"
+msgstr "Ден/Нощ (%s) : %s"
+
+#: functions.inc.php:434
+#, php-format
+msgid "Daynight: %s (%s)"
+msgstr "Ден/нощ: %s (%s)"
+
+#: functions.inc.php:542
+msgid "Day/Night Mode Association"
+msgstr "Дневен/Нощен Режим Асоцииране"
+
+#: functions.inc.php:546
+msgid "Associate with"
+msgstr "Асоциирай с"
+
+#: functions.inc.php:546
+msgid ""
+"If a selection is made, this timecondition will be associated with that "
+"featurecode and will allow this timecondition to be direct overridden by that "
+"daynight mode featurecode"
+msgstr ""
+"Ако е направен избор, това времево условие ще бъде асоциирано с този "
+"специален код и ще позволи на времевото условие да бъде директно отменено от "
+"специалния код за дневен/нощен режим."
+
+#: functions.inc.php:551
+msgid "No Association"
+msgstr "Без Асоциация"
+
+#: functions.inc.php:554
+msgid " - Force Day"
+msgstr " - Включи Дневен"
+
+#: functions.inc.php:556
+msgid " - Force Night"
+msgstr " - Включи Нощен"
+
+#: install.php:74
+msgid "changing primary keys to all fields.."
+msgstr "промяна на primary keys за всички полета.."
+
+#: install.php:78
+msgid "ERROR: failed to alter primary keys "
+msgstr "Грешка: не мога да променя primary keys "
+
+#: install.php:80
+msgid "OK"
+msgstr "OK"
+
+#: page.daynight.php:33
+msgid "Add Day/Night Code"
+msgstr "Добави Ден/Нощ Код"
+
+#: page.daynight.php:86
+msgid "Day / Night Mode Control"
+msgstr "Управление на Дневен/Нощен Режим"
+
+#: page.daynight.php:90
+#, php-format
+msgid "Delete Day/Night Feature Code %s"
+msgstr "Изтрий Ден/Нощ Специален Код %s"
+
+#: page.daynight.php:105
+msgid "Forces to Day  Mode"
+msgstr "Включва на Дневен Режим"
+
+#: page.daynight.php:105
+msgid "Forces to Night Mode"
+msgstr "Включва на Нощен Режим"
+
+#: page.daynight.php:108
+#, php-format
+msgid "Linked to Time Condition %s - %s"
+msgstr "Свързан към Времева Група %s - %s"
+
+#: page.daynight.php:127 page.daynight.php:240
+msgid "Save"
+msgstr "Запис"
+
+#: page.daynight.php:128 page.daynight.php:241
+#, php-format
+msgid "Use feature code: %s to toggle DAY/NIGHT mode"
+msgstr "Използвайте специален код: %s за да включите Режима"
+
+#: page.daynight.php:137
+msgid "Day/Night Feature Code Index:"
+msgstr "Специален Код Индекс:"
+
+#: page.daynight.php:138
+msgid ""
+"There are a total of 10 Feature code objects, 0-9, each can control a call "
+"flow and be toggled using the day/night feature code plus the index."
+msgstr ""
+"Има общо 10 значения на Специален Код, 0-9, всяко от тях може да контролира "
+"потока разговори и се превключва използвайки ден/нощ специален код плюс "
+"индекса."
+
+#: page.daynight.php:163
+msgid "Description"
+msgstr "Описание"
+
+#: page.daynight.php:163
+msgid "Description for this Day/Night Control"
+msgstr "Описание за Дневен/Нощен Режим"
+
+#: page.daynight.php:168
+msgid "Current Mode:"
+msgstr "Текущ Режим:"
+
+#: page.daynight.php:169
+msgid ""
+"This will change the current state for this Day/Night Mode Control, or set "
+"the initial state when creating a new one."
+msgstr ""
+"Това ще промени текущото състояние на Управление на Дневен/Нощен Режим, или "
+"ще установи пъроначално състояние когато създавате нов."
+
+#: page.daynight.php:174
+msgid "Day"
+msgstr "Ден"
+
+#: page.daynight.php:175
+msgid "Night"
+msgstr "Нощ"
+
+#: page.daynight.php:182
+msgid "Recording for Day Mode"
+msgstr ""
+
+#: page.daynight.php:182 page.daynight.php:199
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU to the left"
+msgstr ""
+
+#: page.daynight.php:188 page.daynight.php:204
+msgid "Default"
+msgstr ""
+
+#: page.daynight.php:199
+msgid "Recording for Night Mode"
+msgstr ""
+
+#: page.daynight.php:218
+msgid "Optional Password"
+msgstr "Парола"
+
+#: page.daynight.php:218
+msgid ""
+"You can optionally include a password to authenticate before toggling the "
+"day/night mode. If left blank anyone can use the feature code and it will be "
+"un-protected"
+msgstr ""
+"Допълнително можете да добавите парола за оторизиране преди превключване на "
+"режима. Ако е оставено празно всеки ще може да използва специалния код и ще "
+"е незащитено."
+
+#: page.daynight.php:232
+msgid "DAY"
+msgstr "ДНЕВЕН"
+
+#: page.daynight.php:233
+msgid "NIGHT"
+msgstr "НОЩЕН"
+
+#: page.daynight.php:256
+msgid "Please enter a valid numeric password, only numbers are allowed"
+msgstr "Моля въведете правилна цифрова парола, само цифри са позволени"
+
+#: page.daynight.php:278
+#, php-format
+msgid "Destination to use when set to %s mode"
+msgstr "Направление, което да се използва при %s режим"
+
+#: module.xml
+msgid "Day Night Mode"
+msgstr "Дневен Нощен Режим"
+
+#: module.xml
+msgid "Day/Night Control"
+msgstr "Дневен/Нощен Режим"

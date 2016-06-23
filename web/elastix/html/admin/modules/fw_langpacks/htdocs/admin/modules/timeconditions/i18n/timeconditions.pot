@@ -1,0 +1,250 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for timeconditions
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, php-format
+msgid "Time Condition: %s"
+msgstr ""
+
+msgid "Description must be alpha-numeric, and may not be left blank"
+msgstr ""
+
+msgid "Time Group"
+msgstr ""
+
+msgid " deleted!"
+msgstr ""
+
+msgid "Add Time Group"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "This will display as the name of this Time Group."
+msgstr ""
+
+msgid "Edit Time Group"
+msgstr ""
+
+#, php-format
+msgid "Delete Time Group %s"
+msgstr ""
+
+msgid "Used By"
+msgstr ""
+
+msgid "New Time"
+msgstr ""
+
+msgid "--Select a Group--"
+msgstr ""
+
+msgid "text"
+msgstr ""
+
+msgid "Time to start:"
+msgstr ""
+
+msgid "Time to finish:"
+msgstr ""
+
+msgid "Week Day Start:"
+msgstr ""
+
+msgid "Monday"
+msgstr ""
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+msgid "Friday"
+msgstr ""
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Sunday"
+msgstr ""
+
+msgid "Week Day finish:"
+msgstr ""
+
+msgid "Month Day start:"
+msgstr ""
+
+msgid "Month Day finish:"
+msgstr ""
+
+msgid "Month start:"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "June"
+msgstr ""
+
+msgid "July"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Month finish:"
+msgstr ""
+
+msgid "converting timeconditions time field to int.."
+msgstr ""
+
+msgid "ERROR: failed to convert field "
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Checking for old timeconditions to upgrade.."
+msgstr ""
+
+msgid "starting migration"
+msgstr ""
+
+#, php-format
+msgid "Upgraded %s and created group %s"
+msgstr ""
+
+#, php-format
+msgid "%sWARNING:%s No time defined for this condition, please review"
+msgstr ""
+
+msgid "no upgrade needed"
+msgstr ""
+
+msgid "Add Time Condition"
+msgstr ""
+
+msgid "Time Condition"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+msgid "Time Condition:"
+msgstr ""
+
+#, php-format
+msgid "Delete Time Condition: %s"
+msgstr ""
+
+msgid "Edit Time Condition"
+msgstr ""
+
+msgid "Time Condition name:"
+msgstr ""
+
+msgid "Give this Time Condition a brief name to help you identify it."
+msgstr ""
+
+msgid "Time Group:"
+msgstr ""
+
+msgid ""
+"Select a Time Group created under Time Groups. Matching times will be sent "
+"to matching destination. If no group is selected, call will always go to no-"
+"match destination."
+msgstr ""
+
+msgid "Goto Current Time Group"
+msgstr ""
+
+msgid "Destination if time matches"
+msgstr ""
+
+msgid "Destination if time does not match"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Please enter a valid Time Conditions Name"
+msgstr ""
+
+msgid ""
+"You have not selected a time group to associate with this timecondition. It "
+"will go to the un-matching destination until you update it with a valid group"
+msgstr ""
+
+msgid "Server time:"
+msgstr ""
+
+msgid "Time Conditions"
+msgstr ""
+
+msgid "Inbound Call Control"
+msgstr ""
+
+msgid ""
+"Creates a condition where calls will go to one of two destinations (eg, an "
+"extension, IVR, ring group..) based on the time and/or date. This can be "
+"used for example to ring a receptionist during the day, or go directly to an "
+"IVR at night."
+msgstr ""
+
+msgid "Time Groups"
+msgstr ""

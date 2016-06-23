@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion
+END
+ScaleMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/ScaleMode.java
+END
+DefaultTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/DefaultTransform.java
+END
+HeadersCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/HeadersCallback.java
+END
+InputStreamParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/InputStreamParser.java
+END
+LoadBitmapRegion.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/LoadBitmapRegion.java
+END
+Ion.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/Ion.java
+END
+RequestBodyUploadObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/RequestBodyUploadObserver.java
+END
+BitmapInfoToBitmap.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/BitmapInfoToBitmap.java
+END
+LoadBitmapBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/LoadBitmapBase.java
+END
+IonDrawable.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/IonDrawable.java
+END
+LoadDeepZoom.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/LoadDeepZoom.java
+END
+IonBitmapRequestBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/IonBitmapRequestBuilder.java
+END
+Response.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/Response.java
+END
+ContextReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/ContextReference.java
+END
+IonLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/IonLog.java
+END
+TransformBitmap.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/TransformBitmap.java
+END
+FileCacheStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/FileCacheStore.java
+END
+LoadBitmapEmitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/LoadBitmapEmitter.java
+END
+BitmapFetcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/BitmapFetcher.java
+END
+LoadBitmap.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/LoadBitmap.java
+END
+IonRequestBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/IonRequestBuilder.java
+END
+BitmapCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/BitmapCallback.java
+END
+DeferredLoadBitmap.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/DeferredLoadBitmap.java
+END
+Loader.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/Loader.java
+END
+ProgressCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/ProgressCallback.java
+END

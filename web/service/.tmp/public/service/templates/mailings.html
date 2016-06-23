@@ -1,0 +1,160 @@
+<div data-ng-controller="mailings">
+  
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="mailings center-block">
+       
+        <div class="row list-header flip-in-x-flip-out-x " data-ng-hide="state.hide">
+          <div class="col-xs-12 col-sm-6 vertical-align">
+            <h2>{{ dic('All mailings') }}</h2>
+          </div> 
+          <div class="col-xs-12 col-sm-6 text-right">  
+            <form class="form-inline pull-right">
+              <input type="text" class="form-control search" placeholder="{{ dic('Search string') }}" data-ng-model="search">
+              <button type="button" class="btn btn-default" data-ng-click="new()">
+                {{ dic('New') }}&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="fade-in-up-fade-out" data-ng-hide="state.hide">
+          
+          <accordion data-ng-repeat="(k,m) in mailings | filter:search">
+            <accordion-group is-open="m.open" data-ng-class="(m.allCount==m.sentCount)?'panel-success':(m.canceled)?'panel-danger':'panel-default'">
+
+              <accordion-heading>
+                <div class="row zoom-in-fade-out">
+                  <div class="col-xs-6 col-sm-7">
+                    <div class="hide-overflow">
+                      <span class="text-center" data-ng-class="(m.active && !m.canceled)?((!m.suspended)?'fa fa-refresh fa-spin fa-fw margin-bottom':'glyphicon glyphicon-pause'):'glyphicon glyphicon-envelope'"></span>
+                      &nbsp;{{ (m.subject)?m.subject:dic('Empty subject') }}
+                    </div>  
+                  </div>    
+                  <div class="col-xs-4 col-sm-4">
+                    <progressbar class="progress-striped" value="progress(m)" max="100" type="success" data-ng-class="{'active':!m.suspended}" data-ng-show="m.time>0 && m.active && !m.canceled && m.allCount>1"><i>{{progress(m)}}%</i></progressbar>
+                    <span class="badge alert-default pull-right" tooltip-placement="bottom" tooltip="{{ dic('Sent') }}" data-ng-show="(!m.active || m.canceled) && m.sentCount>0">{{ m.sentCount }}</span>
+                  </div>
+                  <div class="col-xs-2 col-sm-1">
+                    <i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-down': m.open, 'glyphicon-chevron-right': !m.open}"></i>
+                  </div>  
+                </div>  
+              </accordion-heading>
+
+              <div data-ng-init="m.recipientsCollapsed=true">
+                
+                <div class="row-fluid fade-in-fade-out">
+                  
+                  <div class="col-xs-7 col-sm-10">
+                    <ul class="nav nav-pills nav-stacked" role="tablist">
+                      <li role="presentation" class="li-sender hide-overflow"><h4><span class="label label-default">{{ (m.sender.name)?m.sender.name:dic('Not specified') }}</span></h4></li>
+                      <li role="presentation" class="hide-overflow"><span class="label label-info">{{ humanDateTime(m.created,'HH:mm:ss YYYY-MM-DD') }}</span>&nbsp;<span class="label label-primary">{{ m.creator }}</span></li>
+                      <li role="presentation" class="li-recipients hide-overflow">
+                        <button class="btn btn-xs btn-recipients" data-ng-class="m.recipientsCollapsed?'btn-default':'btn-danger'" ladda="m.recipientsGetting" data-style="zoom-in"
+                                data-ng-disabled="m.recipientCount==0" data-ng-click="recipientsShow(m)">{{ dic('Recipients') }}&nbsp;<span class="badge">{{ m.recipientCount }}</span></button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-xs-5 col-sm-2 fade-in-fade-out">
+                    <ul class="nav nav-pills nav-stacked pull-right" role="tablist">
+                      <li role="presentation" class="text-center"><span class="badge" data-ng-class="(m.time<0)?'alert-danger':(m.active?'alert-success':'alert-info')" 
+                                                                        tooltip-placement="bottom" tooltip="{{ dic('Time') }}">{{ humanTime(m) }}</span></li>
+                      <li role="presentation" class="text-center">
+                        <div class="btn-group btn-group-sm" role="group">
+                          <!--<button type="button" class="btn btn-default" ladda="m.canceling" data-style="slide-right" 
+                                  tooltip-placement="bottom" tooltip="{{ dic('Cancel') }}" tooltip-trigger="mouseenter"
+                                  data-ng-click="cancel(m)" data-ng-disabled="!m.active || m.canceled">
+                            <span class="glyphicon glyphicon-stop"></span>
+                          </button>
+                          <button type="button" class="btn btn-default" ladda="m.suspending" data-style="slide-right" 
+                                  tooltip-placement="bottom" tooltip="{{ (m.suspended)?dic('Resume'):dic('Suspend') }}" tooltip-trigger="mouseenter"
+                                  data-ng-click="suspendOrResume(m)" data-ng-disabled="!m.active || m.canceled">
+                            <span class="glyphicon" data-ng-class="(!m.suspended)?'glyphicon-pause':'glyphicon-play'"></span>
+                          </button>-->
+                          <button type="button" class="btn btn-default" ladda="m.canceling" data-style="zoom-in"
+                                  data-ng-click="cancel(m)" data-ng-disabled="!m.active || m.canceled">
+                            <span class="glyphicon glyphicon-stop"></span>
+                          </button>
+                          <button type="button" class="btn btn-default" ladda="m.suspending" data-style="zoom-in"
+                                  data-ng-click="suspendOrResume(m)" data-ng-disabled="!m.active || m.canceled">
+                            <span class="glyphicon" data-ng-class="(!m.suspended)?'glyphicon-pause':'glyphicon-play'"></span>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+                <div class="row-fluid fade-in-fade-out">
+                  <div class="col-xs-12 col-sm-12" collapse="m.recipientsCollapsed">
+                    <div class="bs-callout bs-callout-danger fade-in-fade-out">
+                      <ul class="list-group no-margin">
+                        <li class="list-group-item hide-overflow" data-ng-repeat="(k,r) in m.recipients">
+                          {{ r.contact+((r.name)?' ('+r.name+')':'') }}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
+              </div>  
+
+              <div class="row-fluid fade-in-fade-out" data-ng-init="m.bodyCollapsed=true; attachmentsCollapsed=true; keywordsCollapsed=true; headersCollapsed=true">
+                <div class="col-xs-12 col-sm-12">
+                  <button class="btn btn-xs btn-extra" data-ng-class="m.bodyCollapsed?'btn-default':'btn-primary'" ladda="m.bodyGetting" data-style="zoom-in"
+                          data-ng-disabled="!m.bodyExists" data-ng-click="bodyShow(m)">{{ dic('Body') }}</button>
+                  <button class="btn btn-xs btn-extra" data-ng-class="attachmentsCollapsed?'btn-default':'btn-success'" 
+                          data-ng-disabled="arrayEmpty(m.attachments)" data-ng-click="attachmentsCollapsed=!attachmentsCollapsed">{{ dic('Attachments') }}&nbsp;<span class="badge">{{ (m.attachments)?m.attachments.length:'' }}</span></button>
+                  <button class="btn btn-xs btn-extra" data-ng-class="keywordsCollapsed?'btn-default':'btn-info'" 
+                          data-ng-disabled="arrayEmpty(m.keywords)" data-ng-click="keywordsCollapsed=!keywordsCollapsed">{{ dic('Keywords') }}&nbsp;<span class="badge">{{ (m.keywords)?m.keywords.length:'' }}</span></button>
+                  <button class="btn btn-xs btn-extra" data-ng-class="headersCollapsed?'btn-default':'btn-warning'" 
+                          data-ng-disabled="arrayEmpty(m.headers)" data-ng-click="headersCollapsed=!headersCollapsed">{{ dic('Headers') }}&nbsp;<span class="badge">{{ (m.headers)?m.headers.length:'' }}</span></button>
+                  <div collapse="m.bodyCollapsed">
+                    <div class="bs-callout bs-callout-primary fade-in-fade-out">
+                      <div class="scrollbox" data-ng-bind-html="humanBody(m)"></div>
+                    </div>
+                  </div>
+                  <div collapse="attachmentsCollapsed">
+                    <div class="bs-callout bs-callout-success fade-in-fade-out">
+                      <ul class="list-group no-margin">
+                        <li class="list-group-item" data-ng-repeat="(k,a) in m.attachments">
+                          <span class="badge">{{ humanSize(a.size) }}</span>
+                          <a data-ng-href="/service/mailings/{{m.id}}/attachments/{{a.id}}">{{ a.name+((a.extension)?'.'+a.extension:'') }}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div collapse="keywordsCollapsed">
+                    <div class="bs-callout bs-callout-info fade-in-fade-out">
+                      {{ m.keywords.join(', ') }}
+                    </div>
+                  </div>
+                  <div collapse="headersCollapsed">
+                    <div class="bs-callout bs-callout-warning fade-in-fade-out">
+                      <ul class="list-group no-margin">
+                        <li class="list-group-item" data-ng-repeat="(k,h) in m.headers">
+                          <b>{{ h.name }}:</b>&nbsp{{ h.value }}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+
+            </accordion-group>
+          </accordion>
+   
+          <div data-ng-show="all.length>0">
+            <pagination class="pagination-sm pull-right" total-items="filtered.length" items-per-page="limit" max-size="3" rotate="false"
+                        previous-text="{{ dic('Previous') }}" next-text="{{ dic('Next') }}"
+                        data-ng-model="page" data-ng-change="pageChange()"></pagination>
+          </div>
+        </div>  
+
+      </div>  
+     
+    </div>
+  </div>  
+</div>

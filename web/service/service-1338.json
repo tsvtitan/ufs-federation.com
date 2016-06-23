@@ -1,0 +1,16 @@
+{
+  "apps": [{
+   
+    "name": "service-1338",
+    "script": "/Users/tsv/Projects/web/service/app.js",
+    "instances": 1,
+    "max_memory_restart": "200M",
+    "merge_logs": true,
+    "exec_mode": "cluster_mode",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": 1338,
+      "GRUNT": false
+    }
+  }]
+}

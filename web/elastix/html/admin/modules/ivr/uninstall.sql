@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS ivr;
+DROP TABLE IF EXISTS ivr_dests;

@@ -1,0 +1,37 @@
+<module>
+	<rawname>pinsets</rawname>
+	<name>PIN Sets</name>
+	<version>2.8.0.5</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<description>Allow creation of lists of PINs (numbers for passwords) that can be used by other modules (eg, trunks).</description>
+	<changelog>
+		*2.8.0.5* #4431
+		*2.8.0.4* localization updates
+		*2.8.0.3* #4197
+		*2.8.0.2* #4141
+		*2.8.0.1* #4131
+		*2.8.0.0* #4124 (#4110)
+		*2.7.0.0* localizations
+		*2.6.0.0* misc
+		*2.5.0.1* #3240, #3258
+		*2.5.0* #2845, #2764 tabindex
+		*2.4.0.1* #2843 Russian Translation
+		*2.4.0* bump for 2.4
+		*1.2.3* #2393 add support for pinless dialing
+		*1.2.2.2* #2172 deprecated use of |
+		*1.2.2.1* bump for rc1
+		*1.2.2* Put None label in menu hook
+		*1.2.1* #1770 added proper uninstall
+		*1.2* Add SQLite3 support, fixes http://freepbx.org/trac/ticket/1778
+		*1.1* Add he_IL translation, add naftali5's fixes where pinsets were being lost when moved around.
+		*1.0.11* Stop potential error where a random pinset is appearing when creating a new trunk
+	</changelog>
+	<menuitems>
+		<pinsets>PIN Sets</pinsets>
+	</menuitems>
+	<location>release/2.8/pinsets-2.8.0.4.tgz</location>
+	<md5sum>1e443da60aa3397e1603863d83d3419d</md5sum>
+</module>

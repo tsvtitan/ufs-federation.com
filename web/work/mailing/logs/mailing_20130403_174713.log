@@ -1,0 +1,18 @@
+03.04.2013 17:47:13.863 I: --------------------------------------------------
+03.04.2013 17:47:13.867 I: Connect to Database ...
+03.04.2013 17:47:13.878 I: Connected.
+03.04.2013 17:47:13.879 I: [Mysql->query] set names utf8
+03.04.2013 17:47:15.692 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+03.04.2013 17:47:15.907 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL);
+03.04.2013 17:47:23.661 I: [Mysql->query] SELECT remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+03.04.2013 17:48:26.904 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+03.04.2013 17:48:43.906 I: There are 1 patterns.
+03.04.2013 17:49:33.604 I: Process pattern NULL / 1 emails.
+03.04.2013 17:49:38.650 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id IS NULL ORDER BY created, priority LIMIT 0,10
+03.04.2013 17:49:54.627 I: There are 1 emails. Sending ...
+03.04.2013 17:51:17.538 I: Mailing 1184 has transferred successfully at ...
+03.04.2013 17:51:19.696 I: [Mysql->query] UPDATE `mailing` SET `remote_id`=NULL,`transferred`=CURRENT_TIMESTAMP,`sent`=NULL,`result`=NULL WHERE `mailing_id`='1184'
+03.04.2013 17:51:19.699 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+03.04.2013 17:51:22.075 I: Mailing 1184 has updated successfully ...
+03.04.2013 17:51:23.489 I: MaxCounter=10 Counter=10
+03.04.2013 17:51:25.397 I: Execution time is 251.5340089798

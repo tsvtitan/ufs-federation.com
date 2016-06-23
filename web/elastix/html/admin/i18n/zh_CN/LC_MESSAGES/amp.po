@@ -1,0 +1,3367 @@
+# This file is part of FreePBX.
+#
+#   This file is distributed under the same license as the PACKAGE package.
+#   FreePBX is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 2 of the License, or
+#   (at your option) any later version.
+#
+#   FreePBX is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+#
+# This is a pot file for creating new languages.
+# Copyright (C) 2008 EdwardBadBoy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-27 12:16+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Please select a valid destination."
+msgstr ""
+
+msgid "Internal Options & Configuration"
+msgstr "内部选项和配置"
+
+msgid "Inbound Call Control"
+msgstr "入局呼叫控制"
+
+msgid "Module Admin"
+msgstr "模块管理"
+
+msgid "System Administration"
+msgstr "系统管理"
+
+msgid "Third Party Addon"
+msgstr "第三方插件"
+
+msgid "Tools"
+msgstr "工具"
+
+msgid "Setup"
+msgstr "设置"
+
+msgid "Call Cost"
+msgstr "呼叫费用"
+
+msgid "** MISSING FEATURE CODE **"
+msgstr "** 功能代码丢失 **"
+
+#, php-format
+msgid "Cronmanager encountered %s Errors"
+msgstr "Cronmanager遇到了 %s 个错误"
+
+msgid "The following commands failed with the listed error"
+msgstr "由于所列出的错误，以下命令执行失败"
+
+#, php-format
+msgid "Missing or unreadable config file (%s)...cannot continue"
+msgstr "配置文件（%s）丢失或读取失败，无法继续"
+
+msgid "Objects"
+msgstr "对象"
+
+msgid "Object"
+msgstr "对象"
+
+#, php-format
+msgid "Used as Destination by %s %s"
+msgstr "由 %s %s 用作目的地"
+
+msgid "Trace Back"
+msgstr ""
+
+#, php-format
+msgid "Exit code was %s and output was: %s"
+msgstr "退出码为 %s ，输出为：%s"
+
+#, php-format
+msgid "Could not run %s script."
+msgstr "无法运行 %s 脚本。"
+
+#, php-format
+msgid "Reload failed because retrieve_conf encountered an error: %s"
+msgstr "由于retrieve_conf函数遇到了 %s 错误，重启失败"
+
+msgid "retrieve_conf failed, config not applied"
+msgstr "retrieve_conf 函数执行失败，配置未生效"
+
+msgid ""
+"Reload failed because FreePBX could not connect to the asterisk manager "
+"interface."
+msgstr "由于FreePBX无法连接到Asterisk管理器，重启失败。"
+
+msgid "Successfully reloaded"
+msgstr "重启成功"
+
+msgid ""
+"Could not reload the FOP operator panel server using the bounce_op.sh "
+"script. Configuration changes may not be reflected in the panel display."
+msgstr ""
+"无法用 bounce_op.sh 脚本重启FOP面板服务器程序。配置更改无法在面板上显示。"
+
+msgid "Could not reload FOP server"
+msgstr "无法重启FOP服务器"
+
+msgid ""
+"Successful reload, but could not clear reload flag due to a database error: "
+msgstr "重启成功，但是由于数据库发生错误，无法清除重启标志："
+
+msgid "Add"
+msgstr "添加"
+
+msgid "choose one"
+msgstr ""
+
+msgid "Terminate Call"
+msgstr "结束呼叫"
+
+msgid "description"
+msgstr "描述"
+
+msgid ""
+"The following new modules are available for download. Click delete icon on "
+"the right to remove this notice."
+msgstr "现在提供了以下的新模块的下载。点击右侧的“删除”图标可以隐藏本提示。"
+
+#, php-format
+msgid "%s New modules are available"
+msgstr "%s 个新模块可用"
+
+msgid "There is 1 module available for online upgrade"
+msgstr "现在有1个模块可以进行在线更新"
+
+#, php-format
+msgid "There are %s modules available for online upgrades"
+msgstr "现在有 %s 个模块可以进行在线更新"
+
+#, php-format
+msgid "%s (current: %s)"
+msgstr "%s （当前：%s）"
+
+#, php-format
+msgid "PHP Component %s is required but missing from you PHP installation."
+msgstr ""
+
+#, php-format
+msgid ""
+"PHP Component %s version %s is required but missing from you PHP "
+"installation."
+msgstr ""
+
+#, php-format
+msgid "Module %s is required, but yours is broken. You should reinstall "
+msgstr "需要模块 %s ，但此模块已损坏。请重新安装它。并再试一次。"
+
+#, php-format
+msgid "it and try again."
+msgstr "重试"
+
+#, php-format
+msgid "Module %s is required, but yours is disabled."
+msgstr "需要模块 %s ，但此模块已被禁用。"
+
+#, php-format
+msgid "Module %s is required, but yours is disabled because it needs to "
+msgstr "需要模块 %s ，但此模块已被禁用。"
+
+#, php-format
+msgid "be upgraded. Please upgrade %s first, and then try again."
+msgstr "原因是该模块需要升级。请先为 %s 升级，然后再试一次。"
+
+#, php-format
+msgid "Module %s is required, yours is not installed."
+msgstr "需要模块 %s ，但此模块尚未安装。"
+
+#, php-format
+msgid "Module %s is required."
+msgstr "需要模块 %s 。"
+
+#, php-format
+msgid "File %s must exist."
+msgstr "文件 %s 必须存在。"
+
+#, php-format
+msgid "Requires engine %s, you have: %s"
+msgstr "需要引擎 %s ，已安装的是： %s"
+
+#, php-format
+msgid "Requires one of the following engines: %s; you have: %s"
+msgstr "需要以下的任一引擎： %s ，你安装的是： %s"
+
+#, php-format
+msgid "A %s version below %s is required, you have %s"
+msgstr "需要一个 %s ，并且要求它比版本 %s 旧，你安装的是： %s"
+
+#, php-format
+msgid "%s version %s or below is required, you have %s"
+msgstr "需要 %s （版本为%s）或更低版本，你安装的是： %s "
+
+#, php-format
+msgid "A %s version newer than %s required, you have %s"
+msgstr "需要一个 %s ，并且要求它比版本 %s 新，你安装的是： %s"
+
+#, php-format
+msgid "Your %s version (%s) is incompatible."
+msgstr "你安装的 %s （版本为%s）不被兼容。"
+
+#, php-format
+msgid "Only %s version %s is compatible, you have %s"
+msgstr "只兼容 %s （版本为 %s ），你安装的是 %s "
+
+#, php-format
+msgid "%s version %s or higher is required, you have %s"
+msgstr "需要 %s ，并且要求它的版本比 %s 新，你安装的是 %s "
+
+msgid "Module "
+msgstr ""
+
+msgid " is already enabled"
+msgstr ""
+
+msgid " cannot be enabled"
+msgstr ""
+
+msgid "Module not found in repository"
+msgstr "现有的在线软件仓库中并未包含此模块"
+
+#, php-format
+msgid "Could not remove %s to install new version"
+msgstr "无法为安装 %s 的新版本而移除老版本"
+
+#, php-format
+msgid "Could not untar %s to %s"
+msgstr "无法把 %s 解压到 %s"
+
+#, php-format
+msgid "Could not remove old module %s to install new version"
+msgstr "无法为安装 %s 的新版本而移除老版本"
+
+#, php-format
+msgid "Could not move %s to %s"
+msgstr "无法把 %s 移动到 %s"
+
+#, php-format
+msgid "Error opening %s for writing"
+msgstr "为执行写入操作而打开的 %s 文件失败"
+
+#, php-format
+msgid "Error opening %s for reading"
+msgstr "为执行读取操作而打开的 %s 文件失败"
+
+#, php-format
+msgid "Unable to save %s"
+msgstr "无法保存 %s"
+
+#, php-format
+msgid "File Integrity failed for %s - aborting"
+msgstr "文件完整性由于 %s 被破坏，操作取消"
+
+msgid ""
+"Error finding uploaded file - check your PHP and/or web server configuration"
+msgstr "找不到上传的文件，请检查你的PHP和Web服务器的配置文件是否有错误"
+
+msgid "File must be in tar+gzip (.tgz or .tar.gz) format"
+msgstr "文件必须被打包成tar+gzip（.tgz或者.tar.gz）格式"
+
+msgid ""
+"Filename not in correct format: must be modulename-version.tar.gz (eg. "
+"custommodule-0.1.tar.gz)"
+msgstr ""
+"文件名格式错误：文件名的格式必须是 模块名-版本.tar.gz（例如 custommodule-0.1."
+"tar.gz）"
+
+#, php-format
+msgid "Error creating temporary directory: %s"
+msgstr "在创建临时目录时发生了错误：%s"
+
+msgid "Error untaring uploaded file. Must be a tar+gzip file"
+msgstr "在为文件解包时发生错误，文件打包为tar+gzip的格式"
+
+#, php-format
+msgid "Error removing temporary directory: %s"
+msgstr "在删除临时目录时发生了错误：%s"
+
+msgid "Cannot find module"
+msgstr "无法找到模块"
+
+msgid "Could not read module.xml"
+msgstr "无法读取 module.xml"
+
+msgid "rawname"
+msgstr ""
+
+msgid ""
+" is broken and cannot be installed. You should try to download it again."
+msgstr ""
+
+msgid "Failed to run installation scripts"
+msgstr "无法运行安装脚本"
+
+#, php-format
+msgid "Error updating database. Command was: %s; error was: %s "
+msgstr "更新数据库时发生错误。执行的命令是：%s；错误是：%s"
+
+msgid "Specified module not found"
+msgstr "无法找到指定的模块"
+
+msgid "Module not enabled: cannot disable"
+msgstr "未曾启用模块：不能禁用"
+
+msgid "Cannot disable: The following modules depend on this one: "
+msgstr "无法禁用：以下模块依赖于本模块："
+
+msgid "Module not installed: cannot uninstall"
+msgstr "模块未安装：无法卸载"
+
+msgid "Error updating database: "
+msgstr "更新数据库时发生错误："
+
+msgid "Failed to run un-installation scripts"
+msgstr "无法运行卸载脚本"
+
+#, php-format
+msgid "Cannot delete directory %s"
+msgstr "无法删除目录 %s"
+
+#, php-format
+msgid "Error deleting directory %s (code %d)"
+msgstr "无法删除目录 %s （错误代码 %d）"
+
+#, php-format
+msgid "You have %s disabled modules"
+msgstr "已禁用 %s 个模块"
+
+msgid "You have a disabled module"
+msgstr "已禁用1个模块"
+
+msgid "The following modules are disabled because they need to be upgraded:"
+msgstr "下列模块需要升级，因此已被禁用"
+
+msgid "You should go to the module admin page to fix these."
+msgstr "请在模块管理页面中更正这些错误。"
+
+#, php-format
+msgid "You have %s broken modules"
+msgstr "有 %s 个损坏的模块"
+
+msgid "You have a broken module"
+msgstr "有1个损坏的模块"
+
+msgid "The following modules are disabled because they are broken:"
+msgstr "下列模块已损坏，因此已被禁用"
+
+msgid "Administration"
+msgstr "管理"
+
+msgid "Default Asterisk Manager Password Used"
+msgstr "Asterisk管理器使用了默认的密码"
+
+msgid ""
+"You are using the default Asterisk Manager password that is widely known, "
+"you should set a secure password"
+msgstr "你的Asterisk管理器使用了众所周知的默认密码，出于安全考虑，请更改密码"
+
+msgid "Default ARI Admin password Used"
+msgstr ""
+
+msgid ""
+"You are using the default ARI Admin password that is widely known, you "
+"should change to a new password. Do this in amportal.conf"
+msgstr ""
+
+msgid "Module Administration"
+msgstr "模块管理"
+
+msgid "NOTICE"
+msgstr ""
+
+msgid ""
+"You have accessed the extended repository which includes un-supported and "
+"third party modules"
+msgstr ""
+
+#, php-format
+msgid ""
+"Warning: Cannot connect to online repository (%s). Online modules are not "
+"available."
+msgstr "警告：无法连接到在线软件仓库（%s）。无法在线安装或升级模块。"
+
+#, php-format
+msgid ""
+"Warning: Error retrieving updates from online repository (%s). Online "
+"modules are not available."
+msgstr "警告：无法从线软件仓库（%s）中获取更新信息。无法在线安装或升级模块。"
+
+msgid "Please wait while module actions are performed"
+msgstr "对模块的操作正在进行中，请等待"
+
+#, php-format
+msgid "Downloading %s"
+msgstr "正在下载 %s "
+
+#, php-format
+msgid "Error(s) downloading %s"
+msgstr "在下载 %s 时发生了一项或更多的错误"
+
+#, php-format
+msgid "Error(s) installing %s"
+msgstr "在安装 %s 时发生了一项或更多的错误"
+
+#, php-format
+msgid "%s installed successfully"
+msgstr "成功安装 %s"
+
+#, php-format
+msgid "Error(s) enabling %s"
+msgstr "在启用 %s 时发生了一项或更多的错误"
+
+#, php-format
+msgid "%s enabled successfully"
+msgstr "成功启用 %s"
+
+#, php-format
+msgid "Error(s) disabling %s"
+msgstr "在禁用 %s 时发生了一项或更多的错误"
+
+#, php-format
+msgid "%s disabled successfully"
+msgstr "成功禁用 %s"
+
+#, php-format
+msgid "Error(s) uninstalling %s"
+msgstr "在卸载 %s 时发生了一项或更多的错误"
+
+#, php-format
+msgid "%s uninstalled successfully"
+msgstr "成功卸载 %s"
+
+msgid "Return"
+msgstr "返回"
+
+#, php-format
+msgid ""
+"%s cannot be upgraded: %s Please try again after the dependencies have been "
+"installed."
+msgstr "无法升级 %s ：%s 请在安装好所有的依赖项后重试。"
+
+#, php-format
+msgid "%s %s will be upgraded to online version %s"
+msgstr "%s %s 将被更新为在线版本 %s"
+
+#, php-format
+msgid "%s %s will be re-installed to online version %s"
+msgstr ""
+
+#, php-format
+msgid "%s %s will be downgraded to online version %s"
+msgstr ""
+
+#, php-format
+msgid ""
+"%s cannot be installed: %s Please try again after the dependencies have been "
+"installed."
+msgstr "无法安装 %s ：%s 请在安装好所有的依赖项后重试。"
+
+#, php-format
+msgid "%s %s will be downloaded and installed"
+msgstr "%s %s 将被下载并安装"
+
+#, php-format
+msgid "%s %s will be upgraded to %s"
+msgstr "%s %s 将被更新为 %s"
+
+#, php-format
+msgid "%s %s will be installed and enabled"
+msgstr "%s %s 将被安装并启用"
+
+#, php-format
+msgid ""
+"%s cannot be enabled: %s Please try again after the dependencies have been "
+"installed."
+msgstr "无法启用 %s ：%s 请在安装好所有的依赖项后重试。"
+
+#, php-format
+msgid "%s %s will be enabled"
+msgstr "%s %s 将被启用"
+
+#, php-format
+msgid ""
+"%s cannot be disabled because the following modules depend on it: %s Please "
+"disable those modules first then try again."
+msgstr "无法禁用 %s ，因为以下模块依赖于此模块：%s 请先禁用这些模块后再重试。"
+
+#, php-format
+msgid "%s %s will be disabled"
+msgstr "%s %s 将被禁用"
+
+#, php-format
+msgid ""
+"%s cannot be uninstalled because the following modules depend on it: %s "
+"Please disable those modules first then try again."
+msgstr "无法卸载 %s ，以下模块依赖于本模块：%s 禁用这些模块后重试。"
+
+#, php-format
+msgid "%s %s will be uninstalled"
+msgstr "%s %s 将被卸载"
+
+msgid "Errors with selection:"
+msgstr "所选择项的错误："
+
+msgid ""
+"You may confirm the remaining selection and then try the again for the "
+"listed issues once the required dependencies have been met:"
+msgstr ""
+"你可以确认余下的选择的项，然后在满足了依赖要求后，针对列出的有问题的地方，再"
+"重试一次："
+
+msgid "Please confirm the following actions:"
+msgstr "请确认以下操作："
+
+msgid "Upgrades, installs, enables and disables:"
+msgstr ""
+
+msgid "Forced downgrades and re-installs:"
+msgstr ""
+
+msgid "Confirm"
+msgstr "确认"
+
+msgid "No actions to perform"
+msgstr "没有要执行的操作"
+
+msgid ""
+"Please select at least one action to perform by clicking on the module, and "
+"selecting an action on the \"Action\" tab."
+msgstr "请点击某模块，以选择至少一项操作。在“操作”栏中选择操作。"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Manage local modules"
+msgstr "管理本地模块"
+
+msgid "Check for updates online"
+msgstr "检查在线更新"
+
+msgid ""
+"Checking for updates will transmit your FreePBX and Asterisk version numbers "
+"along with a unique but random identifier. This is used to provide proper "
+"update information and track version usage to focus development and "
+"maintenance efforts. No private information is transmitted."
+msgstr ""
+"为了检查在线更新，你的FreePBX和Asterisk的版本号以及一个随机数将被发送到服务"
+"器。这么做是为了让开发团队更好的掌握各版本的使用情况，以更好的分配开发和维护"
+"力量。请放心，你的隐私不会被上传。"
+
+msgid "Upload module"
+msgstr "上传模块"
+
+#, php-format
+msgid "The following error(s) occurred processing the uploaded file: %s"
+msgstr "在处理上传的文件时发生了以下错误： %s"
+
+#, php-format
+msgid "You should fix the problem or select another file and %s."
+msgstr "请更正此错误或者选择别的文件并 %s "
+
+msgid "try again"
+msgstr "重试"
+
+#, php-format
+msgid ""
+"Module uploaded successfully. You need to enable the module using %s to make "
+"it available."
+msgstr "成功上传模块。你需要启用此模块，用 %s 来启用它。"
+
+msgid "local module administration"
+msgstr "本地模块管理"
+
+msgid ""
+"You can upload a tar gzip file containing a FreePBX module from your local "
+"system. If a module with the same name already exists, it will be "
+"overwritten."
+msgstr ""
+"你可以从本地系统上传包含了一个FreePBX模块的tar+gzip文件。如果有同名的模块存"
+"在，它将被覆盖。"
+
+msgid "Show only upgradeable"
+msgstr ""
+
+msgid "Download all"
+msgstr "全部下载"
+
+msgid "Upgrade all"
+msgstr "全部升级"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Process"
+msgstr "处理"
+
+msgid "Module"
+msgstr "模块"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Publisher"
+msgstr ""
+
+msgid "Broken"
+msgstr "损坏"
+
+msgid "name"
+msgstr "名字"
+
+msgid "Not Installed (Locally available)"
+msgstr "未安装（在本地已可用）"
+
+#, php-format
+msgid "Not Installed (Available online: %s)"
+msgstr "未安装（在线可用： %s）"
+
+#, php-format
+msgid "Disabled; Online upgrade available (%s)"
+msgstr "已禁用；可在线升级（%s）"
+
+#, php-format
+msgid "Disabled; Newer than online version (%s)"
+msgstr "已禁用；比在线的版本（%s）还新"
+
+msgid "Disabled; up to date"
+msgstr "已禁用：已升级到最新"
+
+msgid "Disabled"
+msgstr "禁用"
+
+#, php-format
+msgid "Disabled; Pending upgrade to %s"
+msgstr "已禁用；待升级到 %s"
+
+#, php-format
+msgid "Online upgrade available (%s)"
+msgstr "可在线升级（%s）"
+
+#, php-format
+msgid "Newer than online version (%s)"
+msgstr "比在线的版本（%s）还新"
+
+msgid "Enabled and up to date"
+msgstr "已启用并已升级到最新版本"
+
+msgid "Enabled; Not available online"
+msgstr "已启用；不能在线升级"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Attention"
+msgstr "注意"
+
+msgid "attention"
+msgstr "注意"
+
+msgid "Action"
+msgstr "操作"
+
+msgid "No Action"
+msgstr "无操作"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Download and Install"
+msgstr "下载并安装"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Uninstall"
+msgstr "卸载"
+
+#, php-format
+msgid "Download %s, keep Disabled"
+msgstr "下载 %s ，保持禁用"
+
+#, php-format
+msgid "Upgrade to %s and Enable"
+msgstr "升级到 %s 并启用"
+
+#, php-format
+msgid "Download and Upgrade to %s"
+msgstr "下载并升级到 %s"
+
+#, php-format
+msgid "Force Download and Install %s"
+msgstr ""
+
+#, php-format
+msgid "Force Download and Downgrade to %s"
+msgstr ""
+
+msgid "Disable"
+msgstr "禁用"
+
+msgid "Description"
+msgstr "描述"
+
+#, php-format
+msgid "Publisher: %s"
+msgstr ""
+
+#, php-format
+msgid "License: %s"
+msgstr ""
+
+#, php-format
+msgid "Description for version %s"
+msgstr "对版本 %s 的描述"
+
+msgid "No description is available."
+msgstr "没有可用的描述"
+
+msgid "More info"
+msgstr "更多信息"
+
+#, php-format
+msgid "Get help for %s"
+msgstr "获取关于 %s 的帮助"
+
+msgid "Changelog"
+msgstr "更改日志"
+
+#, php-format
+msgid "Change Log for version %s"
+msgstr "关于版本 %s 的更改日志"
+
+msgid "Debug"
+msgstr "调试"
+
+msgid "All available modules are up-to-date and installed."
+msgstr "所有可用的模块都更新到了最新版本。"
+
+msgid "No modules to display."
+msgstr "没有可显示的模块"
+
+msgid "Untarring.."
+msgstr "正在解压缩。。"
+
+msgid "Done."
+msgstr "完成。"
+
+msgid "Standard Repository"
+msgstr ""
+
+msgid "Extended Repository"
+msgstr ""
+
+msgid ""
+"You have selected to access the Extended Repository. This repository "
+"contains some Third Party and un-supported modules. Although these modules "
+"are believed to work with FreePBX, they are either developed by third "
+"parties in conjunction with optional PBX components, or they are not "
+"directly sponsored by the core FreePBX team and may not receive the same "
+"level of responsiveness to issues as the main code base does."
+msgstr ""
+
+msgid "FreePBX: Flash Operator Panel"
+msgstr "FreePBX：Flash 操作面版"
+
+msgid "Flash Operator Panel"
+msgstr "Flash 操作面版"
+
+msgid "FreePBX: Call Detail Reports"
+msgstr "FreePBX：呼叫详细记录"
+
+msgid "Call Detail Reports"
+msgstr "呼叫详细记录"
+
+msgid "Call Logs"
+msgstr "呼叫记录"
+
+msgid "Compare Calls"
+msgstr "呼叫比较"
+
+msgid "Monthly Traffic"
+msgstr "月度流量"
+
+msgid "Daily load"
+msgstr "每日负载"
+
+msgid "Potential Security Breach"
+msgstr ""
+
+msgid ""
+"You are attempting to modify settings from a URL that does not appear to "
+"have come from a FreePBX page link or button. This can occur if you manually "
+"typed in the URL below. This action has been blocked because the "
+"HTTP_REFERER does not match your current SERVER. If you require this access, "
+"you can set CHECKREFERER=false in amportal.conf to disable this security "
+"check"
+msgstr ""
+
+msgid ""
+"The suspect URL is listed below. If this action is intended, you can click "
+"this link and your action will be processed. Do not proceed with this if you "
+"did not intended to execute this command as it may result in changes to your "
+"configuration."
+msgstr ""
+
+msgid "SUSPECT LINK:"
+msgstr ""
+
+msgid "click to expand/collapse section"
+msgstr ""
+
+msgid "category"
+msgstr "类别"
+
+msgid ""
+"WARNING: Javascript is disabled in your browser. The FreePBX administration "
+"interface requires Javascript to run properly. Please enable javascript or "
+"switch to another  browser that supports it."
+msgstr ""
+"警告：你的浏览器禁用了Javascript。PBX配置管理界面的正确运行需要Javacript。请"
+"启用Javascript或者更换成支持它的浏览器。"
+
+#, php-format
+msgid "%s is a registered trademark of %s"
+msgstr "%s 是 %s 的注册商标"
+
+msgid "FreePBX"
+msgstr "PBX配置工具FreePBX"
+
+#, php-format
+msgid "%s is licensed under %s"
+msgstr "%s 是在 %s 的保护下授权的"
+
+#, php-format
+msgid "%s %s on %s"
+msgstr "%s %s 在 %s 上"
+
+msgid "Management"
+msgstr "管理"
+
+msgid "Admin"
+msgstr "管理"
+
+msgid "Reports"
+msgstr "报告"
+
+msgid "Panel"
+msgstr "面版"
+
+msgid "Recordings"
+msgstr "录音"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "Logged in: "
+msgstr "已登录："
+
+msgid "Logout"
+msgstr "退出"
+
+msgid "Reload Required"
+msgstr "需要重载"
+
+msgid "Apply Configuration Changes"
+msgstr "应用配置改变"
+
+#, php-format
+msgid ""
+"You have made changes to the configuration that have not yet been applied. "
+"When you are finished making all changes, click on %s to put them into "
+"effect."
+msgstr ""
+"你更改了配置，但是更改尚未应用。如果你完成了所有更改，请点击 %s 以让它们生"
+"效。"
+
+msgid ""
+" error(s) occurred, you should view the notification log on the dashboard or "
+"main screen to check for more details."
+msgstr ""
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Retry"
+msgstr "重试"
+
+msgid "Error: Did not receive valid response from server"
+msgstr "错误：没有从服务器收到正确的响应"
+
+msgid ""
+"Reloading will apply all configuration changes made in FreePBX to your PBX "
+"engine and make them active."
+msgstr "重载会使所有对PBX引擎的配置的更改生效。"
+
+msgid "Accept"
+msgstr "接受"
+
+msgid "Continue with reload"
+msgstr "重载并继续"
+
+msgid "Cancel reload and go back to editing"
+msgstr "取消重载并继续编辑"
+
+msgid "Please wait, reloading.."
+msgstr "请等待，正在重载。。"
+
+msgid "Loading..."
+msgstr "装载中。。。"
+
+msgid "Logged out"
+msgstr "已登出"
+
+msgid "You have been successfully logged out."
+msgstr ""
+
+msgid "Log in"
+msgstr "登录"
+
+#, php-format
+msgid "[WARNING]: Menu Item: %s is disabled because asterisk is not running"
+msgstr "[警告]：菜单项：%s 被禁用，原因是asterisk未运行"
+
+msgid ""
+"Restart Asterisk and then refresh the browser in order to try accessing this "
+"menu item again."
+msgstr "重启Asterisk并刷新浏览器以启用此菜单项"
+
+msgid "Not found"
+msgstr "不存在"
+
+msgid ""
+"The section you requested does not exist or you do not have access to it."
+msgstr "你请求的区域不存在，或者你没有访问它的权限。"
+
+msgid "Unauthorized"
+msgstr "权限不足，拒绝访问"
+
+msgid "You are not authorized to access this page."
+msgstr "你无权访问这个页面。"
+
+msgid "Warning:"
+msgstr "警告："
+
+msgid "Cannot connect to Asterisk Manager with "
+msgstr "无法连接到Asterisk管理器"
+
+msgid "Asterisk may not be running."
+msgstr "Asterisk可能没有运行。"
+
+msgid "Welcome to FreePBX."
+msgstr "欢迎来到PBX配置界面。"
+
+msgid "Critical"
+msgstr "严重"
+
+msgid "Security"
+msgstr "安全"
+
+msgid "Update"
+msgstr "升级"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Notice"
+msgstr "通知"
+
+msgid ""
+"If you're new to FreePBX, Welcome. Here are some quick instructions to get "
+"you started"
+msgstr "如果你刚刚接触FreePBX，请阅读这些快速上手的说明"
+
+#, php-format
+msgid ""
+"There are a large number of Plug-in modules available from the Online "
+"Repository. This is\n"
+"available by clicking on the <a href='%s'>Tools menu</a> up the top, then\n"
+"<a href='%s'>Module Admin</a>, then\n"
+"<a href='%s'>Check for updates online</a>.\n"
+"Modules are updated and patched often, so if you are having a problem, it's "
+"worth checking there to see if there's\n"
+"a new version of the module available."
+msgstr ""
+"在线软件仓库中有非常多的插件模块。\n"
+"可以点击上方的<a href='%s'>工具菜单</a>，再点\n"
+"<a href='%s'>模块管理</a>，接着点\n"
+"<a href='%s'>检查在线更新</a>。\n"
+"开发人员会常常为模块升级打补丁，如果你在使用中遇到问题，最好检查一下在线更"
+"新，\n"
+"看看有没有新版本的模块可用了。"
+
+#, php-format
+msgid ""
+"If you're having any problems, you can also use the <a href='%s'>Online "
+"Support</a> \n"
+"module (<b>you need to install this through the <a href='%s'>Module "
+"Repository</a> first</b>)\n"
+"to talk to other users and the developers in real time. Click on <a href='%"
+"s'>Start IRC</a>,\n"
+"when the module is installed, to start a Java IRC client."
+msgstr ""
+
+#, php-format
+msgid ""
+"There is also a community based <a href='%s' target='_new'>FreePBX Web "
+"Forum</a> where you can post\n"
+"questions and search for answers for any problems you may be having."
+msgstr ""
+"同时，我们还建立了一个以 <a href='%s' target='_new'>FreePBX论坛</a> 为基础的"
+"社区，\n"
+"你可以在那里发表问题或者搜索你遇到的问题的答案。"
+
+msgid "We hope you enjoy using FreePBX!"
+msgstr "希望你能顺利的使用FreePBX！"
+
+msgid "Default SQL Password Used"
+msgstr "使用了默认的SQL密码"
+
+msgid ""
+"You are using the default SQL password that is widely known, you should set "
+"a secure password"
+msgstr "你使用了众所周知的默认SQL密码，出于安全考虑，请更改密码"
+
+msgid "Memory Limit Changed"
+msgstr "内存上限改变"
+
+#, php-format
+msgid ""
+"Your memory_limit, %sM, is set too low and has been increased to %sM. You "
+"may want to change this in you php.ini config file"
+msgstr ""
+"你的内存上限（memory_limit）， %sM ，设置得太低，并且现在已经增长为 %sM 。你"
+"可以在你的php.ini文件中更改这个配置。"
+
+msgid "Low Memory Limit"
+msgstr "内存上限太低"
+
+#, php-format
+msgid ""
+"Your memory_limit, %sM, is set too low and may cause problems. FreePBX is "
+"not able to change this on your system. You should increase this to %sM in "
+"you php.ini config file"
+msgstr ""
+"你的内存上限（memory_limit）， %sM ，被设置得太低，可能会引起问题。FreePBX无"
+"法更改这个设置。请修改你的php.ini，将内存上限增加到 %sM"
+
+msgid "Magic Quotes GPC"
+msgstr "魔术引用 GPC"
+
+msgid ""
+"You have magic_quotes_gpc enabled in your php.ini, http or .htaccess file "
+"which will cause errors in some modules. FreePBX expects this to be off and "
+"runs under that assumption"
+msgstr ""
+"你在php.ini、http或.htaccess文件中打开了魔术引用的开关（magic_quotes_gpc），"
+"这会在某些模块中引起错误。FreePBX的正确运行要求关闭此项设置"
+
+msgid "Please select a \"Destination\""
+msgstr "请选择一个目的地"
+
+msgid ""
+"Custom Goto contexts must contain the string \"custom-\".  ie: custom-app,s,1"
+msgstr "自定义的 Goto 上下文必须包含字符串“custom-”。例如：custom-app,s,1"
+
+msgid "The secret must be at minimum six characters in length."
+msgstr ""
+
+msgid "The secret must contain at least two numbers and two letters."
+msgstr ""
+
+msgid "Core"
+msgstr "核心"
+
+msgid "Basic"
+msgstr "基本配置"
+
+msgid "Extensions"
+msgstr "分机"
+
+msgid "Users"
+msgstr "用户"
+
+msgid "Devices"
+msgstr "设备"
+
+msgid "Inbound Routes"
+msgstr "入局线路"
+
+msgid "Zap Channel DIDs"
+msgstr "Zap频道DID设置"
+
+msgid "Outbound Routes"
+msgstr "出局线路"
+
+msgid "Trunks"
+msgstr "中继"
+
+msgid "General Settings"
+msgstr "一般设置"
+
+msgid "Administrators"
+msgstr "管理员"
+
+msgid "FreePBX Support"
+msgstr "FreePBX技术支持"
+
+msgid "Hangup"
+msgstr "挂断"
+
+msgid "Congestion"
+msgstr "拥塞"
+
+msgid "Busy"
+msgstr "忙"
+
+msgid "Play SIT Tone (Zapateller)"
+msgstr "播放SIT提示音（Zapateller）"
+
+msgid "Put caller on hold forever"
+msgstr "一直让主叫等待"
+
+msgid "Play ringtones to caller until they hangup"
+msgstr "向主叫方播放铃声直到他们挂断"
+
+#, php-format
+msgid "User Extension %s: %s"
+msgstr "用户分机 %s：%s"
+
+#, php-format
+msgid "Trunk: %s (%s)"
+msgstr ""
+
+#, php-format
+msgid "Calling Out Route: %s"
+msgstr ""
+
+msgid "A route for this DID/CID already exists!"
+msgstr "一条接收这个DID/CID的线路以存在。"
+
+msgid "You must put in a device id"
+msgstr "你必须输入设备id"
+
+msgid "This device id is already in use"
+msgstr "设备id已存在"
+
+msgid "User Extension: "
+msgstr "用户分机"
+
+#, php-format
+msgid "Inbound Route: %s (%s)"
+msgstr "入局线路：%s （%s）"
+
+msgid "You must put in an extension (or user) number"
+msgstr "你必须输入一个分机（或用户）号码"
+
+#, php-format
+msgid "This user/extension %s is already in use"
+msgstr "此用户/分机 %s 已存在"
+
+#, php-format
+msgid "A route with this DID/CID: %s/%s already exists"
+msgstr "一条接收这个DID/CID（%s/%s）的线路以存在。"
+
+msgid "Invalid Channel Number, must be numeric and not blank"
+msgstr "无效的频道号，频道号必须为数字，并且不能为空"
+
+msgid "Invalid DID, must be a non-blank DID"
+msgstr "无效的DID，必须为非空的DID"
+
+msgid "Error Duplicate Channel Entry"
+msgstr "错误：有重复的频道项"
+
+#, php-format
+msgid "Outbound Route: %s"
+msgstr ""
+
+#, php-format
+msgid ""
+"Failed to open %s for writing, aborting attempt to write the country "
+"indications. The file may be readonly or the permissions may be incorrect."
+msgstr ""
+"无法为写入而打开 %s ，取消向文件写入国家信息的操作。文件可能具有只读属性或其"
+"访问权限没有被正确的设置。"
+
+msgid "Failed to write indications.conf"
+msgstr "无法写入indications.conf"
+
+msgid "On Demand"
+msgstr "需要时才录音"
+
+msgid "Always"
+msgstr "总是"
+
+msgid "Never"
+msgstr "从不"
+
+msgid "Screen Caller: No Memory"
+msgstr "来电显示：禁用记忆功能"
+
+msgid "Screen Caller: Memory"
+msgstr "来电显示：启用记忆功能"
+
+msgid "Default"
+msgstr "默认"
+
+msgid "deleted"
+msgstr "已删除"
+
+msgid "Extension"
+msgstr "分机"
+
+#, php-format
+msgid "Delete Extension %s"
+msgstr "删除分机 %s"
+
+msgid "User"
+msgstr "用户"
+
+#, php-format
+msgid "Delete User %s"
+msgstr "删除用户 %s"
+
+msgid "Add User/Extension"
+msgstr "添加用户/分机"
+
+msgid "Please enter a valid extension number."
+msgstr "请输入有效的分机号码"
+
+msgid "Please enter a valid CID Num Alias (must be a valid number)."
+msgstr "请输入有效的主叫ID（CID）号码（必须是数字）"
+
+msgid "Please enter valid User Password using numbers only"
+msgstr "请输入有效的只包含数字的密码"
+
+msgid "Please enter a valid Display Name"
+msgstr "请输入有效的显示名"
+
+msgid "Please enter a valid Outbound CID"
+msgstr "请输入有效的出局主叫ID（CID）"
+
+msgid "Please enter a valid pause time in seconds, using digits only"
+msgstr "请输入有效的暂停时间，只能输入数字，单位为秒"
+
+msgid ""
+"You have entered a non-standard dialpattern for your DID. You can only enter "
+"standard dialpatterns. You must use the inbound routing form to enter non-"
+"standard patterns"
+msgstr ""
+"你输入的DID不是标准的拨号模式。你只能输入标准的拨号模式。非标准格式的拨号模式"
+"要以入局线路规则的形式输入。"
+
+msgid ""
+"Please enter a valid Caller ID Number or leave it blank for your Assigned "
+"DID/CID pair"
+msgstr "请输入一个有效的主叫ID号码，或者不填写此项以使用你被分配的 DID/CID。"
+
+msgid "Edit Extension"
+msgstr "编辑分机"
+
+msgid "Add Extension"
+msgstr "添加分机"
+
+msgid "Edit User"
+msgstr "编辑用户"
+
+msgid "Add User"
+msgstr "添加用户"
+
+msgid "User Extension"
+msgstr "用户分机号"
+
+msgid "The extension number to dial to reach this user."
+msgstr "这个用户的分机号码"
+
+msgid "User Password"
+msgstr "用户密码"
+
+msgid "A user will enter this password when logging onto a device."
+msgstr "在登录设备时，用户需要输入的密码"
+
+msgid "logs into a device."
+msgstr "登录设备。"
+
+msgid "logs out of a device."
+msgstr "从设备注销"
+
+msgid "Display Name"
+msgstr "显示名"
+
+msgid ""
+"The caller id name for calls from this user will be set to this name. Only "
+"enter the name, NOT the number."
+msgstr "显示名是来电显示上显示的名字。只需要输入名字，不需要输入号码。"
+
+msgid "CID Num Alias"
+msgstr "CID号码"
+
+msgid ""
+"The CID Number to use for internal calls, if different from the extension "
+"number. This is used to masquerade as a different user. A common example is "
+"a team of support people who would like their internal callerid to display "
+"the general support number (a ringgroup or queue). There will be no effect "
+"on external calls."
+msgstr ""
+"内线呼叫使用的CID号码，可以与分机号码不同。这可以用来伪装成其他用户。比如说，"
+"技术支持小组中的成员通常都希望他们的内线呼叫的CID被显示成同样的技术支持号码"
+"（以拨号小组或等待队列的形式工作）。这项设置对外线电话无影响。"
+
+msgid "SIP Alias"
+msgstr "SIP名称"
+
+msgid ""
+"If you want to support direct sip dialing of users internally or through "
+"anonymous sip calls, you can supply a friendly name that can be used in "
+"addition to the users extension to call them."
+msgstr ""
+"如果希望系统支持直接用SIP进行内线呼叫或者用匿名SIP进行呼叫，在呼叫别的用户的"
+"时候，你除了拨打分机号，还可以添加一个昵称。"
+
+msgid "User Devices"
+msgstr "用户设备"
+
+msgid "Edit:"
+msgstr "编辑："
+
+msgid "Extension Options"
+msgstr "分机选项"
+
+msgid "Outbound CID"
+msgstr "出局CID"
+
+msgid ""
+"Overrides the caller id when dialing out a trunk. Any setting here will "
+"override the common outbound caller id set in the Trunks admin."
+"<br><br>Format: <b>\"caller name\" &lt;#######&gt;</b><br><br>Leave this "
+"field blank to disable the outbound callerid feature for this user."
+msgstr ""
+"通过某中继拨出电话时，此项设置会覆盖主叫的CID设置。在此处进行的任何设置都会覆"
+"盖在“中继管理”中对一般出局主叫ID的设置。<br /><br />格式是：<b>\"主叫名\" "
+"&lt;#######&gt;</b><br /><br />留空此项，可以禁用此用户的出局CID功能。"
+
+msgid "Ring Time"
+msgstr "振铃时间"
+
+msgid ""
+"Number of seconds to ring prior to going to voicemail. Default will use the "
+"value set in the General Tab. If no voicemail is configured this will be "
+"ignored."
+msgstr ""
+"在没有被接听的呼叫被转移到语音邮件之前，电话振铃的时间，单位为秒。默认使用的"
+"是“一般设置”标签中设置的值。如果没有启用语音邮件，这项设置会被忽略。"
+
+msgid "Call Waiting"
+msgstr "呼叫等待"
+
+msgid "Set the initial/current Call Waiting state for this user's extension"
+msgstr "设置此用户的分机的初始/当前的呼叫等待状态"
+
+msgid "Call Screening"
+msgstr "来电显示"
+
+msgid ""
+"Call Screening requires external callers to say their name, which will be "
+"played back to the user and allow the user to accept or reject the call.  "
+"Screening with memory only verifies a caller for their caller-id once. "
+"Screening without memory always requires a caller to say their name. Either "
+"mode will always announce the caller based on the last introduction saved "
+"with that callerid. If any user on the system uses the memory option, when "
+"that user is called, the caller will be required to re-introduce themselves "
+"and all users on the system will have that new introduction associated with "
+"the caller's CallerId."
+msgstr ""
+"来电显示要求外线的主叫发送他们的姓名信息，这个信息会显示给被叫用户，被叫用户"
+"可以选择接听或挂断。有记忆功能的来电显示只验证一次主叫的CID。没有记忆功能的来"
+"电显示，总是要求主叫发送他们的姓名。两种模式都总是会把新主叫ID通告给用户。比"
+"如说，某个用户启用了有记忆的来电显示，记住了某主叫的信息，而局内的另一用户要"
+"求此主叫再次输入姓名信息，这次主叫方输入了不同的名字，这之后系统会向所有的用"
+"户显示最新的主叫信息。"
+
+msgid "Pinless Dialing"
+msgstr "拨号绑定"
+
+msgid ""
+"Enabling Pinless Dialing will allow this extension to bypass any pin codes "
+"normally required on outbound calls"
+msgstr "启用拨号绑定允许此分机忽略此出局线路上要求的任何PIN码"
+
+msgid "Assigned DID/CID"
+msgstr "分配的 DID/CID"
+
+msgid "DID Description"
+msgstr "DID描述"
+
+msgid "A description for this DID, such as \"Fax\""
+msgstr "对此DID的描述，比如“传真”"
+
+msgid "Add Inbound DID"
+msgstr "添加入局DID"
+
+msgid ""
+"A direct DID that is associated with this extension. The DID should be in "
+"the same format as provided by the provider (e.g. full number, 4 digits for "
+"10x4, etc).<br><br>Format should be: <b>XXXXXXXXXX</b><br><br>.An optional "
+"CID can also be associated with this DID by setting the next box"
+msgstr ""
+"设置与此分机直接相关的DID。这个DID必须与服务提供商提供的DID格式相同。<br /"
+"><br />格式必须为：<b>XXXXXXXXXX</b><br /><br />。可以在下面的设置中输入一个"
+"与此DID相关的可选的CID"
+
+msgid "Add Inbound CID"
+msgstr "添加入局CID"
+
+msgid ""
+"Add a CID for more specific DID + CID routing. A DID must be specified in "
+"the above Add DID box. In addition to standard dial sequences, you can also "
+"put Private, Blocked, Unknown, Restricted, Anonymous and Unavailable in "
+"order to catch these special cases if the Telco transmits them."
+msgstr ""
+"添加一个CID以执行更精确的DID+CID线路规则。若填写了此项，上面的DID项必须填写。"
+"除了可以使用标准的拨号顺序，如果你的电信公司传输像私有（Private）、阻塞"
+"（Blocked）、未知（Unknown）、受限制（Restricted）、匿名（Anonymous）和不可用"
+"（Unavailable）这样的信息，你还可以使用以上选项来处理这些特殊情况。"
+
+msgid "DID / CID"
+msgstr "DID / CID"
+
+msgid "Any DID"
+msgstr "任何DID"
+
+msgid "Recording Options"
+msgstr "录音选项"
+
+msgid "Record Incoming"
+msgstr "入局录音"
+
+msgid "Record all inbound calls received at this extension."
+msgstr "对此分机的所有入局呼叫录音"
+
+msgid "Record Outgoing"
+msgstr "出局录音"
+
+msgid "Record all outbound calls received at this extension."
+msgstr "对此分机的所有出局呼叫录音"
+
+msgid "Warning! Extension"
+msgstr "警告！你的帐号无权使用此分机号："
+
+msgid "is not allowed for your account"
+msgstr " 。"
+
+msgid "Conflicting Extensions"
+msgstr "分机冲突"
+
+msgid ""
+"The following extension numbers are in conflict, you can click on the item"
+"(s) below to edit the conflicting entity."
+msgstr "以下的分机号码有冲突，你可以点击下面的项目来更正错误。"
+
+msgid "Configure user again:"
+msgstr "再次配置用户设置："
+
+msgid "Configure extension again:"
+msgstr "再次配置分机设置："
+
+msgid "Please enter the dtmfmode for this device"
+msgstr "请输入此设备的dtmfmode"
+
+msgid "Please enter the channel for this device"
+msgstr "请输入此设备的频道"
+
+msgid ""
+"You have not entered a Secret for this device, although this is possible it "
+"is generally bad practice to not assign a Secret to a device. Are you sure "
+"you want to leave the Secret empty?"
+msgstr ""
+"你还没有为此设备设置密码，虽然这也是允许的，但一般来说没有密码是不太好的。你"
+"确定不设置密码？"
+
+msgid "Please enter a Secret for this device"
+msgstr "请为此设备设置密码"
+
+msgid "Generic SIP Device"
+msgstr "普通 SIP 设备"
+
+msgid "Generic IAX2 Device"
+msgstr "普通 IAX2 设备"
+
+msgid "Generic ZAP Device"
+msgstr "普通 ZAP 设备"
+
+msgid "Generic DAHDI Device"
+msgstr ""
+
+msgid "Other (Custom) Device"
+msgstr "其他设备（自定义设备）"
+
+msgid "None (virtual exten)"
+msgstr ""
+
+msgid "Fixed"
+msgstr "固定的"
+
+msgid "Adhoc"
+msgstr "自组织"
+
+msgid "none"
+msgstr "无"
+
+msgid "New User"
+msgstr "新用户"
+
+msgid "Add Device"
+msgstr "添加设备"
+
+msgid "Add an Extension"
+msgstr "添加分机"
+
+msgid "Please select your Device below then click Submit"
+msgstr "请从下面选择你的设备并点击提交"
+
+msgid "Device"
+msgstr "设备"
+
+#, php-format
+msgid "Delete Device %s"
+msgstr "删除设备 %s"
+
+#, php-format
+msgid "Edit Default User: %s"
+msgstr "编辑默认用户：%s"
+
+#, php-format
+msgid "Edit Fixed User: %s"
+msgstr "编辑固定用户：%s"
+
+#, php-format
+msgid "Add %s Device"
+msgstr ""
+
+#, php-format
+msgid "Add %s Extension"
+msgstr ""
+
+msgid "Please enter a device id."
+msgstr "请输入一个设备id。"
+
+msgid "Please enter a valid Description for this device"
+msgstr "请为此设备输入有效的描述"
+
+msgid "Please enter a valid Emergency CID"
+msgstr "请输入一个有效的紧急CID"
+
+msgid "Device Info"
+msgstr "设备信息"
+
+msgid "Device ID"
+msgstr "设备ID"
+
+msgid ""
+"Give your device a unique integer ID.  The device will use this ID to "
+"authenticate to the system."
+msgstr "为你的设备设置一个唯一的整数ID。这个设备会使用此ID来登录系统。"
+
+msgid ""
+"The caller id name for this device will be set to this description until it "
+"is logged into."
+msgstr "此设备的CID名会被设置成这个描述，直到设备登录到系统。"
+
+msgid "Emergency CID"
+msgstr "紧急CID"
+
+msgid ""
+"This caller id will always be set when dialing out an Outbound Route flagged "
+"as Emergency.  The Emergency CID overrides all other caller id settings."
+msgstr ""
+"如果拨打了标记为紧急线路的出局线路，就会使用此CID。紧急CID设置会覆盖所有其他"
+"的CID设置。"
+
+msgid "Device Type"
+msgstr "设备类型"
+
+msgid ""
+"Devices can be fixed or adhoc. Fixed devices are always associated to the "
+"same extension/user. Adhoc devices can be logged into and logged out of by "
+"users."
+msgstr ""
+"设备可以是固定的或者自组织的。固定设备永远与同一个分机/用户关联。用户们可以让"
+"自组织的设备登录系统或从系统注销。"
+
+msgid "Default User"
+msgstr "默认用户"
+
+msgid ""
+"Fixed devices will always mapped to this user.  Adhoc devices will be mapped "
+"to this user by default.<br><br>If selecting 'New User', a new User "
+"Extension of the same Device ID will be set as the Default User."
+msgstr ""
+"固定设备总是映射到此用户上。自组织的设备在默认情况下映射到此用户。<br /><br /"
+">如果选择了“新用户”，该自组织设备（以相同的设备ID标识）的默认用户会被设置成一"
+"个新的用户分机号。"
+
+msgid "Device Options"
+msgstr "设备选项"
+
+#, php-format
+msgid "This device uses %s technology."
+msgstr "这个设备使用了 %s 技术。"
+
+msgid "Via DAHDI compatibility mode"
+msgstr "使用了DAHDI兼容模式"
+
+msgid "User Logon"
+msgstr "用户登录"
+
+msgid "User Logoff"
+msgstr "用户注销"
+
+msgid "ZapBarge"
+msgstr "ZapBarge"
+
+msgid "ChanSpy"
+msgstr "ChanSpy"
+
+msgid "Simulate Incoming Call"
+msgstr "模拟来电"
+
+msgid "Directed Call Pickup"
+msgstr "直接来电接听"
+
+msgid "Asterisk General Call Pickup"
+msgstr "Asterisk一般来电接听"
+
+msgid "In-Call Asterisk Blind Transfer"
+msgstr "In-Call Asterisk Blind Transfer"
+
+msgid "In-Call Asterisk Attended Transfer"
+msgstr "In-Call Asterisk Attended Transfer"
+
+msgid "In-Call Asterisk Toggle Call Recording"
+msgstr "In-Call Asterisk Toggle Call Recording"
+
+msgid "In-Call Asterisk Disconnect Code"
+msgstr "In-Call Asterisk Disconnect Code"
+
+#, php-format
+msgid "ERROR: trying to check if %s already in use"
+msgstr "错误：试图确认 %s 是否已经在使用中"
+
+msgid "Checking if directdids need migrating.."
+msgstr "检查directdid是否需要转移"
+
+msgid "starting migration"
+msgstr "开始转移"
+
+msgid "User: "
+msgstr "用户"
+
+#, php-format
+msgid "ERROR: failed to insert %s for user %s"
+msgstr "错误：无法插入 %s （用户 %s）"
+
+#, php-format
+msgid ""
+"There were %s failures migrating directdids, users table not being changed"
+msgstr "在转移directdid时发生了 %s 错误，用户表没有进行更改"
+
+#, php-format
+msgid "Removing field %s from users table.."
+msgstr "从用户表删除域 %s 。。"
+
+msgid "not present"
+msgstr "没有出现"
+
+msgid "removed"
+msgstr "已移除"
+
+msgid ""
+"ERROR: could not access user table to migrate directdids to incoming table, "
+"aborting"
+msgstr "错误：无法为转移directdid到入局来电表而访问用户表，正在中断操作"
+
+msgid "already done"
+msgstr "已完成"
+
+msgid "updating zap callgroup, pickupgroup.."
+msgstr "正在更新 zap 呼叫组和接听组。。"
+
+#, php-format
+msgid "updated %s callgroups, %s pickupgroups"
+msgstr "更新了 %s 呼叫组和 %s 接听组。"
+
+msgid "not needed"
+msgstr "不需要"
+
+msgid "checking for delay_answer field .."
+msgstr "正在检查 delay_answer 域。。"
+
+msgid "fatal error"
+msgstr "致命错误"
+
+msgid "added"
+msgstr "已添加"
+
+msgid "already exists"
+msgstr "已存在"
+
+msgid "checking for pricid field .."
+msgstr "正在检查 pricid 域"
+
+msgid "Checking for Global var RECORDING_STATE.."
+msgstr ""
+
+msgid "Created"
+msgstr "已创建"
+
+msgid "Already exists!"
+msgstr "已存在！"
+
+msgid "Checking if trunk table migration required.."
+msgstr ""
+
+msgid "migrating.."
+msgstr ""
+
+msgid "removing globals.."
+msgstr ""
+
+msgid "done"
+msgstr ""
+
+msgid "Checking if privacy manager options exists.."
+msgstr ""
+
+msgid "Added pmmaxretries and pmminlength"
+msgstr ""
+
+msgid "Edit Administrator"
+msgstr "编辑管理员"
+
+#, php-format
+msgid "Delete User: %s"
+msgstr "删除拥护： %s "
+
+msgid "Add Administrator"
+msgstr "添加管理员"
+
+msgid "NOTE:"
+msgstr "注意："
+
+msgid ""
+"AUTHTYPE is not set to 'database' in /etc/amportal.conf - note that this "
+"module is not currently providing access control, and changing passwords "
+"here or adding users will have no effect unless AUTHTYPE is set to "
+"'database'."
+msgstr ""
+"在 /etc/amportal.conf 中的 AUTHTYPE 没有被配置为 'database' ——请注意，这导致"
+"此认证模块目前并未提供访问控制服务，在此更改密码或者添加用户都不会起作用，除"
+"非将 AUTHTYPE 设置为 'database'。"
+
+msgid "Username<span>Create a unique username for this new user</span>"
+msgstr "用户名<span>为新用户创建一个唯一的用户名</span>"
+
+msgid "Password<span>Create a password for this new user</span>"
+msgstr "密码<span>为新用户创建密码</span>"
+
+msgid "Access Restrictions"
+msgstr "访问范围限制"
+
+msgid ""
+"Department Name<span>Restrict this user's view of Digital Receptionist menus "
+"and System Recordings to only those for this department.</span>"
+msgstr ""
+"部门<span>在数字话务员的菜单和系统录音界面中，限制该用户只能访问关于此部门的"
+"信息。</span>"
+
+msgid ""
+"Extension Range<span>Restrict this user's view to only Extensions, Ring "
+"Groups, and Queues within this range.</span>"
+msgstr ""
+"分机范围<span>限制用户只能访问这个范围内的分机、拨号小组和等待队列。</span>"
+
+msgid ""
+"Admin Access<span>Select the Admin Sections this user should have access to."
+"</span>"
+msgstr "管理权限<span>选择此用户可以访问的管理区域。</span>"
+
+msgid "Apply Changes Bar"
+msgstr "应用更改工具栏"
+
+msgid "ALL SECTIONS"
+msgstr "所有区域"
+
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid "Submit Changes"
+msgstr "提交更改"
+
+msgid "Username must not be blank"
+msgstr "用户名不能为空"
+
+msgid ""
+"Username cannot start with a number, and can only contain letters and numbers"
+msgstr "用户名不能以数字开始，只能以字母打头"
+
+msgid "For security reasons, you cannot use the department name default"
+msgstr "出于安全考虑，你不能使用默认的部门名称"
+
+msgid "Department name cannot have a space"
+msgstr "部门名称不能包含空格"
+
+msgid " (toggle sort)"
+msgstr "（切换是否排序）"
+
+msgid "Add Incoming Route"
+msgstr "添加入局线路"
+
+msgid "All DIDs"
+msgstr "所有的DID"
+
+msgid "User DIDs"
+msgstr "用户的DID"
+
+msgid "General DIDs"
+msgstr "一般DID"
+
+msgid "Unused DIDs"
+msgstr "未使用的DID"
+
+msgid "any DID"
+msgstr "任何DID"
+
+msgid "any CID"
+msgstr "任何CID"
+
+msgid "Route"
+msgstr "线路"
+
+#, php-format
+msgid "Delete Route %s"
+msgstr "删除线路 %s"
+
+#, php-format
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+#, php-format
+msgid "Edit %s %s (%s)"
+msgstr "编辑 %s %s （%s）"
+
+msgid "Edit Incoming Route"
+msgstr "编辑入局线路"
+
+msgid "Provide a meaningful description of what this incoming route is"
+msgstr "填写关于入局线路的有意义的说明"
+
+msgid "DID Number"
+msgstr "DID号码"
+
+msgid ""
+"Define the expected DID Number if your trunk passes DID on incoming calls. "
+"<br><br>Leave this blank to match calls with any or no DID info.<br><br>You "
+"can also use a pattern match (eg _2[345]X) to match a range of numbers"
+msgstr ""
+"定义了在你的中继中允许通过的呼叫的DID范围。<br /><br />如果希望具有任何DID或"
+"没有DID的呼叫通过，就不填此项。<br /><br />你也可以使用模式匹配（比如 _2[345]"
+"X）来匹配一个范围内的DID号码。"
+
+msgid "Caller ID Number"
+msgstr "主叫ID号码"
+
+msgid ""
+"Define the Caller ID Number to be matched on incoming calls.<br><br>Leave "
+"this field blank to match any or no CID info. In addition to standard dial "
+"sequences, you can also put Private, Blocked, Unknown, Restricted, Anonymous "
+"and Unavailable in order to catch these special cases if the Telco transmits "
+"them."
+msgstr ""
+"定义了在你的中继中允许通过的呼叫的主叫ID（CID）范围。<br /><br />如果希望具有"
+"任何CID或没有CID的呼叫通过，就不填此项。除了可以使用标准的拨号顺序，如果你的"
+"电信公司传输像私有（Private）、阻塞（Blocked）、未知（Unknown）、受限制"
+"（Restricted）、匿名（Anonymous）和不可用（Unavailable）这样的信息，你还可以"
+"使用以上选项来处理这些特殊情况。"
+
+msgid "CID Priority Route"
+msgstr "主叫ID（CID）优先线路"
+
+msgid ""
+"This effects CID ONLY routes where no DID is specified. If checked, calls "
+"with this CID will be routed to this route, even if there is a route to the "
+"DID that was called. Normal behavior is for the DID route to take the calls. "
+"If there is a specific DID/CID route for this CID, that route will still "
+"take the call when that DID is called."
+msgstr ""
+"这个设置仅仅对没有指定DID的线路起作用。如果钩选，具有主叫ID（CID）的呼叫会被"
+"引导到这条线路，即使主叫原本呼叫的是某DID，同时也有线路通往此DID，其结果也一"
+"样。一般来说呼叫是送到DID线路上的。但是，如果对于此CID，有专门指定的DID/CID线"
+"路的话，当DID被呼叫时，呼叫就会传送到那条线路上。"
+
+msgid "Options"
+msgstr "选项"
+
+msgid "Alert Info"
+msgstr "警告信息"
+
+msgid "ALERT_INFO can be used for distinctive ring with SIP devices."
+msgstr "警告信息（ALERT_INFO）可以为SIP设备启用一种不同的振铃。"
+
+msgid "CID name prefix"
+msgstr "CID名字前缀"
+
+msgid ""
+"You can optionally prefix the Caller ID name. ie: If you prefix with \"Sales:"
+"\", a call from John Doe would display as \"Sales:John Doe\" on the "
+"extensions that ring."
+msgstr ""
+"你可以在主叫ID的名字上添加可选的前缀。比如，如果你希望添加“销售部：”前缀，那"
+"么从老王的分机打来的电话会被显示为“销售部：老王”。"
+
+msgid "Music On Hold"
+msgstr "等待时播放音乐"
+
+msgid ""
+"Set the MoH class that will be used for calls that come in on this route. "
+"For example, choose a type appropriate for routes coming in from a country "
+"which may have announcements in their language."
+msgstr ""
+"为这条线路上的呼叫设置一个MoH（等待音乐）类。比如，考虑到某国家说特定的语言，"
+"为从某国家入局的线路选择合适的MoH类型以播放他们的语言的问候消息。"
+
+msgid "No Music"
+msgstr "无音乐"
+
+msgid "Signal RINGING"
+msgstr "振铃信号"
+
+msgid ""
+"Some devices or providers require RINGING to be sent before ANSWER. You'll "
+"notice this happening if you can send calls directly to a phone, but if you "
+"send it to an IVR, it won't connect the call."
+msgstr ""
+"一些设备或服务提供商要求在应答（ANSWER）之前发送振铃（RINGING）信号。你会发现"
+"这发生在直接把呼叫发送到电话上的情况，但如果你把呼叫发送给自动语音应答"
+"（IVR），呼叫会无法连接。"
+
+msgid "Pause Before Answer"
+msgstr "在应答前暂停"
+
+msgid ""
+"An optional delay to wait before processing this route. Setting this value "
+"will delay the channel from answering the call. This may be handy if "
+"external fax equipment or security systems are installed in parallel and you "
+"would like them to be able to seize the line."
+msgstr ""
+"在处理这条线路的通话时，可以设置一个可选的等待时间。设置等待时间会延迟频道对"
+"呼叫的应答。这个设置对于并行安装的传真机或保安系统很实用，因为你可能希望他们"
+"有机会占有线路。"
+
+msgid "Privacy"
+msgstr "隐私"
+
+msgid "Privacy Manager"
+msgstr "隐私管理器"
+
+msgid ""
+"If no Caller ID has been received, Privacy Manager will ask the caller to "
+"enter their phone number. If an user/extension has Call Screening enabled, "
+"the incoming caller will be be prompted to say their name when the call "
+"reaches the user/extension."
+msgstr ""
+
+msgid "No"
+msgstr "否"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Max attempts"
+msgstr ""
+
+msgid "Number of attempts the caller has to enter a valid callerID"
+msgstr ""
+
+msgid "Min Length"
+msgstr ""
+
+msgid ""
+"Minimum amount of digits callerID needs to contain in order to be considered "
+"valid"
+msgstr ""
+
+msgid "Set Destination"
+msgstr "设置未知目的地"
+
+msgid "Clear Destination & Submit"
+msgstr "清除目的地并且提交"
+
+msgid "Please enter a valid DID Number"
+msgstr "请输入一个有效的DID号码"
+
+msgid "Please enter a valid Caller ID Number"
+msgstr "请输入一个有效的主叫ID号码"
+
+msgid "Please enter a valid Fax Email or leave it empty to use the default"
+msgstr "请输入一个有效的传真通告邮件地址，或者不填以使用默认值"
+
+msgid "Please enter a valid number for Pause after answer"
+msgstr "请输入有效的接听后等待的时间（数字形式）"
+
+msgid "Please enter a valid number for Pause Before Answer field"
+msgstr "请输入一个有效的接听前等待时间（数字形式）"
+
+msgid ""
+"Leaving the DID Number AND the Caller ID Number empty will match all "
+"incoming calls received not routed using any other defined Incoming Route.\\n"
+"\\nAre you sure?"
+msgstr ""
+"如果不填写DID号码和主叫ID号码，所有没有匹配其他定义好的入局线路的入局呼叫都将"
+"被匹配。\\n\\n你确定要这样设置吗？"
+
+msgid ""
+"DID information is normally just an incoming telephone number or for "
+"advanced users, a valid Asterisk Dial Pattern\\n\\nYou have entered a non "
+"standard DID pattern.\\n\\nAre you sure this is correct?"
+msgstr ""
+"DID信息一般只是一个来电号码，或者对于高级用户来说，只是一个有效的Asterisk拨号"
+"模式\\n\\n你输入的DID模式不是标准的拨号模式。\\n\\n你确定输入的拨号模式是正确"
+"的吗？"
+
+msgid "A Slash ('/') is never a valid DID. Please remove it and try again"
+msgstr "斜杠（“/”）不是有效的DID。请删除此字符后重试"
+
+msgid "Invalid Caller ID prefix."
+msgstr "无效的主叫ID前缀。"
+
+msgid "Dialing Options"
+msgstr "拨号选项"
+
+msgid "Asterisk Dial command options:"
+msgstr "Asterisk拨号命令选项："
+
+msgid "t: Allow the called user to transfer the call by hitting #"
+msgstr "t：允许被叫用户按#键以转移呼叫"
+
+msgid "T: Allow the calling user to transfer the call by hitting #"
+msgstr "T：允许主叫用户按#键以转移呼叫"
+
+msgid "r: Generate a ringing tone for the calling party"
+msgstr "r：为主叫方生成振铃音"
+
+msgid ""
+"w: Allow the called user to start recording after pressing *1 (Asterisk v1.2)"
+msgstr "w：允许被叫用户按*1后开始录音（Asterisk v1.2）"
+
+msgid ""
+"W: Allow the calling user to start recording after pressing *1 (Asterisk "
+"v1.2)"
+msgstr "W：允许主叫用户按*1后开始录音（Asterisk v1.2）"
+
+msgid "Asterisk Outbound Dial command options:"
+msgstr "Asterisk出局拨号选项："
+
+msgid "r: You SHOULD NOT use this option on outbound trunks"
+msgstr "r：你绝不能在出局中继上使用此选项"
+
+msgid "Call Recording"
+msgstr "电话录音"
+
+msgid "Extension Recording Override:"
+msgstr "覆盖分机录音设定："
+
+msgid ""
+"This will override the recording settings of all extensions/users. If "
+"enabled, the system will ignore all Record Always settings of a user and "
+"will not turn on recording. This does not effect On Demand recording "
+"controlled by the dial options 'w' and 'W' above. It does not effect other "
+"recording settings in modules such as Queues and Conferences. If you don't "
+"use recordings, setting this is beneficial to system performance as it "
+"removes the check that is otherwise done on every single call."
+msgstr ""
+"这会覆盖所有的分机、用户的录音设定。如果被启用，系统将忽略所有的录音，而无论"
+"用户如何设定。这项设置不会影响上面的由选项“w”和“W”设定的按需录音的功能。它也"
+"不会影响其他模块的录音设定，如等待队列和会议模块。如果你不使用录音，启用此项"
+"将使你的系统运行得更快，因为系统不再需要再在每个单独的呼叫中检查录音设置。"
+
+msgid "Call recording format:"
+msgstr "呼叫录音格式："
+
+msgid "Pick the format in which to save recorded calls"
+msgstr "从各种格式中选择一项用于保存呼叫录音"
+
+msgid "WAV"
+msgstr "WAV"
+
+msgid "wav"
+msgstr "wav"
+
+msgid "ulaw"
+msgstr "ulaw"
+
+msgid "alaw"
+msgstr "alaw"
+
+msgid "sln"
+msgstr "sln"
+
+msgid "gsm"
+msgstr "gsm"
+
+msgid "g729"
+msgstr "g729"
+
+msgid "Recording Location:"
+msgstr "录音保存的位置"
+
+msgid ""
+"Override the default location where asterisk will store call recordings. "
+"Include the trailing /. Be sure to set proper permissions on the directory "
+"for the asterisk user."
+msgstr ""
+"覆盖asterisk储存录音的默认位置设置。此设置要包含路径末尾的/，并对该路径为"
+"asterisk用户设置适当的权限。"
+
+msgid "Run after record:"
+msgstr "录音后要运行的脚本："
+
+msgid ""
+"An optional script to be run after the call is hungup. You can include "
+"channel and MixMon variables like ${CALLFILENAME}, ${MIXMON_FORMAT} and "
+"${MIXMON_DIR}. To ensure that you variables are properly escaped, use the "
+"following notation: ^{MY_VAR}"
+msgstr ""
+"通话挂断后，此可选的脚本会被调用。你可以在脚本中包含频道和MixMon变量，例如"
+"${CALLFILENAME}、${MIXMON_FORMAT}和{MIXMON_DIR}。要确保你的变量不与原有变量相"
+"冲突，请使用以下语法：^{变量名}"
+
+msgid "Voicemail"
+msgstr "语音邮件"
+
+msgid "Ringtime Default:"
+msgstr "默认振铃时间："
+
+msgid ""
+"Default number of seconds to ring phones before sending callers to "
+"voicemail. This can be set per extension/user and will have no effect on "
+"phones with no voicemail."
+msgstr ""
+"在将无人接听的呼叫转发到语音邮件之前，默认的振铃时间。每个分机/用户可以单独设"
+"置自己的振铃时间，并且此设置不会影响没有语音邮件的电话。"
+
+msgid "Direct Dial Voicemail Prefix:"
+msgstr "直接拨号到语音邮件的前缀："
+
+msgid ""
+"Prefix used to dial directly to someone's voicemail. Caution should be taken "
+"in choosing this prefix to avoid conflicts with featurecodes."
+msgstr ""
+"此前缀用于直接拨打到某人的语音邮件信箱中。请小心设定此前缀以避免与功能代码相"
+"冲突。"
+
+msgid "Direct Dial to Voicemail message type:"
+msgstr "直接拨号的语音邮件消息类型："
+
+msgid ""
+"Default message type to use when dialing direct to an extensions voicemail"
+msgstr "当直接拨号到某人的语音邮件邮箱时，这项设定指示了消息的类型。"
+
+msgid "Unavailable"
+msgstr "不可用"
+
+msgid "No Message"
+msgstr "无信息"
+
+msgid "Optional Voicemail Recording Gain:"
+msgstr "可选的语音邮件录音增益："
+
+msgid "Use the specified amount of gain when recording the voicemail message."
+msgstr "当为语音邮件录音时，使用指定的增益。"
+
+msgid "The units are whole-number decibels (dB)."
+msgstr "值为整数，单位为分贝（dB）。"
+
+msgid "Do Not Play \"please leave message after tone\" to caller"
+msgstr "不要为主叫播放“请在听到提示音后留言”。"
+
+msgid ""
+"Check this to remove the default message \"Please leave your message after "
+"the tone. When done, hang-up, or press the pound key.\" That is played after "
+"the voicemail greeting (the s option). This applies globally to all vm boxes."
+msgstr ""
+"钩选此项会移除“请在听到提示音后留言。留言结束后请挂断。”通常这句话在语音邮件"
+"的问候语（s选项）后播放。这个设置会影响所有的语音邮箱。"
+
+msgid "Operator Extension:"
+msgstr "话务分机："
+
+msgid ""
+"Default number to dial when callers hit '0' from voicemail or the built in "
+"IVR directory (it has no effect on the Directory Module). This does NOT need "
+"to be an extension, it can be a Ring Group, or even an external number."
+msgstr ""
+
+msgid "Voicemail VmX Locator"
+msgstr "语音邮件的VmX定位器"
+
+msgid "Default Context & Pri:"
+msgstr "默认的上下文和优先级："
+
+msgid "Default to use if only a number/extension are provided."
+msgstr "在只提供一个号码/分机时使用的默认值。"
+
+msgid "Timeout/#-press default:"
+msgstr "超时/#键设置："
+
+msgid ""
+"This is the default location that a caller will be sent if they don't press "
+"any key (timeout) or press # which is interpreted as a timeout. Set this to "
+"'dovm' to go to voicemail (default)."
+msgstr ""
+"这项设置定义了当主叫在规定时间内没有按下任何键（超时）或按下了#键后，呼叫会被"
+"发送到的地方。设置为'dovm'，则呼叫会被转移到语音邮件（默认值）。"
+
+msgid "Loop Exceed default:"
+msgstr "超出循环次数设置："
+
+msgid ""
+"This is the default location that a caller will be sent if they press an "
+"invalid options too man times, as defined by the Maximum Loops count. Set "
+"this to 'dovm' to go to voicemail (default)."
+msgstr ""
+"这项设置定义了当主叫在按下太多次（在最大循环次数中设置）的无效键后，呼叫会被"
+"发送到的地方。设置为'dovm'，则呼叫会被转移到语音邮件（默认值）。"
+
+msgid "Timeout VM Msg:"
+msgstr "超时语音消息设置："
+
+msgid ""
+"If this destination is voicemail, select whether or not to play the standard "
+"voicemail instructions or just beep."
+msgstr ""
+"如果目的地是语音邮件，可以选择是播放一个标准的语音邮件说明还是仅仅响一声。"
+
+msgid "Std Instructions"
+msgstr "标准说明"
+
+msgid "Beep Only"
+msgstr "响一声"
+
+msgid "Max Loop VM Msg:"
+msgstr "最大循环语音邮件消息设置："
+
+msgid "Direct VM Option"
+msgstr "直接语音邮件选项"
+
+msgid ""
+"If a user defined option is to go to voicemail (using the 'dovm' extension) "
+"this is the default option if not specified by the user's settings."
+msgstr ""
+"如果用户定义的选项是将呼叫转移到语音邮件（使用了'dovm'分机），这项这是定义了"
+"要执行的默认动作（如果用户没有定义专门的选项）。"
+
+msgid "Msg Timeout:"
+msgstr "消息超时时间："
+
+msgid ""
+"Time to wait after message has played to timeout and/or repeat the message "
+"if no entry pressed."
+msgstr "设置播放消息后并等待输入的超时时间或者设置为在无输入时一直播放消息。"
+
+msgid "seconds"
+msgstr "秒"
+
+msgid "Msg Play:"
+msgstr "消息播放次数："
+
+msgid ""
+"Number of times to play the recorded message if the caller does not press "
+"any options and it times out."
+msgstr "如果用户没有按任何键并且超时，这项设置定义了播放原来录好的消息的次数。"
+
+msgid "times"
+msgstr "次"
+
+msgid "Error Re-tries:"
+msgstr "错误重试次数："
+
+msgid ""
+"Number of times to play invalid options and repeat the message upon "
+"receiving an undefined option."
+msgstr "在收到无效的选项时的重试并播放消息的次数。"
+
+msgid "Legacy Company Directory"
+msgstr ""
+
+msgid "Find users in the Company Directory by:"
+msgstr "在伙伴目录中查找用户，通过以下方式："
+
+msgid ""
+"The Company Directory allows a caller to spell the user's first name, last "
+"name, or both when searching for a user. This will select which of these "
+"modes are used."
+msgstr ""
+"伙伴目录可以让呼叫者通过姓、名或完整的姓名查找另一用户。这项设置定义了使用了"
+"哪种查找方法。"
+
+msgid "first name"
+msgstr "名"
+
+msgid "last name"
+msgstr "名字"
+
+msgid "first or last name"
+msgstr "名或姓"
+
+msgid "Announce Extension:"
+msgstr "通告分机："
+
+msgid ""
+"Plays a message \"Please hold while I transfer you to extension xxx\" that "
+"lets the caller know what extension to use in the future when connecting "
+"from the company directory."
+msgstr ""
+"通过播放语音消息“请等待，正在将呼叫转移到某某分机。”，让主叫知道将来从伙伴目"
+"录连接时使用哪个分机。"
+
+msgid "International Settings"
+msgstr "国际设置"
+
+msgid "Country Indications"
+msgstr "国家"
+
+msgid "Select which country you are in"
+msgstr "选择你所在的国家"
+
+msgid "24-hour format"
+msgstr "24小时格式"
+
+msgid ""
+"Select Yes if you use 24-hour format or No if you are using 12-hour am/pm "
+"format"
+msgstr "如果你使用24小时格式来显示时间，就选择“是”，选择“否”表示使用12小时格式"
+
+msgid "no"
+msgstr "否"
+
+msgid "yes"
+msgstr "是"
+
+msgid "Security Settings"
+msgstr "安全设置"
+
+msgid "Allow Anonymous Inbound SIP Calls?"
+msgstr "允许匿名入局SIP呼叫"
+
+msgid "** WARNING **"
+msgstr "** 警告 **"
+
+msgid ""
+"Setting this to 'yes' will potentially allow ANYBODY to call into your "
+"Asterisk server using the SIP protocol"
+msgstr "设置此选项为“是”，会允许任何人用SIP协议从外部呼叫你的Asterisk服务器"
+
+msgid ""
+"It should only be used if you fully understand the impact of allowing "
+"anonymous calls into your server"
+msgstr "除非你完全了解允许匿名呼叫进入你的服务器的影响，否则不要启用此项"
+
+msgid "Online Updates"
+msgstr "在线升级"
+
+msgid "Check for Updates"
+msgstr "检查在线更新"
+
+msgid ""
+"Choosing Yes will result in the system automatically checking for updates "
+"nightly. The resulting information will be displayed in the dashboard and "
+"will be optionally emailed to the address below if provided.<br />This will "
+"transmit your FreePBX and Asterisk version numbers along with a unique but "
+"random identifier. This is used to provide proper update information and to "
+"track version usage to focus development and maintenance efforts. No private "
+"information is transmitted."
+msgstr ""
+"如果选择了“是”，系统将会为你自动检查在线更新。检查的结果会在操作面版上显示，"
+"或者可以选择发送通告邮件（发送到下面的邮件地址）。<br />为了检查在线更新，你"
+"的FreePBX和Asterisk的版本号以及一个随机标识符将被发送到服务器。这么做是为了让"
+"开发团队更好的掌握各版本的使用情况，以更好的分配开发和维护力量。请放心，你的"
+"隐私不会被上传。"
+
+msgid "Update Email"
+msgstr "升级邮箱"
+
+msgid ""
+"Email address where online updates will be sent. Leaving blank will result "
+"in no updates being sent."
+msgstr "发送更新的目的电子邮件地址。此项留空则不会发送任何更新。"
+
+msgid "Please enter a valid Number of Seconds"
+msgstr "请输入有效的秒数"
+
+msgid "Please enter a valid Fax Email"
+msgstr "请输入有效的传真邮件地址"
+
+msgid ""
+"You have selected the 'r' option for your trunks. This is highly discouraged "
+"and will create problems with calls on many PRI, VoIP, ISDN and other trunks "
+"that are capable of signaling. Asterisk will generate a ringing tone until "
+"the signaling indicates the line is answered. This will result in some "
+"external IVRs being inaccessible and other strange problems."
+msgstr ""
+"你在你的中继上选择了'r'选项。对于使用信号的如PRI、VoIP、ISDN等中继，这会引起"
+"问题，因此不推荐这样设置。Asterisk会一直生成振铃音，直到有信号表明线路接通。"
+"这会导致无法访问一些外部IVR（自动语音应答）和其他奇怪的问题。"
+
+msgid "Error fetching prefix list for: "
+msgstr "在获取前缀列表时发生错误："
+
+msgid "Invalid format for NPA-NXX code (must be format: NXXNXX)"
+msgstr "无效的 NPA-NXX 代码（正确格式是：NXXNXX）"
+
+msgid ""
+"An unknown error occurred repositioning routes, refresh your browser to see "
+"the current correct route positions"
+msgstr ""
+
+msgid "Add Route"
+msgstr "添加线路"
+
+msgid "Drag up or down to reposition, click to choose"
+msgstr ""
+
+msgid "Edit Route"
+msgstr "编辑线路"
+
+msgid "Route Settings"
+msgstr ""
+
+msgid "Route Name"
+msgstr "线路名"
+
+msgid ""
+"Name of this route. Should be used to describe what type of calls this route "
+"matches (for example, 'local' or 'longdistance')."
+msgstr ""
+"这条线路的名字。一般用来表示这条线路所匹配的呼叫的类型，例如"
+"（'local'或'longdistance'）。"
+
+msgid "Route CID"
+msgstr ""
+
+msgid ""
+"Optional Route CID to be used for this route. If set, this will override all "
+"CIDS specified except:<ul><li>extension/device EMERGENCY CIDs if this route "
+"is checked as an EMERGENCY Route</li><li>trunk CID if trunk is set to force "
+"it's CID</li><li>Forwarded call CIDs (CF, Follow Me, Ring Groups, etc)</"
+"li><li>Extension/User CIDs if checked</li></ul>"
+msgstr ""
+
+msgid "Override Extension"
+msgstr ""
+
+msgid ""
+"If checked the extension's Outbound CID will be ignored in favor of this "
+"CID. The extension's Emergency CID will still be used if the route is an "
+"Emergency Route and the Extension has a defined Emergency CID."
+msgstr ""
+
+msgid "Route Password"
+msgstr "线路密码"
+
+msgid ""
+"Optional: A route can prompt users for a password before allowing calls to "
+"progress.  This is useful for restricting calls to international "
+"destinations or 1-900 numbers.<br><br>A numerical password, or the path to "
+"an Authenticate password file can be used.<br><br>Leave this field blank to "
+"not prompt for password."
+msgstr ""
+
+msgid "Route Type"
+msgstr ""
+
+msgid ""
+"Optional: Selecting Emergency will enforce the use of a device's Emergency "
+"CID setting (if set).  Select this option if this route is used for "
+"emergency dialing (ie: 911)."
+msgstr ""
+
+msgid ""
+"Optional: Selecting Intra-Company will treat this route as an intra-company "
+"connection, preserving the internal Caller ID information instead of the "
+"outbound CID of either the extension or trunk."
+msgstr ""
+
+msgid "Emergency"
+msgstr "紧急情况"
+
+msgid "Intra-Company"
+msgstr ""
+
+msgid "Music On Hold?"
+msgstr "等待时播放音乐："
+
+msgid ""
+"You can choose which music category to use. For example, choose a type "
+"appropriate for a destination country which may have announcements in the "
+"appropriate language."
+msgstr ""
+"你可以选择要使用的音乐分类。例如，为某些国家选择合适的语言类型和问候语。"
+
+msgid "default"
+msgstr ""
+
+msgid "Time Group:"
+msgstr ""
+
+msgid ""
+"If this route should only be available during certain times then Select a "
+"Time Group created under Time Groups. The route will be ignored outside of "
+"times specified in that Time Group. If left as default of Permanent Route "
+"then it will always be available."
+msgstr ""
+
+msgid "---Permanent Route---"
+msgstr ""
+
+msgid "Route Position"
+msgstr ""
+
+msgid "Where to insert this route or relocate it relative to the other routes."
+msgstr ""
+
+#, php-format
+msgid "First before %s"
+msgstr ""
+
+msgid "---No Change---"
+msgstr ""
+
+#, php-format
+msgid "Before %s"
+msgstr ""
+
+#, php-format
+msgid "Last after %s"
+msgstr ""
+
+msgid "Additional Settings"
+msgstr ""
+
+msgid "Dial Patterns that will use this Route"
+msgstr ""
+
+msgid ""
+"A Dial Pattern is a unique set of digits that will select this route and "
+"send the call to the designated trunks. If a dialed pattern matches this "
+"route, no subsequent routes will be tried. If Time Groups are enabled, "
+"subsequent routes will be checked for matches outside of the designated time"
+"(s)."
+msgstr ""
+
+msgid "Rules:"
+msgstr "规则"
+
+msgid "matches any digit from 0-9"
+msgstr "与0-9的数字相匹"
+
+msgid "matches any digit from 1-9"
+msgstr "与1-9的数字相匹"
+
+msgid "matches any digit from 2-9"
+msgstr "与2-9的数字相匹"
+
+msgid "matches any digit in the brackets (example: 1,2,3,7,8,9)"
+msgstr ""
+
+msgid "wildcard, matches one or more dialed digits"
+msgstr ""
+
+msgid "prepend:"
+msgstr ""
+
+msgid ""
+"Digits to prepend to a successful match. If the dialed number matches the "
+"patterns specified by the subsequent columns, then this will be prepended "
+"before sending to the trunks."
+msgstr ""
+
+msgid "prefix:"
+msgstr ""
+
+msgid ""
+"Prefix to remove on a successful match. The dialed number is compared to "
+"this and the subsequent columns for a match. Upon a match, this prefix is "
+"removed from the dialed number before sending it to the trunks."
+msgstr ""
+
+msgid "match pattern:"
+msgstr ""
+
+msgid ""
+"The dialed number will be compared against the  prefix + this match pattern. "
+"Upon a match, the match pattern portion of the dialed number will be sent to "
+"the trunks"
+msgstr ""
+
+msgid "CallerID:"
+msgstr ""
+
+msgid ""
+"If CallerID is supplied, the dialed number will only match the prefix + "
+"match pattern if the CallerID being transmitted matches this. When "
+"extensions make outbound calls, the CallerID will be their extension number "
+"and NOT their Outbound CID. The above special matching sequences can be used "
+"for CallerID matching similar to other number matches."
+msgstr ""
+
+msgid "prepend"
+msgstr ""
+
+msgid "prefix"
+msgstr ""
+
+msgid "match pattern"
+msgstr ""
+
+msgid "CallerId"
+msgstr ""
+
+msgid "Dial patterns wizards"
+msgstr "拨号模式向导"
+
+msgid ""
+"These options provide a quick way to add outbound dialing rules. Follow the "
+"prompts for each."
+msgstr "这些选项提供了快速配置出局拨号规则的途径。请按提示操作。"
+
+msgid "Lookup local prefixes"
+msgstr "查找本地前缀"
+
+msgid ""
+"This looks up your local number on www.localcallingguide.com (NA-only), and "
+"sets up so you can dial either 7, 10 or 11 digits (5551234, 6135551234, "
+"16135551234) to access this route."
+msgstr ""
+"系统为你在www.localcallingguid.com查找你的本地号码（仅限于NA），并且允许你拨"
+"打7位、10位和11位号码（如5551234、6135551234、16135551234）来访问这条线路。"
+
+msgid ""
+"What is your areacode + prefix (NPA-NXX)?\\n\\n(Note: this database contains "
+"North American numbers only, and is not guaranteed to be 100% accurate. You "
+"will still have the option of modifying results.)\\n\\nThis may take a few "
+"seconds."
+msgstr ""
+"请输入你的地区码+拨号前缀（NPA-NXX）\\n：\\n（请注意，本数据库只包含了北美的"
+"号码，且不保证它100%正确。你仍可以更改结果。）\\n\\n这需要几秒的时间"
+
+msgid "Invalid NPA-NXX. Must be of the format \\'NXX-NXX\\'"
+msgstr "无效的 NPA-NXX 格式。正确的格式是 \\'NPA-NXX\\'"
+
+msgid ""
+"Error: Cannot continue!\\n\\nPrefix lookup requires cURL support in PHP on "
+"the server. Please install or enable cURL support in your PHP installation "
+"to use this function. See http://www.php.net/curl for more information."
+msgstr ""
+"错误：无法继续执行！\\n\\n前缀查询需要服务器PHP对cURL的支持。为了使用这个功"
+"能，请安装并启用PHP的cURL支持。请参考http://www.php.net/curl，以获得更多的信"
+"息。"
+
+msgid "NXXXXXX"
+msgstr ""
+
+msgid "NXXXXXX,NXXNXXXXXX"
+msgstr ""
+
+msgid "1800NXXXXXX,1888NXXXXXX,1877NXXXXXX,1866NXXXXXX"
+msgstr ""
+
+msgid "1NXXNXXXXXX"
+msgstr ""
+
+msgid "011."
+msgstr ""
+
+msgid "411,311"
+msgstr ""
+
+msgid "911"
+msgstr ""
+
+msgid "(pick one)"
+msgstr "（选一个）"
+
+msgid "Local 7 digit"
+msgstr "本地7位数字"
+
+msgid "Local 7/10 digit"
+msgstr "本地7/10数字"
+
+msgid "Toll-free"
+msgstr "免费的"
+
+msgid "Long-distance"
+msgstr "长途"
+
+msgid "International"
+msgstr "国际"
+
+msgid "Information"
+msgstr "信息"
+
+msgid "Trunk Sequence for Matched Routes"
+msgstr ""
+
+msgid ""
+"The Trunk Sequence controls the order of trunks that will be used when the "
+"above Dial Patterns are matched. <br><br>For Dial Patterns that match long "
+"distance numbers, for example, you'd want to pick the cheapest routes for "
+"long distance (ie, VoIP trunks first) followed by more expensive routes "
+"(POTS lines)."
+msgstr ""
+"中继顺序控制了拨号模式被匹配后，中继被使用的顺序。<br /><br />例如说，对于匹"
+"配长途通话的拨号模式来说，你会希望首先使用那些比较便宜的中继（比如VoIP），若"
+"不成功，才使用那些较贵的中继（比如一般的电话线）。"
+
+msgid "Move Up"
+msgstr "上移"
+
+msgid "Move Down"
+msgstr "下移"
+
+msgid "Add Trunk"
+msgstr "添加中继"
+
+msgid "remove"
+msgstr ""
+
+msgid "Click here to remove this pattern"
+msgstr ""
+
+msgid "Route name is invalid, please try again"
+msgstr "线路名称无效，请重试"
+
+msgid "Route password must be numeric or leave blank to disable"
+msgstr "线路密码要么只能是数字，要么就不填"
+
+msgid "At least one trunk must be picked"
+msgstr "只要要选择一个中继"
+
+msgid "Invalid Outbound Caller ID"
+msgstr "无效的出局主叫ID"
+
+msgid "No dial pattern, there must be at least one"
+msgstr ""
+
+msgid "Dial pattern is invalid"
+msgstr "无效的拨号模式"
+
+#, php-format
+msgid "Channel %s"
+msgstr ""
+
+msgid "Add a Trunk"
+msgstr "添加中继"
+
+msgid "Add SIP Trunk"
+msgstr "添加SIP中继"
+
+msgid "Add DAHDI Trunk"
+msgstr ""
+
+msgid "Add Zap Trunk"
+msgstr "添加Zap中继"
+
+msgid "DAHDI compatibility mode"
+msgstr "DAHDI兼容模式"
+
+msgid "Add IAX2 Trunk"
+msgstr "添加IAX2中继"
+
+msgid "Add ENUM Trunk"
+msgstr "添加ENUM中继"
+
+msgid "Add DUNDi Trunk"
+msgstr "添加DUNDi中继"
+
+msgid "Add Custom Trunk"
+msgstr "添加自定义中继"
+
+#, php-format
+msgid "%s Channel %s"
+msgstr ""
+
+#, php-format
+msgid "Edit %s Trunk"
+msgstr "编辑 %s 中继"
+
+msgid "DAHDI compatibility Mode"
+msgstr "DAHDI 兼容模式"
+
+#, php-format
+msgid "Delete Trunk %s"
+msgstr "删除中继：%s"
+
+msgid "In use by"
+msgstr "正在使用："
+
+msgid "route"
+msgstr "线路"
+
+msgid "routes"
+msgstr "线路"
+
+msgid "Sequence"
+msgstr "顺序"
+
+msgid "WARNING:"
+msgstr "警告："
+
+msgid "This trunk is not used by any routes!"
+msgstr "此中继未被任何线路使用"
+
+msgid ""
+"This trunk will not be able to be used for outbound calls until a route is "
+"setup that uses it. Click on <b>Outbound Routes</b> to setup routing."
+msgstr ""
+"除非建立使用此中继的线路，否则它无法用于出局呼叫。点击 <b>出局线路</b> 以配置"
+"线路参数。"
+
+#, php-format
+msgid "Add %s Trunk"
+msgstr ""
+
+msgid ""
+"FreePBX offers limited support for DUNDi trunks and additional manual "
+"configuration is required. The trunk name should correspond to the "
+"[mappings] section of the remote dundi.conf systems. For example, you may "
+"have a mapping on the remote system, and corresponding configurations in "
+"dundi.conf locally, that looks as follows:<br /><br />[mappings]<br />priv "
+"=> dundi-extens,0,IAX2,priv:${SECRET}@218.23.42.26/${NUMBER},nopartial<br /"
+"><br />In this example, you would create this trunk and name it priv. You "
+"would then create the corresponding IAX2 trunk with proper settings to work "
+"with DUNDi. This can be done by making an IAX2 trunk in FreePBX or by using "
+"the iax_custom.conf file.<br />The dundi-extens context in this example must "
+"be created in extensions_custom.conf. This can simply include contexts such "
+"as ext-local, ext-intercom-users, ext-paging and so forth to provide access "
+"to the corresponding extensions and features provided by these various "
+"contexts and generated by FreePBX."
+msgstr ""
+"FreePBX仅对DUNDi中继提供有限的支持，你需要额外的手工配置。中继的名字要与配置"
+"文件中的 [mappings] 小节中的远程 dudi.conf 系统的有关设置相关联。比如说，你在"
+"本地的 dundi.conf 中进行了配置，对在远程系统作了映射。配置代码大致是这样的："
+"<br /><br />[mappings]<br />priv => dundi-extens,0,IAX2,priv:${SECRET}"
+"@218.23.42.26/${NUMBER},noparital<br /><br />在这个例子中，你应该创建一个中继"
+"并命名为 priv 。你可以为配合 DUNDi 工作，而以适当的配置创建相关的IAX2中继。这"
+"个工作可在 FreePBX 中完成，或者也可以手动修改 iax_custom.conf 。<br />这个例"
+"子中的 dundi-extens 的上下文配置必须在 extensions_custom.conf 中创建。此配置"
+"可以仅包括类似于 ext-local, ext-intercom-users, ext-paging 等等的上下文，用来"
+"访问相关的分机和功能（无论是这些上下文提供的或 FreePBX 生成的）。"
+
+msgid "Trunk Name"
+msgstr "中继名"
+
+msgid "Descriptive Name for this Trunk"
+msgstr ""
+
+msgid "Outbound Caller ID"
+msgstr "出局呼叫ID"
+
+msgid ""
+"Caller ID for calls placed out on this trunk<br><br>Format: <b>&lt;"
+"#######&gt;</b>. You can also use the format: \"hidden\" <b>&lt;#######&gt;</"
+"b> to hide the CallerID sent out over Digital lines if supported (E1/T1/J1/"
+"BRI/SIP/IAX)."
+msgstr ""
+
+msgid "CID Options"
+msgstr ""
+
+msgid ""
+"Determines what CIDs will be allowed out this trunk. IMPORTANT: EMERGENCY "
+"CIDs defined on an extension/device will ALWAYS be used if this trunk is "
+"part of an EMERGENCY Route regardless of these settings.<br />Allow Any CID: "
+"all CIDs including foreign CIDS from forwarded external calls will be "
+"transmitted.<br />Block Foreign CIDs: blocks any CID that is the result of a "
+"forwarded call from off the system. CIDs defined for extensions/users are "
+"transmitted.<br />Remove CNAM: this will remove CNAM from any CID sent out "
+"this trunk<br />Force Trunk CID: Always use the CID defined for this trunk "
+"except if part of any EMERGENCY Route with an EMERGENCY CID defined for the "
+"extension/device."
+msgstr ""
+
+msgid "Allow Any CID"
+msgstr ""
+
+msgid "Block Foreign CIDs"
+msgstr ""
+
+msgid "Remove CNAM"
+msgstr ""
+
+msgid "Force Trunk CID"
+msgstr ""
+
+msgid "Maximum Channels"
+msgstr "最大频道数"
+
+#, php-format
+msgid ""
+"Controls the maximum number of outbound channels (simultaneous calls) that "
+"can be used on this trunk. To count inbound calls against this maximum, use "
+"the auto-generated context: %s as the inbound trunk's context. (see "
+"extensions_additional.conf) Leave blank to specify no maximum."
+msgstr ""
+"控制在这个中继上的出局频道的最大值（即同时呼叫数）。要对这个最大值统计入局呼"
+"叫数，可以使用自动生成的上下文：%s ，作为入局中继的上下文。（参考"
+"extensions_additional.conf。）此项不填内容表示无限制。"
+
+msgid ""
+"Controls the maximum number of outbound channels (simultaneous calls) that "
+"can be used on this trunk. Inbound calls are not counted against the "
+"maximum. Leave blank to specify no maximum."
+msgstr ""
+"控制在这个中继上的出局频道的最大值（即同时呼叫数）。不对这个最大值统计入局呼"
+"叫数。此项不填内容表示无限制。"
+
+msgid "Disable Trunk"
+msgstr "禁用中继"
+
+msgid "Check this to disable this trunk in all routes where it is used."
+msgstr "钩选此项会在所有使用了此中继的线路上禁用它"
+
+msgid "Monitor Trunk Failures"
+msgstr "中继出错记录"
+
+msgid ""
+"If checked, supply the name of a custom AGI Script that will be called to "
+"report, log, email or otherwise take some action on trunk failures that are "
+"not caused by either NOANSWER or CANCEL."
+msgstr ""
+"如果钩选此项，就提供一个自定义的AGI脚本的名字。在发生非 NOANSWER 或 CANCEL 引"
+"起的中继错误时，这个AGI脚本将被调用，它可以用来报告错误、记录错误、发送通知错"
+"误的邮件或做一些别的工作。"
+
+msgid "Dialed Number Manipulation Rules"
+msgstr ""
+
+msgid ""
+"These rules can manipulate the dialed number before sending it out this "
+"trunk. If no rule applies, the number is not changed. The original dialed "
+"number is passed down from the route where some manipulation may have "
+"already occurred. This trunk has the option to further manipulate the "
+"number. If the number matches the combined values in the <b>prefix</b> plus "
+"the <b>match pattern</b> boxes, the rule will be applied and all subsequent "
+"rules ignored.<br/> Upon a match, the <b>prefix</b>, if defined, will be "
+"stripped. Next the <b>prepend</b> will be inserted in front of the <b>match "
+"pattern</b> and the resulting number will be sent to the trunk. All fields "
+"are optional."
+msgstr ""
+
+msgid ""
+"Digits to prepend upon a successful match. If the dialed number matches the "
+"patterns in the <b>prefix</b> and <b>match pattern</b> boxes, this will be "
+"prepended before sending to the trunk."
+msgstr ""
+
+msgid ""
+"Prefix to remove upon a successful match. If the dialed number matches this "
+"plus the <b>match pattern</b> box, this prefix is removed before adding the "
+"optional <b>prepend</b> box and sending the results to the trunk."
+msgstr ""
+
+msgid ""
+"The dialed number will be compared against the <b>prefix</b> plus this "
+"pattern. Upon a match, this portion of the number will be sent to the trunks "
+"after removing the <b>prefix</b> and appending the <b>prepend</b> digits"
+msgstr ""
+
+msgid ""
+"You can completely replace a number by matching on the <b>prefix</b> only, "
+"replacing it with a <b>prepend</b> and leaving the <b>match pattern</b> "
+"blank."
+msgstr ""
+
+msgid "+ Add More Dial Pattern Fields"
+msgstr ""
+
+msgid "Clear all Fields"
+msgstr ""
+
+msgid "Dial Rules Wizards"
+msgstr "拨号规则向导"
+
+msgid "Always dial with prefix"
+msgstr "拨号时总是包含前缀"
+
+msgid ""
+"is useful for VoIP trunks, where if a number is dialed as \"5551234\", it "
+"can be converted to \"16135551234\"."
+msgstr "对VoIP中继很有用。它可以把拨出的号码如“5551234”转换成“16135551234”。"
+
+msgid "Remove prefix from local numbers"
+msgstr "从本地号码中移除前缀"
+
+msgid ""
+"is useful for ZAP and DAHDI trunks, where if a local number is dialed as "
+"\"6135551234\", it can be converted to \"555-1234\"."
+msgstr ""
+
+msgid "Setup Google for directory assistance"
+msgstr ""
+
+msgid ""
+"is useful to translate a call to directory assistance (default: 411) to "
+"Google's toll free directory (default: 18004664411) or any other number of "
+"your choosing"
+msgstr ""
+
+msgid "Lookup numbers for local trunk"
+msgstr "为本地中继查找号码"
+
+msgid ""
+"This looks up your local number on www.localcallingguide.com (NA-only), and "
+"sets up so you can dial either 7 or 10 digits (regardless of what your PSTN "
+"is) on a local trunk (where you have to dial 1+area code for long distance, "
+"but only 5551234 (7-digit dialing) or 6135551234 (10-digit dialing) for "
+"local calls"
+msgstr ""
+"系统为你在www.localcallingguid.com查找你的本地号码，这使你可以在本地中继（即"
+"拨长途需要加拨1的区域）中，拨7或10位数字（而不管你的PSTN是什么），且只有"
+"5551234（7位拨号）或者6135551234（10位拨号）作为本地呼叫。"
+
+msgid "Lookup numbers for local trunk (7-digit dialing)"
+msgstr "为本地中继查找号码（7位拨号）"
+
+msgid "Lookup numbers for local trunk (10-digit dialing)"
+msgstr "为本地中继查找号码（10位拨号）"
+
+msgid "Are you sure you want to disable this trunk in all routes it is used?"
+msgstr "你确定要在所有的线路上禁用该中继吗？"
+
+msgid "You have enabled this trunk in all routes it is used"
+msgstr "你已在所有使用此中继的线路上启用了它"
+
+msgid "\")"
+msgstr "\")"
+
+msgid ""
+"What is the local dialing pattern?\\n\\n(ie. NXXNXXXXXX for US/CAN 10-digit "
+"dialing, NXXXXXX for 7-digit)"
+msgstr ""
+"请输入本地拨号模式：\\n\\n（例如，为美国/加拿大的10位拨号输入NXXNXXXXXX，或为"
+"7位拨号输入NXXXXXX）"
+
+msgid "Invalid pattern. Only 0-9, #, *, Z, N, X and . are allowed."
+msgstr "无效拨号模式。只能输入0-9、#、*、Z、N、X和.（小数点）。"
+
+msgid ""
+"What prefix should be added to the dialing pattern?\\n\\n(ie. for US/CAN, 1"
+"+areacode, ie, \\'1613\\')?"
+msgstr ""
+"请输入添加到此拨号模式的前缀：\\n\\n（例如，对于美国/加拿大拨号，需要输入1+地"
+"区码，那么请输入\\'1613\\'之类的前缀）"
+
+msgid "Invalid prefix. Only dialable characters (0-9, #, and *) are allowed."
+msgstr "无效的前缀。只能输入可拨号的字符（0-9、#和*）。"
+
+msgid ""
+"What prefix should be removed from the number?\\n\\n(ie. for US/CAN, 1"
+"+areacode, ie, \\'1613\\')"
+msgstr ""
+"请输入需要从拨号模式中移除的前缀：\\n\\n（例如，对于美国/加拿大拨号，需要输入"
+"1+地区码，那么请输入\\'1613\\'之类的前缀）"
+
+msgid "Invalid prefix. Only 0-9, #, *, Z, N, and X are allowed."
+msgstr "无效拨号前缀。只能输入0-9、#、*、Z、N、X和.（小数点）。"
+
+msgid "What is the dialing pattern for local numbers after"
+msgstr "请输入本地号码的拨号模式："
+
+msgid "(ie. NXXNXXXXXX for US/CAN 10-digit dialing, NXXXXXX for 7-digit)"
+msgstr ""
+"（例如，对于美国/加拿大的10位拨号，输入NXXNXXXXXX，对于7位拨号，输入NXXXXXX）"
+
+msgid ""
+"What is the directory assistance number you will dial locally in the format "
+"that is passed to this trunk, ie 411"
+msgstr ""
+
+msgid "\"411\""
+msgstr ""
+
+msgid "Invalid pattern. Only 0-9, #, *"
+msgstr ""
+
+msgid ""
+"Google 411 number to dial, or alternative number you want dialed when "
+"calling directory assistance on this trunk"
+msgstr ""
+
+msgid "18004664411"
+msgstr ""
+
+msgid "Invalid number. Only 0-9, #,  and * are allowed."
+msgstr ""
+
+msgid "Outbound Dial Prefix"
+msgstr "出局拨号前缀"
+
+msgid ""
+"The outbound dialing prefix is used to prefix a dialing string to all "
+"outbound calls placed on this trunk. For example, if this trunk is behind "
+"another PBX or is a Centrex line, then you would put 9 here to access an "
+"outbound line. Another common use is to prefix calls with 'w' on a POTS line "
+"that need time to obtain dial tone to avoid eating digits.<br><br>Most users "
+"should leave this option blank."
+msgstr ""
+"出局拨号前缀会在从此中继拨出的号码前添加一个前缀。比如说，如果这个中继在另一"
+"个PBX之后或者是一条中央交换线路，就可以设置数字9为前缀以访问出局线路。另一个"
+"用途是为普通电话线路的呼叫添加“w”，因为普通电话线路需要一些时间来获取拨号音，"
+"这样就可以避免它“吃掉”某些拨号数字。<br /><br />大多数用户不需要填写此项，留"
+"空即可。"
+
+msgid "Outgoing Settings"
+msgstr "出局设置"
+
+msgid "Zap Identifier"
+msgstr ""
+
+msgid ""
+"ZAP channels are referenced either by a group number or channel number "
+"(which is defined in zapata.conf).  <br><br>The default setting is <b>g0</b> "
+"(group zero)."
+msgstr ""
+"ZAP频道可以以一个组号或者频道号（在zapata.conf中定义）引用。<br /><br />默认"
+"设置是<b>g0</b>（第0组）。"
+
+msgid "DAHDI Identifier"
+msgstr ""
+
+msgid ""
+"DAHDI channels are referenced either by a group number or channel number "
+"(which is defined in chan_dahdi.conf).  <br><br>The default setting is "
+"<b>g0</b> (group zero)."
+msgstr ""
+
+msgid "Custom Dial String"
+msgstr "自定义拨号字符串"
+
+msgid "Define the custom Dial String.  Include the token"
+msgstr "输入自定义的拨号字符串，包括标识符"
+
+msgid "wherever the number to dial should go.<br><br><b>examples:</b><br>"
+msgstr "，系统将向这个标识符拨号。<br /><br /><b>例如：</b><br />"
+
+msgid "DUNDi Mapping"
+msgstr "DUNDi映射"
+
+msgid ""
+"This is the name of the DUNDi mapping as defined in the [mappings] section "
+"of remote dundi.conf peers. This corresponds to the 'include' section of the "
+"peer details in the local dundi.conf file. This requires manual "
+"configuration of DUNDi to use this trunk."
+msgstr ""
+"这是DUNDi映射名，与dundi.conf的[mappings]小节中关于远程端点的定义有关。具体的"
+"说，DUNDi映射名应该与dundi.conf中'include'小节中的端点详细定义相关。要在此中"
+"继上使用DUNDi，需要进行手工配置。"
+
+msgid "Give this trunk a unique name.  Example: myiaxtel"
+msgstr "为这个中继取一个唯一的名字。例如：myiaxtel"
+
+msgid "PEER Details"
+msgstr "端点详细信息"
+
+msgid ""
+"Modify the default PEER connection parameters for your VoIP provider."
+"<br><br>You may need to add to the default lines listed below, depending on "
+"your provider.<br /><br />WARNING: Order is important as it will be "
+"retained. For example, if you use the \"allow/deny\" directives make sure "
+"deny comes first."
+msgstr ""
+"更改你的VoIP提供商的默认端点连接参数。<br /><br />根据你的提供商的情况，你可"
+"能需要把它添加到下面的默认线路中去。<br /><br />警告：添加的顺序很重要，因为"
+"在此显示顺序与实际执行处理的顺序是一样的。比如说，你使用了\"allow/deny\"指"
+"令，请确保deny指令被放在最前面。"
+
+msgid "Incoming Settings"
+msgstr "入局设置"
+
+msgid "USER Context"
+msgstr "用户上下文"
+
+msgid ""
+"This is most often the account name or number your provider expects."
+"<br><br>This USER Context will be used to define the below user details."
+msgstr ""
+"这通常是你在提供商那儿分配的账号名或号码。<br /><br />这段用户上下文将被用于"
+"定义下面的用户详细信息。"
+
+msgid "USER Details"
+msgstr "用户详细信息"
+
+msgid "Modify the default USER connection parameters for your VoIP provider."
+msgstr "更改到你的VoIP提供商的默认的用户连接参数。"
+
+msgid ""
+"You may need to add to the default lines listed below, depending on your "
+"provider..<br /><br />WARNING: Order is important as it will be retained. "
+"For example, if you use the \"allow/deny\" directives make sure deny \n"
+"\t\t\t\tcomes first."
+msgstr ""
+"根据你的提供商的要求，你可能需要将它添加到下面的默认线路中去。<br /><br />警"
+"告：添加的顺序很重要，因为实际执行操作的顺序与在此添加的顺序是一样的。比如，"
+"如果你使用了\"allow/deny\"指令，请确保deny指令被放在了最前面。"
+
+msgid "Registration"
+msgstr "注册"
+
+msgid "Register String"
+msgstr "注册字符串"
+
+msgid ""
+"Most VoIP providers require your system to REGISTER with theirs. Enter the "
+"registration line here.<br><br>example:<br><br>username:password@switch."
+"voipprovider.com.<br><br>Many providers will require you to provide a DID "
+"number, ex: username:password@switch.voipprovider.com/didnumber in order for "
+"any DID matching to work."
+msgstr ""
+"大多数VoIP提供商要求你的系统在他们那里进行注册。在这里输入注册行。<br /><br /"
+">例如：<br /><br />用户名:密码@switch.voipprovider.com.<br />（所有标点都是英"
+"文标点）<br />许多提供商还要求你提供一个DID号码，例如：用户名:密码@switch."
+"voipprovider.com/did号码。"
+
+msgid "Invalid Maximum Channels"
+msgstr "无效的最大频道数"
+
+msgid "Invalid Dial Rules"
+msgstr "无效的拨号规则"
+
+msgid "Invalid Outbound Dial Prefix"
+msgstr "无效的出局拨号前缀"
+
+msgid "Invalid Trunk Name entered"
+msgstr "输入了无效的中继名"
+
+msgid "Invalid Custom Dial String entered"
+msgstr "输入了无效的自定义拨号字符串"
+
+msgid "Trunk Name and User Context cannot be set to the same value"
+msgstr "中继名和用户上下文不能相同"
+
+msgid "User Context was left blank and User Details will not be saved!"
+msgstr "由于用户上下文为空，用户详细信息将不会被保存！"
+
+msgid ""
+"You must define an Outbound Caller ID when Choosing this CID Options value"
+msgstr ""
+
+msgid ""
+"It is highly recommended that you define an Outbound Caller ID on all "
+"trunks, undefined behavior can result when nothing is specified. The CID "
+"Options can control when this CID is used. Do you still want to continue?"
+msgstr ""
+
+msgid ""
+"You have not entered a User Password.  While this is acceptable, this user "
+"will not be able to login to an AdHoc device.\\n\\nAre you sure you wish to "
+"leave the User Password empty?"
+msgstr ""
+"你尚未输入用户密码。虽然这也是允许的，但这个用户无法通过自组织设备登录系统。"
+"\\n\\n你确定不设置用户密码吗？"
+
+msgid "Add Channel"
+msgstr "添加中继"
+
+msgid "Edit Zap Channel: "
+msgstr "编辑Zap频道"
+
+msgid "Add Zap Channel"
+msgstr "添加Zap中继"
+
+msgid ""
+"Zap Channel DIDs allow you to assign a DID to specific Zap Channels. You can "
+"supply the same DID to multiple channels. This would be a common scenario if "
+"you have multiple POTS lines that are on a hunt group from your provider. "
+"You MUST assign the channel's context to from-zaptel for these settings to "
+"have effect. It will be a line that looks like:<br /><br />context = from-"
+"zaptel<br /><br />in your zapata.conf configuration effecting the specified "
+"channel(s). Once you have assigned DIDs you can use standard Inbound Routes "
+"with the specified DIDs to route your calls."
+msgstr ""
+"Zap频道的DID设置允许你为Zap频道分配一个DID。你可以在不同的频道上使用相同的"
+"DID。你可能拥有多条传统的电话线路，而这些线路在服务提供商处作为一个寻找群来看"
+"待，在此种场合下，就常用这种设置。你必须将频道的上下文分配为 from-zaptel ，以"
+"让这些设置生效。在 zapata.conf 文件中，对某频道的配置行看起来像这样：<br /"
+"><br />context = from-zaptel<br /><br />。一旦你分配好了DID，就可以使用标准的"
+"入局线路设置和指定的DID来引导你的呼叫。"
+
+msgid "Edit Channel"
+msgstr "编辑频道"
+
+msgid "Channel"
+msgstr "中继"
+
+msgid "The Zap Channel number to map to a DID"
+msgstr "要映射到DID的Zap频道号"
+
+msgid "A useful description describing this channel"
+msgstr "对这个频道的有意义的描述"
+
+msgid "DID"
+msgstr "DID"
+
+msgid ""
+"The DID that this channel represents. The incoming call on this channel will "
+"be treated as if it came in with this DID and can be managed with Inbound "
+"Routing on DIDs"
+msgstr ""
+"设置这个频道的DID。通过这个频道入局的呼叫都会具有这个DID，并且将由关于此DID的"
+"入局线路设置来管理。"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid ""
+"DID information is normally just an incoming telephone number.\\n\\nYou have "
+"entered a non standard DID pattern.\\n\\nAre you sure this is correct?"
+msgstr ""
+"DID信息一般只包含入局的电话的号码\\n\\n你输入了的DID模式不是标准的DID模式\\n"
+"\\n你确定自己的输入正确吗？"
+
+msgid ""
+"You appear to be using a converted DID in the form of zapchanNN that was "
+"automatically generated during an upgrade. You should consider assigning the "
+"DID that is normally associated with this channel to take full advantage of "
+"the inbound routing abilities. Changing the DID here will require you to "
+"make changes in the Inbound Routes tab. Do you want to continue?"
+msgstr ""
+"你似乎使用了一种转换后的DID（类似于zapchanNN的形式），它可能是在升级中自动生"
+"成的。请考虑分配与此频道相联系的普通的DID，以让入局线路规则能更好的工作。改变"
+"此处的DID需要你在入局线路标签处进行相应的更改。继续吗？"

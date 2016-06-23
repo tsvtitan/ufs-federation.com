@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5EBDD580-0DCD-2E22-40ED-656F227E24FA" name="CONFIRMS">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:39:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONFIRM_ID" id="0D442315-A21B-F9D2-9F40-62CA1DF07AFC">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:39:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SESSION_ID" id="038FD36F-21A2-501F-3BA4-567C2B4339D3">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:45:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7973C193-6A35-89F0-0565-2AD672F8B21E" referredColumn="COL-5AA1E56E-6C19-48F1-91BF-3DD877268848_00000000"/>
+</associations>
+</Column>
+<Column name="ACCOUNT_ID" id="561E489F-DA9A-85FA-D9E5-587E9E7A0DBC">
+<createdBy>root</createdBy>
+<createdTime>2014-02-21 07:11:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BAD9A22-7075-687A-D0DA-0518BC4DDB78" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="MESSAGE_ID" id="96103405-1738-DA63-4484-33D0A886FFBB">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:40:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>B5428982-A2E0-4CC2-08F6-72934611ACE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5BB738D3-C67F-CB6E-8309-E461AA457201" referredColumn="B5428982-A2E0-4CC2-08F6-72934611ACE7"/>
+</associations>
+</Column>
+<Column name="CREATED" id="20075F5D-51CC-C11E-C490-351C6D161597">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:41:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEGIN" id="ACC90706-6761-EC58-4800-798F75AC014F">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:41:18 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END" id="B308DA02-3059-6DFC-09F6-D9A5D24F9D74">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:41:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="FF09309E-818C-ADD2-DAE7-6645A8BBB4F5">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:41:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="B728DA81-52B0-8A7A-A3D9-6A906951EE32">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:41:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONFIRM_TYPE" id="7ECCF1BB-B94B-41A0-29F7-0218EA80F9C5">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:42:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARAMS" id="4E657687-C835-D51B-25F9-DB854EA06369">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:42:42 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONFIRMED" id="49401422-008B-BA03-50E5-9D2A42681EF8">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:43:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PATH_ID" id="306C702E-DD67-8F04-E13C-482120C25B2D">
+<createdBy>root</createdBy>
+<createdTime>2014-02-25 09:00:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32513225-830A-9FA1-81BC-18E9DD487EC2" referredColumn="COL-D493FC8C-E573-46CC-B7AF-2BAA12DC06EB_00000000"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EF44A52-0562-0ECE-88F7-0F9237372B3E" name="CONFIRMS_MESSAGES_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:40:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96103405-1738-DA63-4484-33D0A886FFBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDBB1347-BAA8-6B2E-3134-5242CF373ED7" name="CONFIRMS_SESSIONS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-17 11:45:55 UTC</createdTime>
+<generatorID>CKY-DADC0A28-9BA0-4AE2-8BDB-92320E2B3381_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="038FD36F-21A2-501F-3BA4-567C2B4339D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA3D3844-87B0-0294-CA1E-D84AA7473252" name="CONFIRMS_ACCOUNTS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-21 07:11:55 UTC</createdTime>
+<generatorID>CKY-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="561E489F-DA9A-85FA-D9E5-587E9E7A0DBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="644398B6-CEAF-6F5C-B399-B2D705989C76" name="CONFIRMS_PATHS_FK">
+<createdBy>root</createdBy>
+<createdTime>2014-02-25 09:00:32 UTC</createdTime>
+<generatorID>CKY-DB00817D-6782-4E62-9013-1052A2FD3490_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="306C702E-DD67-8F04-E13C-482120C25B2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

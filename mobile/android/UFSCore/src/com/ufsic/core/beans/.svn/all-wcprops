@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans
+END
+GroupBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/GroupBean.java
+END
+CategoryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/CategoryBean.java
+END
+BaseGroupPreviewBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/BaseGroupPreviewBean.java
+END
+ValidationBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/ValidationBean.java
+END
+NewsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/NewsBean.java
+END
+BaseBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/BaseBean.java
+END
+GroupDetailBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/GroupDetailBean.java
+END
+ActivityBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/ActivityBean.java
+END
+DateBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/DateBean.java
+END
+QRCodeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/QRCodeBean.java
+END
+TableBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/TableBean.java
+END
+HtmlBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/HtmlBean.java
+END
+KeywordsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/KeywordsBean.java
+END
+AuthBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/AuthBean.java
+END
+ErrorBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/ErrorBean.java
+END
+PromotionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/PromotionBean.java
+END
+BranchBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/beans/BranchBean.java
+END

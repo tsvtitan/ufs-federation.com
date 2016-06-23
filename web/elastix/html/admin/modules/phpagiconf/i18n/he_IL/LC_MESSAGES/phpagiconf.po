@@ -1,0 +1,158 @@
+# Hebrew version of PHPAGICONF module of FreePBX
+# Copyright (C) 2006
+# This file is distributed under the same license as the PACKAGE package.
+# Shimi <shimi@shimi.net>, 2006.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-28 17:20+0300\n"
+"PO-Revision-Date: 2006-09-28 17:30+0300\n"
+"Last-Translator: Shimi <shimi@shimi.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: phpagiconf/functions.inc.php:32
+msgid "Error writing the phpagi.conf file."
+msgstr "שגיאה בכתיבת קובץ phpagi.conf."
+
+#: phpagiconf/page.phpagiconf.php:64
+msgid "PHPAGI Config:"
+msgstr "תצורת PHPAGI:"
+
+#: phpagiconf/page.phpagiconf.php:69
+msgid "Main config:"
+msgstr "תצורה ראשית:"
+
+#: phpagiconf/page.phpagiconf.php:72
+msgid "Debug:"
+msgstr "דיבאג:"
+
+#: phpagiconf/page.phpagiconf.php:72
+msgid "Enable PHPAGI debugging."
+msgstr "מפעיל פלט מורחב של PHPAGI לצורך מציאת באגים"
+
+#: phpagiconf/page.phpagiconf.php:74 phpagiconf/page.phpagiconf.php:81
+#: phpagiconf/page.phpagiconf.php:116
+msgid "false"
+msgstr "לא"
+
+#: phpagiconf/page.phpagiconf.php:75 phpagiconf/page.phpagiconf.php:82
+#: phpagiconf/page.phpagiconf.php:117
+msgid "true"
+msgstr "כן"
+
+#: phpagiconf/page.phpagiconf.php:79
+msgid "Error handler:"
+msgstr "מטפל בשגיאות:"
+
+#: phpagiconf/page.phpagiconf.php:79
+msgid "Use internal error handler."
+msgstr "השתמש במטפל השגיאות הפנימי."
+
+#: phpagiconf/page.phpagiconf.php:86
+msgid "Mail errors to:"
+msgstr "שלח שגיאות אל:"
+
+#: phpagiconf/page.phpagiconf.php:86
+msgid "Email where the errors will be sent."
+msgstr "כתובת הדואר שאליה ישלחו שגיאות"
+
+#: phpagiconf/page.phpagiconf.php:90
+msgid "Hostname of the server:"
+msgstr "כתובת המארח של השרת:"
+
+#: phpagiconf/page.phpagiconf.php:90
+msgid "Hostname of this server."
+msgstr "כתובת המארח (הוסט) של השרת."
+
+#: phpagiconf/page.phpagiconf.php:94
+msgid "Temporary directory:"
+msgstr "ספריה זמנית:"
+
+#: phpagiconf/page.phpagiconf.php:94
+msgid "Temporary directory for storing temporary output."
+msgstr "ספריה זמנית לאחסון פלטים זמניים."
+
+#: phpagiconf/page.phpagiconf.php:97
+msgid "Festival config:"
+msgstr "תצורת Festival"
+
+#: phpagiconf/page.phpagiconf.php:99
+msgid "Path to text2wave:"
+msgstr "נתיב ל text2wave:"
+
+#: phpagiconf/page.phpagiconf.php:99
+msgid "Path to text2wave binary."
+msgstr "נתיב לקובץ ההרצה של text2wave."
+
+#: phpagiconf/page.phpagiconf.php:102
+msgid "Asterisk API settings:"
+msgstr "הגדרות API של אסטריסק"
+
+#: phpagiconf/page.phpagiconf.php:104
+msgid "Server:"
+msgstr "שרת:"
+
+#: phpagiconf/page.phpagiconf.php:104
+msgid "Server to connect to."
+msgstr "שרת שיש להתחבר אליו."
+
+#: phpagiconf/page.phpagiconf.php:108
+msgid "Port:"
+msgstr "יציאה:"
+
+#: phpagiconf/page.phpagiconf.php:108
+msgid "Port to connect to manager."
+msgstr "יציאה (פורט) שדרכה יש להתחבר לניהול."
+
+#: phpagiconf/page.phpagiconf.php:112
+msgid "Fast AGI config:"
+msgstr "תצורת AGI מהיר:"
+
+#: phpagiconf/page.phpagiconf.php:114
+msgid "setuid:"
+msgstr "שנה משתמש"
+
+#: phpagiconf/page.phpagiconf.php:114
+msgid "Drop privileges to owner of script."
+msgstr "הורד הרשאות על ידי הרצה בתור הבעלים של הסקריפט"
+
+#: phpagiconf/page.phpagiconf.php:121
+msgid "Basedir:"
+msgstr "ספריה בסיסית:"
+
+#: phpagiconf/page.phpagiconf.php:121
+msgid "Path to AGI scripts folder."
+msgstr "נתיב לספריית סקריפטי ה AGI"
+
+#: phpagiconf/page.phpagiconf.php:124
+msgid "Cepstral config:"
+msgstr "תצורת Cepstral:"
+
+#: phpagiconf/page.phpagiconf.php:126
+msgid "Swift path:"
+msgstr "נתיב ל Swift:"
+
+#: phpagiconf/page.phpagiconf.php:126
+msgid "Path to cepstral TTS binary."
+msgstr "נתיב לקובץ המהודר של cepstral TTS."
+
+#: phpagiconf/page.phpagiconf.php:130
+msgid "Cepstral voice:"
+msgstr "קול Cepstral:"
+
+#: phpagiconf/page.phpagiconf.php:130
+msgid "TTS Voice used."
+msgstr "קול ה TTS שבו יש להשתמש."
+
+#: phpagiconf/page.phpagiconf.php:164
+msgid "To use this module you need the Asterisk API module version >= 1.0.4"
+msgstr "כדי להשתמש במודול זה, אתה צריך מודול API של אסטריסק מגירסא 1.0.4 או חדשה יותר"
+
+#: phpagiconf/page.phpagiconf.php:171
+msgid "To use this module you need to download and enable Asterisk API module."
+msgstr "כדי להשתמש בגירסא זו תצטרך להוריד ולהפעיל את מודול ה API של אסטריסק"

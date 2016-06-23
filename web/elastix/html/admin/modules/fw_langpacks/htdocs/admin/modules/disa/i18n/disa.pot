@@ -1,0 +1,141 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for disa
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "DISA"
+msgstr ""
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
+msgstr ""
+
+#, php-format
+msgid "DISA: %s"
+msgstr ""
+
+msgid "Add DISA"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+#, php-format
+msgid "Delete DISA %s"
+msgstr ""
+
+msgid "Edit DISA"
+msgstr ""
+
+msgid "DISA name:"
+msgstr ""
+
+msgid "Give this DISA a brief name to help you identify it."
+msgstr ""
+
+msgid "PIN"
+msgstr ""
+
+msgid "The user will be prompted for this number."
+msgstr ""
+
+msgid "If you wish to have multiple PIN's, separate them with commas"
+msgstr ""
+
+msgid "Response Timeout"
+msgstr ""
+
+msgid ""
+"The maximum amount of time it will wait before hanging up if the user has "
+"dialed an incomplete or invalid number. Default of 10 seconds"
+msgstr ""
+
+msgid "Digit Timeout"
+msgstr ""
+
+msgid ""
+"The maximum amount of time permitted between digits when the user is typing "
+"in an extension. Default of 5"
+msgstr ""
+
+msgid "Require Confirmation"
+msgstr ""
+
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+
+msgid "Caller ID"
+msgstr ""
+
+msgid ""
+"(Optional) When using this DISA, the users CallerID will be set to this. "
+"Format is \"User Name\" <5551234>"
+msgstr ""
+
+msgid "Context"
+msgstr ""
+
+msgid ""
+"(Experts Only) Sets the context that calls will originate from. Leave this "
+"as from-internal unless you know what you're doing."
+msgstr ""
+
+msgid "Allow Hangup"
+msgstr ""
+
+#, php-format
+msgid ""
+"Allow the current call to be disconnected and dial tone presented for a new "
+"call by pressing the Hangup feature code: %s while in a call"
+msgstr ""
+
+msgid "Submit Changes"
+msgstr ""
+
+msgid "Please enter a valid DISA Name"
+msgstr ""
+
+msgid "Please enter a valid DISA PIN"
+msgstr ""
+
+msgid "Please enter a valid Caller ID or leave it blank"
+msgstr ""
+
+msgid "Context cannot be blank"
+msgstr ""

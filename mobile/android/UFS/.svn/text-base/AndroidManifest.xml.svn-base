@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:versionCode="1423112" 14 = 14 (minSdkVersion), 23 = 2-3 (normal - large), 114 = 1.14 (versionName) -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.ideast.ufs"
+    android:installLocation="auto"
+    android:versionCode="1423120"
+    android:versionName="1.2" >
+
+    <compatible-screens>
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="480"
+            android:screenSize="large" />
+    </compatible-screens>
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="company" android:value="UFS"></meta-data>
+        
+        <meta-data android:name="counterGoogleKey" android:value="UA-52688652-1"></meta-data>
+        <meta-data android:name="counterYandexKey" android:value="\ 25969"></meta-data>
+        <meta-data android:name="counterDistimoKey" android:value="H6uGlqea9nhSn2No"></meta-data>
+        
+        <service android:name="org.openudid.OpenUDID_service">
+				   <intent-filter>
+				    <action android:name="org.openudid.GETUDID" />
+				  </intent-filter>
+				</service>
+				
+        <!-- <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyChQyoKHEHZjM6fuzYSRU54zI6v6MRJGDc" />-->
+        
+        <receiver
+				    android:name="com.distimo.sdk.InstallReferrerReceiver"
+				    android:exported="true" >
+				    <intent-filter>
+				        <action android:name="com.android.vending.INSTALL_REFERRER" />
+				    </intent-filter>
+				</receiver>
+				
+        <meta-data
+           android:name="com.google.android.maps.v2.API_KEY" 
+           android:value="AIzaSyCper1MNZcfv2G1hK96gUqM-7Sp92Bx2lk" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!--  Yandex metrica  -->
+        
+        <meta-data android:name="metrica:api:key" android:value="0"/>
+        
+        <service     
+			      android:name="com.yandex.metrica.MetricaService"
+			      android:exported="true" android:enabled="true"
+			      android:process=":Metrica" >
+			            
+			      <intent-filter>
+			          <category android:name="android.intent.category.DEFAULT" />
+			          <action android:name="com.yandex.metrica.IMetricaService" />
+			          <data android:scheme="metrica" />
+			      </intent-filter>
+			
+			      <meta-data android:name="metrica:api:level" android:value="4" />
+				</service> 
+				
+        <receiver 
+						android:name="com.yandex.metrica.MetricaEventHandler"
+						android:exported="true" android:enabled="true" >
+						
+			      <intent-filter>
+			          <action android:name="com.yandex.metrica.intent.action.SYNC" />
+			      </intent-filter>
+			
+			      <intent-filter>
+			          <action android:name="android.intent.action.PACKAGE_ADDED" />
+			          <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+			          <data android:scheme="package" />
+			      </intent-filter>
+				</receiver> 
+
+        <receiver
+				    android:name="com.yandex.metrica.CampaignReceiver"
+				    android:exported="true" >
+				
+				    <intent-filter>
+				        <action android:name="com.android.vending.INSTALL_REFERRER" />
+				    </intent-filter>
+				</receiver>
+  
+        <provider
+		        android:name="com.ufsic.core.providers.MetricaContentProvider"
+		        android:authorities="ru.ideast.ufs.MetricaContentProvider"
+		        android:exported="true" android:enabled="true" />
+        
+        <!-- Yandex metrica  -->
+        
+        
+        <activity
+            android:name="com.ufsic.core.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.ufsic.core.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.FileSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.GroupFullListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ufsic.core.activities.GalleryActivity" />
+        <activity
+            android:name="com.ufsic.core.activities.BranchDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.TablesActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.ufsic.core.activities.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.PdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ufsic.core.activities.QRCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ufsic.core.activities.PromotionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ufsic.core.activities.RegistrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ufsic.core.activities.SubscriptionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+       
+    </application>
+
+</manifest>

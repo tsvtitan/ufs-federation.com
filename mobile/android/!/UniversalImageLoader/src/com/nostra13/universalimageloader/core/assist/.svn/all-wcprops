@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist
+END
+ViewScaleType.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/ViewScaleType.java
+END
+LoadedFrom.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/LoadedFrom.java
+END
+QueueProcessingType.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/QueueProcessingType.java
+END
+ImageSize.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/ImageSize.java
+END
+ContentLengthInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/ContentLengthInputStream.java
+END
+ImageScaleType.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/ImageScaleType.java
+END
+FlushedInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/FlushedInputStream.java
+END
+FailReason.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/FailReason.java
+END

@@ -1,0 +1,9 @@
+#holder {
+    height: 280px;
+    margin: 0;
+    width: 520px;
+	background-color:#FFF;
+}
+
+table#data,
+#holder *{color:#686B70;}

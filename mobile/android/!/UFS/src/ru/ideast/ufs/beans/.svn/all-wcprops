@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/87/android/UFS/src/ru/ideast/ufs/beans
+END
+GroupBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/GroupBean.java
+END
+CategoryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/CategoryBean.java
+END
+BaseGroupPreviewBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/BaseGroupPreviewBean.java
+END
+NewsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/87/android/UFS/src/ru/ideast/ufs/beans/NewsBean.java
+END
+BaseBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/BaseBean.java
+END
+GroupDetailBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/GroupDetailBean.java
+END
+ActivityBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/ActivityBean.java
+END
+DateBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/DateBean.java
+END
+QRCodeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mobile/!svn/ver/60/android/UFS/src/ru/ideast/ufs/beans/QRCodeBean.java
+END
+TableBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mobile/!svn/ver/78/android/UFS/src/ru/ideast/ufs/beans/TableBean.java
+END
+HtmlBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/HtmlBean.java
+END
+ErrorBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/ErrorBean.java
+END
+AuthBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/AuthBean.java
+END
+PromotionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/75/android/UFS/src/ru/ideast/ufs/beans/PromotionBean.java
+END
+BranchBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/beans/BranchBean.java
+END

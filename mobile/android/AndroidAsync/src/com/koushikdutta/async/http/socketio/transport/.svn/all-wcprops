@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/transport
+END
+SocketIOTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/transport/SocketIOTransport.java
+END
+XHRPollingTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/transport/XHRPollingTransport.java
+END
+WebSocketTransport.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mobile/!svn/ver/55/android/AndroidAsync/src/com/koushikdutta/async/http/socketio/transport/WebSocketTransport.java
+END

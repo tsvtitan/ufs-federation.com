@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2581AE39-DA39-F77D-E75A-79283A3DB81C" name="AGREEMENTS">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:26:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AGREEMENT_ID" id="E692D215-2F71-6F95-8463-DF066A3179A9">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:26:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="9D628C8D-845C-613D-BF05-EEFC89136245">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:27:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="60469E9B-1B86-4E54-3400-A84123575023" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="CREATED" id="86983AE7-CC8B-4972-D7DF-D7090766BBF8">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:28:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="A71E6FC5-793B-EE5B-3A60-E985D4F669FE">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:29:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="B26D9535-FCC8-DD42-3E3F-4DEFD67E68AA">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:29:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="E1EC69B7-75B1-3C42-C258-DF088A1496BF">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:29:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="3A90736B-43EB-3591-6C1E-7341FE754C2F">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:30:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SYSTEM_ID" id="1195DB86-D437-7462-8A28-4F8CBDBA403A">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:27:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>FD6D38FC-D9C7-99BC-73EA-AA9EB8CD10CC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8987AA9-ADDE-E14D-E3A3-0BEF11B71EF1" referredColumn="FD6D38FC-D9C7-99BC-73EA-AA9EB8CD10CC"/>
+</associations>
+</Column>
+<Column name="ID_IN_SYSTEM" id="CD95F32D-045D-74BC-5617-B804679475E3">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:31:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13BF13EA-1239-8FE1-E5DD-C304F837C3E0" name="AGREEMENTS_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:26:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E692D215-2F71-6F95-8463-DF066A3179A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE0C60BF-594D-C4C2-9B63-4ACD0208C010" name="AGREEMENTS_ACCOUNTS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:27:26 UTC</createdTime>
+<generatorID>CKY-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D628C8D-845C-613D-BF05-EEFC89136245"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B125B53-B7DC-57BC-20D7-15519B73C4A3" name="AGREEMENTS_SYSTEMS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-30 08:27:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1195DB86-D437-7462-8A28-4F8CBDBA403A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

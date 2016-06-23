@@ -1,0 +1,11 @@
+08.04.2013 12:48:50.454 I: --------------------------------------------------
+08.04.2013 12:48:50.724 I: Connect to Database ...
+08.04.2013 12:48:51.587 I: Connected.
+08.04.2013 12:48:51.856 I: [Mysql->query] set names utf8
+08.04.2013 12:48:51.858 I: [Mysql->query] 1 records
+08.04.2013 12:48:52.125 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+08.04.2013 12:48:52.127 I: [Mysql->query] 1 records
+08.04.2013 12:48:52.419 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+08.04.2013 12:48:52.421 I: [Mysql->query] 1 records
+08.04.2013 12:48:53.663 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+08.04.2013 12:48:53.663 I: [Mysql->query] 1 records

@@ -1,0 +1,226 @@
+10
+
+dir
+143
+https://ru.ufs-federation.com/svn/mobile/android/GooglePlayServicesLib44W/res
+https://ru.ufs-federation.com/svn/mobile
+
+
+
+2014-07-11T07:47:06.606941Z
+143
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+color
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+drawable-xxhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-af
+dir
+
+values-am
+dir
+
+values-ar
+dir
+
+values-be
+dir
+
+values-bg
+dir
+
+values-ca
+dir
+
+values-cs
+dir
+
+values-da
+dir
+
+values-de
+dir
+
+values-el
+dir
+
+values-en-rGB
+dir
+
+values-en-rIN
+dir
+
+values-es
+dir
+
+values-es-rUS
+dir
+
+values-et-rEE
+dir
+
+values-fa
+dir
+
+values-fi
+dir
+
+values-fr
+dir
+
+values-fr-rCA
+dir
+
+values-hi
+dir
+
+values-hr
+dir
+
+values-hu
+dir
+
+values-hy-rAM
+dir
+
+values-in
+dir
+
+values-it
+dir
+
+values-iw
+dir
+
+values-ja
+dir
+
+values-ka-rGE
+dir
+
+values-km-rKH
+dir
+
+values-ko
+dir
+
+values-lo-rLA
+dir
+
+values-lt
+dir
+
+values-lv
+dir
+
+values-mn-rMN
+dir
+
+values-ms-rMY
+dir
+
+values-nb
+dir
+
+values-nl
+dir
+
+values-pl
+dir
+
+values-pt
+dir
+
+values-pt-rBR
+dir
+
+values-pt-rPT
+dir
+
+values-ro
+dir
+
+values-ru
+dir
+
+values-sk
+dir
+
+values-sl
+dir
+
+values-sr
+dir
+
+values-sv
+dir
+
+values-sw
+dir
+
+values-th
+dir
+
+values-tl
+dir
+
+values-tr
+dir
+
+values-uk
+dir
+
+values-vi
+dir
+
+values-zh-rCN
+dir
+
+values-zh-rHK
+dir
+
+values-zh-rTW
+dir
+
+values-zu
+dir
+

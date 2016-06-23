@@ -1,0 +1,18 @@
+12.04.2013 14:35:26.406 I: --------------------------------------------------
+12.04.2013 14:35:26.406 I: Connect to Database ...
+12.04.2013 14:35:26.420 I: Connected.
+12.04.2013 14:35:26.420 I: [Mysql->query] set names utf8
+12.04.2013 14:35:26.421 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+12.04.2013 14:35:26.421 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created>ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NULL);
+12.04.2013 14:35:26.422 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+12.04.2013 14:35:32.280 I: Mailing 1194 has sent successfully at 2013-04-12 00:00:00...
+12.04.2013 14:35:32.578 I: [Mysql->query] UPDATE `mailing` SET `sent`='2013-04-12 00:00:00',`result`=NULL WHERE `mailing_id`='1194' AND `remote_id`='9E67A8DB83C5749B8337BCF01C9EE77C'
+12.04.2013 14:35:32.588 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+12.04.2013 14:35:33.214 I: Mailing 1194 has updated successfully ...
+12.04.2013 14:35:35.608 I: Mailing 1195 has sent successfully at 2013-04-12 00:00:00...
+12.04.2013 14:35:35.890 I: [Mysql->query] UPDATE `mailing` SET `sent`='2013-04-12 00:00:00',`result`=NULL WHERE `mailing_id`='1195' AND `remote_id`='9E67A8DB83C5749B8337BCF01C9EE77C'
+12.04.2013 14:35:35.894 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+12.04.2013 14:35:36.446 I: Mailing 1195 has updated successfully ...
+12.04.2013 14:35:36.751 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+12.04.2013 14:35:39.030 I: There is nothing to worry about
+12.04.2013 14:35:39.031 I: Execution time is 12.625034093857

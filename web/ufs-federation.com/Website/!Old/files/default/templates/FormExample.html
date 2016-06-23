@@ -1,0 +1,12 @@
+<div class="panel bgcolor5 norightmargin">
+  <div th:replace="FormErrors(form=${form})"/>
+  <div class="content">
+    <p class="acenter">
+      <div th:replace="InputText(field=${form.findField('NAME')})"/>
+      <!--/*/<th:block th:with="f=${form.findField('DATE_FROM')}">/*/--><div th:replace="${f.Template}(field=${f})"/><!--/*/</th:block>/*/-->
+      <!--/*/<th:block th:with="f=${form.findField('DATE_TO')}">/*/--><div th:replace="${f.Template}(field=${f})"/><!--/*/</th:block>/*/-->
+      <div th:replace="InputSubmit(button=${form.findButton('SUBMIT')})"/>
+    </p>
+  </div>
+</div>
+<div th:replace="FormParams(form=${form})"/>

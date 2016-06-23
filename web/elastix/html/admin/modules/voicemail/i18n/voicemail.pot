@@ -1,0 +1,259 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for voicemail
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Voicemail is enabled but the Voicemail Password field is empty.  Are you "
+"sure you wish to continue?"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "yes"
+msgstr ""
+
+msgid "no"
+msgstr ""
+
+msgid "Please enter a valid Voicemail Password, using digits only"
+msgstr ""
+
+msgid "Please enter a valid Email Address"
+msgstr ""
+
+msgid "Please enter a valid Pager Email Address"
+msgstr ""
+
+msgid "VM Context cannot be blank"
+msgstr ""
+
+msgid "Voicemail & Directory"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Voicemail Password"
+msgstr ""
+
+#, php-format
+msgid ""
+"This is the password used to access the voicemail system.%sThis password can "
+"only contain numbers.%sA user can change the password you enter here after "
+"logging into the voicemail system (%s) with a phone."
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "The email address that voicemails are sent to."
+msgstr ""
+
+msgid "Pager Email Address"
+msgstr ""
+
+msgid ""
+"Pager/mobile email address that short voicemail notifications are sent to."
+msgstr ""
+
+msgid "Email Attachment"
+msgstr ""
+
+msgid "Option to attach voicemails to email."
+msgstr ""
+
+msgid "Play CID"
+msgstr ""
+
+msgid ""
+"Read back caller's telephone number prior to playing the incoming message, "
+"and just after announcing the date and time the message was left."
+msgstr ""
+
+msgid "Play Envelope"
+msgstr ""
+
+msgid ""
+"Envelope controls whether or not the voicemail system will play the message "
+"envelope (date/time) before playing the voicemail message. This setting does "
+"not affect the operation of the envelope option in the advanced voicemail "
+"menu."
+msgstr ""
+
+msgid "Delete Voicemail"
+msgstr ""
+
+msgid ""
+"If set to \"yes\" the message will be deleted from the voicemailbox (after "
+"having been emailed). Provides functionality that allows a user to receive "
+"their voicemail via email alone, rather than having the voicemail able to be "
+"retrieved from the Webinterface or the Extension handset.  CAUTION: MUST "
+"HAVE attach voicemail to email SET TO YES OTHERWISE YOUR MESSAGES WILL BE "
+"LOST FOREVER."
+msgstr ""
+
+msgid "IMAP Username"
+msgstr ""
+
+#, php-format
+msgid "This is the IMAP username, if using IMAP storage"
+msgstr ""
+
+msgid "IMAP Password"
+msgstr ""
+
+#, php-format
+msgid "This is the IMAP password, if using IMAP storage"
+msgstr ""
+
+msgid "VM Options"
+msgstr ""
+
+#, php-format
+msgid "Separate options with pipe ( | )%sie: review=yes|maxmessage=60"
+msgstr ""
+
+msgid "VM Context"
+msgstr ""
+
+msgid ""
+"This is the Voicemail Context which is normally set to default. Do not "
+"change unless you understand the implications."
+msgstr ""
+
+msgid "VmX Locater"
+msgstr ""
+
+msgid "VmX Locater&trade;"
+msgstr ""
+
+msgid ""
+"Enable/Disable the VmX Locater feature for this user. When enabled all "
+"settings are controlled by the user in the User Portal (ARI). Disabling will "
+"not delete any existing user settings but will disable access to the feature"
+msgstr ""
+
+msgid "Please enter a valid phone number using number digits only"
+msgstr ""
+
+msgid "Use When:"
+msgstr ""
+
+msgid ""
+"Menu options below are available during your personal voicemail greeting "
+"playback. <br/><br/>Check both to use at all times."
+msgstr ""
+
+msgid "unavailable"
+msgstr ""
+
+msgid "busy"
+msgstr ""
+
+msgid "Voicemail Instructions:"
+msgstr ""
+
+msgid "Uncheck to play a beep after your personal voicemail greeting."
+msgstr ""
+
+msgid "Standard voicemail prompts."
+msgstr ""
+
+msgid "Press 0:"
+msgstr ""
+
+msgid ""
+"Pressing 0 during your personal voicemail greeting goes to the Operator. "
+"Uncheck to enter another destination here. This feature can be used while "
+"still disabling VmX to allow an alternative Operator extension without "
+"requiring the VmX feature for the user."
+msgstr ""
+
+msgid "Go To Operator"
+msgstr ""
+
+msgid "Press 1:"
+msgstr ""
+
+msgid ""
+"The remaining options can have internal extensions, ringgroups, queues and "
+"external numbers that may be rung. It is often used to include your cell "
+"phone. You should run a test to make sure that the number is functional any "
+"time a change is made so you don't leave a caller stranded or receiving "
+"invalid number messages."
+msgstr ""
+
+msgid ""
+"Enter an alternate number here, then change your personal voicemail greeting "
+"to let callers know to press 1 to reach that number. <br/><br/>If you'd like "
+"to use your Follow Me List, check \"Send to Follow Me\" and disable Follow "
+"Me above."
+msgstr ""
+
+msgid "Send to Follow-Me"
+msgstr ""
+
+msgid "Press 2:"
+msgstr ""
+
+msgid ""
+"Use any extensions, ringgroups, queues or external numbers. <br/><br/"
+">Remember to re-record your personal voicemail greeting and include "
+"instructions. Run a test to make sure that the number is functional."
+msgstr ""
+
+#, php-format
+msgid "Failed to delete vmbox: %s@%s"
+msgstr ""
+
+#, php-format
+msgid "failed with retcode %s while removing %s:"
+msgstr ""
+
+msgid "Voicemail"
+msgstr ""
+
+msgid "My Voicemail"
+msgstr ""
+
+msgid "Dial Voicemail"
+msgstr ""
+
+msgid "Cannot connect to Asterisk Manager with "
+msgstr ""
+
+msgid "Basic"
+msgstr ""
+
+msgid "This module allows you to configure Voicemail for a user or extension"
+msgstr ""

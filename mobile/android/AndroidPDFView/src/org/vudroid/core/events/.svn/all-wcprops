@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events
+END
+SafeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/SafeEvent.java
+END
+CurrentPageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/CurrentPageListener.java
+END
+DecodingProgressListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/DecodingProgressListener.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/Event.java
+END
+BringUpZoomControlsListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/BringUpZoomControlsListener.java
+END
+ZoomChangedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/ZoomChangedEvent.java
+END
+ZoomListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/ZoomListener.java
+END
+BringUpZoomControlsEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/BringUpZoomControlsEvent.java
+END
+EventDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/events/EventDispatcher.java
+END

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DABD69CC-E281-933D-9D2C-73475D297F5D" name="MESSAGES_CHANNELS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:27:21 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<containerWithKeyObject>787CD348-D8FA-FEBA-5B24-30E9BD0DC5ED</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>D6C86ECA-3FC2-C0D6-EDAF-6656C3151AD1</localFKIndex>
+<keyObject>83F6F749-A218-6C6D-8E58-88D17BB22F93</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

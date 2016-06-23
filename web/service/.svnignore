@@ -1,0 +1,5 @@
+node_modules
+.netbeans.xml
+.tmp
+.git
+.gitignore

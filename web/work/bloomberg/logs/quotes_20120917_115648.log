@@ -1,0 +1,148 @@
+17.09.2012 11:56:48.039 I: --------------------------------------------------
+17.09.2012 11:56:48.039 I: Starting ...
+17.09.2012 11:56:48.558 I: [MSSql->Query] SET ANSI_WARNINGS ON
+17.09.2012 11:56:48.641 I: [MSSql->Query] SET ANSI_NULLS ON
+17.09.2012 11:56:48.723 I: Bloomberg database is connected. Selecting data ...
+17.09.2012 11:56:48.723 I: [MSSql->getRecords] SELECT * FROM [BLOOMBERG_XLS]...[FI$]
+17.09.2012 11:56:49.492 I: There are 17 record(s)
+17.09.2012 11:56:49.496 I: Data is <?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <item>
+    <short_name>REPUBLIC OF BELA</short_name>
+    <security_name>BELRUS 8.95 01/26/18</security_name>
+    <id_isin>XS0583616239</id_isin>
+    <bid>98.613</bid>
+    <ask>99.339</ask>
+    <px_close_1d>97.649</px_close_1d>
+  </item>
+  <item>
+    <short_name>TINKOFF CREDIT</short_name>
+    <security_name>AKBHC 11 1/2 04/21/14</security_name>
+    <id_isin>XS0619845349</id_isin>
+    <bid>101.536</bid>
+    <ask>103.403</ask>
+    <px_close_1d></px_close_1d>
+  </item>
+  <item>
+    <short_name>KAZANORGSINTEZ</short_name>
+    <security_name>KZOSRU 10 03/19/15</security_name>
+    <id_isin>XS0271050501</id_isin>
+    <bid>102</bid>
+    <ask>103.875</ask>
+    <px_close_1d>102.25</px_close_1d>
+  </item>
+  <item>
+    <short_name>AK BARS BANK</short_name>
+    <security_name>AKBARS 10 1/4 12/03/12</security_name>
+    <id_isin>XS0470427476</id_isin>
+    <bid>100.885</bid>
+    <ask>102</ask>
+    <px_close_1d>101.443</px_close_1d>
+  </item>
+  <item>
+    <short_name>UTK</short_name>
+    <security_name>KUBNRU 9 06/04/13</security_name>
+    <id_isin>XS0363010157</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d></px_close_1d>
+  </item>
+  <item>
+    <short_name>ALFA BANK</short_name>
+    <security_name>ALFARU 7 3/4 04/28/21</security_name>
+    <id_isin>XS0620695204</id_isin>
+    <bid>106.936</bid>
+    <ask>107.579</ask>
+    <px_close_1d>105.948</px_close_1d>
+  </item>
+  <item>
+    <short_name>OJSC RASPADSKAYA</short_name>
+    <security_name>RASPAD 7 3/4 04/27/17</security_name>
+    <id_isin>XS0772835285</id_isin>
+    <bid>103.19</bid>
+    <ask>104.122</ask>
+    <px_close_1d>101.968</px_close_1d>
+  </item>
+  <item>
+    <short_name>RUSSIA-EUROBOND</short_name>
+    <security_name>RUSSIA 5 5/8 04/04/42</security_name>
+    <id_isin>XS0767473852</id_isin>
+    <bid>118.928</bid>
+    <ask>119.775</ask>
+    <px_close_1d>120.435</px_close_1d>
+  </item>
+  <item>
+    <short_name>LUKOIL INTL FIN</short_name>
+    <security_name>LUKOIL 7 1/4 11/05/19</security_name>
+    <id_isin>XS0461926569</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d></px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROM</short_name>
+    <security_name>GAZPRU 9 1/4 04/23/19</security_name>
+    <id_isin>XS0424860947</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>131.25</px_close_1d>
+  </item>
+  <item>
+    <short_name>EVRAZ GROUP SA</short_name>
+    <security_name>EVRAZ 6 3/4 04/27/18</security_name>
+    <id_isin>XS0618905219</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>101.319</px_close_1d>
+  </item>
+  <item>
+    <short_name>OAO TMK</short_name>
+    <security_name>TRUBRU 7 3/4 01/27/18</security_name>
+    <id_isin>XS0585211591</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d></px_close_1d>
+  </item>
+  <item>
+    <short_name>PROMSVYAZBK</short_name>
+    <security_name>PROMBK 6.2 04/25/14</security_name>
+    <id_isin>XS0619624413</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>100</px_close_1d>
+  </item>
+  <item>
+    <short_name>ALFA MTN ISS</short_name>
+    <security_name>ALFARU 8 03/18/15</security_name>
+    <id_isin>XS0494933806</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>107.5</px_close_1d>
+  </item>
+  <item>
+    <short_name>ALLIANCE OIL CO</short_name>
+    <security_name>VOSTOK 9 7/8 03/11/15</security_name>
+    <id_isin>XS0493579238</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d></px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROM</short_name>
+    <security_name>GAZPRU 10 1/2 03/25/14</security_name>
+    <id_isin>XS0420135443</id_isin>
+    <bid>111.979</bid>
+    <ask>112.708</ask>
+    <px_close_1d>112.243</px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROM NEFT</short_name>
+    <security_name>SIBNEF 4 3/8 09/19/22</security_name>
+    <id_isin>XS0830192711</id_isin>
+    <bid>101.28</bid>
+    <ask>101.533</ask>
+    <px_close_1d>101.268</px_close_1d>
+  </item>
+</data>
+
+17.09.2012 11:56:49.496 I: Game over :-)

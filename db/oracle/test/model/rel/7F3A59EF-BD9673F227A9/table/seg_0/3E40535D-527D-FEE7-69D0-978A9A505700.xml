@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E40535D-527D-FEE7-69D0-978A9A505700" name="PROMOTION_PRODUCTS">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:56:34 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROMOTION_PRODUCT_ID" id="A0DBD1D1-45CA-72C4-7E89-9D429C7B1AD7">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:57:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMOTION_TYPE_ID" id="5C758919-00B6-C7F6-F658-B3131BF5A5FA">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:57:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>595C2D39-ABF9-0B15-BE99-8C18C21DAF4B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DFBC9BC-0E90-9042-969C-51DC5FBDA96F" referredColumn="595C2D39-ABF9-0B15-BE99-8C18C21DAF4B"/>
+</associations>
+</Column>
+<Column name="PROMOTION_COMPANY_ID" id="C8067531-C4AA-8749-D962-E7EDEE527A98">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:58:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>D5A7F6E3-773D-FCFD-A828-F6D4B782C4F3</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7822695B-7D49-4E02-0A68-0D8A1FD79791" referredColumn="D5A7F6E3-773D-FCFD-A828-F6D4B782C4F3"/>
+</associations>
+</Column>
+<Column name="CREATED" id="C0D73127-EDD9-BD21-5894-D6D1A9DF4953">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:59:02 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEGIN" id="62884A2D-021E-A125-FB2B-8518EC2682F1">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:59:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END" id="8FBAA1D0-87F5-BEA6-6F75-63090A1A4771">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:59:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="29F0E76A-31D7-04B6-50A9-F4F341612771">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:59:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIMEOUT" id="F9133F48-964D-DD53-DF74-3491A32E1571">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:59:47 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="0CCD6E13-E197-62AF-517D-121ABA2E751A">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:59:56 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2D3B622-396A-C644-AC60-E65CDD909626" name="PROMOTION_PRODUCTS_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:57:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0DBD1D1-45CA-72C4-7E89-9D429C7B1AD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FD693EC-AF9B-C109-C2EC-E0674DA68296" name="PROMOTION_PRODUCTS_PROMOTION_TYPES_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:57:44 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C758919-00B6-C7F6-F658-B3131BF5A5FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F58C4D47-0A67-7B01-3D23-D79ED4EC86BA" name="PROMOTION_PRODUCTS_PROMOTION_COMPANIES_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:58:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8067531-C4AA-8749-D962-E7EDEE527A98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

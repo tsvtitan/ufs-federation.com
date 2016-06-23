@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="TAB-BB7BEACA-3D1D-4778-AA7A-7326DEBDC0D5_00000000" name="PAGE_MENUS">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ENT-BB7BEACA-3D1D-4778-AA7A-7326DEBDC0D5_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAGE_MENU_ID" id="COL-91540B26-B63E-43FC-9E8F-47FB6FA4CA14_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-91540B26-B63E-43FC-9E8F-47FB6FA4CA14_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="COL-46951869-E5B2-4EE1-8DD9-A805A9D6FAE2_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-46951869-E5B2-4EE1-8DD9-A805A9D6FAE2_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-A02ACE2E-D844-41E8-8527-79575F8A9821_00000000" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="MENU_ID" id="COL-8CADDD33-CAA7-4478-BD14-B47577848221_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-8CADDD33-CAA7-4478-BD14-B47577848221_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-65189518-C1FC-4534-A457-2BCDEEA0C81C_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-C6E9BE0A-DEFB-4CE6-8443-039521A19603_00000000" referredColumn="COL-65189518-C1FC-4534-A457-2BCDEEA0C81C_00000000"/>
+</associations>
+</Column>
+<Column name="PAGE_ID" id="COL-61E42B2E-8E87-4965-8E1E-2E89CB18685D_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-61E42B2E-8E87-4965-8E1E-2E89CB18685D_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-87D56C14-1995-4A54-8E04-88FF556DC265_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-E85E1BDD-4C2E-45D4-B227-B08BBF2B99FF_00000000" referredColumn="COL-87D56C14-1995-4A54-8E04-88FF556DC265_00000000"/>
+</associations>
+</Column>
+<Column name="ONLY_CURRENT" id="COL-005C1985-63EC-4A97-A2B3-2B1F4224BDFE_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-005C1985-63EC-4A97-A2B3-2B1F4224BDFE_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="XPK-D215BB3A-629B-4D3B-97EC-0FB7F09C03F7_00000000" name="XPKМеню страниц">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>CKY-D215BB3A-629B-4D3B-97EC-0FB7F09C03F7_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-91540B26-B63E-43FC-9E8F-47FB6FA4CA14_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0192C707-E3FE-CF3A-5EF8-2A749A1B9360" name="R/64">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-E85E1BDD-4C2E-45D4-B227-B08BBF2B99FF_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-61E42B2E-8E87-4965-8E1E-2E89CB18685D_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F968298-3734-A34D-BEB3-552E22E8D732" name="R/65">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-C6E9BE0A-DEFB-4CE6-8443-039521A19603_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-8CADDD33-CAA7-4478-BD14-B47577848221_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="685D74BE-F77E-6F32-4969-80EF4E088A6D" name="R/66">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-A02ACE2E-D844-41E8-8527-79575F8A9821_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-46951869-E5B2-4EE1-8DD9-A805A9D6FAE2_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

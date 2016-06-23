@@ -1,0 +1,28 @@
+10
+
+dir
+0
+http://apps.ufs-federation.com/svn/mobile/android/UniversalImageLoader/bin/res
+http://apps.ufs-federation.com/svn/mobile
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app
+END
+SlidingActivityBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityBase.java
+END
+SlidingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivity.java
+END
+SlidingFragmentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app/SlidingFragmentActivity.java
+END
+SlidingListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app/SlidingListActivity.java
+END
+SlidingActivityHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityHelper.java
+END
+SlidingPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/7/android/SlidingMenu/src/com/jeremyfeinstein/slidingmenu/lib/app/SlidingPreferenceActivity.java
+END

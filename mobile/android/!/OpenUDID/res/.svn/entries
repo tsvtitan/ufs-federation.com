@@ -1,0 +1,52 @@
+10
+
+dir
+95
+http://apps.ufs-federation.com/svn/mobile/android/OpenUDID/res
+http://apps.ufs-federation.com/svn/mobile
+
+
+
+2014-04-29T08:25:59.876947Z
+34
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+

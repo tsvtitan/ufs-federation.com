@@ -1,0 +1,58 @@
+10
+
+dir
+290
+https://ru.ufs-federation.com/svn/mobile/android/UFS/res
+https://ru.ufs-federation.com/svn/mobile
+
+
+
+2015-09-08T14:08:38.530279Z
+285
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+menu
+dir
+
+values
+dir
+
+values-v14
+dir
+
+values-w820dp
+dir
+

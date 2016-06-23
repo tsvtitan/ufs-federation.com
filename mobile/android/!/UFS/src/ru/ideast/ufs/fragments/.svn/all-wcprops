@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/115/android/UFS/src/ru/ideast/ufs/fragments
+END
+BranchListFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/102/android/UFS/src/ru/ideast/ufs/fragments/BranchListFragment.java
+END
+TableFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/fragments/TableFragment.java
+END
+ActivityListFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/102/android/UFS/src/ru/ideast/ufs/fragments/ActivityListFragment.java
+END
+SubcategoryListFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/fragments/SubcategoryListFragment.java
+END
+HtmlFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/fragments/HtmlFragment.java
+END
+GroupPreviewListFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/102/android/UFS/src/ru/ideast/ufs/fragments/GroupPreviewListFragment.java
+END
+LeftMenuFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/115/android/UFS/src/ru/ideast/ufs/fragments/LeftMenuFragment.java
+END
+SmartMapFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/fragments/SmartMapFragment.java
+END
+NewsListFragment.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/103/android/UFS/src/ru/ideast/ufs/fragments/NewsListFragment.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/mobile/!svn/ver/130/android/UFS
+END
+UFS.apk
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mobile/!svn/ver/127/android/UFS/UFS.apk
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/mobile/!svn/ver/126/android/UFS/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mobile/!svn/ver/112/android/UFS/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/mobile/!svn/ver/112/android/UFS/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/mobile/!svn/ver/120/android/UFS/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/mobile/!svn/ver/1/android/UFS/.classpath
+END

@@ -1,0 +1,18 @@
+<head>
+  <title th:text="${page.TITLE}"/>
+  <meta name="description" th:content="${page.DESCRIPTION}"/>
+  <meta th:charset="${page.Charset}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css"/>-->
+  <!--<link href="http://fonts.googleapis.com/css?family=Roboto:300,100,400" rel="stylesheet" type="text/css"/>-->
+  <!--<link rel="stylesheet" th:href="${page.CssPath}"/>-->
+  <link rel="stylesheet" th:href="${path.getRootPath('/css2/style.css')}"/>
+  <link rel="stylesheet" th:href="${path.getRootPath('/css2/jquery-ui-1.10.3.custom.css')}"/>
+  <script th:src="${path.getRootPath('/js/jquery-1.11.0.min.js')}" src="/js/jquery-1.11.0.min.js"/>
+  <script th:src="${path.getRootPath('/js/jquery-ui.min.js')}" src="/js/jquery-ui.min.js"/>
+  <script th:src="${path.getRootPath('/js/ufsic.js')}" src="/js/ufsic.js"/>
+  <script th:src="${path.getRootPath('/js/json2.js')}" src="/js/json2.js"/>
+  <!--<script type="text/javascript" th:src="${page.JsPath}"/>-->
+  <!--<link th:href="${path.getRootPath('/customIcon.png')}" rel="apple-touch-icon" href="/customIcon.png"/>-->
+  <script th:src="${path.getRootPath('/js/modernizr.min.js')}" src="/js/modernizr.min.js"></script>
+</head>

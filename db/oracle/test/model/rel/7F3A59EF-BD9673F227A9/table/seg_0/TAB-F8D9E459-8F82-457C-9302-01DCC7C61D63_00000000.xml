@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="TAB-F8D9E459-8F82-457C-9302-01DCC7C61D63_00000000" name="ACCOUNT_MENUS">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ENT-F8D9E459-8F82-457C-9302-01DCC7C61D63_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCOUNT_ID" id="COL-5BC34DD5-7EE5-46D5-8B6A-ABC89442ADD2_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-5BC34DD5-7EE5-46D5-8B6A-ABC89442ADD2_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-38E7A8F5-3465-4754-B2B3-F2D42C013BBB_00000000" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="MENU_ID" id="COL-72BE2D6A-5D42-4400-B45B-B36AD11B0056_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-72BE2D6A-5D42-4400-B45B-B36AD11B0056_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-65189518-C1FC-4534-A457-2BCDEEA0C81C_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-058A85C1-2832-4BF6-8D46-FBC9CE98582E_00000000" referredColumn="COL-65189518-C1FC-4534-A457-2BCDEEA0C81C_00000000"/>
+</associations>
+</Column>
+<Column name="PRIORITY" id="COL-6C924E86-419E-4CEA-A635-43A693F434B6_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-6C924E86-419E-4CEA-A635-43A693F434B6_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="XPK-AF9E2ECA-80F1-4BD4-B2A1-47CF5D679C10_00000000" name="XPKДоступ к меню">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>CKY-AF9E2ECA-80F1-4BD4-B2A1-47CF5D679C10_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-5BC34DD5-7EE5-46D5-8B6A-ABC89442ADD2_00000000"/>
+<colUsage columnID="COL-72BE2D6A-5D42-4400-B45B-B36AD11B0056_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2C20F7F-CA4C-91D9-5B3E-FDEC689981CB" name="R/54">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-38E7A8F5-3465-4754-B2B3-F2D42C013BBB_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-5BC34DD5-7EE5-46D5-8B6A-ABC89442ADD2_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2124807D-1AA7-F63E-5DB2-903A2C1992C7" name="R/55">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-058A85C1-2832-4BF6-8D46-FBC9CE98582E_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-72BE2D6A-5D42-4400-B45B-B36AD11B0056_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/appearance
+END
+ViewAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/appearance/ViewAnimator.java
+END
+AnimationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/appearance/AnimationAdapter.java
+END
+ResourceAnimationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/appearance/ResourceAnimationAdapter.java
+END
+SingleAnimationAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/appearance/SingleAnimationAdapter.java
+END

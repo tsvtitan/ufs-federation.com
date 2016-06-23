@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- declare-styleable name="ActionBarUfs">
+        <attr name="left_btn" format="integer" />
+        <attr name="single_text" format="string" />
+        <attr name="top_text" format="string" />
+        <attr name="bottom_text" format="string" />
+        <attr name="right_btn" format="integer" />
+        <attr name="background" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_breakLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+    </declare-styleable-->
+    
+    <declare-styleable name="FlowLayoutEx">
+       <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayoutEx_Layout">
+       <attr name="android:layout_gravity" />
+    </declare-styleable>
+    
+</resources>

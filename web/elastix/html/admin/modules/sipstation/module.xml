@@ -1,0 +1,40 @@
+<module>
+	<rawname>sipstation</rawname>
+	<name>SIPSTATION</name>
+	<version>2.8.0.8</version>
+	<type>setup</type>
+	<category>Basic</category>
+	<menuitems>
+		<sipstation sort="-9">SIPSTATION</sipstation>
+	</menuitems>
+	<description>
+		This module is used to configure, manage and troubleshoot your SIPSTATION(tm) FreePBX.com SIP trunks and DIDs. The license on this source code is NOT GPL Open Source, it is a proprietary Free to Use license.
+	</description>
+	<publisher>Bandwidth.com</publisher>
+	<license>COMMERCIAL</license>
+	<changelog>
+		*2.8.0.8* Allows dtmfmode to be set to other valid values, qualify, qualifyfreq, and context to be set/removed differently without errors reported
+		*2.8.0.7* Add remove Trunks and Keys option to SIPSTATION
+		*2.8.0.6* #4448
+		*2.8.0.5* #4310 undefined variables and spelling errors
+		*2.8.0.4* increase ajax and CURL TIMEOUT
+		*2.8.0.3* redefine core_routing_trunk_del and only if extension table is still there
+		*2.8.0.2* switch to new trunk dialrule apis
+		*2.8.0.1* report proper TEMPNOTAVAIL status when server replies with that, minor changes to install script
+		*2.8.0.0* update to use new Outbound Route APIs
+		*2.7.0.0* spelling, localizations
+		*2.6.0.3* add better error warnings when Contact/Network IP are different and not from private IP range
+		*2.6.0.2* bug fix that was not showing warning when Contact IP and Network IP were yellow
+		*2.6.0.1* add more details to noserver error
+		*2.6.0.0* tooltip edits, first release
+		*2.6.0RC1.0* Changed to gw1/gw2 separate registrations
+		*2.6.0beta1.6* collapsable section mods, added failover fields for future use, curl changes
+		*2.6.0beta1.5* css mods, new URL for xml access
+		*2.6.0beta1.4* many more bug fixes and tweaks
+		*2.6.0beta1.3* more status, lots of bug fixes
+		*2.6.0beta1.2* added install script to cleanup potential phantom trunks
+		*2.6.0beta1.1* first release
+	</changelog>
+	<location>release/2.8/sipstation-2.8.0.7.tgz</location>
+	<md5sum>2a8478d43a7768c48140b2c57289829e</md5sum>
+</module>

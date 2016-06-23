@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4537A0D3-B4A4-EE7A-EF0D-6913B2548722" name="CHANNELS">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:05:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CHANNEL_ID" id="196EF8A1-103B-A9CD-81BB-AD99D500ADEC">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:06:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARENT_ID" id="8A3A55EE-82B5-866B-AABD-3D2F2F863717">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:26:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>196EF8A1-103B-A9CD-81BB-AD99D500ADEC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E41746A-35C6-24B4-D992-F049BF24FE77" referredColumn="196EF8A1-103B-A9CD-81BB-AD99D500ADEC"/>
+</associations>
+</Column>
+<Column name="NAME" id="552D6E69-0094-F7FB-C97B-4B55BAF56B9A">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:06:58 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="751E2C3B-30DF-F826-4CD6-456F09BAA824">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:23:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLASS_NAME" id="703C6A5F-EE3A-FC1F-67D3-945902EBB91B">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:23:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCKED" id="6AC9F6BB-2C24-C03B-B336-7BD3112ADF05">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:23:35 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="2F09691B-4D41-F09D-DD82-42CAC954C07E">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:23:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SETTINGS" id="DAEC5BBD-5C70-177A-BE8B-9682C6E59E63">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:24:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUEUE_LENGTH" id="8E424983-B3A5-E56B-1C53-9E9FDF26555F">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:25:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_COUNT" id="EE8498F3-C46B-ED89-512A-6637042B1CFB">
+<createdBy>tsv</createdBy>
+<createdTime>2014-09-15 05:38:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83F6F749-A218-6C6D-8E58-88D17BB22F93" name="CHANNELS_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:06:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="196EF8A1-103B-A9CD-81BB-AD99D500ADEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="762E8BBF-2E17-E823-029B-AE4584457F18" name="CHANNELS_CHANNELS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-06 07:26:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A3A55EE-82B5-866B-AABD-3D2F2F863717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

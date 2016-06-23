@@ -1,0 +1,18 @@
+User-Agent: Yandex
+Disallow: *download-files
+Disallow: *disclosure-of-information-download-pdf
+Disallow: *upload
+Disallow: *downloads
+Host: ru.ufs-federation.com
+
+User-Agent: Google
+Disallow: *download-files
+Disallow: *disclosure-of-information-download-pdf
+Disallow: *upload
+Disallow: *downloads
+
+User-Agent: *
+Disallow: *download-files
+Disallow: *disclosure-of-information-download-pdf
+Disallow: *upload
+Disallow: *downloads

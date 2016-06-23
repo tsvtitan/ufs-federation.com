@@ -1,0 +1,7 @@
+12.09.2012 18:40:52.065 I: --------------------------------------------------
+12.09.2012 18:40:52.065 I: Starting ...
+12.09.2012 18:40:52.403 I: Bloomberg database is connected. Selecting data ...
+12.09.2012 18:40:52.403 I: [MSSql->getRecords] SELECT * FROM [BLOOMBERG_XLS]...[FI$]
+12.09.2012 18:40:52.490 E: [MSSql->getRecords] Error: Heterogeneous queries require the ANSI_NULLS and ANSI_WARNINGS options to be set for the connection. This ensures consistent query semantics. Enable these options and then reissue your query.
+12.09.2012 18:40:52.490 E: Quotes data is not found
+12.09.2012 18:40:52.491 I: Game over :-)

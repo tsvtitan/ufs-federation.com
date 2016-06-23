@@ -1,0 +1,40 @@
+10
+
+dir
+309
+https://ru.ufs-federation.com/svn/mobile/android/UFS/bin/res/crunch
+https://ru.ufs-federation.com/svn/mobile
+
+
+
+2015-09-15T13:08:53.404974Z
+309
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+

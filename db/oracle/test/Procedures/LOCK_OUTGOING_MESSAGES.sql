@@ -1,0 +1,96 @@
+DROP PROCEDURE LOCK_OUTGOING_MESSAGES;
+
+CREATE OR REPLACE PROCEDURE LOCK_OUTGOING_MESSAGES
+(
+  CHANNEL_ID IN NVARCHAR2,
+  LOCK_ID OUT NVARCHAR2,
+  LOCK_COUNT OUT INTEGER,
+  ALL_COUNT OUT INTEGER
+)
+AS 
+  EMAIL_PATTERN NVARCHAR2(100):='[a-zA-Z0-9._%-]+@[a-zA-Z0-9._%-]+\.[a-zA-Z]{2,4}';
+  MAX_QUEUE_LENGTH INTEGER:=100;
+  QUEUE_LENGTH INTEGER;
+BEGIN
+  LOCK_ID:=GET_UNIQUE_ID();
+  
+  IF (CHANNEL_ID IS NULL) THEN
+
+    UPDATE MESSAGES
+       SET LOCK_ID=LOCK_OUTGOING_MESSAGES.LOCK_ID, 
+           CHANNEL_ID=DECODE(CHANNEL_ID,NULL,
+                             DECODE(REGEXP_SUBSTR(RECIPIENT_CONTACT,EMAIL_PATTERN),NULL,
+                                    GET_SMS_OUTGOING_CHANNEL_ID,GET_EMAIL_OUTGOING_CHANNEL_ID),CHANNEL_ID)
+     WHERE SENT IS NULL
+       AND LOCK_ID IS NULL
+       AND LOCKED IS NULL
+       AND (BEGIN IS NULL OR BEGIN<=CURRENT_TIMESTAMP)
+       AND (END IS NULL OR END>=CURRENT_TIMESTAMP)
+       AND RECIPIENT_CONTACT IS NOT NULL;
+    
+    LOCK_COUNT:=SQL%ROWCOUNT;
+    ALL_COUNT:=LOCK_COUNT; 
+
+    FOR INC IN (SELECT CHANNEL_ID, 
+                       DECODE(QUEUE_LENGTH,NULL,MAX_QUEUE_LENGTH,QUEUE_LENGTH) AS QUEUE_LENGTH
+                  FROM CHANNELS
+                 WHERE LOCKED IS NULL
+                 ORDER BY PRIORITY) LOOP
+      
+      UPDATE MESSAGES            
+         SET LOCK_ID=NULL
+       WHERE MESSAGE_ID IN (SELECT MESSAGE_ID 
+                              FROM (SELECT ROWNUM AS RN, MESSAGE_ID 
+                                      FROM (SELECT MESSAGE_ID
+                                              FROM MESSAGES
+                                             WHERE LOCK_ID=LOCK_OUTGOING_MESSAGES.LOCK_ID
+                                               AND CHANNEL_ID=INC.CHANNEL_ID 
+                                             ORDER BY PRIORITY, CREATED, BEGIN))
+                             WHERE RN>INC.QUEUE_LENGTH)
+         AND LOCK_ID IS NOT NULL;                            
+    
+      LOCK_COUNT:=LOCK_COUNT-SQL%ROWCOUNT;
+      
+    END LOOP; 
+    
+  ELSE
+  
+    UPDATE MESSAGES
+       SET LOCK_ID=LOCK_OUTGOING_MESSAGES.LOCK_ID
+     WHERE SENT IS NULL
+       AND LOCK_ID IS NULL
+       AND LOCKED IS NULL
+       AND (BEGIN IS NULL OR BEGIN<=CURRENT_TIMESTAMP)
+       AND (END IS NULL OR END>=CURRENT_TIMESTAMP)
+       AND RECIPIENT_CONTACT IS NOT NULL
+       AND CHANNEL_ID=LOCK_OUTGOING_MESSAGES.CHANNEL_ID;
+    
+    LOCK_COUNT:=SQL%ROWCOUNT;
+    ALL_COUNT:=LOCK_COUNT; 
+  
+    FOR INC IN (SELECT DECODE(QUEUE_LENGTH,NULL,MAX_QUEUE_LENGTH,QUEUE_LENGTH) AS QUEUE_LENGTH
+                   FROM CHANNELS
+                  WHERE CHANNEL_ID=LOCK_OUTGOING_MESSAGES.CHANNEL_ID) LOOP
+      QUEUE_LENGTH:=INC.QUEUE_LENGTH;                  
+      EXIT;                  
+    END LOOP;                  
+    
+    UPDATE MESSAGES             
+       SET LOCK_ID=NULL
+     WHERE MESSAGE_ID IN (SELECT MESSAGE_ID 
+                             FROM (SELECT ROWNUM AS RN, MESSAGE_ID 
+                                      FROM (SELECT MESSAGE_ID
+                                              FROM MESSAGES
+                                             WHERE LOCK_ID=LOCK_OUTGOING_MESSAGES.LOCK_ID
+                                               AND CHANNEL_ID=LOCK_OUTGOING_MESSAGES.CHANNEL_ID 
+                                             ORDER BY PRIORITY, CREATED, BEGIN))
+                            WHERE RN>LOCK_OUTGOING_MESSAGES.QUEUE_LENGTH)
+       AND LOCK_ID IS NOT NULL;                            
+  
+    LOCK_COUNT:=LOCK_COUNT-SQL%ROWCOUNT;
+  
+  END IF;
+  
+  COMMIT;
+  
+END;

@@ -1,0 +1,215 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2009 Mikael Carlsson, mickecamino@gmail.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX daynight\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-26 07:00+0200\n"
+"PO-Revision-Date: 2008-10-11 23:12+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:153
+#, php-format
+msgid "Day/Night (%s) : %s"
+msgstr "Dag/Natt (%s) : %s"
+
+#: functions.inc.php:434
+#, php-format
+msgid "Daynight: %s (%s)"
+msgstr "Dag/Natt: %s (%s)"
+
+#: functions.inc.php:542
+msgid "Day/Night Mode Association"
+msgstr "Tilldela Dag/Natt-läge"
+
+#: functions.inc.php:546
+msgid "Associate with"
+msgstr "Tilldela till"
+
+#: functions.inc.php:546
+msgid ""
+"If a selection is made, this timecondition will be associated with that "
+"featurecode and will allow this timecondition to be direct overridden by that "
+"daynight mode featurecode"
+msgstr ""
+"Om ett val har gjorts kommer denna tidskondition att tilldelas till en "
+"funktionskod som gör det möjligt att "
+
+#: functions.inc.php:551
+msgid "No Association"
+msgstr "Ingen tilldelning"
+
+#: functions.inc.php:554
+msgid " - Force Day"
+msgstr "- Tvinga Dagläge"
+
+#: functions.inc.php:556
+msgid " - Force Night"
+msgstr "- Tvinga Nattläge"
+
+#: install.php:74
+msgid "changing primary keys to all fields.."
+msgstr "ändra primärnyckel för alla fält"
+
+#: install.php:78
+msgid "ERROR: failed to alter primary keys "
+msgstr "FEL: kunde inte ändra primärnyckel"
+
+#: install.php:80
+msgid "OK"
+msgstr "OK"
+
+#: page.daynight.php:33
+msgid "Add Day/Night Code"
+msgstr "Lägg till Dag/Natt-kod"
+
+#: page.daynight.php:86
+msgid "Day / Night Mode Control"
+msgstr "Dag / Natt-kontroll"
+
+#: page.daynight.php:90
+#, php-format
+msgid "Delete Day/Night Feature Code %s"
+msgstr "Ta bort Dag/Natt-funktionskoden %s"
+
+#: page.daynight.php:105
+msgid "Forces to Day  Mode"
+msgstr "Tvingas till Dagläge"
+
+#: page.daynight.php:105
+msgid "Forces to Night Mode"
+msgstr "Tvingas till Nattläge"
+
+#: page.daynight.php:108
+#, php-format
+msgid "Linked to Time Condition %s - %s"
+msgstr "Länkad till tidskondition %s - %s"
+
+#: page.daynight.php:127 page.daynight.php:240
+msgid "Save"
+msgstr "Spara"
+
+#: page.daynight.php:128 page.daynight.php:241
+#, php-format
+msgid "Use feature code: %s to toggle DAY/NIGHT mode"
+msgstr "Använd funktionskod: %s för att ändra Dag/Natt-läge"
+
+#: page.daynight.php:137
+msgid "Day/Night Feature Code Index:"
+msgstr "Index för Dag/Natt-funktionskod:"
+
+#: page.daynight.php:138
+msgid ""
+"There are a total of 10 Feature code objects, 0-9, each can control a call "
+"flow and be toggled using the day/night feature code plus the index."
+msgstr ""
+"Det finns totalt 10 funktionskoder, 0-9, var en av dom kan kontrollera "
+"samtalsflödet och kan ställas om med Dag/Natt-funktionskod plus indexet."
+
+#: page.daynight.php:163
+msgid "Description"
+msgstr "Beskrivning"
+
+#: page.daynight.php:163
+msgid "Description for this Day/Night Control"
+msgstr "Kortfattad beskrivning för Dag/Natt-kontroll"
+
+#: page.daynight.php:168
+msgid "Current Mode:"
+msgstr "Aktuellt läge:"
+
+#: page.daynight.php:169
+msgid ""
+"This will change the current state for this Day/Night Mode Control, or set "
+"the initial state when creating a new one."
+msgstr ""
+"Detta kommer att ändra aktuellt läge för denna Dag/Natt-kontroll, eller "
+"sätta utgångsläge när nya skapas."
+
+#: page.daynight.php:174
+msgid "Day"
+msgstr "Dag"
+
+#: page.daynight.php:175
+msgid "Night"
+msgstr "Natt"
+
+#: page.daynight.php:182
+msgid "Recording for Day Mode"
+msgstr "Meddelande för dagläge"
+
+#: page.daynight.php:182 page.daynight.php:199
+msgid ""
+"Message to be played.<br>To add additional recordings use the \"System "
+"Recordings\" MENU to the left"
+msgstr ""
+"Meddelande att spela upp.<br>För att lägga till fler meddelanden använd "
+"\"Systeminspelningar\" i menyn till vänster"
+
+#: page.daynight.php:188 page.daynight.php:204
+msgid "Default"
+msgstr "Standard"
+
+#: page.daynight.php:199
+msgid "Recording for Night Mode"
+msgstr "Meddelande för nattläge"
+
+#: page.daynight.php:218
+msgid "Optional Password"
+msgstr "Valfritt lösenord"
+
+#: page.daynight.php:218
+msgid ""
+"You can optionally include a password to authenticate before toggling the "
+"day/night mode. If left blank anyone can use the feature code and it will be "
+"un-protected"
+msgstr ""
+"Du kan valfritt inkludera ett lösenord som måste anges innan omkoppling av "
+"Dag/Natt-läge kan ske. Om detta fält lämnas tomt kan vem som helst ställa om "
+"Dag/Natt-läget."
+
+#: page.daynight.php:232
+msgid "DAY"
+msgstr "DAG"
+
+#: page.daynight.php:233
+msgid "NIGHT"
+msgstr "NATT"
+
+#: page.daynight.php:256
+msgid "Please enter a valid numeric password, only numbers are allowed"
+msgstr "Skriv in ett giltigt lösenord, endast siffror"
+
+#: page.daynight.php:278
+#, php-format
+msgid "Destination to use when set to %s mode"
+msgstr "Destination att gå till när det är %s"
+
+#: module.xml
+msgid "Day Night Mode"
+msgstr "Dag/Natt-läge"
+
+#: module.xml
+msgid "Day/Night Control"
+msgstr "Dag/Natt-kontroll"

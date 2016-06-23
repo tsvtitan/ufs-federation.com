@@ -1,0 +1,28 @@
+<module>
+	<rawname>dundicheck</rawname>
+	<name>DUNDi Lookup Registry</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* spelling errors, localizations
+		*2.6.0.0* localizations
+		*2.5.0* #2918 First release
+	</changelog>
+	<description>
+		This module will check all configured and enabled DUNDi trunks as part of the extension registry function, and report back conflicts if
+		other sites have the same extensions. This does not filter against the route patterns - it will take any number being created and
+		report a conflict if that trunk could be used to call that number.
+	</description>
+	<type>tool</type>
+	<menuitems>
+		<dundicheck>DUNDi Lookup</dundicheck>
+	</menuitems>
+	<depends>
+		<version>2.4.0</version>
+	</depends>
+	<category>System Administration</category>
+	<location>release/2.7/dundicheck-2.7.0.0.tgz</location>
+	<md5sum>9ec289c1f2a1d07357b2f2b6b00c2386</md5sum>
+</module>

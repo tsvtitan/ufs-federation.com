@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F04D305-6228-C005-B0F2-A249730A8A1A" name="MOBILE_TABLES">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:43:05 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MOBILE_TABLE_ID" id="55B9B568-52AA-03F0-7A7C-8B04AAE3444A">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:47:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOBILE_MENU_ID" id="3B5513CC-0CF4-0A7E-2166-0E24A85CAD49">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:52:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<delegate>BCEC0CC4-FA50-4F29-BC71-9636088A37BF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89DD05F6-5671-4743-0E68-BFF43BE3E784" referredColumn="BCEC0CC4-FA50-4F29-BC71-9636088A37BF"/>
+</associations>
+</Column>
+<Column name="LOCKED" id="8CAAB658-8CAA-F879-E835-439E27D0C041">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 05:59:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="F1D4CB5D-A626-249A-CFCA-E1E60B27AEA1">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:52:36 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="4475AAED-5611-94FA-E203-8E92251E7B91">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:52:45 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLUMNS" id="339B8A36-6230-4772-393E-4E53B696D2DB">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:53:01 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALIGNMENTS" id="2C0C7289-9EDC-9B94-C62A-505B38F92A4A">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:53:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SQL" id="5BA6E838-D86F-0510-DF3D-68AD78809504">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:53:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="AF5A350A-63E1-52D4-10B8-84F06B7D1866">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:53:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5212707-D438-F320-3F3F-8FE90A3077EE" name="MOBILE_TABLES_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:47:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55B9B568-52AA-03F0-7A7C-8B04AAE3444A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3EC8009-4731-94F2-2284-6140E28380CD" name="MOBILE_TABLES_MOBILE_MENUS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-05 13:52:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B5513CC-0CF4-0A7E-2166-0E24A85CAD49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

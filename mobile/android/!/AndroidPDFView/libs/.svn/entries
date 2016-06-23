@@ -1,0 +1,74 @@
+10
+
+dir
+110
+http://apps.ufs-federation.com/svn/mobile/android/AndroidPDFView/libs
+http://apps.ufs-federation.com/svn/mobile
+
+
+
+2014-06-16T12:46:45.775399Z
+110
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+.DS_Store
+file
+117
+
+
+
+2014-06-18T05:44:05.000000Z
+1dc087b7b35ba9bf1e7491155ca87169
+2014-06-18T05:44:50.694003Z
+117
+tsv
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6148
+
+armeabi
+dir
+
+armeabi-v7a
+dir
+
+mips
+dir
+
+x86
+dir
+

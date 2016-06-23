@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ufs="http://schemas.android.com/apk/res/ru.ideast.ufs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ru.ideast.ufs.widgets.ActionBarUfs
+        android:id="@+id/qr_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        ufs:left_btn="@drawable/btn_menu_selector" />
+
+    <FrameLayout
+        android:id="@+id/qr_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:id="@+id/qr_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+</LinearLayout>

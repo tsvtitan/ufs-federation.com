@@ -1,0 +1,20 @@
+//
+//  NewsKeywordDB.h
+//  UFS
+//
+//  Created by Sergei Tomilov on 11/25/14.
+//  Copyright (c) 2014 UFS Investment Company. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "ManadgeObjectDB.h"
+
+@interface NewsKeywordDB : ManadgeObjectDB
+
+@property (nonatomic, retain) NSString * keyword;
+@property (nonatomic, retain) NSNumber * index;
+@property (nonatomic, retain) NewsDB *news;
+
+
+@end

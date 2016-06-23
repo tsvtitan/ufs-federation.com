@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mobile/!svn/ver/209/android/StickyListHeaders
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/.gitignore
+END
+proguard-project.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/proguard-project.txt
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/AndroidManifest.xml
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/build.gradle
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/build.xml
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/pom.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/project.properties
+END
+gradle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/gradle.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mobile/!svn/ver/210/android/StickyListHeaders/.classpath
+END

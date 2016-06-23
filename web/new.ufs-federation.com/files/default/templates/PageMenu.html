@@ -1,0 +1,9 @@
+<ul class="submenu" style="margin-top: 70px;">
+  <li th:each="menu:${pageMenus}" th:class="${menu.lINK==path.PATH}?'active'" class="active"><a th:if="${menu.LINK!=path.PATH}" th:href="${path.getBasePath(menu.LINK)}" href="/"><font th:utext="${menu.NAME}">Верхнее меню</font><span th:if="${menu.NEW}" class="label-new" th:text="#{NewMenu}">Новое</span></a><span th:if="${menu.LINK==path.PATH}"><font th:utext="${menu.NAME}">Текущее меню</font><span th:if="${menu.NEW}" class="label-new" th:text="#{NewMenu}">Новое</span></span>
+    <ul class="submenu-inner">
+      <li th:each="item:${menu.items}" th:class="${item.lINK==path.PATH}?'active'" class="active">
+        <a th:if="${item.LINK!=path.PATH}" th:href="${path.getBasePath(item.LINK)}" href="/"><font th:utext="${item.NAME}">Нижнее меню</font><span th:if="${item.NEW}" class="label-new" th:text="#{NewMenu}">Новое</span></a><span th:if="${item.LINK==path.PATH}"><font th:utext="${item.NAME}">Текущее меню</font><span th:if="${item.NEW}" class="label-new" th:text="#{NewMenu}">Новое</span></span>
+      </li>
+    </ul>
+  </li>
+</ul>

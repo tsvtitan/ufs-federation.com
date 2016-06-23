@@ -1,0 +1,106 @@
+# Russian freePBX ver. translation
+# Copyright (c) 2006-2008 PostMet Corporation
+# This file is distributed under the same license as the freePBX package.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+#
+# fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 12:13+0200\n"
+"PO-Revision-Date: 2008-12-26 15:07+0100\n"
+"Last-Translator: Alexander Kozyrev\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Misc Destination: %s"
+msgstr "Дополнительное направление: %s"
+
+#: page.miscdests.php:69 page.miscdests.php:114 page.miscdests.php:122
+msgid "Add Misc Destination"
+msgstr "Добавить Дополнительное направление"
+
+#: page.miscdests.php:83
+msgid "Misc Destination"
+msgstr "Дополнительное направление"
+
+#: page.miscdests.php:83
+msgid "deleted"
+msgstr "удалено"
+
+#: page.miscdests.php:94
+msgid ""
+"Misc Destinations are for adding destinations that can be used by other "
+"FreePBX modules, generally used to route incoming calls. If you want to "
+"create feature codes that can be dialed by internal users and go to various "
+"destinations, please see the <strong>Misc Applications</strong> module."
+msgstr ""
+"Этот модуль добавляет Дополнительные направления, "
+"которые можно затем использовать в других модулях FreePBX, в том числе для маршрутизации входящих звонков. Для создания сервисного кода, набрав "
+"который можно попасть прямо в это созданное "
+"направление, воспользуйтесь секцией "
+"<strong>Дополнительные приложения</strong>."
+
+#: page.miscdests.php:99
+msgid "Misc Destination:"
+msgstr "Дополнительное направление:"
+
+#: page.miscdests.php:103
+#, php-format
+msgid "Delete Misc Destination %s"
+msgstr "Удалить Дополнительное направление %s"
+
+#: page.miscdests.php:122
+msgid "Edit Misc Destination"
+msgstr "Изменить Дополнительное направление"
+
+#: page.miscdests.php:127
+msgid "Description:"
+msgstr "Описание:"
+
+#: page.miscdests.php:127
+msgid "Give this Misc Destination a brief name to help you identify it."
+msgstr ""
+"Присвойте этому направлению короткое название для идентификации."
+
+#: page.miscdests.php:131
+msgid "Dial:"
+msgstr "Набирать:"
+
+#: page.miscdests.php:131
+msgid ""
+"Enter the number this destination will simulate dialing, exactly as you "
+"would dial it from an internal phone. When you route a call to this "
+"destination, it will be as if the caller dialed this number from an internal "
+"phone."
+msgstr ""
+"Набрав этот номер вы симулируете набор прямо в "
+"созданное направление. Когда добавляете это "
+"направление в сценариях маршрутизации, то поведение в направлении "
+"будет точно такое же, как будто набран этот "
+"внутренний номер."
+
+#: page.miscdests.php:136
+msgid "featurecode shortcuts"
+msgstr "список сервисных кодов"
+
+#: page.miscdests.php:151
+msgid "Submit Changes"
+msgstr "Применить изменения"
+
+#: page.miscdests.php:168
+msgid "Please enter a valid Description"
+msgstr "Введите действительное описание"
+
+#: page.miscdests.php:169
+msgid "Please enter a valid Dial string"
+msgstr "Введите разрешённый код набора"
+
+#: module.xml
+msgid "Misc Destinations"
+msgstr "Дополнительные назначения"

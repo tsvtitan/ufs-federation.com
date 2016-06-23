@@ -1,0 +1,865 @@
+//
+//  UFSDetailVC.m
+//  UFS
+//
+//  Created by mihail on 27.08.13.
+//  Copyright (c) 2013 Moskovchenko M. All rights reserved.
+//
+
+#import "UFSDetailVC.h"
+
+static const NSString *newsHtml = @""
+"<html>"
+"<head>"
+"<style type=\"text/css\">"
+"body{margin:10; max-width: 300px!important; padding:0 5px 0 5px;word-wrap: break-word !important;color:#333333 !important;background-color:#FFF; font-family:Helvetica !important;}"
+"h2,h3,h1{margin:5.0px 0 5.0px 0;}"
+"p,p b{text-align:left;color:rgb(3,68,124);padding:0;margin:0;font-size:90%%;word-wrap: break-word !important;}"
+"br { margin: 0px 0px 0px 0px; }"
+"p {margin-bottom: 10px;}"
+"body,h2{ font-size:%fpx;}"
+"table{font-size: 14px;}"
+"tr td{text-align:center;font-size:10pt;word-wrap: break-word !important;}"
+"table,table tr, tr td{padding:0 !important;margin:0 !important;white-space: auto !important;}"
+"td{width:auto !important;}"
+"div{overflow-y:scroll !important;max-width: 310px !important;}"
+".image{min-height:40px;padding: 0;margin:0;border: 1px;max-width:310px!important;}"
+".usual,img,iframe,iframe img{width:auto;height:auto;max-width:300px!important;padding:0;margin:0;}"
+".image img{padding:0px;width:300px;}"
+"a .grayLink{text-decoration:none; border-bottom:#777 solid 1px; color:#777;}"
+"body, h2:{font-family:Helvetica!important;}"
+"h1:{font-family:Helvetica;}"
+//"h2, h3, span, p, table:{font-family:SiemensSans-Bold !important;}"
+".pic{position:absolute;margin-left:0;margin-top:18;z-index:0}"
+//".stabs{width:100px !important;color:#990000 !important}"
+"</style>"
+"</head>"
+"<body>"
+"<h1 style=\"padding:0;margin:0;line-height: 1;text-width:bold;font-family:Helvetica;font-size:%fpx;color:rgb(98,125,146);\" id = \"caption\">%@</h1>"
+"<br>"
+"<span style=\"margin:0px;padding:2px;line-height: 1;text-width:bold;margin-bottom:-25px;font-family:Helvetica ;font-size:%fpx;color:rgb(155,171,183);\">%@</span>"//time
+"<br>"
+
+"<br>"
+"<p style=\"padding-bottom:-5px;float:left;font-family:Helvetica  !important; color:rgb(3,68,124);\">%@</p>"
+"<br>"
+"<br><br>"
+
+"</body>"
+"</html>";
+
+
+@interface UFSDetailVC ()
+{
+    UIActivityIndicatorView *indicator;
+    UIImageView *imageForNews;
+}
+
+@end
+
+@implementation UFSDetailVC
+
+@synthesize fetchedResultsController;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        pdfCount = 0;
+    }
+    return self;
+}
+-(id)initWithNewsId:(NSInteger)newsID CategoryID:(NSInteger)cID andSubcategoryID:(NSInteger)subID
+{
+    newsId = newsID;
+    self = [self initWithNibName:nil bundle:nil];
+    {
+        if ([UFSLoader reachable])
+        {
+            [UFSLoader requestPostAuth:@"" andWidth:@""];
+            [UFSLoader requestPostMainNews:@"" CategoryId:[NSString stringWithFormat:@"%d",cID] andSubCategoryId:[NSString stringWithFormat:@"%d",subID] andNewsID:[NSString stringWithFormat:@"%d",newsId]];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadFaild:) name:kNotificationRequestFaild object:nil];
+
+        }
+        NSError *error = nil;
+        if (![[self fetchedResultsController] performFetch:&error]) {
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        }
+
+
+    }
+    
+    return self;
+}
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    //    fetchedResultsController.delegate = self;
+////    [newsWebView setDelegate:self];
+//}
+//-(void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//    isLoading = false;
+////    fetchedResultsController.delegate = nil;
+////     [newsWebView setDelegate:nil];
+//}
+-(void) dealloc
+{
+   
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    fetchedResultsController.delegate = nil;
+    relatedTV.delegate=nil;
+    relatedTV.dataSource = nil;
+//    imageForNews.tapDelegate = nil;
+//    SAFE_KILL(relatedTV);
+    SAFE_KILL(fetchedResultsController);
+    [super dealloc];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    /* tsv */
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afterImageLoad:) name:kNotificationImageLoaded object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(afterImageLoad:) name:kNotificationImageLoadFailed object:nil];
+    /* tsv */
+
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    bgScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    [bgScroll setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:bgScroll];
+    bgScroll.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [bgScroll release];
+    newsWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 1)];
+//    newsWebView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [newsWebView setBackgroundColor:[UIColor clearColor]];
+    [newsWebView.scrollView setScrollEnabled:false];
+    [newsWebView setDelegate:self];
+    
+    [bgScroll addSubview:newsWebView];
+    [newsWebView release];
+    
+
+    UIImage *imgBtn = [UIImage imageNamed:@"icn_nav_back"];
+    //    imgBtn = [imgBtn stretchableImageWithLeftCapWidth:12 topCapHeight:0];
+    UIButton *backbutton = [[UIButton alloc] initWithFrame:CGRectMake(5.0f, (self.view.frame.size.height - 30)/2.0f, 30.0f, 30.0f)];
+    [backbutton setBackgroundImage:imgBtn forState:UIControlStateNormal];
+    [backbutton addTarget:self action:@selector(BackButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [backbutton.titleLabel setTextAlignment:NSTextAlignmentCenter];
+    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithCustomView:backbutton] autorelease];
+    [backbutton release];
+
+    imageForNews = [[UIImageView alloc] initWithFrame:CGRectMake(10, newsWebView.height+5, 300, 200)];
+    [imageForNews setBackgroundColor:[UIColor clearColor]];
+    imageForNews.tag=300;
+    [imageForNews.layer setBorderColor:RGBA(152, 187, 209, 1.0f).CGColor];
+    [imageForNews.layer setBorderWidth:0.7f];
+    [imageForNews.layer setCornerRadius:5.0f];
+    [bgScroll addSubview:imageForNews];
+    [imageForNews release];
+    
+    
+    
+    [imageForNews setHidden:YES];
+    
+    // Notify Lable And TableView
+    notifyLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, imageForNews.height+10, bgScroll.width-20, 20)];
+    notifyLabel.text = @"Обзоры по этой теме:";
+    notifyLabel.backgroundColor = [UIColor clearColor];
+    notifyLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+    notifyLabel.textColor = RGBA(155, 171, 183, 1.0f);
+    [bgScroll addSubview:notifyLabel];
+    [notifyLabel release];
+    [notifyLabel setHidden:YES];
+    relatedTV = [[UITableView alloc] initWithFrame:CGRectMake(10, notifyLabel.height+5, bgScroll.width-20, (40.0f*[_newsObj.relatedLinks allObjects].count)) style:UITableViewStylePlain];
+    [relatedTV setBackgroundColor:[UIColor clearColor]];
+    [relatedTV setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [relatedTV setScrollEnabled:false];
+    [bgScroll addSubview:relatedTV];
+    [relatedTV release];
+    [relatedTV setHidden:YES];
+    
+    
+    
+    if (self.type==1)
+     {
+         labelFoeLoading = [[UILabel alloc] initWithFrame:self.view.bounds];
+         [labelFoeLoading setBackgroundColor:RGBA(231, 234, 236, 1.0f)];
+         [self.view addSubview:labelFoeLoading];
+         [labelFoeLoading release];
+     }
+    if (self.newsObj)
+    {
+        [self setContentForWebView];
+    }
+    else if (fetchedResultsController.fetchedObjects.count)
+    {
+        /*self.newsObj = fetchedResultsController.fetchedObjects.lastObject;
+        if ([_newsObj.text length])
+        {
+            [self setContentForWebView];
+        }*/
+    }
+
+         indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+         [indicator setCenter:CGPointMake(self.view.center.x, self.view.center.y-44)];
+         [indicator setColor:[UIColor grayColor]];
+         [self.view addSubview:indicator];
+         [indicator startAnimating];
+         [indicator release];
+
+    
+	// Do any additional setup after loading the view.
+}
+-(void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    fetchedResultsController.delegate = nil;
+    [super viewWillDisappear:animated];
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    fetchedResultsController.delegate = self;
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateImageInWeb:) name:kNotificationImageLoaded object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateImageInWeb:) name:kNotificationImageLoadFailed object:nil];
+   
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    if (self.type!=1)
+        [indicator stopAnimating];
+    pdfCount = 0;
+    NSString * h = [webView stringByEvaluatingJavaScriptFromString:@"document.getElementById(\"caption\").scrollHeight;"];
+
+    NSArray *arr = [_newsObj.files allObjects];
+//    arr = [arr filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"type==%@",@(3)]];
+    for (int i=0;i<arr.count;i++)
+    {
+        FileImageUrlDB *filePdf = arr[i];
+        if ([filePdf.extension isEqualToString:@"pdf"])
+        {
+            pdfCount++;
+        }
+    }
+    if (pdfCount)
+    {
+
+//        float heightForPdfButton = [str sizeWithFont:[UIFont fontWithName:@"Helvetica" size:(13+ 1.0f*2)] constrainedToSize:CGSizeMake(newsWebView.width-20, MAXFLOAT)].height;
+        float heightForPdfButton = [h floatValue]-10;
+        UIButton *pdfButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.width-70, heightForPdfButton+20, 50, 50)];
+        [pdfButton setImage:[UIImage imageNamed:@"btn_download"] forState:UIControlStateNormal];
+        [pdfButton addTarget:self action:@selector(pdfButtonTap:) forControlEvents:UIControlEventTouchUpInside];
+        [newsWebView.scrollView addSubview:pdfButton];
+        [pdfButton release];
+    }
+
+
+   float height = webView.scrollView.contentSize.height;
+
+    [newsWebView setFrame:CGRectMake(0, 0, self.view.width, height)];
+    
+    [bgScroll setContentSize:CGSizeMake(self.view.width, height)];
+           
+
+    if (self.type==1)
+    {
+        
+            if (imageForNews.tag==400)
+            {
+                /*[indicator stopAnimating];
+                CATransition *animation = [CATransition animation];
+                [animation setDuration:0.5f];
+                [animation setType:kCATransitionFade];
+                [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+                [animation setRemovedOnCompletion:YES];
+                [labelFoeLoading.layer addAnimation:animation forKey:nil];
+                [labelFoeLoading setHidden:YES];
+                labelFoeLoading = nil;
+                
+                UIButton *imageButton = [[UIButton alloc] initWithFrame:imageForNews.frame];
+                
+                imageButton.backgroundColor = [UIColor clearColor];
+                [imageButton addTarget:self action:@selector(imageNewsTaped:) forControlEvents:UIControlEventTouchUpInside];
+                [bgScroll addSubview:imageButton];
+                [imageButton release];*/
+                imageForNews.frame = CGRectMake(10, height, 300, 200);
+                imageForNews.hidden = NO;
+                height+=220;
+            }
+        
+    }
+    [bgScroll setContentSize:CGSizeMake(self.view.width, height)];
+    if ([_newsObj.relatedLinks allObjects].count)
+    {
+        notifyLabel.frame = CGRectMake(10, height, bgScroll.width-20, 20);
+        [notifyLabel setHidden:NO];
+        height+=20;
+        relatedTV.frame = CGRectMake(10, height+5, bgScroll.width-20, (40.0f*[_newsObj.relatedLinks allObjects].count)+5);
+        relatedTV.delegate = self;
+        relatedTV.dataSource=self;
+        [relatedTV setHidden:NO];
+        height+=relatedTV.height+15;
+    }
+    [bgScroll setContentSize:CGSizeMake(self.view.width, height+5)];
+
+}
+
+/* tsv */
+-(void)afterImageLoad:(NSNotification *)notify
+{
+    
+    if ([notify.object isKindOfClass:[NSString class]]) {
+        
+        if ([notify.name isEqualToString:kNotificationImageLoaded]) {
+            
+            NSString *imagePath = (NSString *)notify.object;
+            
+            [imageForNews setTag:400];
+            [imageForNews setImage:[FileSystem imageWithPath:imagePath]];
+            
+            CATransition *animation = [CATransition animation];
+            [animation setDuration:0.5f];
+            [animation setType:kCATransitionFade];
+            [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+            [animation setRemovedOnCompletion:YES];
+            [labelFoeLoading.layer addAnimation:animation forKey:nil];
+            [labelFoeLoading setHidden:YES];
+            labelFoeLoading = nil;
+            [indicator stopAnimating];
+            UIButton *imageButton = [[UIButton alloc] initWithFrame:imageForNews.frame];
+            
+            imageButton.backgroundColor = [UIColor clearColor];
+            imageButton.tag = 8888;
+            [imageButton addTarget:self action:@selector(imageNewsTaped:) forControlEvents:UIControlEventTouchUpInside];
+            [bgScroll addSubview:imageButton];
+            [imageButton release];
+            
+            [self setElementPosition];
+            
+        } else {
+            
+            CATransition *animation = [CATransition animation];
+            [animation setDuration:0.5f];
+            [animation setType:kCATransitionFade];
+            [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+            [animation setRemovedOnCompletion:YES];
+            [labelFoeLoading.layer addAnimation:animation forKey:nil];
+            [labelFoeLoading setHidden:YES];
+            labelFoeLoading = nil;
+            [indicator stopAnimating];
+            
+            [imageForNews removeFromSuperview];
+            [imageForNews setImage:nil];
+            //imageForNews = nil;
+            [self setElementPosition];
+
+        }
+    }
+}
+/* tsv */
+
+-(void) setContentForWebView
+{
+    self.titleText = [_newsObj title];
+    if (self.type==1)
+    {
+        NSArray *arr = [_newsObj.files allObjects];
+        arr = [arr filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"type==1"]];
+        NSLog(@"%@",arr);
+        if (arr.count)
+        {
+            arr = [arr sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"url" ascending:YES]]];
+            FileImageUrlDB *filePdf = arr[0];
+            NSString *fileName = [NSString stringWithFormat:kServerBasePath,filePdf.url];
+ 
+            if (fileName.length)
+            {
+                if ([FileSystem pathExisted:fileName])
+                {
+                    NSLog(@"file name %@",fileName);
+//                  [imageForNews setHidden:NO];
+                    [imageForNews setTag:400];
+                    [imageForNews setImage:[FileSystem imageWithPath:fileName]];
+                    
+                    /* tsv */
+                    CATransition *animation = [CATransition animation];
+                    [animation setDuration:0.5f];
+                    [animation setType:kCATransitionFade];
+                    [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+                    [animation setRemovedOnCompletion:YES];
+                    [labelFoeLoading.layer addAnimation:animation forKey:nil];
+                    [labelFoeLoading setHidden:YES];
+                    labelFoeLoading = nil;
+                    [indicator stopAnimating];
+                    UIButton *imageButton = [[UIButton alloc] initWithFrame:imageForNews.frame];
+                    
+                    imageButton.backgroundColor = [UIColor clearColor];
+                    imageButton.tag = 8888;
+                    [imageButton addTarget:self action:@selector(imageNewsTaped:) forControlEvents:UIControlEventTouchUpInside];
+                    [bgScroll addSubview:imageButton];
+                    [imageButton release];
+                    
+                    [self setElementPosition];
+                    /* tsv */
+                   
+                } else {
+
+                    /*NSMutableURLRequest *request = [[UFSLoader shared] requestWithMethod:@"GET" path:fileName parameters:nil];
+                    [request setHTTPShouldHandleCookies:NO];
+                    [request addValue:@"image/*" forHTTPHeaderField:@"Accept"];
+                    [request setTimeoutInterval:10];
+
+            
+                    [imageForNews setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+                      
+                      [imageForNews setTag:400];
+                      CATransition *animation = [CATransition animation];
+                      [animation setDuration:0.5f];
+                      [animation setType:kCATransitionFade];
+                      [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+                      [animation setRemovedOnCompletion:YES];
+                      [labelFoeLoading.layer addAnimation:animation forKey:nil];
+                      [labelFoeLoading setHidden:YES];
+                      labelFoeLoading = nil;
+                      [indicator stopAnimating];
+                      UIButton *imageButton = [[UIButton alloc] initWithFrame:imageForNews.frame];
+                    
+                      imageButton.backgroundColor = [UIColor clearColor];
+                      imageButton.tag = 8888;
+                      [imageButton addTarget:self action:@selector(imageNewsTaped:) forControlEvents:UIControlEventTouchUpInside];
+                      [bgScroll addSubview:imageButton];
+                      [imageButton release];
+                    
+                      [self setElementPosition];
+                    
+                    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+                   
+                      CATransition *animation = [CATransition animation];
+                      [animation setDuration:0.5f];
+                      [animation setType:kCATransitionFade];
+                      [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+                      [animation setRemovedOnCompletion:YES];
+                      [labelFoeLoading.layer addAnimation:animation forKey:nil];
+                      [labelFoeLoading setHidden:YES];
+                      labelFoeLoading = nil;
+                      [indicator stopAnimating];
+                    
+                      [imageForNews removeFromSuperview];
+                      imageForNews = nil;
+                      [self setElementPosition];
+                    
+                   }];*/
+                    
+                   /* tsv */
+                    
+                   NSString *imageURL = filePdf.url;
+                   NSString *imagePath = [imageURL stringByReplacingOccurrencesOfString:@"files" withString:@"image"]; 
+                   [UFSLoader getImage:imageURL AndName:imagePath];
+                   
+                   /* tsv */
+                }
+            }
+        }
+    }
+
+    //NSString *innerHtml=[NSString stringWithFormat:(NSString*)newsHtml,(13+ 1.0f*2), (15+ 1.0f*2), [_newsObj title].length ? [_newsObj title] : @"" , (12+ 1.0f*2), [_newsObj strDate], [_newsObj text].length ? [_newsObj text] : @""];
+    
+    /* tsv */
+    
+    NSString *temp = [_newsObj text];
+    temp = [temp stringByReplacingOccurrencesOfString:@"\r\n" withString:@"<br>"];
+    if (!temp.length) {
+        temp = @"";
+    }
+    
+    NSString *innerHtml=[NSString stringWithFormat:(NSString*)newsHtml,(13+ 1.0f*2), (15+ 1.0f*2), [_newsObj title].length ? [_newsObj title] : @"" , (12+ 1.0f*2), [_newsObj strDate], temp];
+    
+    /* tsv */
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    
+    NSString* kCachePath = nil;
+    //if (![Loader reachable]) {
+    kCachePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:@"iDEastCache//http:"];
+//    kCachePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:@"iDEastCache//"];
+
+    kCachePath = [kCachePath stringByReplacingOccurrencesOfString:@"/" withString:@"//"];
+    kCachePath = [kCachePath stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
+    kCachePath = [NSString stringWithFormat:@"file:/%@//", kCachePath];
+// Pictures
+    [newsWebView loadHTMLString:innerHtml baseURL:[NSURL URLWithString:kCachePath]];
+//     [newsWebView loadHTMLString:innerHtml baseURL:nil];
+   
+}
+- (void)updateImageInWeb:(NSNotification *)notification
+{
+//    if ([notification.name isEqualToString:kNotificationImageLoaded])
+//    {
+//        
+//        FileImageUrlDB *image = [[[_newsObj.files allObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"type==1"]] objectAtIndex:0];
+//        NSLog(@"image name %@",image.url);
+//        if ([[image.url stringByReplacingOccurrencesOfString:@"files" withString:@"image"] isEqualToString:notification.object])
+//        {
+//            NSLog(@"Loaded image.....................................%@",notification.object);
+//            [imageForNews setImage:[FileSystem uncachedImageWithPath:notification.object]];
+//            if (labelFoeLoading)
+//            {
+//                CATransition *animation = [CATransition animation];
+//                [animation setDuration:0.5f];
+//                [animation setType:kCATransitionFade];
+//                [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+//                [animation setRemovedOnCompletion:YES];
+//                [labelFoeLoading.layer addAnimation:animation forKey:nil];
+//                [labelFoeLoading setHidden:YES];
+//                labelFoeLoading = nil;
+//                [indicator stopAnimating];
+//               
+//            }
+//            
+//
+//        }
+////        [imageForNews setImage:[UIImage imageNamed:notification.object]];
+//        
+////        UITapGestureRecognizer *imageTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTaped:)];
+////        [imageForNews addGestureRecognizer:imageTap];
+////        [imageTap release];
+//
+//        //        [imageForNews setImage:[UIImage imageNamed:notification.object]];
+//    }
+//    else if ([notification.name isEqualToString:kNotificationImageLoadFailed])
+//    {
+//         NSLog(@"Loaded image failed.....................................");
+//        CATransition *animation = [CATransition animation];
+//        [animation setDuration:0.5f];
+//        [animation setType:kCATransitionFade];
+//        [animation setTimingFunction:[CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+//        [animation setRemovedOnCompletion:YES];
+//        [labelFoeLoading.layer addAnimation:animation forKey:nil];
+//        [labelFoeLoading setHidden:YES];
+//        labelFoeLoading = nil;
+//        [indicator stopAnimating];
+//        
+//        [imageForNews removeFromSuperview];
+//        imageForNews = nil;
+//        [self setElementPosition];
+//    }
+// [[NSNotificationCenter defaultCenter] removeObserver:self];
+//    [self setContentForWebView];
+}
+-(void)BackButtonTapped: (UIButton *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)pdfButtonTap: (UIButton *)sender
+{
+    NSArray *arr = [_newsObj.files allObjects];
+    arr = [arr filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"type==%@",@(3)]];
+    
+    FileImageUrlDB *filePdf = arr[0];
+    if (arr.count>1)
+    {
+        NSLog(@"PDF count %d",pdfCount);
+        NSSortDescriptor *sortD= [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+        NSArray *sortedArr = [arr sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortD]];
+        PdfTableViewController *pdfTView = [[PdfTableViewController alloc] initWithNibName:nil bundle:nil];
+        [pdfTView setPdfArray:sortedArr];
+        [pdfTView setNameOfNews:_newsObj.title];
+        [self.navigationController pushViewController:pdfTView animated:YES];
+        [pdfTView release];
+    }
+    else
+    {
+        ReaderViewController *readerPDF = [[ReaderViewController alloc] initWithReaderDocumentURL:filePdf.url AndName:filePdf.url];
+        [readerPDF setPdfName:_newsObj.title];
+        [self.navigationController pushViewController:readerPDF animated:YES];
+        [readerPDF release];
+    }
+}
+- (void) setElementPosition
+{
+    
+    float height = newsWebView.scrollView.contentSize.height;
+    
+    [newsWebView setFrame:CGRectMake(0, 0, self.view.width, height)];
+    if (imageForNews)
+    {
+        imageForNews.frame = CGRectMake(10, height, 300, 200);
+        imageForNews.hidden = NO;
+        [self.view viewWithTag:8888].frame = imageForNews.frame;
+        height+=220;
+    }
+    if ([_newsObj.relatedLinks allObjects].count)
+    {
+        notifyLabel.frame = CGRectMake(10, height, bgScroll.width-20, 20);
+        [notifyLabel setHidden:NO];
+        height+=20;
+        relatedTV.frame = CGRectMake(10, height+5, bgScroll.width-20, (40.0f*[_newsObj.relatedLinks allObjects].count)+5);
+        relatedTV.delegate = self;
+        relatedTV.dataSource=self;
+        [relatedTV setHidden:NO];
+        height+=relatedTV.height+15;
+    }
+    [bgScroll setContentSize:CGSizeMake(self.view.width, height+5)];
+
+}
+- (void)imageNewsTaped:(UIButton *)sender
+{
+    NSLog(@"image tappppp");
+    NSArray *imageArr = [[self.newsObj.files allObjects] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"type==1"]];
+    PhotoGalleryVC *photoGalleryVC = [[PhotoGalleryVC alloc] initWithItems:imageArr];
+    [photoGalleryVC setTrId:_newsObj.identifier];
+    [photoGalleryVC setTitleGallery:@"Фотографии"];
+    [self.navigationController pushViewController:photoGalleryVC animated:YES];
+    [photoGalleryVC release];
+    
+    
+}
+
+#pragma -mark Supported Inteface Orientation
+-(BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+   	return  (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    
+    //    id object = (self.fetchedResultsController.fetchedObjects.count > 0) ? [self.fetchedResultsController.fetchedObjects objectAtIndex:0] : nil;
+    //    [menuTableView setActionDate:[(NewsDB *)object date]];
+    if ((self.fetchedResultsController.fetchedObjects.count > 0))
+    {
+        self.newsObj = [fetchedResultsController.fetchedObjects objectAtIndex:0];
+        [self setContentForWebView];
+    }
+    
+}
+
+
+
+- (NSFetchedResultsController *)fetchedResultsController {
+    
+    if (fetchedResultsController != nil) {
+        return fetchedResultsController;
+    }
+    
+    /*
+	 Set up the fetched results controller.
+     */
+  
+   
+	// Create the fetch request for the entity.
+	NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+	// Edit the entity name as appropriate.
+   	NSEntityDescription *entity = [NSEntityDescription entityForName:@"NewsDB" inManagedObjectContext:CoreDataManager.shared.managedObjectContext];
+    
+	[fetchRequest setEntity:entity];
+	
+	// Set the batch size to a suitable number.
+	[fetchRequest setFetchBatchSize:20];
+    [fetchRequest setFetchLimit:20];
+    
+	// Sort using the timeStamp property..
+   
+    
+    NSArray *sortDescriptors = @[];
+    
+    
+    NSPredicate * predicatForResult = [NSPredicate predicateWithFormat:@"identifier == %d",newsId];
+    [fetchRequest setPredicate : predicatForResult];
+	[fetchRequest setSortDescriptors:sortDescriptors];
+	 
+    // Use the sectionIdentifier property to group into sections.
+	
+    NSFetchedResultsController *localFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:CoreDataManager.shared.managedObjectContext sectionNameKeyPath:nil  cacheName:nil];
+    localFetchedResultsController.delegate = self;
+	self.fetchedResultsController = localFetchedResultsController;
+	
+	[localFetchedResultsController release];
+	[fetchRequest release];
+//	[sortDescriptors release];
+    
+    return fetchedResultsController;
+}
+#pragma -mark Related TableView Delegate & DataSource
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   if  ((indexPath.row==[_newsObj.relatedLinks allObjects].count-1 || indexPath.row==0) && [_newsObj.relatedLinks allObjects].count>1)
+   {
+       return 45;
+   }
+    return 40;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    //    return [self.childViewControllers count];
+    NSArray *arr = [_newsObj.relatedLinks allObjects];
+
+    return arr.count;
+    
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+    
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *arr = [_newsObj.relatedLinks allObjects];
+    arr = [arr sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]]];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"cellId%d",indexPath.row];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell==nil)
+    {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
+    
+    
+    // Configuring cell
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        UIImageView *acces = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icn_arrow"]];
+        cell.accessoryView = acces;
+
+    UIImage * btnImage = nil;
+    if (indexPath.row==0)
+    {
+        
+        btnImage = [[UIImage imageNamed:@"bg_table_medium_cell_"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 12, 10, 12)];
+        
+        
+    }
+    else if (indexPath.row==arr.count-1)
+    {
+        btnImage = [[UIImage imageNamed:@"bg_table_medium_cell"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 12, 10, 12)];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryView = nil;
+        [acces setCenter:CGPointMake(self.view.width-34, 20)];
+        [cell.contentView addSubview:acces];
+    }
+
+    else
+    {
+        btnImage = [[UIImage imageNamed:@"bg_table_middle_cell"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 10, 5, 10)];
+        
+    }
+    if (arr.count==1)
+    {
+         btnImage = [[UIImage imageNamed:@"btn_big_round"] stretchableImageWithLeftCapWidth:10 topCapHeight:0];
+       
+    }
+    NSString *str =  ((NewsDB *)[arr objectAtIndex:indexPath.row]).title;
+       //        //        [cell.accessoryView setFrame:CGRectMake(250, 0, 8, 11)];
+        [acces release];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        
+        //     [dateFormatter setDateFormat:@"dd.LL.yyyy"];
+        [dateFormatter setDateStyle:NSDateFormatterShortStyle]; // 2013-01-24 15:46:53
+        //    [dateFormatter setDateStyle:NSDateFormatterNoStyle];
+        //    [dateFormatter setFormatterBehavior:NSDateFormatterBehaviorDefault];
+        //    newsDB.date = @([[dateFormatter dateFromString:newsDB.strDate] timeIntervalSince1970]);
+        NSString *strDate = [dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:[((NewsDB *)[arr objectAtIndex:indexPath.row]).date intValue]]];
+        [dateFormatter release];
+
+        UIImageView *bgImage = [[UIImageView alloc] initWithFrame:cell.backgroundView.bounds];
+        [bgImage setImage:btnImage];
+        cell.backgroundView = bgImage;
+       
+        int x=0;
+        if (indexPath.row==0 && arr.count!=1)
+            x+=5;
+        UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 3+x, tableView.width-40, 15)];
+        [dateLabel setBackgroundColor:[UIColor clearColor]];
+        [dateLabel setFont:[UIFont fontWithName:@"Helvetica" size:12]];
+        [dateLabel setTextColor:RGBA(133, 156, 182, 1.0f)];
+        [dateLabel setText:strDate];
+        [cell.contentView addSubview:dateLabel];
+        [dateLabel release];
+
+    UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 16+x, tableView.width-40, 20)];
+    [titleLable setBackgroundColor:[UIColor clearColor]];
+    [titleLable setFont:[UIFont fontWithName:@"Helvetica" size:15]];
+    [titleLable setTextColor:RGBA(3, 68, 124, 1.0f)];
+    [titleLable setText:str];
+    [cell.contentView addSubview:titleLable];
+    [titleLable release];
+    }
+    return cell;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *arr = [_newsObj.relatedLinks allObjects];
+    arr = [arr sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO]]];
+    
+    UFSDetailVC *newsDetail = [[UFSDetailVC alloc] initWithNewsId:[((NewsDB *)[arr objectAtIndex:indexPath.row]).identifier intValue] CategoryID:[((NewsDB *)[arr objectAtIndex:indexPath.row]).categoryID intValue] andSubcategoryID:[((NewsDB *)[arr objectAtIndex:indexPath.row]).subcategoryID intValue]];
+    [newsDetail setType:1];
+    
+    [self.navigationController pushViewController:newsDetail animated:YES];
+    [newsDetail release];
+
+}
+-(void)loadFaild: (NSNotification *) notify
+{
+    if ([indicator isAnimating])
+    {
+        [indicator stopAnimating];
+        //            indicator = nil;
+    }
+    
+    NSString *messageNotify = @"Загрузка не удалась. Попробуйте позже";
+    if (((NSString *)notify.object).length)
+    {
+        messageNotify = ((NSString *)notify.object);
+        NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+        [userDef setValue:@"" forKey:kTokenForSession];
+        [userDef setValue:@(0) forKey:kTokenExpiredTime];
+        [userDef synchronize];
+    }
+    else
+    {
+        if ([UFSLoader reachable])
+        {
+            UIAlertView *alertFaild = [[UIAlertView alloc] initWithTitle:@"Внимание" message:messageNotify delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alertFaild show];
+            [alertFaild release];
+        }
+        else
+        {
+            if (!fetchedResultsController.fetchedObjects.count)
+            {
+            }
+        }
+    }
+    ((UIButton *)self.navigationItem.rightBarButtonItem.customView).hidden = true;
+}
+
+@end

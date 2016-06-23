@@ -1,0 +1,77 @@
+//
+//  UFSLoader.h
+//  UFS
+//
+//  Created by iD-EAST on 16.07.13.
+//  Copyright (c) 2013 iD EAST. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "UFSConstantUrl.h"
+#import "AFNetworking.h"
+#import "Reachability.h"
+
+#define URL_FOR_SERVICE(urlString,serviceUrlString) \
+([urlString length] >= [serviceUrlString length] ? \
+[[urlString substringToIndex:([serviceUrlString length])] isEqualToString:serviceUrlString] : NO )
+
+#define kNotificationImageLoaded @"kNotificationImageLoaded"
+#define kNotificationImageLoadFailed @"kNotificationImageLoadFailed"
+
+#define kNotificationFileLoaded @"kNotificationFileLoaded"
+#define kNotificationFileLoadFailed @"kNotificationFileLoadFailed"
+
+#define kNotificationLoaderObjectLoaded @"kNotificationLoaderObjectLoaded"
+#define kNotificationLoaderObjectFailed @"kNotificationLoaderObjectFailed"
+ 
+
+/*
+#define kServerRootFmt @"http://ru.ufs-federation.com%@"
+#define kServerBasePath @"https://ru.ufs-federation.com/mobile%@"
+#define kServerBaseURL @"https://ru.ufs-federation.com/mobile/"
+*/
+
+
+#define kServerRootFmt @"http://ru.ufs-federation.com%@"
+#define kServerBasePath @"http://ru.dev1.ufs-federation.com:8080/MobileGate%@"
+#define kServerBaseURL @"http://ru.dev1.ufs-federation.com:8080/MobileGate/"
+
+
+
+@class Reachability;
+
+@interface UFSLoader : AFHTTPClient
+{
+	
+	Reachability *reach;
+    AFHTTPClient *client;
+    
+}
+@property (nonatomic, retain) AFHTTPClient *client;
+@property (nonatomic, assign, readonly) Reachability *reach;
+@property (nonatomic, assign) BOOL reachabilityStatus;
+
+
++(UFSLoader *) shared;
++(BOOL)reachable;
++(BOOL)requestPostAuth: (NSString *)screenHeigth andWidth:(NSString *)screenWidth;
++(void)requestPostRubrics;
++(AFHTTPRequestOperation *)getImage:(NSString *)image AndName:(NSString *)name;
++(void)requestPostMainNews:(NSString *)dateFrom CategoryId:(NSString *)catId andSubCategoryId:(NSString *)subCatId andNewsID:(NSString *)newsId;
++(AFHTTPRequestOperation *)requestGetFile:(NSString *)url AndName:(NSString *)fileName;
++(void)requestPostDebtMarketWithSubCategoryId:(NSString *)subCatId;
++(AFJSONRequestOperation *)requestGetDateForNewsWithCategoryId:(NSString *)catId AndSubCatId:(NSString *)subCatId;
++(void)requestPostTableNewsWithSubCategoryId:(NSString *)subCatId;
++(void)requestPostContacts;
++ (void)requestPostActionsWithCategoryIdentifier:(NSString *)categoryId;
+// POST запрос для акций
++ (void)requestPostHTMLDataWithCategoryIdentifier:(NSString *)categoryId andSubCategoryId:(NSString *)subCatId;
++(void)stopAndClear;
+//+(BOOL) reachebleWifi;
+
+/* tsv */
++(void)requestPostQRCode:(NSString *)text;
++(void)requestPostPromotion:(NSString *)promotionID AndAccepted:(NSString *)accepted;
+/* tsv */
+
+@end

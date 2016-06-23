@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2750B28A-9FB6-38D4-F18B-49ABD0DDA2A3" name="ATTACHMENTS_MESSAGES_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-12-17 11:45:23 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<containerWithKeyObject>8B6AAE3E-F46D-16DF-9B79-1E6249D0DA0A</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>F39FD60C-B52A-63F2-A447-4BF8A76839D7</localFKIndex>
+<keyObject>621A129B-20F9-3482-69F6-BA96683CBCE6</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

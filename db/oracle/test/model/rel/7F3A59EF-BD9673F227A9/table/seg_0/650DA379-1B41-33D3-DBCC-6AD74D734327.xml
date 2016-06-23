@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="650DA379-1B41-33D3-DBCC-6AD74D734327" name="CLIENTS">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 09:13:48 UTC</createdTime>
+<generatorID>B627585A-03AA-FF66-624B-757C566F50B3</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENT_ID" id="9AA6D5C3-AA32-888A-F764-72BD975B9288">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 09:13:48 UTC</createdTime>
+<generatorID>EA8F8C89-ACB1-B37F-FCC8-44DEF292100A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BED6649-B110-DD55-2E55-96101DF602FC" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="SPECTRE_UFS_ID" id="A0691122-715A-107E-7DC8-FE65836527C4">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 09:13:48 UTC</createdTime>
+<generatorID>D526C093-5B80-A9EC-B5FF-FFAFCCA402E7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0725A60C-9AD4-C726-A8F8-47A5A409B492" name="Клиенты_PK">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 09:13:48 UTC</createdTime>
+<generatorID>C04A9E16-71D8-39A8-EED7-BB69B62DBAC7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AA6D5C3-AA32-888A-F764-72BD975B9288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="524CCC60-39E6-141F-8422-32A64F13E6B7" name="Клиенты__IDX">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 09:14:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>131C8B77-BD34-641A-E7EA-2F7660650494</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9AA6D5C3-AA32-888A-F764-72BD975B9288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7413978-EAFB-4E64-28BB-AC84530AAE72" name="Клиенты_ACCOUNTS_FK">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 09:14:39 UTC</createdTime>
+<generatorID>131C8B77-BD34-641A-E7EA-2F7660650494</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AA6D5C3-AA32-888A-F764-72BD975B9288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

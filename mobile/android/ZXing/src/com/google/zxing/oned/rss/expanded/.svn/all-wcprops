@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/expanded
+END
+BitArrayBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/expanded/BitArrayBuilder.java
+END
+RSSExpandedReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/expanded/RSSExpandedReader.java
+END
+ExpandedPair.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/expanded/ExpandedPair.java
+END
+ExpandedRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/expanded/ExpandedRow.java
+END

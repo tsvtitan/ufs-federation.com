@@ -1,0 +1,6 @@
+01.04.2013 14:34:03.618 I: --------------------------------------------------
+01.04.2013 14:34:03.619 I: Connecting to Google ...
+01.04.2013 14:34:04.052 E: Error refreshing the OAuth2 token, message: '{
+  "error" : "invalid_scope"
+}'
+01.04.2013 14:34:04.054 I: Execution time is 0.43610000610352

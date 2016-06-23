@@ -1,0 +1,14 @@
+<div th:each="publication:${publications}" th:if="${publication.RecNum>=start}" th:class="g392">
+  <a th:href="@{${publication.PATH}}" href="#" class="item smi">
+    <div th:if="${publication.IMAGE_PATH!='' and publication.SOURCE_IMAGE_PATH!=''}" class="label">
+      <img th:src="${path.getBasePath(publication.SOURCE_IMAGE_PATH)}" class="img-responsive"/>
+    </div>
+    <div th:if="${publication.IMAGE_PATH!=''}" class="img-zoom" th:style="${'background-image: url('+path.getBasePath(publication.IMAGE_PATH)+');'}"></div>
+    <div class="item-inner">
+      <p class="date" th:utext="${publication.getPosted($PublicationPostedFormat)}"/>
+      <p th:if="${publication.SOURCE_NAME!=''}" class="label-text" th:utext="${publication.SOURCE_NAME}"/>
+      <p class="headline" th:utext="${publication.TITLE}"/>
+      <p class="description" th:utext="${publication.EXCERPT}"/>
+    </div>
+  </a>
+</div>

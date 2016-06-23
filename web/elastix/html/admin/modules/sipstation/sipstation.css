@@ -1,0 +1,84 @@
+input.validation-error {
+	border:2px solid #FF3333;
+}
+div.sipstation-errors {
+	border:3px solid #FF3333;
+	background-repeat: repeat-x;
+}
+div.sipstation-errors p {
+	text-align:center;
+	color:#FF3333;
+	font-weight:bold;
+	text-decoration:underline;
+}
+div.sipstation-messages {
+	border:3px solid #00CC00;
+	background-repeat: repeat-x;
+}
+div.sipstation-messages p {
+	text-align:center;
+	color:#00CC00;
+	font-weight:bold;
+	text-decoration:underline;
+}
+input.ips-mismatch {
+	background-color:#FF3333;
+	border:1px solid #FFFF66;
+}
+input.ips-private {
+	background-color:#FFFF66;
+	border:1px solid #FFFF66;
+}
+input.ips-match {
+	background-color:#00CC00;
+	border:1px solid #00CC00;
+}
+input.ast-registered-no {
+	background-color:#FF3333;
+	border:1px solid #FF3333;
+}
+input.ast-registered-yes {
+	background-color:#00CC00;
+	border:2px solid #00CC00;
+}
+input.registered-no {
+	background-color:#FF3333;
+	border:1px solid #FF3333;
+}
+input.registered-yes {
+	background-color:#00CC00;
+	border:2px solid #00CC00;
+}
+tr.did-header td {
+	color:gray;
+	font-weight:bold;
+}
+.firewall-fail, .firewall-fail input {
+	background-color:#FF3333;
+	border:1px solid #FF3333;
+}
+.firewall-pass, .firewall-pass input {
+	background-color:#00CC00;
+	border:1px solid #00CC00;
+}
+input.changed_trunks {
+	background-color:#FFFF66;
+	border:1px solid #FFFF66;
+}
+input.no_codecs {
+	background-color:#FF3333;
+	border:1px solid #FF3333;
+}
+.warning-messages {
+	color:gray;
+	font-style:italic;
+	font-size:small;
+}
+/*
+.account-access, #asterisk-stregisterattempts-msg, #gateway-reginfo-msg, .firewall-test-fields, #reset-trunks-button
+{
+	visibility:hidden;
+}
+*/
+.toggle-minus{background:url('images/toggle_minus.png') center no-repeat; padding: 3px 3px;cursor: pointer}
+.toggle-plus{background:url('images/toggle_plus.png') center no-repeat; padding: 3px 3px;cursor: pointer}

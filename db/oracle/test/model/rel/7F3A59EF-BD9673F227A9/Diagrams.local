@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="13CE2C47-9FDA-179A-9A53-F237583EDB18" name="Relational" visible="true"/>
+   <object objectType="sub_view" objectID="0EDDCDAC-AB45-D88A-E48A-1E371E57D53A" name="Мобильное приложение (МП)" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

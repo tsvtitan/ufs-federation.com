@@ -1,0 +1,31 @@
+<module>
+	<rawname>queueprio</rawname>
+	<name>Queue Priorities</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<category>Inbound Call Control</category>
+	<description>
+		Adds the ability to set a callers priority higher before entering a queue
+	</description>
+	<menuitems>
+		<queueprio>Queue Priorities</queueprio>
+	</menuitems>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* localizations
+		*2.6.0.1* #3654
+		*2.6.0.0* misc
+		*2.5.0.4* #3246, #3254
+		*2.5.0.3* #3214
+		*2.5.0.2* #3110, #3138 Sqlite3 fixes
+		*2.5.0.1* #2845 tabindex
+		*2.5.0* First release of module
+	</changelog>
+	<depends>
+		<version>2.5.0alpha1</version>
+	</depends>
+	<location>release/2.7/queueprio-2.7.0.0.tgz</location>
+	<md5sum>ac666993935735827c3c507e9d2d9a6e</md5sum>
+</module>

@@ -1,0 +1,83 @@
+<div class="width">
+  <div class="row clearfix">
+    <div class="g196">
+      <ul class="sitemap">
+        <li class="header"><a href="/00">О&nbsp;компании</a></li>
+        <li><a href="/01">Новости</a></li>
+        <li><a href="/02">Мы&nbsp;в&nbsp;СМИ</a></li>
+        <li><a href="/03">Мероприятия</a></li>
+        <li><a href="/04">История</a></li>
+        <li><a href="/05">Руководство</a></li>
+        <li><a href="/06">Команда</a></li>
+        <li><a href="/07">Работа в&nbsp;UFS IC</a></li>
+        <li><a href="/08">Лицензии</a></li>
+        <li><a href="/09">Отчетность</a></li>
+      </ul>
+    </div>
+    
+    <div class="g196">
+      <ul class="sitemap">
+        <li class="header"><a href="/10">Аналитика</a></li>
+        <li><a href="/11">Долговой рынок</a></li>
+        <li><a href="/12">Рынок акций</a></li>
+        <li><a href="/13">Товарный рынок</a></li>
+        <li><a href="/14">Экономика</a></li>
+        <li><a href="/15">Дивидендный календарь</a></li>
+        <li><a href="/16">Управление рисками</a></li>
+        <li><a href="/17">Задать вопрос</a></li>
+        <li><a href="/18">Команда</a></li>
+        <li><a href="/19">Подписка на&nbsp;аналитику</a></li>
+      </ul>
+    </div>
+    
+    <div class="g196">
+      <ul class="sitemap">
+        <li class="header"><a href="/20">Инвесторам</a></li>
+        <li><a href="/20">Брокерские операции</a></li>
+        <li><a href="/20">Доверительное управление</a></li>
+        <li><a href="/20">Депозитарные услуги</a></li>
+        <li><a href="/20">Фонды совместных инвестиций</a></li>
+        <li><a href="/20">Задать вопрос</a></li>
+      </ul>
+    </div>
+    
+    <div class="g196">
+      <ul class="sitemap">
+        <li class="header"><a href="/30">Эмитентам</a></li>
+        <li><a href="/31">Рынки долгового капитала</a></li>
+        <li><a href="/32">Рынки акционерного капитала</a></li>
+      </ul>
+      <ul class="sitemap">
+        <li class="header"><a href="/33">Инвестиции в&nbsp;золото</a></li>
+      </ul>
+      <ul class="sitemap">
+        <li class="header"><a th:href="${path.getBasePath('/leasing')}" th:utext="#{LeasingCaption}"/></li>
+      </ul>
+    </div>
+    
+    <div class="g196">
+      <ul class="sitemap">
+        <li class="header"><a href="/30">Wealth Management</a></li>
+        <li><a href="/31">Asset management</a></li>
+        <li><a href="/32">Фонды</a></li>
+        <li><a href="/32">Контакты</a></li>
+      </ul>
+    </div>
+    
+    <div class="g196">
+      <ul class="sitemap">
+        <li class="header"><a href="/30">Фонды</a></li>
+        <li><a href="/31">Фонд прямых инвестиций</a></li>
+        <li><a href="/32">Фонд &laquo;Петр Великий&raquo;</a></li>
+        <li><a href="/32">Фонд &laquo;Лев Толстой&raquo;</a></li>
+        <li><a href="/32">Фонд &laquo;Золотой&raquo;</a></li>
+        <li><a href="/32">Фонд альтернативной энергетики</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--<span th:utext="${scheme.Provider.getSqlStack()}"/>-->
+<div th:if="${account!=null}" th:switch="${account.LoginName}">
+  <p th:case="'Имя Фамилия'" th:utext="${account.LoginName}"/>
+  <p th:case="'Sergei Tomilov'" th:utext="Проверка"/>
+</div>

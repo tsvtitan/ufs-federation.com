@@ -1,0 +1,49 @@
+<div class="pad">
+  <p>Добро пожаловать!<br/><br/>Вы находитесь в клиентской версии нашего сайта, который предоставляет следующий пречень услуг:</p>
+  <br/>
+  <ul>
+    <li><a th:href="${path.getRelativePath('/reports')}">Статичные и динамичные отчеты</a>
+      <p>
+        <ul>
+          <li><a th:href="${path.getRelativePath('/reports/money')}">Движение денежных средств (состояние счета)</a></li>
+          <li><a th:href="${path.getRelativePath('/reports/shares')}">Движение ценных бумаг (сделки)</a></li>
+        </ul>
+      </p>
+    </li>  
+    <li>Брокерская деятельность
+      <p>
+        <ul>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Перевод денег между брокерскими счетами</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Вывод ДС</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Заказ внепланового отчета</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Назначение уполномоченных лиц</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Открытие дополнительного счета</a></li>
+        </ul>
+      </p>
+    </li>
+    <li>Депозитарная деятельность
+      <p>
+        <ul>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Зачисление и списание ЦБ</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Открытие дополнительного счета</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Перевод ЦБ на другой счет</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Перемещение ЦБ в другой депозитарий</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Получение депозитарной выписки</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Заказ внепланового отчета</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Назначение уполномоченных лиц</a></li>
+        </ul>
+      </p>
+    </li>
+    <li>Операции с фондами
+      <p>
+        <ul>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Купить паи фондов</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Продать паи фондов</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">РЕПО паев фондов</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Заказ внепланового отчета</a></li>
+          <li><a th:href="${path.getRelativePath('/orders/form')}">Вывод доходности пая</a></li>
+        </ul>
+      </p>
+    </li>
+  </ul>  
+</div>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util
+END
+ListViewWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/ListViewWrapper.java
+END
+ListViewWrapperSetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/ListViewWrapperSetter.java
+END
+AbsListViewWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/AbsListViewWrapper.java
+END
+AnimatorUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/AnimatorUtil.java
+END
+Swappable.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/Swappable.java
+END
+AdapterViewUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/AdapterViewUtil.java
+END
+Insertable.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobile/!svn/ver/216/android/ListViewAnimationsLibCore/src/com/nhaarman/listviewanimations/util/Insertable.java
+END

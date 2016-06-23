@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder
+END
+ErrorCorrectionLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/ErrorCorrectionLevel.java
+END
+BitMatrixParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/BitMatrixParser.java
+END
+Version.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/Version.java
+END
+DecodedBitStreamParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/DecodedBitStreamParser.java
+END
+DataMask.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/DataMask.java
+END
+QRCodeDecoderMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/QRCodeDecoderMetaData.java
+END
+FormatInformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/FormatInformation.java
+END
+Decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/Decoder.java
+END
+DataBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/DataBlock.java
+END
+Mode.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/qrcode/decoder/Mode.java
+END

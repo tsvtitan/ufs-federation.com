@@ -1,0 +1,271 @@
+# This file is part of FreePBX.
+# Original Release by Philippe Lindheimer
+# Copyright Philippe Lindheimer (2009)
+# Copyright Bandwidth.com (2009)
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX iaxsettings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-30 00:07+0200\n"
+"PO-Revision-Date: 2010-01-23 23:08+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: SWEDISH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: Sweden\n"
+
+#: functions.inc.php:308
+#, php-format
+msgid "%s must be a non-negative integer"
+msgstr "%s måste vara ett positivt heltal"
+
+#: functions.inc.php:312
+msgid "Bind Address (bindaddr) must be an IP address."
+msgstr "Bindadress (bindaddr) måste vara en IP-adress."
+
+#: functions.inc.php:317
+msgid "Bind Port (bindport) must be between 1024..65535, default 5060"
+msgstr "Bindport (bindport) måste vara mellan 1024..65535, standard är 5060"
+
+#: functions.inc.php:353
+msgid "resyncthreshold must be a non-negative integer or -1 to disable"
+msgstr "resyncthreshold måste vara ett positivt heltal eller -1 för att avaktivera"
+
+#: install.php:47
+msgid "checking for iaxsettings table.."
+msgstr "kontrollerar tabellen iaxsettings.."
+
+#: install.php:51
+msgid "none, creating table"
+msgstr "ingen, skapar tabell"
+
+#: install.php:55
+msgid "populating default codecs.."
+msgstr "skriver standard codecs.."
+
+#: install.php:76
+msgid "fatal error occurred populating defaults, check module"
+msgstr "allvarligt fel inträffade när standardvärde skrevs, kontrollera modulen"
+
+#: install.php:78
+msgid "ulaw, alaw, gsm added"
+msgstr "la till ulaw, alaw, gsm"
+
+#: install.php:81
+msgid "already exists"
+msgstr "finns redan"
+
+#: page.iaxsettings.php:108
+msgid "Edit Settings"
+msgstr "Redigera inställningar"
+
+#: page.iaxsettings.php:136
+msgid "ERRORS"
+msgstr "FEL"
+
+#: page.iaxsettings.php:151
+msgid "Audio Codecs"
+msgstr "Ljud-codecs"
+
+#: page.iaxsettings.php:154
+msgid "Codecs"
+msgstr "Codecs"
+
+#: page.iaxsettings.php:154
+msgid "Check the desired codecs, all others will be disabled unless explicitly enabled in a device or trunks configuration."
+msgstr "Markera dom önskade codecarna, alla andra kommer att avaktiveras om dom inte är explicit definierade i enheter eller trunkkonfigurering."
+
+#: page.iaxsettings.php:184
+msgid "Codec Priority"
+msgstr "Codec-prioritering"
+
+#: page.iaxsettings.php:184
+msgid "Asterisk: codecpriority. Controls the codec negotiation of an inbound IAX call. This option is inherited to all user entities.  It can also be defined in each user entity separately which will override the setting here. The valid values are:<br />host - Consider the host's preferred order ahead of the caller's.<br />caller - Consider the callers preferred order ahead of the host's.<br /> disabled - Disable the consideration of codec preference altogether. (this is the original behavior before preferences were added)<br />reqonly  - Same as disabled, only do not consider capabilities if the requested format is not available the call will only be accepted if the requested format is available."
+msgstr "Asterisk: codecpriority. Kontrollerar förhandlingen av codecs för inkommande IAX-samtal. Detta val ärvs av alla användare. Det kan också definieras separat för varje användare, detta kommer då att ha företräde framför inställningarna här. Giltiga värde är:<br />host - Föredra hostens inställningar före uppringarens.<br />caller - Föredra uppringarens inställningar före hostens.<br /> disabled - Avaktivera alla förhandlingar om codecs. (Detta är standardinställningen innan inställningar lades till)<br />reqonly  - Samma som disabled, samtal kommer bara att accepteras om codec finns tillgänglig."
+
+#: page.iaxsettings.php:212
+msgid "Bandwidth"
+msgstr "Bandbredd"
+
+#: page.iaxsettings.php:212
+msgid "Asterisk: bandwidth. Specify bandwidth of low, medium, or high to control which codecs are used in general."
+msgstr "Asterisk: bandwidth. Ange bandbredden, låg, mellan eller hög för att fastställa vilka codecs som generellt ska gälla."
+
+#: page.iaxsettings.php:219
+msgid "low"
+msgstr "låg"
+
+#: page.iaxsettings.php:223
+msgid "medium"
+msgstr "mellan"
+
+#: page.iaxsettings.php:227
+msgid "high"
+msgstr "hög"
+
+#: page.iaxsettings.php:231
+msgid "unset"
+msgstr "ej definierat"
+
+#: page.iaxsettings.php:239
+msgid "Video Codecs"
+msgstr "Video-codecs"
+
+#: page.iaxsettings.php:244
+msgid "Video Support"
+msgstr "Videosupport"
+
+#: page.iaxsettings.php:244
+msgid "Check to enable and then choose allowed codecs."
+msgstr "Markera för att aktivera, välj sedan codecs."
+
+#: page.iaxsettings.php:251
+#: page.iaxsettings.php:318
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: page.iaxsettings.php:255
+#: page.iaxsettings.php:322
+msgid "Disabled"
+msgstr "Avaktiverad"
+
+#: page.iaxsettings.php:292
+msgid "Registration Settings"
+msgstr "Registreringsinställningar"
+
+#: page.iaxsettings.php:297
+msgid "Registration Times"
+msgstr "Registreringstider"
+
+#: page.iaxsettings.php:297
+msgid "Asterisk: minregexpire, maxregexpire. Minimum and maximum length of time that IAX peers can request as a registration expiration interval (in seconds)."
+msgstr "Asterisk: minregexpire, maxregexpire. Minsta och största längs på tid i sekunder som IAX peers kan begära registrering vid upphörande av registrering."
+
+#: page.iaxsettings.php:306
+msgid "Jitter Buffer Settings"
+msgstr "Inställningar för Jitterbuffer"
+
+#: page.iaxsettings.php:311
+msgid "Jitter Buffer"
+msgstr "Jitterbuffer"
+
+#: page.iaxsettings.php:311
+msgid "Asterisk: jitterbuffer. You can adjust several parameters relating to the jitter buffer. The jitter buffer's function is to compensate for varying network delay. The jitter buffer works for INCOMING audio - the outbound audio will be dejittered by the jitter buffer at the other end."
+msgstr "Asterisk: jitterbuffer. Du kan justera flera parametrar i relation till jitterbuffrar. Jitterbuffrarna används för att kompensera för olika fördröjningar i nätverket. Jitterbuffrar fungerar för INKOMMANDE ljud - utgående ljud kommer att avjittras med hjälp av jitterbuffers i andra änden."
+
+#: page.iaxsettings.php:332
+msgid "Force Jitter Buffer"
+msgstr "Tvinga jitterbuffer"
+
+#: page.iaxsettings.php:332
+msgid "Asterisk: forcejitterbuffer. Forces the use of a jitterbuffer on the receive side of an IAX channel. Normally the jitter buffer will not be used if receiving a jittery channel but sending it off to another channel such as a SIP channel to an endpoint, since there is typically a jitter buffer at the far end. This will force the use of the jitter buffer before sending the stream on. This is not typically desired as it adds additional latency into the stream."
+msgstr "Asterisk: forcejitterbuffer. Tvingar användandet av en jitterbuffer på mottagande sidan av en IAX-kanal. Normalt kommer inte jitterbuffern att användas vid mottagande av en jittery-kanal men skickar den till en annan kanal såsom en SIP-kanal till en ändutrusting eftersom det typiskt finns en jitterbuffer i slutet av kedjan. Detta tvingar användandet av en jitterbuffer innan mediaströmmen skickas vidare. Detta används inte normal då det ökar fördröjningen i mediaströmmen. "
+
+#: page.iaxsettings.php:339
+msgid "Yes"
+msgstr "Ja"
+
+#: page.iaxsettings.php:343
+msgid "No"
+msgstr "Nej"
+
+#: page.iaxsettings.php:353
+msgid "Jitter Buffer Size"
+msgstr "Storlek på jitterbuffer"
+
+#: page.iaxsettings.php:353
+msgid "Asterisk: maxjitterbuffer. Max length of the jitterbuffer in milliseconds.<br /> Asterisk: resyncthreshold. When the jitterbuffer notices a significant change in delay that continues over a few frames, it will resync, assuming that the change in delay was caused by a timestamping mix-up. The threshold for noticing a change in delay is measured as twice the measured jitter plus this resync threshold. Resyncing can be disabled by setting this parameter to -1."
+msgstr "Asterisk: maxjitterbuffer. Maxlängden på jitterbuffern i millisekunder.<br> Asterisk: resyncthreshold. En återsynkning kommer att ske om jitterbuffern detekterar en signifikant ändring i fördröjning som fortsätter över ett par ramar, under förutsättning att ändringen i förseningen orsakades av en sammanblandning av tidsstämplar. Spärren för detektering av fördröjning mäts som två gånger den uppmätta jittern plus denna spärr för återsynk. Återsynk kan avaktiveras genom att sätta denna parameter till -1."
+
+#: page.iaxsettings.php:363
+msgid "Max Interpolations"
+msgstr "Max interpolation"
+
+#: page.iaxsettings.php:363
+msgid "Asterisk: maxjitterinterps. The maximum number of interpolation frames the jitterbuffer should return in a row. Since some clients do not send CNG/DTX frames to indicate silence, the jitterbuffer will assume silence has begun after returning this many interpolations. This prevents interpolating throughout a long silence."
+msgstr "Asterisk: maxjitterinterps. Det maximala antal interpoleringsramar som jitterbuffern ska returnera på en rad. Eftersom vissa enheter inte skickar CNG/DTX-ramar för att indikera tystnad, kommer jitterbuffern att anta tystnad har startars efter att returnerat dessa interpoleringar. Detta förhindrar interpoleringar under en längre tystnad."
+
+#: page.iaxsettings.php:371
+msgid "Advanced General Settings"
+msgstr "Avancerade generella inställningar"
+
+#: page.iaxsettings.php:376
+msgid "Language"
+msgstr "Språk"
+
+#: page.iaxsettings.php:376
+msgid "Default Language for a channel, Asterisk: language"
+msgstr "Standardspråk för en kanal. Asterisk: language"
+
+#: page.iaxsettings.php:385
+msgid "Bind Address"
+msgstr "Bindadress"
+
+#: page.iaxsettings.php:385
+msgid "Asterisk: bindaddr. The IP address to bind to and listen for calls on the Bind Port. If set to 0.0.0.0 Asterisk will listen on all addresses. To bind to multiple IP addresses or ports, use the Other 'IAX Settings' fields where you can put settings such as:<br /> bindaddr=192.168.10.100:4555.<br />  It is recommended to leave this blank."
+msgstr "Asterisk: bindaddr. IP-adressen att binda till och lyssna efter samtal på Bindporten. Om detta sätts till 0.0.0.0 kommer Asterisk att lyssna på alla adresser. För att binda till multipla adresser eller portar, använd Andra IAX-inställningar där du kan mata in inställningar såsom: <br /> bindaddr=192.168.10.100:4555.<br />  Det är rekommenderat att lämna detta fält tomt"
+
+#: page.iaxsettings.php:394
+msgid "Bind Port"
+msgstr "Bindport"
+
+#: page.iaxsettings.php:394
+msgid "Asterisk: bindport. Local incoming UDP Port that Asterisk will bind to and listen for IAX messages. The IAX standard is 4569 and in most cases this is what you want. It is recommended to leave this blank."
+msgstr "Asterisk: bindport. Lokal inkommande UDP-port som Asterisk binder sig till och lyssnar efter IAX-meddelanden. Standardporten för IAX är 4569 och i de flesta fall är vad du vill ha. Det är rekommenderat att lämna detta fält tomt"
+
+#: page.iaxsettings.php:403
+msgid "Delay Auth Rejects"
+msgstr "Fördröj avslag på autentisering"
+
+#: page.iaxsettings.php:403
+msgid "Asterisk: delayreject. For increased security against brute force password attacks enable this which will delay the sending of authentication reject for REGREQ or AUTHREP if there is a password."
+msgstr "Asterisk: delayreject. För ökad säkerhet i sk. brute force attacker, aktivera denna inställning för att fördröja avslag på autentisering för REGREQ och AUTHREP om det finns ett lösenord."
+
+#: page.iaxsettings.php:410
+msgid "Enable"
+msgstr "Aktivera"
+
+#: page.iaxsettings.php:414
+msgid "Disable"
+msgstr "Avaktivera"
+
+#: page.iaxsettings.php:426
+msgid "Other IAX Settings"
+msgstr "Andra inställningar för IAX"
+
+#: page.iaxsettings.php:426
+msgid "You may set any other IAX settings not present here that are allowed to be configured in the General section of iax.conf. There will be no error checking against these settings so check them carefully. They should be entered as:<br /> [setting] = [value]<br /> in the boxes below. Click the Add Field box to add additional fields. Blank boxes will be deleted when submitted."
+msgstr "Du kan göra fler IAX-inställningar som inte visas här men som är tillåtna att konfigurera i den generella sektionen av iax.conf. Ingen felkontroll kommer att göras mot dessa inställningar så kontrollera dom noga. Syntaxen för värdena är <br /> [inställning] = [värde]<br />  i fälten nedan. Klicka på Lägg till fält för att lägga till fler. Tomma fält kommer att tas bort när sidan sparas"
+
+#: page.iaxsettings.php:565
+#, php-format
+msgid "Settings in %s may override these. Those settings should be removed."
+msgstr "Inställningar i %s kan åsidosätta inställningarna du gör här. Du bör ta bort dom"
+
+#: page.iaxsettings.php:569
+#, php-format
+msgid "File %s should not have any settings in it. Those settings should be removed."
+msgstr "Filen %s ska inte ha några inställningar alls. Dessa inställningar måste tas bort"
+
+msgid "Add Field"
+msgstr "Lägg till fält"
+
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+

@@ -1,0 +1,30 @@
+<module>
+	<rawname>irc</rawname>
+	<name>Online Support</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>tool</type>
+	<category>Support</category>
+	<description>This module lets you connect to the IRC network where developers and other users chat. You can chat to the developers live, if you have problems</description>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* spelling, localizations
+		*2.6.0.0* added publisher/lic
+		*2.5.0.2* remove auto display of kernel info into IRC channel r7432
+		*2.5.0.1* localization updates
+		*2.5.0* localization, Swedish
+		*2.4.0.1* #2843 Russian Translation
+		*2.4.0* bumped for 2.4
+		*1.1.1.3* change Dcoumentation left nav to Online Resource and fix url
+		*1.1.1.2* bump for rc1
+		*1.1.1.1* #2070 fix proper use of script tags
+		*1.1.1* Add he_IL translation
+		*1.1* First release for 2.2, changed the window so it pops-out of the normal web page
+	</changelog>
+	<menuitems>
+		<irc>Online Support</irc>
+	</menuitems>
+	<location>release/2.7/irc-2.7.0.0.tgz</location>
+	<md5sum>553797351e5eefd381f40fd37856964a</md5sum>
+</module>

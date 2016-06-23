@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/exceptions
+END
+CorruptedDataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/exceptions/CorruptedDataException.java
+END
+NoNetworkException.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/exceptions/NoNetworkException.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/decoder/ec
+END
+ErrorCorrection.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/decoder/ec/ErrorCorrection.java
+END
+ModulusGF.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/decoder/ec/ModulusGF.java
+END
+ModulusPoly.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/decoder/ec/ModulusPoly.java
+END

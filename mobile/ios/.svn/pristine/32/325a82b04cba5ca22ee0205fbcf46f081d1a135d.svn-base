@@ -1,0 +1,29 @@
+//
+//  AnalyticsCounter.h
+//  UFS
+//
+//  Created by Sergei Tomilov on 7/17/14.
+//  Copyright (c) 2014 UFS Investment Company. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "AnalyticsSystems.h"
+
+//#define kYandexKey @"26455"
+#define kDistimoKey @"H6uGlqea9nhSn2No"
+#define kYandexKey @"25969"
+#define kGoogleKey @"UA-52688652-1"
+
+@interface AnalyticsCounter : NSObject
+{
+    @protected AnalyticsSystems *systems;
+}
+
+- (AnalyticsSystems *)getSystems;
++ (void)initialize:(NSDictionary *)options;
++ (void)forceSend;
++ (void)eventScreen:(NSString *)screen category:(NSString *)category action:(NSString *)action value:(NSString *)value;
++ (void)eventScreen:(NSString *)screen categories:(NSArray *)categories action:(NSString *)action value:(NSString *)value;
++ (void)eventScreens:(NSArray *)screens category:(NSString *)category action:(NSString *)action value:(NSString *)value;
+
+@end

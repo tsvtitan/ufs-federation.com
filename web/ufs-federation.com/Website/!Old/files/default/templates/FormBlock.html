@@ -1,0 +1,15 @@
+<!--/*/<th:block th:with="form=${form},template=${(form.Template=='')?'Form':form.Template}" th:if="${form}">/*/-->
+<div th:id="${form.PageFormId}">
+<form id="form" class="clearfix" th:action="${path.RelativePath}" method="post">
+  <div th:replace="${template}"/>
+</form>  
+<script th:inline="javascript" th:if="${form.Async}">
+  $(document).ready(function(){
+    
+    var div[[${path.newJsIdent('div')}]] = /*[[${form.PageFormId}]]*/null;
+    var tableIds[[${path.newJsIdent('tableIds')}]] = /*[[${form.TableIds}]]*/null;
+    
+    formSetEvents(div[[${path.lastJsIdent('div')}]],tableIds[[${path.lastJsIdent('tableIds')}]]);
+  });
+</script>
+</div><!--/*/</th:block>/*/-->

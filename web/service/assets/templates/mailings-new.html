@@ -1,0 +1,194 @@
+<div data-ng-controller="mailingsNew">
+  
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="mailings-new center-block">
+        
+        <div class="row list-header flip-in-x-flip-out-x" data-ng-hide="state.hide">
+          <div class="col-xs-12 vertical-align">
+            <h2>{{ dic('New mailing') }}</h2>
+          </div>  
+        </div>
+        
+        <div class="panel panel-default zoom-in-fade-out" data-ng-hide="state.hide" >
+
+          <form class="form-horizontal" novalidate name="form" role="form" data-ng-submit="submit()">
+
+            <div class="panel-body">
+
+              <div class="form-group" check-field>
+                <label class="col-sm-2 control-label" for="name">{{ dic('Sender') }}</label>
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="{{ dic('Input sender name') }}" data-ng-model="data.name">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-ng-disabled="state.disabled">{{ data.contact }}&nbsp;&nbsp;<span class="caret"></span></button>
+                      <ul class="dropdown-menu dropdown-menu-right scrollable-menu" role="menu">
+                        <li data-ng-repeat="(k,v) in senderMenu"><a class="hide-overflow" href="#" data-ng-click="data.contact=v">{{ v }}</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="form-group" check-field>
+                <label class="col-sm-2 control-label" for="recipients">{{ dic('Recipients') }}</label>
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="recepients" disabled name="recipientsValue" placeholder="{{ dic('Select recipients') }}" data-ng-model="recipientsValue">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-ng-disabled="state.disabled">{{ dic('Select') }}&nbsp;&nbsp;<span class="caret"></span></button>
+                      <ul class="dropdown-menu dropdown-menu-right scrollable-menu" role="menu">
+                        <li>                        
+                          <span class="link-file">  
+                            <input type="file" id="recipients" multiple file-change="recipientsChange(files)">{{ dic('From file') }}
+                          </span>
+                        </li>
+                        <li data-ng-repeat="(k,v) in recipientsMenu"><a class="hide-overflow" href="#" data-ng-click="recipientsMenuClick(v)">{{ v.name }}</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="form-group" check-field>
+                <label class="col-sm-2 control-label" for="subject">{{ dic('Subject') }}</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="{{ dic('Input subject') }}" data-ng-model="data.subject" data-ng-disabled="state.disabled">
+                </div>  
+              </div>
+
+              <div class="form-group" check-field>
+                <label class="col-sm-2 control-label" for="body">{{ dic('Body') }}</label>
+                <div class="col-sm-10">
+                  <summernote id="body" height="100" placeholder="dic('Input body')" required name="body" lang="dic('Lang')" data-ng-model="data.body" disabled="state.disabled"></summernote>
+                </div>  
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="attachments">{{ dic('Attachments') }}</label>
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <input type="text" class="form-control" disabled placeholder="{{ dic('Select attacments') }}" data-ng-model="attachmentsValue">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-file" data-ng-disabled="state.disabled">
+                        <input type="file" id="attachments" multiple file-change="attachmentsChange(files)">{{ dic('Browse') }}&hellip;
+                      </button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <accordion>
+                    <accordion-group is-open="status.extra">
+
+                      <accordion-heading>
+                        {{ dic('Extra options') }}&nbsp;<i class="pull-right glyphicon" data-ng-class="{'glyphicon-chevron-down': status.extra, 'glyphicon-chevron-right': !status.extra}"></i>
+                      </accordion-heading>
+
+                      <div class="fade-in-fade-out">
+                        <div class="form-group" check-field>
+                          <label class="col-sm-2 control-label" for="replyTo">{{ dic('Reply to') }}</label>
+                          <div class="col-sm-10">
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="replyTo" name="replyTo" placeholder="{{ dic('Input email') }}" data-ng-model="data.replyTo" data-ng-pattern="emailPattern" data-ng-disabled="state.disabled">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-ng-disabled="state.disabled">{{ dic('Select') }}&nbsp;&nbsp;<span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                  <li data-ng-repeat="(k,v) in replyToMenu"><a href="#" data-ng-click="replyToClick(v)">{{ k }}</a></li>
+                                </ul>
+                              </div>
+                            </div>  
+                          </div>  
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-2 control-label" for="keywords">{{ dic('Keywords') }}</label>
+                          <div class="col-sm-10">
+                            <textarea class="form-control" rows="2" id="keywords" placeholder="{{ dic('Input keywords') }}" data-ng-model="data.keywords" data-ng-disabled="state.disabled"></textarea>
+                          </div>  
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="pattern">{{ dic('Pattern') }}</label>
+                          <div class="col-sm-8">
+                            <select class="form-control" id="pattern" data-ng-model="data.pattern" data-ng-disabled="state.disabled">
+                              <option data-ng-repeat="(k,v) in patterns" data-ng-value="v" data-ng-selected="v==data.pattern">{{ k }}</option>
+                            </select>
+                          </div>  
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="headers">{{ dic('Headers') }}</label>
+                          <div class="col-sm-8">
+                            <textarea class="form-control" id="headers" rows="2" placeholder="{{ dic('Input headers') }}" data-ng-model="data.headers" data-ng-disabled="state.disabled"></textarea>
+                          </div>  
+                        </div>
+
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="channel">{{ dic('Channel') }}</label>
+                          <div class="col-sm-8">
+                            <select class="form-control" id="channel" data-ng-model="data.channel" data-ng-disabled="state.disabled">
+                              <option data-ng-repeat="(k,v) in channels" data-ng-value="v" data-ng-selected="v==data.channel">{{ k }}</option>
+                            </select>
+                          </div>  
+                        </div>
+
+                        <div class="form-group" check-field>
+                          <label class="col-sm-9 control-label" for="duration">{{ dic('Duration') }}</label>
+                          <div class="col-sm-3">
+                            <input type="number" class="form-control" id="duration" placeholder="{{ dic('Input duration') }}" min="1" max="180" data-ng-model="data.duration" data-ng-disabled="state.disabled">
+                          </div>  
+                        </div>
+
+                        <div class="form-group" check-field>
+                          <label class="col-sm-9 control-label" for="delay">{{ dic('Delay') }}</label>
+                          <div class="col-sm-3">
+                            <input type="number" class="form-control" id="delay" placeholder="{{ dic('Input delay') }}" min="0" max="600" data-ng-model="data.delay" data-ng-disabled="state.disabled">
+                          </div>  
+                        </div>
+                      </div>  
+
+                    </accordion-group>
+                  </accordion>
+                </div>  
+              </div>
+            </div>
+
+            <div class="panel-footer">
+              <div class="col-sm-offset-5">
+                <div class="input-group" check-field>
+                  <input type="text" class="form-control" name="testEmail" placeholder="{{ dic('Input test contact') }}" value="{{ auth.user.email }}" 
+                         data-ng-model="testEmail" data-ng-pattern="emailOrPhonePattern" data-ng-disabled="state.disabled"
+                         data-ng-change="testEmailChange()">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" ladda="state.testing" data-ng-click="test()" data-ng-disabled="state.creating">
+                      {{ dic('Test') }}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-footer text-center">
+              <div class="btn-group" role="group">
+                <button type="submit" class="btn btn-primary" ladda="state.creating" data-ng-disabled="state.testing">
+                  {{ dic('Create') }}
+                </button>
+                <button type="button" class="btn btn-default" data-ng-disabled="state.testing" data-ng-click="cancel()">
+                  {{ dic('Cancel') }}
+                </button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>  
+    </div>
+  </div>  
+</div>

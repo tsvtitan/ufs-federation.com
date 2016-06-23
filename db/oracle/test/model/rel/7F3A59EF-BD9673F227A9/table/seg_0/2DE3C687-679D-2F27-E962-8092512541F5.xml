@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DE3C687-679D-2F27-E962-8092512541F5" name="PROMOTION_TYPES">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:49:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROMOTION_TYPE_ID" id="595C2D39-ABF9-0B15-BE99-8C18C21DAF4B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:51:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="02D518C6-534D-D641-7F12-CC5264D8BBE4">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:51:41 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="040045C4-F732-2E57-0367-2F9C36C81CAD">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:51:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGREEMENT" id="39443E94-B6C3-6EF7-8A75-A224EF13204E">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:52:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGE" id="F48AC064-B199-9E96-E0BF-C9E9B789ED79">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:52:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMAGE_EXTENSION" id="7DE4EA2B-D598-E571-E0C9-7EA14C1B1863">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:52:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DD4C83E8-9F0C-C840-27CD-3CB19294CDD2" name="PROMOTION_PRODUCT_TYPES_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-06-06 09:51:11 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="595C2D39-ABF9-0B15-BE99-8C18C21DAF4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

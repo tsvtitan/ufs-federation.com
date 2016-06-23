@@ -1,0 +1,60 @@
+13.09.2012 09:55:14.275 I: --------------------------------------------------
+13.09.2012 09:55:14.275 I: Starting ...
+13.09.2012 09:55:14.606 I: [MSSql->Query] SET ANSI_WARNINGS ON
+13.09.2012 09:55:14.689 I: [MSSql->Query] SET ANSI_NULLS ON
+13.09.2012 09:55:14.771 I: Bloomberg database is connected. Selecting data ...
+13.09.2012 09:55:14.771 I: [MSSql->getRecords] SELECT * FROM [BLOOMBERG_XLS]...[FI$]
+13.09.2012 09:55:14.902 I: There are 6 record(s)
+13.09.2012 09:55:14.904 I: Data is <?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <item>
+    <short_name>ALFA BANK</short_name>
+    <security_name>ALFARU 7 7/8 09/25/17</security_name>
+    <id_isin>XS0544362972</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>108.625</px_close_1d>
+  </item>
+  <item>
+    <short_name>REPUBLIC OF BELA</short_name>
+    <security_name>BELRUS 8 3/4 08/03/15</security_name>
+    <id_isin>XS0529394701</id_isin>
+    <bid>99.684</bid>
+    <ask>100.751</ask>
+    <px_close_1d>100.08</px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROM</short_name>
+    <security_name>GAZPRU 10 1/2 03/25/14</security_name>
+    <id_isin>XS0420135443</id_isin>
+    <bid>111.932</bid>
+    <ask>112.552</ask>
+    <px_close_1d>112.243</px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROMBANK</short_name>
+    <security_name>GPBRU 6 1/4 12/15/14</security_name>
+    <id_isin>XS0531270964</id_isin>
+    <bid>105.924</bid>
+    <ask>106.516</ask>
+    <px_close_1d>106.002</px_close_1d>
+  </item>
+  <item>
+    <short_name>SBERBANK</short_name>
+    <security_name>SBERRU 5.4 03/24/17</security_name>
+    <id_isin>XS0543956717</id_isin>
+    <bid>108.075</bid>
+    <ask>108.77</ask>
+    <px_close_1d>108.322</px_close_1d>
+  </item>
+  <item>
+    <short_name>ALFA BANK</short_name>
+    <security_name>ALFARU 7 7/8 09/25/17</security_name>
+    <id_isin>XS0544362972</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>108.625</px_close_1d>
+  </item>
+</data>
+
+13.09.2012 09:55:14.905 I: Game over :-)

@@ -1,0 +1,30 @@
+<module>
+	<rawname>dictate</rawname>
+	<name>Dictation</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.1* localizations
+		*2.7.0.0* #3873
+		*2.6.0.0* localizations
+		*2.5.0.2* localization string enclosures
+		*2.5.0.1* #2530 typo _GLOBALS should be GLOBALS
+		*2.5.0* typo in $_GLOBALS variable
+		*2.4.0* abort if user/extension conflict and move hook after user/extnesion hook
+		*1.1.2.3* #2312 fix dictate in devicesandusers mode
+		*1.1.2.2* changed categories
+		*1.1.2.1* bump for rc1
+		*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
+		*1.1.1* Fix for Dictation not appearing on User page when in Device and User mode.
+		*1.1* Fix changes not sticking when creating an extension, replace Rob-sounds with Allison-sounds.
+		*1.0.1* Replaced 'invalid extension' with 'feature not available on this line' when disabled
+		*1.0.0* Original Release
+	</changelog>
+	<description>This uses the app_dictate module of Asterisk to let users record dictate into their phones. When complete, the dictations can be emailed to an email address specified in the extension page.</description>
+	<location>release/2.7/dictate-2.7.0.1.tgz</location>
+	<md5sum>713e2f52a4f9a024cbbf14a45eca1817</md5sum>
+</module>

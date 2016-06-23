@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">UFS IC</string>
+    <string name="download_no_network_and_data">Для работы раздела необходимо подключение к интернету</string>
+    <string name="download_no_network">Нет интернета\nБудет показана только закэшированная информация</string>
+    <string name="file_sub_title">Прикрепленные файлы</string>
+    <string name="file_dialog_title">Предупреждение</string>
+    <string name="file_dialog_message">Вы действительно хотите загрузить файл размером %s?</string>
+    <string name="file_dialog_message_wo_size">Вы действительно хотите загрузить файл?</string>
+    <string name="file_failed">Загрузка файла не удалась</string>
+    <string name="tables_dialog_title">Описание</string>
+    <string name="calendar_title">Календарь</string>
+    <string name="group_detail_review">Обзоры по этой теме:</string>
+    <string name="subcategory_all">Всего материалов</string>
+    <string name="subcategory_actual">Из них актуальных</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="promotion_agreement_yes">ДА</string>
+    <string name="promotion_agreement_no">нет</string>
+    <string name="promotion_accept">Спасибо, Я все получил(а)!</string>
+    <string name="promotion_reject">Извините, мне отказали :(</string>
+    <string name="promotion_agreement">Условия проведения</string>
+    
+</resources>

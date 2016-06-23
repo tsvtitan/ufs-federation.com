@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="TAB-1BE4061D-EC8B-4787-8301-562E9E31F290_00000000" name="Обзоры">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ENT-1BE4061D-EC8B-4787-8301-562E9E31F290_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAGE_ID" id="COL-80DFF3DA-F37A-4AD7-BBF3-844DD15DA970_00000000">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>ATT-80DFF3DA-F37A-4AD7-BBF3-844DD15DA970_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-87D56C14-1995-4A54-8E04-88FF556DC265_00000000</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FKI-2DDC27F1-08B7-4A24-BD3E-67300BEABBA3_00000000" referredColumn="COL-87D56C14-1995-4A54-8E04-88FF556DC265_00000000"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="XPK-D3C7BD8E-BEA2-446C-910B-2EE291FA212F_00000000" name="XPKОбзоры">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>CKY-D3C7BD8E-BEA2-446C-910B-2EE291FA212F_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-80DFF3DA-F37A-4AD7-BBF3-844DD15DA970_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFCB5909-E7BB-E1C2-DC7F-1E291A0C4F2A" name="R/40">
+<createdBy>root</createdBy>
+<createdTime>2013-11-07 08:01:17 UTC</createdTime>
+<generatorID>REL-2DDC27F1-08B7-4A24-BD3E-67300BEABBA3_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="COL-80DFF3DA-F37A-4AD7-BBF3-844DD15DA970_00000000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

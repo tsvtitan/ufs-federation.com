@@ -1,0 +1,88 @@
+<module>
+	<rawname>framework</rawname>
+	<name>FreePBX Framework</name>
+	<version>2.8.1.4</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<candisable>no</candisable>
+	<canuninstall>no</canuninstall>
+	<changelog>
+		*2.8.1.4* add distro to online checking
+		*2.8.1.3* #4858
+		*2.8.1.2* #4844
+		*2.8.1.1* #4501, send phpversion to online repo, enable versionupgrade to work better
+		*2.8.1.0* #4616, #4693, #4719, #4680
+		*2.8.0.4* #4585, #4587, #4549, #4602, #4603, #4494, #4615 (Security Bug)
+		*2.8.0.3* misc fixes
+		*2.8.0.2* #4245, #4461
+		*2.8.0.1* #4385
+		*2.8.0.0* #4400, #4388, #4185, #4403, #3963, #4411, #4413, #4418
+		*2.8.0rc1.3* #4388, #4389 cleanup
+		*2.8.0rc1.2* #4389
+		*2.8.0rc1.1* #4376, #4381, #4382, #4386
+		*2.8.0rc1.0* #4366, #4354 
+		*2.8.0beta2.4* #4179, #4345, #4331, #4339
+		*2.8.0beta2.3* #4307, #4253, #4311
+		*2.8.0beta2.2* #4307, revert #4306
+		*2.8.0beta2.1* #4256, #4299, #4306
+		*2.8.0beta2.0* #4247, #4264, #4242, #4086, #4183, #4292
+		*2.8.0beta1.3* #4164, #4163, #4106, #4172, #3981, #3914, #3552, #3708, #4134, #4127, #4207, #4188, #4223 Security Vulnerability
+		*2.8.0beta1.2* #4164
+		*2.8.0beta1.1* #4071, #4152, #4158, misc CSS changes
+		*2.8.0beta1.0* bumping to beta
+		*2.8.0.0alpha2.1* #4109, #3375, jquery update to 1.4.2
+		*2.8.0.0alpha2.0* #4110, #4138, #4135, #1798, #4143, #4144
+		*2.8.0.0alpha1.0* #2181, #4110, #3375, #4109, #4123, #4121, #4125, #4126, add jquery.toggleval.js to FreePBX
+		*2.7.0.0* localizations
+		*2.7.0RC1.2* #4068
+		*2.7.0RC1.1* #4057
+		*2.7.0RC1.0* #2839, #3980, #3992, #4024, #4051, #3575
+		*2.7.0beta1.0* #3707, #4007, #3940, #3929, #3974
+		*2.6.0.1* #3971, #3977, #3900, #3987
+		*2.6.0.0* #3885, #3878, #3295, #3883, #3903, #3889
+		*2.6.0RC2.1* #3870
+		*2.6.0RC2.0* #3854
+		*2.6.0RC1.1* #3807, #3843, #3856, #3857
+		*2.6.0RC1.0* #3850, #3837, #3858, #3861, #3678
+		*2.6.0beta2.2* #3840, misc warning fixes
+		*2.6.0beta2.1* #2880, #3291, #3835
+		*2.6.0beta2.0* #3075, #3780, #3559, #3606, #3599, #3642, #3608, #3581, #3266, #3562, #3639, #3305
+		*2.6.0beta1.4* added param to featurecode class function
+		*2.6.0beta1.3* rename moduleauthor to modulepublisher class in css, update CHANGES
+		*2.6.0beta1.2* add sql() def to migration table
+		*2.6.0beta1.1* add trunk migration code to tables.php
+		*2.6.0beta1.0* renamed to beta1
+		*2.6.0beta0.2* packed js library updated
+		*2.6.0beta0.1* changed to pull from 2.6 branch
+		*2.6.0beta0.0* #1957, #3673, #1380, #3680, #3694, #3696, #3698
+		*2.6.0alpha1.2* fix bug introduced from #3660
+		*2.6.0alpha1.1* Friendly Warning re: #3660
+		*2.6.0alpha1.0* Security Vulnerability: #3660; #3324, #3327, #3368, #3380, #3224, #3462, #3446, #3469, #3588, #3592, r7324, #3271, #3449, #3556, #3641, #3513, #3525, #3658, #3490, #3582, #3570, #3264
+		*2.5.1.0* #3271, #3309, localization fixes
+		*2.5.0.1* #2792, #3223, #3225, #3235, #3234, #3242, #3246, #3247, #3248, #3221
+		*2.5.0.0* #3176, #3191, #3204, #3209 - fixes SECURITY VULNERABILITY in CDR Reporting
+		*2.5.0rc3.0* #3145, #3151, #3154, #3155, #3156, #3164, #3166, #3165, #3077, #3170 (DAHDI Support)
+		*2.5.0rc2.4* #3131, #3137 several changes to better cache module data and boost performance of page loads
+		*2.5.0rc2.3* #2750, #3128, #3124, #3134, #3131
+		*2.5.0rc2.2* #3107, #3093, #3090, #3113, $3117
+		*2.5.0rc2.1* #3104 fix some urlencoding/decoding re: #3102 changes
+		*2.5.0rc2.0* #3067, #3086, #3082, #3102
+		*2.5.0rc1.1* published wrong, including rc1.0 additions
+		*2.5.0rc1.0* #2913, #3052 delay_answer schema and CSS fix
+		*2.5.0beta1.2* #3014, #3030, #2992, #3026, #3027
+		*2.5.0beta1.1* #2635, #2792 CDR Reporting pie chart errors, and fix bug introduced by #2963
+		*2.5.0beta1.0* #2854, #2978, #2980, #2981, #2982, #2963, #2985
+		*2.5.0alpha1.2* #2957 fix fatal failure in retrieve_conf from change to splice
+		*2.5.0alpha1.1* #2941, #2924, #1539, #2950, #2944, #2945, #2699, #2686, #2946, #2606, #2772, #2565, #1679
+		*2.5.0alpha1.0* #1628, #1715, #1843, #2497, #2604, #2606, #2609, #2686, #2701, #2703, #2739, #2766, #2777, #2782, #2784, #2793, #2798, #2799, #2809, #2818, #2829, #2843, #2845, #2855, #2862, #2881, #2890, #2891, #2897, #2903, #2910, #2911, #2921, #2924
+		*2.4.0.1* #2843, #2701, #2818, #2784, #2604, #2766, #2798, #2809, #2799, #2685, #2676
+		*2.4.0.0* CHANGELOG TRUNCATED See SVN Repository
+	</changelog>
+	<description>
+		This module provides a facility to install bug fixes to the framework code that is not otherwise housed in a module
+	</description>
+	<type>setup</type>
+	<category>Basic</category>
+	<location>release/2.8/framework-2.8.1.3.tgz</location>
+	<md5sum>684a3fbb214eda430c1e3b075487480e</md5sum>
+</module>

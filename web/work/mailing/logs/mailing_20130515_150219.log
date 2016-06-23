@@ -1,0 +1,18 @@
+15.05.2013 15:02:19.115 I: --------------------------------------------------
+15.05.2013 15:02:19.115 I: Connect to Database ...
+15.05.2013 15:02:19.117 I: Connected.
+15.05.2013 15:02:19.118 I: [Mysql->query] set names utf8
+15.05.2013 15:02:19.118 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY);
+15.05.2013 15:02:19.118 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing);
+15.05.2013 15:02:19.119 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+15.05.2013 15:02:19.120 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+15.05.2013 15:02:19.121 I: There are 1 patterns.
+15.05.2013 15:02:19.121 I: Process pattern 389 / 1 emails.
+15.05.2013 15:02:19.121 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id=389 ORDER BY created, priority LIMIT 0,3000
+15.05.2013 15:02:19.122 I: There are 1 emails. Sending / transferring ...
+15.05.2013 15:02:19.250 I: Mailing 1203 has transferred successfully at 2013-05-15 15:02:19...
+15.05.2013 15:02:19.263 I: [Mysql->query] UPDATE `mailing` SET `remote_id`='798A3B7A103862AAAF0557CEB85687D5',`transferred`='2013-05-15 15:02:19',`sent`=NULL,`result`=NULL WHERE `mailing_id`='1203'
+15.05.2013 15:02:19.264 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+15.05.2013 15:02:19.265 I: Mailing 1203 has updated successfully ...
+15.05.2013 15:02:19.265 I: MaxCounter=1 Counter=1
+15.05.2013 15:02:19.265 I: Execution time is 0.15046811103821

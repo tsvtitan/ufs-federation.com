@@ -1,0 +1,231 @@
+package com.ufsic.core.activities;
+
+import java.util.Calendar;
+
+import com.ufsic.core.beans.DateBean;
+import com.ufsic.core.beans.ErrorBean;
+import com.ufsic.core.beans.ValidationBean;
+import com.ufsic.core.counters.AnalyticsCounter;
+import com.ufsic.core.exceptions.CorruptedDataException;
+import com.ufsic.core.exceptions.NoNetworkException;
+import com.ufsic.core.fragments.NewKeywordsFragment;
+import com.ufsic.core.loaders.FragmentLoader;
+import com.ufsic.core.loaders.FragmentLoaderManager;
+import com.ufsic.core.loaders.FragmentLoaderManager.Flag;
+import com.ufsic.core.managers.HttpManager;
+import com.ufsic.core.managers.LoadingState;
+import com.ufsic.core.managers.URLManager;
+import com.ufsic.core.utils.SharedPreferencesWrap;
+import com.ufsic.core.utils.ToolBox;
+import com.ufsic.core.widgets.ActionBarUfs;
+
+import net.simonvt.calendarview.CalendarView;
+import net.simonvt.calendarview.CalendarView.OnDateChangeListener;
+import com.ufsic.core.R;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
+import android.widget.Toast;
+
+public class CalendarActivity extends Activity /*implements FragmentLoaderManager.Callback<DateBean>*/ {
+
+	public static final String CATEGORY_ID = "categoryId";
+	public static final String SUBCATEGORY_ID = "subcategoryId";
+	
+	public static final String DATE = "date";
+	
+	//private FragmentLoaderManager<DateBean> loaderManager;
+	/* tsv */private Handler messageHandler = null;
+	
+	private int nowDateCode;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.calendar_activity);
+		
+		Bundle extras = getIntent().getExtras();
+		if(extras == null || !extras.containsKey(CATEGORY_ID) || !extras.containsKey(SUBCATEGORY_ID)) {
+			finish();
+			return;
+		}
+		
+		/*loaderManager = new FragmentLoaderManager<DateBean>(this);
+		loaderManager.run(true, Flag.RUN_IF_NOT_EXIST, extras);*/
+
+		Calendar calendar = Calendar.getInstance();
+		nowDateCode = calendar.get(Calendar.YEAR) + calendar.get(Calendar.MONTH) + calendar.get(Calendar.DAY_OF_MONTH);
+		
+		ActionBarUfs actionBar = (ActionBarUfs) findViewById(R.id.ca_action_bar);
+		actionBar.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				setResult(RESULT_CANCELED);
+				finish();
+			}
+		});
+		
+		/* tsv */
+		
+        messageHandler = new Handler(Looper.getMainLooper()) {
+        	
+        	@Override
+            public void handleMessage(Message inputMessage) {
+        		CalendarActivity.this.onResultReceive((DateBean)inputMessage.obj);
+    		}
+        };
+		
+		final String categoryId = extras.getString(CATEGORY_ID);
+		final String subcategoryId = extras.getString(SUBCATEGORY_ID);
+		
+		new Thread() {
+			
+			private void publishProgress(DateBean wrappedBeans) {
+				
+				if (messageHandler!=null) {
+				  Message.obtain(messageHandler,0,wrappedBeans).sendToTarget();
+				}
+			}
+			
+			@Override
+			public void run() {
+			   
+				DateBean wrappedBeans = null;
+				
+				try {
+					String token = SharedPreferencesWrap.INSTANCE.getString(SharedPreferencesWrap.TOKEN);
+					wrappedBeans = HttpManager.INSTANCE.getData(URLManager.getDatesOfNews(token, categoryId, subcategoryId), DateBean.class);
+				} catch (NoNetworkException e) {
+				} catch (CorruptedDataException e) {
+				}
+				
+				if(wrappedBeans != null)
+					publishProgress(wrappedBeans);
+				else {
+					ErrorBean errorBean = new ErrorBean();
+					errorBean.setMessage("NoNetwork");
+					
+					DateBean dateBean = new DateBean();
+					dateBean.setError(errorBean);
+					
+					publishProgress(dateBean);
+				}
+
+			}
+			
+		}.start();
+		/* tsv */
+	}
+	
+	@Override
+	public void onResume() {
+		super.onResume();
+		//loaderManager.onResume(this);
+	}
+	
+	@Override
+	public void onPause() {
+		//loaderManager.onPause();
+		super.onPause();
+	}
+	
+	@Override
+	public void onDestroy() {
+		//loaderManager.onDestroy();
+		/* tsv */messageHandler = null;
+		super.onDestroy();
+	}
+
+	//@Override
+	public void onResultReceive(DateBean data) {
+		
+		if(data.getError().getMessage().equals("NoNetwork")) {
+			Toast.makeText(this, getResources().getString(R.string.download_no_network_and_data), Toast.LENGTH_SHORT).show();
+			
+			finish();
+			return;
+		}
+		
+		CalendarView calendarView = new CalendarView(this);
+		calendarView.setEventDates(data.getResult());
+		calendarView.setFirstDayOfWeek(2);
+		calendarView.setShowWeekNumber(false);
+		calendarView.setOnDateChangeListener(new OnDateChangeListener() {
+			
+			@Override
+			public void onSelectedDayChange(CalendarView view, int year, int month, int day) {
+				int selDateCode = year + month + day;
+				
+				//защита от вызова метода при смене месяца
+				if(nowDateCode != selDateCode) {
+					Calendar calendar = Calendar.getInstance();
+					calendar.set(year, month, day);
+					calendar.set(Calendar.HOUR_OF_DAY, 0);
+					calendar.set(Calendar.MINUTE, 0);
+					calendar.set(Calendar.SECOND, 0);
+					
+					setResult(RESULT_OK, new Intent().putExtra(DATE, calendar.getTimeInMillis() / 1000));
+					finish();
+				}
+			}
+		});
+		
+		int calendarHeight = ToolBox.dp2pix(this, 350);
+		LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, calendarHeight);
+		
+		LinearLayout container = (LinearLayout) findViewById(R.id.ca_container);
+		container.addView(calendarView, params);
+	}
+
+	/*@Override
+	public FragmentLoader<DateBean> onCreateLoader(Bundle params) {
+		return new DateLoader(this, params);
+	}
+	
+	/*private class DateLoader extends FragmentLoader<DateBean> {
+
+		private String categoryId;
+		private String subcategoryId;
+		
+		public DateLoader(Context context, Bundle params) {
+			super(context);
+			
+			categoryId = params.getString(CalendarActivity.CATEGORY_ID);
+			subcategoryId = params.getString(CalendarActivity.SUBCATEGORY_ID);
+		}
+
+		@Override
+		public void runInBackground(boolean firstRun) {
+			DateBean wrappedBeans = null;
+			
+			try {
+				String token = SharedPreferencesWrap.INSTANCE.getString(SharedPreferencesWrap.TOKEN);
+				wrappedBeans = HttpManager.INSTANCE.getData(URLManager.getDatesOfNews(token, categoryId, subcategoryId), DateBean.class);
+			} catch (NoNetworkException e) {
+			} catch (CorruptedDataException e) {
+			}
+			
+			if(wrappedBeans != null)
+				publishProgress(wrappedBeans);
+			else {
+				ErrorBean errorBean = new ErrorBean();
+				errorBean.setMessage("NoNetwork");
+				
+				DateBean dateBean = new DateBean();
+				dateBean.setError(errorBean);
+				
+				publishProgress(dateBean);
+			}
+		}
+	}*/
+}

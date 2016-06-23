@@ -1,0 +1,31 @@
+<div data-ng-controller="header" data-ng-show="visible">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      
+      <div class="navbar-header">
+        
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-ng-show="auth.user || auth.templates.length">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" ui-sref="home">
+          <img class="img-brand" alt="{{ dic('Title') }}" src="/service/images/mini-logo.png">
+        </a>
+      </div>
+      
+      <div class="navbar-collapse collapse" navbar>
+        <ul class="nav navbar-nav">
+          <li data-ng-repeat="(k,v) in auth.menu"><a ui-sref="{{ k }}">{{ dic(v.name) }}</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" data-ng-show="auth.user">
+          <button type="button" class="btn btn-default" data-ng-click="logout()" ladda="state.logout">
+            {{ auth.user.login }}&nbsp;&nbsp;<span class="glyphicon glyphicon-log-out glyphicon-align-right" aria-hidden="true"></span>
+          </button
+        </form>
+      </div>
+
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss
+END
+DataCharacter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/DataCharacter.java
+END
+RSSUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/RSSUtils.java
+END
+FinderPattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/FinderPattern.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/Pair.java
+END
+RSS14Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/RSS14Reader.java
+END
+AbstractRSSReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/rss/AbstractRSSReader.java
+END

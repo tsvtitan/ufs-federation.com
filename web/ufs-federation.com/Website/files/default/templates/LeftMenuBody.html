@@ -1,0 +1,33 @@
+<body>
+
+  <div class="header">
+    <div th:replace="Toolbar"/>
+    <div th:replace="Menu"/>
+  </div>
+
+  <div class="width">
+    <div th:replace="NestedPromoBanner"/>
+    <div th:replace="PromoMenu"/>
+  </div>  
+
+  <div class="page bgcolor1 width">
+    <div th:replace="BreadCrumb"/>
+    <div class="row clearfix">
+      <div class="g294"> 
+        <div th:replace="PageMenu"/>
+      </div>  
+      <div class="g882 content">
+        <div class="pad">
+          <h1 th:utext="${page.TITLE}"/>
+          <div th:replace="${page.HtmlTemplate}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div th:replace="Sitemap"/>
+    <div th:replace="Copyright"/>
+  </footer>
+
+</body>

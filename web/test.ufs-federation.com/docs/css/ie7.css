@@ -1,0 +1,36 @@
+/* Disable a deprecated */
+font,basefont {color: expression(this.parentNode.currentStyle['color']); font-family: expression(this.parentNode.currentStyle['fontFamily'])}
+center {text-align: expression(this.parentNode.currentStyle['textAlign'])}
+s,strike,u {text-decoration: expression(this.parentNode.currentStyle['textDecoration'])}
+
+div#header {
+  scrollbar-track-color:expression(
+  this.runtimeStyle.scrollbarTrackColor = "#fff",
+  ((screen.deviceXDPI/screen.logicalXDPI) == 1) ? (document.body.style.fontSize = 1/(screen.logicalYDPI/96) +'em') : false
+  );
+}
+
+
+#footer ul.add-nav li { display: inline;  }
+
+div.sidebar div.sidebar-kontakti address dl dt,
+div.sidebar div.sidebar-kontakti address dl dd,
+#promo div.promo-section div.section address dl dt,
+#promo div.promo-section div.section address dl dd,
+#promo div.promo-section div.anal-block dl dt,
+#promo div.promo-section div.anal-block dl dd,
+div.sidebar address.glavni-office dl dt,
+div.sidebar address.glavni-office dl dd,
+div.promo-section div.section div.article var.news-logo .block-img, 
+body.inner var.news-logo .block-img,
+body.index div.promo-section div.section.second_s var.news-logo var, 
+body.konferencii var.news-logo var, 
+body.o-kompanii div.article var.news-logo var  { display: inline;  }
+
+ul.pager-universal li { display: inline; margin: 0 3px; }
+#slider div.ui-tabs-panel{ height:108px;}
+#slider ul.slider-pager,
+#slider div.fragment-block div.resume{margin-left:-541px;}
+body.emitenti-dolgovogo-rinka ul.kalendar-statistiki li a{padding:16px 26px 14px;}
+body.emitenti-dolgovogo-rinka div.section-kalendar-statistiki #nav_na_grafikah{width: 841px;}
+ul.hfeed{ margin-bottom:0;}

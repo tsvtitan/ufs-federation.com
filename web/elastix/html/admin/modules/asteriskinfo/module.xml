@@ -1,0 +1,36 @@
+<module>
+	<rawname>asteriskinfo</rawname>
+	<name>Asterisk Info</name>
+	<version>2.8.0.2</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>
+		Provides a snapshot of the current Asterisk configuration
+	</description>
+	<menuitems>
+		<asteriskinfo>Asterisk Info</asteriskinfo>
+	</menuitems>
+	<depends>
+		<engine>asterisk</engine>
+		<version>2.5.0rc3</version>
+	</depends>
+	<changelog>
+		*2.8.0.2* localization updates
+		*2.8.0.1* #4209
+		*2.8.0.0* #3703
+		*2.7.0.0* spelling fixes, localization updates
+		*2.6.0.0* localizations, misc
+		*2.5.0.1* #3157, #3153, #3077 (DAHDI Support)
+		*2.5.0* #2845 tabindex
+		*2.4.0.1* #2704 Asterisk 1.6 tweaks
+		*2.4.0* bumped to 2.4
+		*0.3.0.1* bump for rc1
+		*0.3.0* #2187 Fix for Asterisk 1.4
+		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
+		*0.1.0* Initial release
+	</changelog>
+	<location>release/2.8/asteriskinfo-2.8.0.1.tgz</location>
+	<md5sum>87130a9ac7d28dba23114fc4a2676786</md5sum>
+</module>

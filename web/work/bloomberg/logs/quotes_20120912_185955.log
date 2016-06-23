@@ -1,0 +1,7 @@
+12.09.2012 18:59:55.622 I: --------------------------------------------------
+12.09.2012 18:59:55.622 I: Starting ...
+12.09.2012 18:59:55.961 I: [MSSql->Query] SET ANSI_WARNINGS ON
+12.09.2012 18:59:56.045 I: [MSSql->Query] SET ANSI_NULLS ON
+12.09.2012 18:59:56.130 I: Bloomberg database is connected. Selecting data ...
+12.09.2012 18:59:56.130 I: [MSSql->getRecords] SELECT * FROM [BLOOMBERG_XLS]...[FI$]
+12.09.2012 18:59:56.256 I: There are 5 record(s)

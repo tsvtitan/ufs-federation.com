@@ -1,0 +1,6 @@
+<div class="half" style="margin: auto"><!--/*/<th:block th:each="field:${form.Fields}" th:with="template=${(field.Template==null)?'InputText':field.Template}">/*/-->
+  <div th:replace="${template}"/>
+  <br/><!--/*/</th:block>/*/--><br/><!--/*/<th:block th:each="button:${form.Buttons}" th:with="template=${(button.Template==null)?'InputSubmit':button.Template}">/*/-->
+  <div th:replace="${template}"/><!--/*/</th:block>/*/-->
+  <br/>
+</div>

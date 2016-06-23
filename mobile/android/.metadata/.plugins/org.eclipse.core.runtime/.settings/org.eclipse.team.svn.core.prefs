@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+externalMigrateFromAuthorizationDatabase/isMigrated=true
+migrateFromAuthorizationDatabase/isMigrated=true
+repositories/305453d8e1ce00131141f074d69f7561=305453d8e1ce00131141f074d69f7561;http\://apps.ufs-federation.com/svn/mobile/android;http\://apps.ufs-federation.com/svn/mobile/android;branches;tags;trunk;true;b9c3671d-bcd4-4ab9-98c7-6143888a2cfb;http\://apps.ufs-federation.com/svn/mobile;;false;<http\://apps.ufs-federation.com\:80> Subversion;;0
+repositories/50737a40ddfa00131b1e839b3e3b7165=50737a40ddfa00131b1e839b3e3b7165;https\://ru.ufs-federation.com/svn/mobile/android;https\://ru.ufs-federation.com/svn/mobile/android;branches;tags;trunk;true;b9c3671d-bcd4-4ab9-98c7-6143888a2cfb;https\://ru.ufs-federation.com/svn/mobile;;false;<https\://ru.ufs-federation.com\:443> Subversion;;0
+repositories/80fdd6afe2ce00131141f074d69f7561=80fdd6afe2ce00131141f074d69f7561;http\://apps.ufs-federation.com/svn/mobile/android/libs;http\://apps.ufs-federation.com/svn/mobile/android/libs;branches;tags;trunk;true;;;;false;;;0
+repositories/905bb0efe2ce00131141f074d69f7561=905bb0efe2ce00131141f074d69f7561;http\://apps.ufs-federation.com/svn/mobile/android/library;http\://apps.ufs-federation.com/svn/mobile/android/library;branches;tags;trunk;true;b9c3671d-bcd4-4ab9-98c7-6143888a2cfb;http\://apps.ufs-federation.com/svn/mobile;;false;;;0
+synch_info/contigous=true

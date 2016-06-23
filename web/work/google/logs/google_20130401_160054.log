@@ -1,0 +1,179 @@
+01.04.2013 16:01:01.425 I: --------------------------------------------------
+01.04.2013 16:01:01.425 I: Connecting to Google ...
+01.04.2013 16:01:01.646 I: Connected. Create a group...
+01.04.2013 16:01:06.900 I: Name: groupId Value: all@ufs-federation.com
+01.04.2013 16:01:06.901 I: Name: groupName Value: All Users of UFS IC
+01.04.2013 16:01:06.902 I: Name: emailPermission Value: Domain
+01.04.2013 16:01:06.906 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.908 I: Name: description Value: рассылка всем сотрудникам UFS IC
+01.04.2013 16:01:06.910 I: Name: groupId Value: all_contacts@ufs-federation.com
+01.04.2013 16:01:06.912 I: Name: groupName Value: All Contacts
+01.04.2013 16:01:06.914 I: Name: emailPermission Value: Domain
+01.04.2013 16:01:06.916 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.916 I: Name: description Value: 
+01.04.2013 16:01:06.917 I: Name: groupId Value: back@ufs-federation.com
+01.04.2013 16:01:06.918 I: Name: groupName Value: Back UFS
+01.04.2013 16:01:06.919 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.919 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.920 I: Name: description Value: 
+01.04.2013 16:01:06.921 I: Name: groupId Value: clientscy@ufs-federation.com
+01.04.2013 16:01:06.921 I: Name: groupName Value: clientscy
+01.04.2013 16:01:06.922 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.923 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.924 I: Name: description Value: 
+01.04.2013 16:01:06.924 I: Name: groupId Value: clientservice@ufs-federation.com
+01.04.2013 16:01:06.925 I: Name: groupName Value: clientservice
+01.04.2013 16:01:06.926 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.927 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.927 I: Name: description Value: 
+01.04.2013 16:01:06.928 I: Name: groupId Value: compliance@ufs-federation.com
+01.04.2013 16:01:06.929 I: Name: groupName Value: Compliance
+01.04.2013 16:01:06.930 I: Name: emailPermission Value: Member
+01.04.2013 16:01:06.931 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.931 I: Name: description Value: 
+01.04.2013 16:01:06.932 I: Name: groupId Value: depo@ufs-federation.com
+01.04.2013 16:01:06.933 I: Name: groupName Value: UFS Depo
+01.04.2013 16:01:06.933 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.934 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.935 I: Name: description Value: 
+01.04.2013 16:01:06.936 I: Name: groupId Value: digital@ufs-federation.com
+01.04.2013 16:01:06.936 I: Name: groupName Value: WWW-Support
+01.04.2013 16:01:06.937 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.938 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.939 I: Name: description Value: 
+01.04.2013 16:01:06.940 I: Name: groupId Value: fi@ufs-federation.com
+01.04.2013 16:01:06.941 I: Name: groupName Value: Fi
+01.04.2013 16:01:06.941 I: Name: emailPermission Value: Member
+01.04.2013 16:01:06.942 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.943 I: Name: description Value: 
+01.04.2013 16:01:06.944 I: Name: groupId Value: ic-ufs@ufs-federation.com
+01.04.2013 16:01:06.944 I: Name: groupName Value: IC UFS
+01.04.2013 16:01:06.945 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:06.945 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.946 I: Name: description Value: 
+01.04.2013 16:01:06.947 I: Name: groupId Value: iddqd1@ufs-federation.com
+01.04.2013 16:01:06.947 I: Name: groupName Value: iddqd1
+01.04.2013 16:01:06.948 I: Name: emailPermission Value: Domain
+01.04.2013 16:01:06.949 I: Name: permissionPreset Value: TeamDomain
+01.04.2013 16:01:06.950 I: Name: description Value: 
+01.04.2013 16:01:06.951 I: Name: groupId Value: lease@ufs-federation.com
+01.04.2013 16:01:06.952 I: Name: groupName Value: UFS Lease
+01.04.2013 16:01:06.953 I: Name: emailPermission Value: Member
+01.04.2013 16:01:06.954 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.955 I: Name: description Value: 
+01.04.2013 16:01:06.956 I: Name: groupId Value: localsite@ufs-federation.com
+01.04.2013 16:01:06.956 I: Name: groupName Value: Local Site
+01.04.2013 16:01:06.957 I: Name: emailPermission Value: Domain
+01.04.2013 16:01:06.958 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.959 I: Name: description Value: 
+01.04.2013 16:01:06.960 I: Name: groupId Value: males@ufs-federation.com
+01.04.2013 16:01:06.961 I: Name: groupName Value: Males
+01.04.2013 16:01:06.962 I: Name: emailPermission Value: Member
+01.04.2013 16:01:06.963 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.963 I: Name: description Value: 
+01.04.2013 16:01:06.964 I: Name: groupId Value: office.leasing@ufs-federation.com
+01.04.2013 16:01:06.965 I: Name: groupName Value: Office Leasing
+01.04.2013 16:01:06.965 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.967 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.967 I: Name: description Value: 
+01.04.2013 16:01:06.968 I: Name: groupId Value: operations.leasing@ufs-federation.com
+01.04.2013 16:01:06.969 I: Name: groupName Value: Operations Leasing
+01.04.2013 16:01:06.970 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.970 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.971 I: Name: description Value: 
+01.04.2013 16:01:06.972 I: Name: groupId Value: planning_session@ufs-federation.com
+01.04.2013 16:01:06.973 I: Name: groupName Value: UFS Planning session
+01.04.2013 16:01:06.974 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:06.975 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.975 I: Name: description Value: 
+01.04.2013 16:01:06.976 I: Name: groupId Value: quotes@ufs-federation.com
+01.04.2013 16:01:06.977 I: Name: groupName Value: Quotes
+01.04.2013 16:01:06.977 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:06.978 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.979 I: Name: description Value: 
+01.04.2013 16:01:06.980 I: Name: groupId Value: report@ufs-federation.com
+01.04.2013 16:01:06.981 I: Name: groupName Value: Report UFS
+01.04.2013 16:01:06.981 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.982 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.983 I: Name: description Value: 
+01.04.2013 16:01:06.984 I: Name: groupId Value: research@ufs-federation.com
+01.04.2013 16:01:06.984 I: Name: groupName Value: UFS Research
+01.04.2013 16:01:06.985 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.986 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.986 I: Name: description Value: 
+01.04.2013 16:01:06.987 I: Name: groupId Value: rsa@ufs-federation.com
+01.04.2013 16:01:06.988 I: Name: groupName Value: PKI Infrastructure Support
+01.04.2013 16:01:06.989 I: Name: emailPermission Value: Domain
+01.04.2013 16:01:06.990 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.990 I: Name: description Value: 
+01.04.2013 16:01:06.991 I: Name: groupId Value: russia-sales@ufs-federation.com
+01.04.2013 16:01:06.992 I: Name: groupName Value: Russia Sales
+01.04.2013 16:01:06.992 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:06.993 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:06.994 I: Name: description Value: 
+01.04.2013 16:01:06.995 I: Name: groupId Value: sales.leasing@ufs-federation.com
+01.04.2013 16:01:06.996 I: Name: groupName Value: Sales Leasing
+01.04.2013 16:01:06.997 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:06.000 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.002 I: Name: description Value: 
+01.04.2013 16:01:07.004 I: Name: groupId Value: settlement@ufs-federation.com
+01.04.2013 16:01:07.004 I: Name: groupName Value: Settlement
+01.04.2013 16:01:07.005 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.006 I: Name: permissionPreset Value: Announcement
+01.04.2013 16:01:07.006 I: Name: description Value: 
+01.04.2013 16:01:07.007 I: Name: groupId Value: support@ufs-federation.com
+01.04.2013 16:01:07.008 I: Name: groupName Value: UFS Technical Support
+01.04.2013 16:01:07.009 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:07.010 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.011 I: Name: description Value: 
+01.04.2013 16:01:07.011 I: Name: groupId Value: test@ufs-federation.com
+01.04.2013 16:01:07.012 I: Name: groupName Value: test
+01.04.2013 16:01:07.013 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:07.014 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.015 I: Name: description Value: 
+01.04.2013 16:01:07.016 I: Name: groupId Value: ufs-funds@ufs-federation.com
+01.04.2013 16:01:07.016 I: Name: groupName Value: UFS Funds
+01.04.2013 16:01:07.017 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:07.018 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.019 I: Name: description Value: 
+01.04.2013 16:01:07.020 I: Name: groupId Value: ufs_eurobonds_stat@ufs-federation.com
+01.04.2013 16:01:07.020 I: Name: groupName Value: UFS Eurobonds Stat
+01.04.2013 16:01:07.021 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.021 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.022 I: Name: description Value: 
+01.04.2013 16:01:07.023 I: Name: groupId Value: ufs_mailer@ufs-federation.com
+01.04.2013 16:01:07.024 I: Name: groupName Value: UFS Mailer
+01.04.2013 16:01:07.024 I: Name: emailPermission Value: Anyone
+01.04.2013 16:01:07.025 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.026 I: Name: description Value: 
+01.04.2013 16:01:07.027 I: Name: groupId Value: ufs_mailer_en@ufs-federation.com
+01.04.2013 16:01:07.027 I: Name: groupName Value: UFS Mailer (en)
+01.04.2013 16:01:07.028 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.029 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.030 I: Name: description Value: 
+01.04.2013 16:01:07.031 I: Name: groupId Value: ufs_mailer_rus@ufs-federation.com
+01.04.2013 16:01:07.031 I: Name: groupName Value: UFS Mailer (rus)
+01.04.2013 16:01:07.032 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.033 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.034 I: Name: description Value: 
+01.04.2013 16:01:07.035 I: Name: groupId Value: ufs_research_eng@ufs-federation.com
+01.04.2013 16:01:07.036 I: Name: groupName Value: UFS Research (en)
+01.04.2013 16:01:07.037 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.038 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.038 I: Name: description Value: 
+01.04.2013 16:01:07.039 I: Name: groupId Value: ufs_research_rus@ufs-federation.com
+01.04.2013 16:01:07.040 I: Name: groupName Value: UFS Research (rus)
+01.04.2013 16:01:07.041 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.041 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.042 I: Name: description Value: 
+01.04.2013 16:01:07.043 I: Name: groupId Value: ufs_sales@ufs-federation.com
+01.04.2013 16:01:07.043 I: Name: groupName Value: UFS Sales
+01.04.2013 16:01:07.044 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.045 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.046 I: Name: description Value: 
+01.04.2013 16:01:07.047 I: Name: groupId Value: vahitov@ufs-federation.com
+01.04.2013 16:01:07.048 I: Name: groupName Value: Vahitov
+01.04.2013 16:01:07.049 I: Name: emailPermission Value: Owner
+01.04.2013 16:01:07.049 I: Name: permissionPreset Value: Custom
+01.04.2013 16:01:07.050 I: Name: description Value: 
+01.04.2013 16:01:07.051 I: Execution time is 5.6259858608246

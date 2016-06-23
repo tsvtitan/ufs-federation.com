@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/deque
+END
+Deque.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/deque/Deque.java
+END
+LIFOLinkedBlockingDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/deque/LIFOLinkedBlockingDeque.java
+END
+BlockingDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/deque/BlockingDeque.java
+END
+LinkedBlockingDeque.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mobile/!svn/ver/1/android/UniversalImageLoader/src/com/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque.java
+END

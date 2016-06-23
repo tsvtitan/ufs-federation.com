@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core
+END
+DocumentView.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/DocumentView.java
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/Page.java
+END
+PageTreeNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/PageTreeNode.java
+END
+DecodeServiceBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/DecodeServiceBase.java
+END
+DecodeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/DecodeService.java
+END
+VuDroidLibraryLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/110/android/AndroidPDFView/src/org/vudroid/core/VuDroidLibraryLoader.java
+END

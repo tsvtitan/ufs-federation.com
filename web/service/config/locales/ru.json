@@ -1,0 +1,161 @@
+{
+  "Lang": "ru-RU",
+  "Title": "UFS IC Сервис",
+  "Version": "v 1.2",
+  
+  "Home.Name": "Главная",
+  
+  "Mailing.Name": "Рассылка",
+  
+  "back": {
+    
+    "You are not permitted to perform this action": "Вам запрещено выполнять это действие",
+    "Gate is not responding": "Шлюз не отвечает",
+    "Gate returned an invalid message": "Шлюз вернул неверное сообщение",
+    "User is not found": "Пользователь не найден",
+    "Message gate cannot send the mailing": "Шлюз сообщений не может отправить сообщений",
+    
+    "init": {
+      "Session needs to be cleared": "Сессия нуждается в очистке",
+      "Initialization error": "Ошибка инициализации"
+    },
+    
+    "auth": {
+      "User {login} is not found": "Пользователь {login} не найден",
+      "Session is not found": "Сессия не найдена",
+      "Logout error": "Ошибка выхода из системы",
+      "Login error": "Ошибка входа в систему",
+      "Code is invalid": "Неправильный код"
+    },
+    
+    "mailings": {
+      "Mailing is not found": "Рассылка не найдена",
+      "Body of the request is empty": "Тело запроса пустое",
+      "Subject of the mailing is empty": "Тема рассылки пустое",
+      "Body of the mailing is empty": "Тело рассылки пустое",
+      "Menu is not found": "Меню не найдено",
+      "Recipients are not found": "Получатели не найдены",
+      "{count} from {subject}": "{count} из {subject}",
+      "{count} from Subscription": "{count} из Почтовых рассылок",
+      "Recipients error": "Ошибка запроса получателей",
+      "New error": "Ошибка создания рассылки",
+      "Get error": "Ошибка получения рассылок",
+      "Mailings are not found": "Рассылки не найдены"
+      
+    }
+  },
+  
+  "front": {
+
+    "Check fields": "Проверьте поля",
+    "Connection failed": "Соединение разорвано",
+    "Could not subscribe on event": "Не могу подписаться на событие",
+    "Could not unsubscribe from event": "Не могу отписаться от события",
+    
+    "header": {
+      "All mailings": "Все рассылки",
+      "New mailing": "Новая рассылка"
+    },
+    
+    "auth": {
+      "Login": "Логин",
+      "Input login": "Укажите логин",
+      "Password": "Пароль",
+      "Input password": "Укажите пароль",
+      "Enter": "Войти",
+      "Input code": "Введите код",
+      "Click to refresh": "Нажмите чтобы обновить"
+    },
+    
+    "home": {
+      "Service": "Сервис",
+      "It allows to manage mailings": "Позволяет управлять рассылками"
+    },
+    
+    "mailings": {
+      
+      "All mailings": "Все рассылки",
+      "New": "Новая",
+      "Search string": "Строка поиска",
+      "New mailing": "Новая рассылка",
+      "Sender": "Отправитель",
+      "Not specified": "Не указан",
+      "Recipients": "Получатели",
+      "Empty subject": "Пустая тема",
+      "Created": "Создано",
+      "Previous": "пред",
+      "Next": "след",
+      "Sent": "Отправлено",
+      "Time": "Время",
+      "Cancel": "Отменить",
+      "Repeat": "Повторить",
+      "Suspend": "Приостановить",
+      "Resume": "Продолжить",
+      "Body": "Письмо",
+      "Attachments": "Вложения",
+      "Keywords": "Ключевые слова",
+      "Headers": "Заголовки",
+      "HH:mm:ss YYYY-MM-DD": "HH:mm:ss DD.MM.YYYY"
+    },
+
+    "mailingsNew": {
+      "New mailing": "Новая рассылка",
+      "Sender": "Отправитель",
+      "Input sender name": "Напишите имя отправителя",
+      "Select": "Выбрать",
+      "From file": "Из файла",
+      "Recipients": "Получатели",
+      "Select recipients": "Выберите получателей",
+      "Subject": "Тема",
+      "Input subject": "Напишите тему письма",
+      "Body": "Письмо",
+      "Input body": "Напишите текст письма",
+      "Attachments": "Вложения",
+      "Select attacments": "Выберите вложения",
+      "Browse": "Выбрать",
+      "Extra options": "Дополнительно",
+      "Reply to": "Ответить на",
+      "Input email": "Напишите электронный адрес",
+      "Keywords": "Ключевые слова",
+      "Input keywords": "Напишите ключевые слова через запятую",
+      "Pattern": "Шаблон письма",
+      "Channel": "Канал отправки",
+      "Headers": "Заголовки письма",
+      "Input headers": "Напишите заголовки письма",
+      "Delay": "Задержка (сек.)",
+      "Input delay": "Укажите задержку",
+      "Duration": "Продолжительность (мин.)",
+      "Input duration": "Укажите продолжительность",
+      "Test": "Проверка",
+      "Input test contact": "Напишите контакт для проверки",
+      "Create": "Создать",
+      "Cancel": "Отмена",
+      "{count} file(s) selected": "{count} файл(ов) выбрано",
+      "{count} message(s) queued": "{count} сообщен(ий) поставлено в очередь",
+      
+      "defaultSender": "mailer@lists.ufs-financial.ch",
+      
+      "senderMenu": ["mailer@lists.ufs-financial.ch","mailer@lists.premier-broker.ru"],
+      
+      "replyToMenu": {
+        "Аналитика": "research@ufs-federation.com",
+        "PR": "pr@ufs-federation.com"
+      },
+      
+      "defaultPattern": "Шаблон по умолчанию",
+      
+      "patterns": {
+        "Шаблон по умолчанию": "EmptyPattern",
+        "Шаблон для рассылки по email": "EmailDefaultPattern"
+      },
+      
+      "defaultChannel": "UFS Exchange Outgoing",
+      
+      "channels": {
+        "Случайный канал": "",
+        "UFS Exchange Outgoing": "UFSExchangeOutgoing",
+        "Premier Exchange Outgoing": "PremierExchangeOutgoing"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<table width=auto cellspacing=0 cellpadding=3 border=1>
+  <tr>
+    <% for(var i in columns) {%>
+    <td style="text-align:center;background-color:#eeeeee"><b><%= columns[i] %></b></td>
+    <% } %>
+  </tr><br>
+  <% for(var i in table) { var r=table[i]; %>
+  <tr>
+    <% for(var j in fields) { var s=(styles && styles[j])?styles[j]:''; %>
+    <td style="<%= s %>"><%= r[fields[j]] %></td>
+    <% } %>
+  </tr>    
+  <% } %>  
+</table>

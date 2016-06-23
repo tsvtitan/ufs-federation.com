@@ -1,0 +1,16 @@
+<div class="navbar">
+  <div class="width clearfix bgcolor1">
+    <div id="logo" class="fleft">
+      <a th:href="${path.RootPath}" href="/" th:title="#{CompanyName}" title="UFS Investment Company">
+        <img th:src="${path.getBasePath('/i/logo-bw.gif')}" src="/i/logo-bw.gif"/>
+      </a>
+    </div>
+    <ul class="main-nav fright clean horizontal">
+      <li th:each="menu:${menus}" class="nested"><a th:href="${path.getBasePath(menu.LINK)}" href="/"><font th:utext="${menu.NAME}">Верхнее меню</font></a>
+        <ul class="clean">
+          <li th:each="item:${menu.items}"><a th:href="${path.getBasePath(item.LINK)}" href="/" th:utext="${item.NAME}">Новости</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

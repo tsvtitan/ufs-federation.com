@@ -1,0 +1,382 @@
+#!/usr/bin/env bash
+
+# Formating variables
+# use like: ${b}text$bx - ${b} starts bold, $bx end it, etc.
+# you must use echo -e for formating to be valid
+b="\033[1m"
+bx="\033[0m"
+u="\e[4m"
+ux="\e[0m"
+
+ROOT_UID=0	 # root uid is 0
+E_NOTROOT=67	 # Non-root exit error
+
+
+echo
+# check to see if we are root
+if [ "$UID" -ne "$ROOT_UID" ]
+then
+	echo "Sorry, you must be root to run this script."
+	echo
+	exit $E_NOTROOT
+fi
+
+# make sure config file exists
+if [ ! -e "/etc/amportal.conf" ]       # Check if file exists.
+  then
+    echo;
+    echo "/etc/amportal.conf does not exist!";
+	echo "Have you installed the AMP configuration?";
+	exit;
+fi
+# Set some defaults which can be re-defined in amportal.conf
+AMPDEVUSER=asterisk
+AMPDEVGROUP=asterisk
+AMPASTERISKUSER=asterisk
+AMPASTERISKGROUP=asterisk
+AMPASTERISKWEBUSER=$AMPASTERISKUSER
+AMPASTERISKWEBGROUP=$AMPASTERISKGROUP
+AMPVMUMASK=077
+ASTETCDIR=/etc/asterisk
+FPBXDBUGFILE=/tmp/freepbx_debug.log
+
+. /etc/amportal.conf
+
+if [ -z $PIDOF ]; then
+    PIDOF=pidof
+fi
+
+if [ $ASTRUNDIR = /var/run ]
+  then
+    echo "**** ERROR IN CONFIGURATION ****"
+    echo "astrundir in '$ASTETCDIR' is set to '/var/run' - THIS IS WRONG."
+    echo "Please change it to something sensible (eg, '/var/run/asterisk') and re-run"
+    echo "install_amp"
+    exit;
+fi
+
+if [ ! -d "$ASTRUNDIR" ]
+  then
+    echo "**** WARNING: ERROR IN CONFIGURATION ****"
+    echo "astrundir in '$ASTETCDIR' is set to $ASTRUNDIR but the directory"
+		echo "does not exists. Attempting to create it with: 'mkdir -p $ASTRUNDIR'"
+		echo
+		mkdir -p $ASTRUNDIR
+		RET=$?
+		if [ $RET != 0 ]
+		then
+    	echo "**** ERROR: COULD NOT CREATE $ASTRUNDIR ****"
+			echo "Attempt to execute 'mkdir -p $ASTRUNDIR' failed with an exit code of $RET"
+    	echo "You must create this directory and the try again."
+			exit
+		fi
+fi
+
+chown_asterisk() {
+	echo SETTING FILE PERMISSIONS
+
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $ASTRUNDIR
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $ASTETCDIR
+	chmod -R g+w $ASTETCDIR
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $ASTVARLIBDIR
+	chmod g+w $ASTVARLIBDIR
+	chmod -R g+w $ASTVARLIBDIR/*
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $ASTLOGDIR
+	chmod -R g+w $ASTLOGDIR
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $ASTSPOOLDIR
+	chmod -R g+w $ASTSPOOLDIR
+	chown -R $AMPASTERISKWEBUSER:$AMPASTERISKWEBGROUP $AMPWEBROOT/admin
+	chmod -R g+w $AMPWEBROOT/admin
+	chown -R $AMPASTERISKWEBUSER:$AMPASTERISKWEBGROUP $FOPWEBROOT
+	chmod -R g+w $FOPWEBROOT
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $AMPWEBROOT/recordings
+	chmod -R g+w $AMPWEBROOT/recordings
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $AMPWEBROOT/_asterisk
+	chmod u+x,g+x $ASTVARLIBDIR/bin/*
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $ASTVARLIBDIR/bin/*
+	chown -R $AMPASTERISKUSER:$AMPASTERISKGROUP $AMPBIN/*
+
+
+	if [ "$ASTAGIDIR" != "" ]; then
+		chmod u+x $ASTAGIDIR/*
+	else
+		chmod u+x $ASTVARLIBDIR/agi-bin/*
+	fi
+
+	chmod u+x,g+x $AMPBIN/bounce_op.sh
+	chmod u+x,g+x $FOPWEBROOT/*.pl
+	chmod u+x $FOPWEBROOT/safe_opserver
+	chown $AMPASTERISKUSER /dev/tty9
+
+	# Ensure that various hardware devices are owned correctly.
+	[ -e /dev/zap ] && chown -R $AMPDEVUSER:$AMPDEVGROUP /dev/zap 
+	[ -e /dev/dahdi ] && chown -R $AMPDEVUSER:$AMPDEVGROUP /dev/dahdi 
+	[ -e /dev/capi20 ] && chown -R $AMPDEVUSER:$AMPDEVGROUP /dev/capi20
+	[ -e /dev/misdn ] && chown -R $AMPDEVUSER:$AMPDEVGROUP /dev/misdn
+	[ -e /dev/mISDN ] && chown -R $AMPDEVUSER:$AMPDEVGROUP /dev/mISDN
+	[ -e /dev/dsp ] && chown -R $AMPDEVUSER:$AMPDEVGROUP /dev/dsp
+
+	echo Permissions OK
+}
+
+check_asterisk() {
+# check to see if asterisk is running
+# Note, this isn't fool-proof.  If safe_asterisk is constantly restarting a dying asterisk,
+# then there is a chance pidof will return non zero.  We call this twice to reduce chances of this happening
+pid_length=`$PIDOF asterisk|awk '{print length($0)}'`
+	if [ "$pid_length" == "0" -a "$pid_length" != "" ]
+		then
+				killall -9 safe_asterisk
+				killall -9 mpg123 > /dev/null
+				echo
+				echo "-----------------------------------------------------"
+				echo "Asterisk could not start!"
+				echo "Use 'tail $ASTLOGDIR/full' to find out why."
+				echo "-----------------------------------------------------"
+				exit 0
+		fi
+}
+
+run_asterisk() {
+# check to see if asterisk is running
+echo
+echo "STARTING ASTERISK"
+pid_length=`$PIDOF asterisk|awk '{print length($0)}'`
+	if [ "$pid_length" != "0" -a "$pid_length" != "" ]
+		then
+			echo "Asterisk is already running"
+		else
+			# su - asterisk -c "export PATH=$PATH:/usr/sbin && export LD_LIBRARY_PATH=/usr/local/lib && /usr/sbin/safe_asterisk"
+			export LD_LIBRARY_PATH=/usr/local/lib
+			umask $AMPVMUMASK
+			/usr/sbin/safe_asterisk -U asterisk -G $AMPASTERISKGROUP
+			sleep 5
+			check_asterisk
+			sleep 1
+			check_asterisk
+			echo "Asterisk Started"
+		fi
+}
+
+stop_asterisk() {
+echo
+echo "STOPPING ASTERISK"
+pid_length=`$PIDOF asterisk|awk '{print length($0)}'`
+	if [ "$pid_length" != "0" -a "$pid_length" != "" ]
+		then
+			/usr/sbin/asterisk -rx "core stop gracefully" | grep -v "No such command"
+			/usr/sbin/asterisk -rx "stop gracefully" | grep -v -E "No such command|deprecated|Unable to connect to remote"
+			echo "Asterisk Stopped"
+		fi
+}
+
+check_fop() {
+#check to see if FOP is running
+	pid_length=`$PIDOF -x op_server.pl|awk '{print length($0)}'`
+	if [ "$pid_length" == "0" -a "$pid_length" != "" ]
+		then
+				ps -ef | grep safe_opserver | grep -v grep | awk '{print $2}' | xargs kill -9
+				echo
+				echo "-----------------------------------------------------"
+				echo "The FOP's server (op_server.pl) could not start!"
+				echo "Please correct this problem"
+				echo "-----------------------------------------------------"
+				exit 0
+		fi
+}
+
+run_fop() {
+# check to see if FOP is running
+echo
+echo "STARTING FOP SERVER"
+pid_length=`$PIDOF -x op_server.pl|awk '{print length($0)}'`
+	if [ "$pid_length" != "0" -a "$pid_length" != "" ]
+		then
+			echo "FOP server is already running"
+		else
+			su - $AMPASTERISKUSER -c "cd $FOPWEBROOT && $FOPWEBROOT/safe_opserver &" > /dev/null 2>&1
+			# Check if su was successful, if not add a shell
+			[ "$?" -eq "0" ] || su -s /bin/bash $AMPASTERISKUSER -c "cd $FOPWEBROOT && $FOPWEBROOT/safe_opserver &" 
+			sleep 1
+			check_fop
+			echo "FOP Server Started"
+		fi
+}
+
+stop_fop() {
+	echo
+	echo "STOPPING FOP SERVER"
+	pid_length=`$PIDOF -x op_server.pl|awk '{print length($0)}'`
+		if [ "$pid_length" != "0" -a "$pid_length" != "" ]
+			then
+				ps -ef | grep safe_opserver | grep -v grep | awk '{print $2}' | xargs kill
+				killall op_server.pl
+				echo "FOP Server Stopped"
+			fi
+}
+
+kill_amp() {
+	echo
+	echo "KILLING AMP PROCESSES"
+	killall -9 safe_asterisk
+	killall -9 asterisk
+	killall -9 mpg123
+	ps -ef | grep safe_opserver | grep -v grep | awk '{print $2}' | xargs kill -9
+	killall -9 op_server.pl
+}
+
+case "$1" in
+	start)
+		chown_asterisk
+		run_asterisk
+		if [ -z "$FOPRUN" -o "$FOPRUN" == "true" -o "$FOPRUN" == "TRUE" -o "$FOPRUN" == "True" -o "$FOPRUN" == "yes" -o "$FOPRUN" == "YES" -o "$FOPRUN" == "Yes" ]
+		then
+			if [ -z "$FOPDISABLE" -o "$FOPDISABLE" == "false" -o "$FOPDISABLE" == "FALSE" -o "$FOPDISABLE" == "False" -o "$FOPDISABLE" == "no" -o "$FOPDISABLE" == "NO" -o "$FOPDISABLE" == "No" ]
+			then
+				run_fop
+			fi
+		fi
+	;;
+	stop)
+		stop_asterisk
+		stop_fop
+	;;
+	restart)
+		stop_asterisk
+		stop_fop
+		sleep 1
+		chown_asterisk
+		run_asterisk
+		if [ -z "$FOPRUN" -o "$FOPRUN" == "true" -o "$FOPRUN" == "TRUE" -o "$FOPRUN" == "True" -o "$FOPRUN" == "yes" -o "$FOPRUN" == "YES" -o "$FOPRUN" == "Yes" ]
+		then
+			if [ -z "$FOPDISABLE" -o "$FOPDISABLE" == "false" -o "$FOPDISABLE" == "FALSE" -o "$FOPDISABLE" == "False" -o "$FOPDISABLE" == "no" -o "$FOPDISABLE" == "NO" -o "$FOPDISABLE" == "No" ]
+			then
+				run_fop
+			fi
+		fi
+	;;
+	stop_fop)
+		stop_fop
+	;;
+	start_fop)
+		run_asterisk
+		run_fop
+	;;
+	restart_fop)
+		stop_fop
+		run_asterisk
+		run_fop
+	;;
+
+	reload)
+		killall -HUP asterisk
+		if [ -z "$FOPRUN" -o "$FOPRUN" == "true" -o "$FOPRUN" == "TRUE" -o "$FOPRUN" == "True" -o "$FOPRUN" == "yes" -o "$FOPRUN" == "YES" -o "$FOPRUN" == "Yes" ]; then
+			if [ -z "$FOPDISABLE" -o "$FOPDISABLE" == "false" -o "$FOPDISABLE" == "FALSE" -o "$FOPDISABLE" == "False" -o "$FOPDISABLE" == "no" -o "$FOPDISABLE" == "NO" -o "$FOPDISABLE" == "No" ]; then
+				killall -HUP op_server.pl
+			else
+				stop_fop
+			fi
+		else
+			stop_fop
+		fi
+	;;
+	chown)
+		chown_asterisk
+	;;
+	kill)
+		kill_amp
+	;;
+	#Added some admin/dev oriented options:
+	#see usage in help text below
+	admin|a)
+		case $2 in
+			reload|r)
+				$ASTVARLIBDIR/bin/module_admin reload
+			;;
+			context|ctx)
+			case $3 in
+				list|l)
+				#asterisk -rx 'dialplan show'|grep Context|awk '{print $3}'|sed "s/'//g"|sort
+					cat $ASTETCDIR/extensions*|grep '^\['|sed 's/[][]//g'|sort
+				;;
+				contains|con)
+					awk -v var="[$4]" 'f && /^;/{exit} f{print} index($0,var){f=1}' /etc/asterisk/extensions_additional.conf
+				;;
+				*)
+					for i in $ASTETCDIR/extensions*; do	awk -v "var=$3" '$0 ~ "^\\[" var "\\]", /^;/ { print }'  $i; done
+				;;
+			esac
+			;;
+			modadmin|ma)
+				$ASTVARLIBDIR/bin/module_admin $3 $4
+			;;
+			externalip|extip)
+				echo `wget http://mirror.freepbx.org/whatismyip.php -O - -q|sed 's/<[^>]*>//g'`
+			;;
+			dbug)
+				if [ -f $FPBXDBUGFILE ]; then 
+					tail -f $FPBXDBUGFILE 
+				else 
+					touch tail -f $FPBXDBUGFILE
+					chown $AMPASTERISKUSER:$AMPASTERISKGROUP $FPBXDBUGFILE
+					tail -f $FPBXDBUGFILE
+				fi
+			;;
+		*)
+
+#formating variables defined at top of file
+echo -e "                         $b $u FPBX admin options menu$ux$bx
+
+
+useage: ${b}amportal$bx (${b}admin$bx|${b}a$bx) <option>
+
+options: 
+
+${b}reload$bx|${b}r$bx:      Does a full dialplan regeneration/reload (like clicking 
+               the orange bar)
+${b}context$bx|${b}cxt$bx:   Show's the specified context from the dialplan. This is extreamly
+               usefull when developing dialplan on a system with many modules, 
+               where it is not fesable look thru the whole extensions_additional
+               every time to see how a specific context was generate
+               When run with the 'list' or 'l' option, will list all avalible 
+               contexts as they appear in extensions* files
+${b}modadmin$bx|${b}ma$bx:   Runs the module_admin script with additional argument as passed
+${b}externalip$bx|${b}extip$bx: Returns the external ip for the default gateway    
+${b}dbug$bx: shows the freepbx debug log file and any updates     
+\n\n\n"
+		;;
+	esac
+	;;
+	*)
+		if [ -z "$FOPRUN" -o "$FOPRUN" == "true" -o "$FOPRUN" == "TRUE" -o "$FOPRUN" == "True" -o "$FOPRUN" == "yes" -o "$FOPRUN" == "YES" -o "$FOPRUN" == "Yes" ]
+		then
+			if [ -z "$FOPDISABLE" -o "$FOPDISABLE" == "false" -o "$FOPDISABLE" == "FALSE" -o "$FOPDISABLE" == "False" -o "$FOPDISABLE" == "no" -o "$FOPDISABLE" == "NO" -o "$FOPDISABLE" == "No" ]
+			then
+				FOPUSAGE="start_fop|stop_fop|restart_fop|"
+			fi
+		fi
+
+		echo "-------------FreePBX Control Script-----------------------------------------------"
+		echo
+		echo "Usage:       amportal start|stop|restart|${FOPUSAGE}kill|chown"
+		echo
+		echo "start:       Starts Asterisk and Flash Operator Panel server if enabled"
+		echo "stop:        Gracefully stops Asterisk and the FOP server"
+		echo "restart:     Stop and Starts"
+		if [ -z "$FOPRUN" -o "$FOPRUN" == "true" -o "$FOPRUN" == "TRUE" -o "$FOPRUN" == "True" -o "$FOPRUN" == "yes" -o "$FOPRUN" == "YES" -o "$FOPRUN" == "Yes" ]
+		then
+			if [ -z "$FOPDISABLE" -o "$FOPDISABLE" == "false" -o "$FOPDISABLE" == "FALSE" -o "$FOPDISABLE" == "False" -o "$FOPDISABLE" == "no" -o "$FOPDISABLE" == "NO" -o "$FOPDISABLE" == "No" ]
+			then
+
+				echo "start_fop:   Starts FOP server and Asterisk if not running"
+				echo "stop_fop:    Stops FOP serverg"
+				echo "restart_fop: Stops FOP server and Starts it and Asterisk if not running"
+			fi
+		fi
+		echo "kill:        Kills Asterisk and the FOP server"
+		echo "chown:       Sets appropriate permissions on files"
+		echo
+		exit 1
+	;;
+esac
+

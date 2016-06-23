@@ -1,0 +1,7 @@
+03.04.2013 17:42:23.523 I: --------------------------------------------------
+03.04.2013 17:42:23.531 I: Connect to Database ...
+03.04.2013 17:42:23.539 I: Connected.
+03.04.2013 17:42:23.539 I: [Mysql->query] set names utf8
+03.04.2013 17:42:25.496 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+03.04.2013 17:42:25.885 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing) AND created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+03.04.2013 17:42:25.887 E: [Mysql->query] Unknown column 'sent' in 'where clause'

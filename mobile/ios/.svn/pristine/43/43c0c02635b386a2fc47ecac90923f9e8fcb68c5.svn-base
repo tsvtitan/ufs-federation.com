@@ -1,0 +1,91 @@
+//	Список URL для загрузки данных с сервисов UFS
+//  UFS
+//
+//  Created by mihail on 10.07.13.
+//  Copyright (c) 2013 Moskovchenko M. All rights reserved.
+//
+
+#ifndef UFS_UFSConstantUrl_h
+#define UFS_UFSConstantUrl_h
+
+
+// Типы данных в приложении
+
+// 0 - undefined
+// 1 - news
+// 2 - stocks
+// 3 - table view
+// 4 - group data
+// 5 - html text
+// 6 - contacts VC
+
+/* tsv */ // 99 - QR-code reader
+
+/* URL для получения списков */
+// Авторизация (получение токена)
+#define UFSURLAuth @"auth"
+// Список категорий
+#define UFSURLCategories @"getCategories"
+// Список новостей
+#define UFSURLNews @"getNews"
+// Табличные данные
+#define UFSURLTableNews @"getTableView"
+// Даты для которых есть новости
+#define UFSURLDatesOfNews @"getDatesOfNews"
+// Группы
+#define UFSURLDebtMarket @"getGroups"
+// Контактыs
+#define UFSURLBranches @"getBranches"
+// Акции
+#define UFSURLActivities @"getActivities"
+// ХТМЛ данные
+#define UFSURLHTMLData @"getHtml"
+
+/* tsv */
+#define UFSURLQRCode @"qrcode"
+#define UFSURLPromotion @"promotion"
+#define UFSURLKeywords @"keywords"
+/* tsv */
+
+/* URL для получения изображения к спискам и галлереям. */
+#define UFSURLGetImage @"http://w3.siemens.ru/files/%@"
+
+// Получение pdf файлов
+#define UFSURLGetPdf @"http://w3.siemens.ru/files/%@"
+
+// Токен для работы приложения
+#define kTokenForSession @"kTokenForSession"
+
+// Первый запуск
+#define kFirstTimeStart @"kFirstTimeStart"
+// Контстанта для хранения времени истечения токена
+#define kTokenExpiredTime @"kTokenExpiredTime"
+
+// Сеть не доступна
+#define kNotReachable @"kNotReachable"
+
+// Сеть доступна
+#define kReachableOk @"kReachableOk"
+
+// Ошибка загрузки
+#define kNotificationRequestFaild @"kNotificationRequestFaild"
+
+
+/* tsv */
+#define kNotificationQRCode @"kNotificationQRCode"
+#define kNotificationPromotion @"kNotificationPromotion"
+#define kNotificationNewAuth @"kNotificationNewAuth"
+
+#define kFirstMenuShow @"kFirstMenuShow"
+
+#define kAuthEmail @"kAuthEmail"
+#define kAuthPhone @"kAuthPhone"
+#define kAuthCategoryId @"kAuthCategoryId"
+#define kAuthCategoryDelay @"kAuthCategoryDelay"
+/* tsv */
+
+#define kNotificationDisableMenu @"kNotificationDisableMenu"
+#define kNotificationDataNotRemoved @"kNotificationDataNotRemoved"
+#define kNotificationDataRemoved @"kNotificationDataRemoved"
+
+#endif

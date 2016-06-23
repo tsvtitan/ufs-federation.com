@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/130/android/UFS/src/ru/ideast/ufs/managers
+END
+URLManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/130/android/UFS/src/ru/ideast/ufs/managers/URLManager.java
+END
+HttpManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/53/android/UFS/src/ru/ideast/ufs/managers/HttpManager.java
+END
+LoadingState.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/managers/LoadingState.java
+END
+TrustAllSSLSocketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/126/android/UFS/src/ru/ideast/ufs/managers/TrustAllSSLSocketFactory.java
+END

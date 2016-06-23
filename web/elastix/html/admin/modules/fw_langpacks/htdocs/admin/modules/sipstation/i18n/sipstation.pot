@@ -1,0 +1,605 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for sipstation
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-26 13:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "An error was encountered updating DID destinations"
+msgstr ""
+
+#, php-format
+msgid "Successfully updated or created %s inbound routes for your DIDs"
+msgstr ""
+
+#, php-format
+msgid ""
+"There are %s invalid entries, only updated or created %s inbound routes for "
+"your DIDs"
+msgstr ""
+
+#, php-format
+msgid ""
+"There were %s validation failures on the requested DIDs, no updates performed"
+msgstr ""
+
+msgid ""
+"No Free Ports in Asterisk RTP Port Range available for testing, you can try "
+"later"
+msgstr ""
+
+msgid ""
+"The test timed out which means your firewall is probably configured wrong. "
+"If subsequent tests fail, check your port forwarding on the firewall."
+msgstr ""
+
+msgid "An unexpected token was returned, try the test again"
+msgstr ""
+
+msgid "Checking routes for trunks.."
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "error detected"
+msgstr ""
+
+#, php-format
+msgid ""
+"an erroneous entry, %s,  was found in extensions table that should not be "
+"there"
+msgstr ""
+
+#, php-format
+msgid "found %s"
+msgstr ""
+
+msgid "checking for phantoms.."
+msgstr ""
+
+#, php-format
+msgid "removed %s phantoms"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+#, php-format
+msgid "%s Account Access"
+msgstr ""
+
+#, php-format
+msgid ""
+"This module requires %s trunking service available at %s or click on the "
+"image above. Once you have service a key will be available in the portal. "
+"Enter it below to use this module. The key is very long, use \"Copy\" & "
+"\"Paste\" to copy it here. The key will be stored securely and can be "
+"removed at any time to stop access. If the key is compromised, you can "
+"contact customer support at voip@freepbx.com and have a new one re-generated."
+"<br /><br />Once active, this module will configure your trunks, routes and "
+"DIDs and provide diagnostic tools to configure and monitor your service."
+msgstr ""
+
+msgid "Account Key"
+msgstr ""
+
+msgid ""
+"In order to use this service you must have a SIPSTATION FreePBX.com portal "
+"account and service (https://store.freepbx.com). From there you can obtain a "
+"unique secure key which you should copy and paste into this key field. Once "
+"entered, you can access your services from within this module without "
+"exposing your account username and password. You can remove the key at any "
+"time"
+msgstr ""
+
+msgid "Add Key"
+msgstr ""
+
+#, php-format
+msgid ""
+"To disable account access, click %s. The auto generated trunk, route and DID "
+"configurations will remain active even if the key is removed. Trunks can be "
+"removed or disabled from the \"Trunks\" tab."
+msgstr ""
+
+msgid "Remove Key"
+msgstr ""
+
+msgid "System Status"
+msgstr ""
+
+msgid "WARNING"
+msgstr ""
+
+msgid ""
+"Your key is no longer valid. Click below to remove the current key. To "
+"obtain a new key and use this module, visit the portal at https://store."
+"freepbx.com and log into your account."
+msgstr ""
+
+msgid ""
+"The server is currently unavailable and we can not process you request. "
+"Please check back with us later. We apologize for the inconvenience."
+msgstr ""
+
+msgid ""
+"The server is currently not responding. It is either unavailable or access "
+"is being blocked. If the server is unavailable, please try again later."
+msgstr ""
+
+#, php-format
+msgid ""
+"To disable account access, click %s. To update account information, click %"
+"s. If port forwarding is configured on your firewall/router, you can test it "
+"with the %s button. Port forwarding can provide more reliable service and "
+"better quality and we recommend setting it up. The test sends a packet to an "
+"unused Asterisk RTP port at your WAN address and results in a PASS if the "
+"packet is properly received."
+msgstr ""
+
+msgid "Update Account Info"
+msgstr ""
+
+msgid "Run Firewall Test"
+msgstr ""
+
+msgid "Get Account Info"
+msgstr ""
+
+msgid "Reset Trunks"
+msgstr ""
+
+msgid "Trunk Status"
+msgstr ""
+
+msgid ""
+"Provides Gateway Side and Client side realtime status information on your "
+"trunks and SIP registrations. Also provides a quick link to the FreePBX "
+"trunk configurations page. More details on the tooltips below."
+msgstr ""
+
+msgid "Primary"
+msgstr ""
+
+msgid "Secondary"
+msgstr ""
+
+msgid "Asterisk Reg."
+msgstr ""
+
+msgid "Status of Registration as reported by Asterisk on your local system."
+msgstr ""
+
+#, php-format
+msgid ""
+"Warning: The Asterisk configuration: %s, is set wrong. Change this to 0 to "
+"continually retry registrations until successful. You can use the Asterisk "
+"SIP Settings module to set this."
+msgstr ""
+
+msgid "Contact IP"
+msgstr ""
+
+msgid ""
+"This is the contact IP as seen on the gateway and provides warnings if "
+"errors are detected. These SHOULD be your external IP as seen on the WAN "
+"side of your router. If they are not, or if they do not match your Network "
+"IP, you should configure your NAT settings in the Asterisk SIP Settings "
+"module or in sip_nat.conf if not using that module."
+msgstr ""
+
+msgid "Network IP"
+msgstr ""
+
+msgid ""
+"This is the network IP as seen on the gateway and provides warnings if "
+"errors are detected. These SHOULD be your external IP as seen on the WAN "
+"side of your router. If they are not, or if they do not match your Network "
+"IP, you should configure your NAT settings in the Asterisk SIP Settings "
+"module or in sip_nat.conf if not using that module."
+msgstr ""
+
+msgid ""
+"Warning: The SIP Contact header is not set to your WAN IP. It is set to your "
+"internal private IP behind NAT. The gateway will attempt to decipher your "
+"proper address but your configuration is incorrect. You should review the "
+"NAT settings in the Asterisk SIP Settings module, or sip_nat.conf if not "
+"using that module."
+msgstr ""
+
+msgid ""
+"ERROR: Your SIP Contact header is a non-private IP address that does not "
+"match your network IP. Your system will probably fail typically resulting in "
+"one way audio issues. This is usually caused because of an externip setting "
+"that is not the same as you WAN IP, or an externhost setting with dynamic "
+"DNS information that is not updated. You should check the Asterisk SIP "
+"Settings Module or your sip_nat.conf file for the proper settings."
+msgstr ""
+
+msgid "SIP Ping"
+msgstr ""
+
+msgid ""
+"Roundtrip signaling delay to SIP server as determined by the Asterisk "
+"'qualify' command. This is only signaling delay. The voice connections (RTP "
+"media streams) are routed from your system to the closest POP (point of "
+"presence) where the call enters the PSTN. This assures the optimal minimum "
+"latency but can't be reported because it's dependent on each call."
+msgstr ""
+
+msgid "Not Available"
+msgstr ""
+
+msgid "Codec Priorities"
+msgstr ""
+
+msgid ""
+"Codec Priority Asterisk reports for these trunks. This is filtered to only "
+"show codecs supported by the gateways. The Codecs can be edited on the trunk "
+"page to make changes to priority or available codecs."
+msgstr ""
+
+msgid "Firewall Test"
+msgstr ""
+
+#, php-format
+msgid ""
+"Status result of Firewall Test. If %s, it means we successfully received the "
+"RTP packet that was sent from the remote server. If %s, it means the packet "
+"sent from the remote server was blocked by your firewall or lost in the "
+"Internet. You can retry the test."
+msgstr ""
+
+msgid "PASS"
+msgstr ""
+
+msgid "FAIL"
+msgstr ""
+
+msgid "Status:"
+msgstr ""
+
+msgid "External IP:"
+msgstr ""
+
+msgid "Account Settings"
+msgstr ""
+
+msgid "SIP Credentials"
+msgstr ""
+
+msgid ""
+"The SIP Username and Password (secret) for this account. You can change the "
+"password in the SIPSTATION(TM) portal at https://store.freepbx.com"
+msgstr ""
+
+msgid "Username:"
+msgstr ""
+
+msgid "Password:"
+msgstr ""
+
+msgid "Gateways"
+msgstr ""
+
+msgid ""
+"Primary and Secondary servers to send SIP traffic to. These are used in the "
+"automatic trunk configuration."
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid ""
+"The number of concurrent calls that have been purchased and are configured "
+"for your service. Sometimes called trunks and similar to the number of PRI "
+"channels or POTS lines in a traditional telco environment.<br /> Your "
+"monthly charge includes all costs for DIDs and unlimited trunks.<br /> The "
+"Caller ID Number can be configured in the https://store.freepbx.com portal "
+"to send either standard 10 Digit NPA (for North American Numbers) or the "
+"E164 standard which is +1NXXNXXXXXX for NPA numbers and +NN XXXXXX.. for "
+"other countries where +NN is the Country Code."
+msgstr ""
+
+msgid "Channels"
+msgstr ""
+
+msgid "Monthly Cost"
+msgstr ""
+
+msgid "CID Format"
+msgstr ""
+
+msgid "E911 Location"
+msgstr ""
+
+msgid ""
+"This the E911 registered address. It is critical the E911 information is "
+"accurate and a valid US address, or leave it blank. You are responsible for "
+"the accuracy of this information and there may be substantial penalties by "
+"your local authorities if it is not accurate when E911 service is used. The "
+"settings can be changed from the https://store.freepbx.com account portal."
+"<br />The E911 Caller ID will be transmitted to the E911 operator for ALL "
+"calls made to 911 Emergency Services and any CID you set will be ignored, "
+"whether it is one of your account DIDs or any other CID. You must have E911 "
+"address information entered to use E911 services."
+msgstr ""
+
+msgid "E911 Caller ID"
+msgstr ""
+
+msgid "Address 1"
+msgstr ""
+
+msgid "Address 2"
+msgstr ""
+
+msgid "City"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+msgid "Zip"
+msgstr ""
+
+msgid "Route and Trunk Configuration"
+msgstr ""
+
+msgid ""
+"Check/Uncheck the boxes and submit to add/remove this service as the primary "
+"trunks to any listed route. Both gateways should be configured to allow for "
+"redundancy. If gateways are already configured in the route, the box will be "
+"checked, even if they are not the primary trunks for that route. Click on "
+"the route name to link directly to the Outbound Routes page for any route."
+"<br />An Area Code can be set to enable 7 digit dialing for any route "
+"configured to pass 7 digits."
+msgstr ""
+
+#, php-format
+msgid ""
+"Check Primary (%s) and Secondary (%s) Trunk for each route that should be "
+"configured with the %s service. The trunks will be inserted into the "
+"corresponding routes upon clicking the %s button. You can enable 7 digit "
+"dialing with the trunk by entering your area code as well."
+msgstr ""
+
+msgid "Update Route/Trunk Configurations"
+msgstr ""
+
+msgid "Area Code"
+msgstr ""
+
+msgid ""
+"Provide your 3 digit area code if you would like your trunks to allow 7 "
+"digit dialing and automatically prepend your area code. This requires the "
+"route to be configured to send a 7 digit number."
+msgstr ""
+
+#, php-format
+msgid "Edit: %s"
+msgstr ""
+
+msgid "DID Configuration"
+msgstr ""
+
+msgid ""
+"You can assign each DID to any of your extensions on this screen to generate "
+"a route to that extension with default settings. If you check the \"Set CID"
+"\" box you will set the extension's outbound CID to this DID also. (Note the "
+"Outbound CID on an extension will not be deleted if you subsequently change "
+"the assignment of that DID, unless another DID is assigned with the box "
+"checked. You will need to go to the extension and modify it otherwise.) If "
+"the DID is already assigned to something other than an extension, the "
+"destination will be listed and can be changed here. To assign to other "
+"destination types, click the DID link to go direct to the Inbound route for "
+"that DID or to create a new one."
+msgstr ""
+
+msgid "DID"
+msgstr ""
+
+msgid "Failover #"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Route To"
+msgstr ""
+
+msgid "Set CID"
+msgstr ""
+
+msgid "Update DID Configurations"
+msgstr ""
+
+msgid ""
+"A valid key is required to perform this action and the server must be "
+"available. Error:"
+msgstr ""
+
+msgid "ERROR"
+msgstr ""
+
+msgid "NO CODECS"
+msgstr ""
+
+msgid "An Error occurred trying to contact the server for account settings."
+msgstr ""
+
+msgid "SERVER ERROR"
+msgstr ""
+
+msgid "FIREWALL TEST WARNING"
+msgstr ""
+
+msgid "An Error occurred trying run firewall test"
+msgstr ""
+
+msgid "FIREWALL TEST ERROR"
+msgstr ""
+
+msgid "An Error occurred trying Submit"
+msgstr ""
+
+msgid "UPDATES"
+msgstr ""
+
+msgid "NOTICE"
+msgstr ""
+
+msgid ""
+"You will no longer have access to your account unless you re-enter your key. "
+"It will be removed from the system. Do you want to continue?"
+msgstr ""
+
+msgid "Add: "
+msgstr ""
+
+msgid "Edit: "
+msgstr ""
+
+msgid "Not Created"
+msgstr ""
+
+msgid "Generated Primary Trunk: "
+msgstr ""
+
+msgid "Generated Secondary Trunk: "
+msgstr ""
+
+msgid "Trunks can be added to routes below."
+msgstr ""
+
+msgid "Account DIDs can be configured below."
+msgstr ""
+
+msgid ""
+"There are trunks configured with identical credentials. They must be removed "
+"to use this module for Routing and Trunk Configuration."
+msgstr ""
+
+msgid "Trunk: "
+msgstr ""
+
+msgid ""
+"Trunk settings have been updated or you have made changes. You may want to "
+"press the \"Reset Trunks\" button. The effected trunks are listed and you "
+"can click to edit them:"
+msgstr ""
+
+msgid "Primary Trunk"
+msgstr ""
+
+msgid "Secondary Trunk"
+msgstr ""
+
+msgid "UPDATE"
+msgstr ""
+
+msgid ""
+"Trunks have been reset to the default configuration. All codecs and other "
+"setups have been preserved."
+msgstr ""
+
+msgid "Primary Trunk Reset"
+msgstr ""
+
+msgid "Secondary Trunk Reset"
+msgstr ""
+
+msgid "You did not enter a key, Please enter a key to add."
+msgstr ""
+
+msgid ""
+"You have entered an invalid key. You can find your key in the portal and "
+"should copy and paste it below."
+msgstr ""
+
+#, php-format
+msgid ""
+"%s: This module can not reach the server to obtain your account information. "
+"If you can navigate to <a href='https://store.freepbx.com'>https://store."
+"freepbx.com</a> from a browser then there is an issue with your firewall or "
+"DNS resolution. If this is a first time install you might be able to reboot "
+"to rectify the issue. If you have an aggressive firewall with content "
+"filtering or equivalent, you may have to disable that feature for this "
+"server or white list the store.freepbx.com site if possible."
+msgstr ""
+
+#, php-format
+msgid "There is a problem with your key: %s"
+msgstr ""
+
+msgid "Not Registered"
+msgstr ""
+
+#, php-format
+msgid ""
+"The prefix you entered, %s, is not a proper prefix or the wrong length. It "
+"should be a 3 digit prefix."
+msgstr ""
+
+#, php-format
+msgid "Successfully configured %s routes to use your SIP trunks"
+msgstr ""
+
+#, php-format
+msgid "Your Area Code was updated to %s"
+msgstr ""
+
+msgid "No updates were required, no routes or areacode were changed"
+msgstr ""
+
+#, php-format
+msgid ""
+"Your trunks are not configured. Click on the Get Account Info button in "
+"order to re-pull your account information and generate the required trunks "
+"and then try again."
+msgstr ""
+
+#, php-format
+msgid ""
+"Your module version is not compatible with the current API requirements and "
+"needs to be updated. Expecting XML version %s and received version %s."
+msgstr ""
+
+msgid "SIPSTATION"
+msgstr ""
+
+msgid "Basic"
+msgstr ""
+
+msgid ""
+"This module is used to configure, manage and troubleshoot your SIPSTATION"
+"(tm) FreePBX.com SIP trunks and DIDs. The license on this source code is NOT "
+"GPL Open Source, it is a proprietary Free to Use license."
+msgstr ""
+
+msgid "Not Set"
+msgstr ""

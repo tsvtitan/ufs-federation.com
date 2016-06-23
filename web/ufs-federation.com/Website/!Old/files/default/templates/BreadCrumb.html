@@ -1,0 +1,3 @@
+<ul class="breadcrumb">
+  <li th:each="item:${paths}" th:class="${item.PATH.equals(path.PATH)}?'active'" class="active"><a th:if="${item.PATH!=path.PATH}" th:href="${path.getBasePath(item.PATH)}" href="/" th:utext="${item.TITLE}">Ссылка на страницу</a><span th:if="${item.PATH==path.PATH}" th:utext="${item.TITLE}">Текущая страница</span></li>
+</ul>

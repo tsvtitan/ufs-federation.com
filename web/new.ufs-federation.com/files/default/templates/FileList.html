@@ -1,0 +1,10 @@
+<div th:each="accountFile:${accountFiles}" th:switch="${accountFile.getExtension().asString()}" th:class="pad">
+  <a th:case="pdf" th:href="${path.getRootPath(accountFile.getPathName().asString())}" href="" class="file-link file-pdf" 
+     th:utext="${accountFile.getName().asString()}">Отчет 08-04-2014.pdf<span>1,3&nbsp;Mb, PDF</span></a>
+  <a th:case="docx" th:href="${path.getRootPath(accountFile.getPathName().asString())}" href="" class="file-link file-word" 
+     th:utext="${accountFile.getName().asString()}">Отчет 08-03-2014.docx<span>0,8&nbsp;Mb, Word</span></a>
+  <a th:case="xlsx" th:href="${path.getRootPath(accountFile.getPathName().asString())}" href="" class="file-link file-exell" 
+     th:utext="${accountFile.getName().asString()}">Отчет 08-02-2014.xls<span>1,1&nbsp;Mb, Exell</span></a>
+  <a th:case="*" th:href="${path.getRootPath(accountFile.getPathName().asString())}" href="" class="file-link" 
+     th:utext="${accountFile.getName().asString()}">Заявление (1)<span>2,0&nbsp;Mb</span></a>
+</div>

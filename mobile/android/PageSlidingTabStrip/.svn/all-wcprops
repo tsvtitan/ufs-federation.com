@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/mobile/!svn/ver/188/android/PageSlidingTabStrip
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/AndroidManifest.xml
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/build.gradle
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/project.properties
+END
+gradle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/gradle.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/189/android/PageSlidingTabStrip/.classpath
+END

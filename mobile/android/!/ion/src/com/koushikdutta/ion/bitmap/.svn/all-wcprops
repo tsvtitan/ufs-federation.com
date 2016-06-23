@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap
+END
+Exif.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/Exif.java
+END
+SoftReferenceHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/SoftReferenceHashtable.java
+END
+BitmapInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/BitmapInfo.java
+END
+Transform.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/Transform.java
+END
+IonBitmapCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/IonBitmapCache.java
+END
+LruBitmapCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/LruBitmapCache.java
+END
+MarkableInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/bitmap/MarkableInputStream.java
+END

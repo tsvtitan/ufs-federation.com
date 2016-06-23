@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX miscdests\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-05 12:13+0200\n"
+"PO-Revision-Date: 2008-10-10 22:50+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:33
+#, php-format
+msgid "Misc Destination: %s"
+msgstr "Övrig destination: %s"
+
+#: page.miscdests.php:69
+#: page.miscdests.php:114
+#: page.miscdests.php:122
+msgid "Add Misc Destination"
+msgstr "Lägg till Övrig destination"
+
+#: page.miscdests.php:83
+msgid "Misc Destination"
+msgstr "Övrig destination"
+
+#: page.miscdests.php:83
+msgid "deleted"
+msgstr "borttagen"
+
+#: page.miscdests.php:94
+msgid "Misc Destinations are for adding destinations that can be used by other FreePBX modules, generally used to route incoming calls. If you want to create feature codes that can be dialed by internal users and go to various destinations, please see the <strong>Misc Applications</strong> module."
+msgstr "Övriga applikationer är till för att lägga till destinationer som kan användas av andra FreePBX moduler, mest till för att koppla inkommande samtal. Om du vill använda en funktionskod som kan användas av interna användare som ska gå till olika destinatioer, använd då <strong>Övriga applikationer</strong>."
+
+#: page.miscdests.php:99
+msgid "Misc Destination:"
+msgstr "Övrig destination:"
+
+#: page.miscdests.php:103
+#, php-format
+msgid "Delete Misc Destination %s"
+msgstr "Ta bort Övrig destination %s"
+
+#: page.miscdests.php:122
+msgid "Edit Misc Destination"
+msgstr "Redigera Övrig destination"
+
+#: page.miscdests.php:127
+msgid "Description:"
+msgstr "Beskrivning:"
+
+#: page.miscdests.php:127
+msgid "Give this Misc Destination a brief name to help you identify it."
+msgstr "Skriv in en kortfattad beskrivning."
+
+#: page.miscdests.php:131
+msgid "Dial:"
+msgstr "Nummer:"
+
+#: page.miscdests.php:131
+msgid "Enter the number this destination will simulate dialing, exactly as you would dial it from an internal phone. When you route a call to this destination, it will be as if the caller dialed this number from an internal phone."
+msgstr "Skriv in det nummer som denna destination ska slå, exakt som om du skulle slå den på din interna telefon. När du skickar samtal till denna destination, kommer det att se ut som om uppringaren slog numret från en intern telefon."
+
+#: page.miscdests.php:136
+msgid "featurecode shortcuts"
+msgstr "snabbval för funktionskoder"
+
+#: page.miscdests.php:151
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: page.miscdests.php:168
+msgid "Please enter a valid Description"
+msgstr "Skriv in en giltig beskrivning"
+
+#: page.miscdests.php:169
+msgid "Please enter a valid Dial string"
+msgstr "Skriv in en giltig telefonnumer"
+
+#: module.xml
+msgid "Misc Destinations"
+msgstr "Övriga destinationer"
+

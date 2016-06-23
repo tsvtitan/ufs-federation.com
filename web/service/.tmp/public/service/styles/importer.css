@@ -1,0 +1,454 @@
+/**
+ * importer.less
+ *
+ * By default, new Sails projects are configured to compile this file
+ * from LESS to CSS.  Unlike CSS files, LESS files are not compiled and
+ * included automatically unless they are imported below.
+ *
+ * The LESS files imported below are compiled and included in the order
+ * they are listed.  Mixins, variables, etc. should be imported first
+ * so that they can be accessed by subsequent LESS stylesheets.
+ *
+ * (Just like the rest of the asset pipeline bundled in Sails, you can
+ * always omit, customize, or replace this behavior with SASS, SCSS,
+ * or any other Grunt tasks you like.)
+ */
+.no-margin {
+  margin: 0px;
+}
+.no-padding {
+  padding: 0px;
+}
+.img-brand {
+  margin-top: -10px;
+  height: 40px;
+}
+.navbar-30 {
+  height: 30px;
+  min-height: 30px;
+}
+.navbar-text-footer {
+  margin-top: 3px;
+}
+.table-container {
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  vertical-align: middle;
+}
+.table-cell-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-cell-center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.table-cell-bottom {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.drop-shadow {
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.btn-file,
+.link-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file],
+.link-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+.panel-title .accordion-toggle {
+  text-decoration: none;
+}
+.scrollable-menu {
+  height: auto;
+  max-height: 300px;
+  overflow-x: hidden;
+}
+.dropdown-menu {
+  max-width: 300px;
+}
+@media (min-width: 768px) {
+  .dropdown-menu {
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .dropdown-menu {
+    max-width: 700px;
+  }
+}
+.hide-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+}
+.scrollbox {
+  width: 100%;
+  overflow: -moz-scrollbars-vertical;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-y: hidden;
+}
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+.list-header {
+  margin-bottom: 5px;
+}
+.list-header h2 {
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.list-header form {
+  margin-bottom: 5px;
+}
+body {
+  height: 100%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #eeeeee;
+}
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+.bs-callout-default {
+  border-left-color: #777;
+}
+.bs-callout-default h4 {
+  color: #777;
+}
+.bs-callout-primary {
+  border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+  color: #428bca;
+}
+.bs-callout-success {
+  border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+  color: #5cb85c;
+}
+.bs-callout-danger {
+  border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+  color: #d9534f;
+}
+.bs-callout-warning {
+  border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+  color: #f0ad4e;
+}
+.bs-callout-info {
+  border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+  color: #5bc0de;
+}
+.dropdown-menu > li > span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dropdown-menu > li > span:hover,
+.dropdown-menu > li > span:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > span,
+.dropdown-menu > .active > span:hover,
+.dropdown-menu > .active > span:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0;
+}
+.dropdown-menu > .disabled > span,
+.dropdown-menu > .disabled > span:hover,
+.dropdown-menu > .disabled > span:focus {
+  color: #777;
+}
+.dropdown-menu > .disabled > span:hover,
+.dropdown-menu > .disabled > span:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.progress-bar-default {
+  background-color: #ccc;
+}
+.progress-striped .progress-bar-default {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.navbar-inverse {
+  background-color: #004577;
+  border-color: #004577;
+}
+.spinner {
+  border: none;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  margin-top: -16px;
+  margin-left: -16px;
+  width: 38px;
+  height: 36px;
+  padding: 0;
+  z-index: -999;
+}
+.spinner.glyphicon-refresh {
+  font-size: 36px;
+  text-align: center;
+}
+.alert-container {
+  display: table;
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  min-width: 90%;
+  z-index: 999;
+}
+@media (min-width: 520px) {
+  .alert-container {
+    min-width: 350px;
+    max-width: 500px;
+  }
+}
+.auth {
+  max-width: 350px;
+  width: 90%;
+}
+.auth .form-group-30 {
+  max-height: 30px;
+  min-height: 30px;
+}
+.mailings {
+  width: 90%;
+}
+.mailings .panel-group {
+  margin-bottom: 10px;
+}
+.mailings .progress {
+  margin-bottom: 0px;
+  height: 18px;
+  background-color: #fff;
+}
+.mailings .progress-bar {
+  color: #000;
+}
+.mailings .bs-callout {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.mailings .panel-body {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.mailings .btn-group {
+  margin-bottom: 10px;
+}
+.mailings .btn-group-sm {
+  margin-top: 0px;
+}
+.mailings .btn-recipients {
+  margin-right: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.mailings .btn-extra {
+  margin-right: 5px;
+  margin-top: 8px;
+}
+.mailings .badge {
+  font-weight: normal;
+}
+.mailings .panel-heading .glyphicon {
+  width: 21px;
+}
+.mailings .panel-heading .badge {
+  font-weight: normal;
+}
+.mailings .panel-heading .hide-overflow {
+  padding-bottom: 1px;
+}
+.mailings .pagination {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.mailings .nav-stacked > li {
+  margin-bottom: 5px;
+}
+.mailings .nav-stacked .li-sender > h4 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.mailings .nav-stacked .li-recipients {
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+.mailings .list-group-item {
+  padding: 5px 10px;
+}
+.mailings .search {
+  max-width: 150px;
+}
+.mailings .label {
+  font-weight: 400;
+}
+@media (min-width: 300px) {
+  .mailings .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 600px) {
+  .mailings .list-header .col-sm-6 {
+    width: 50%;
+  }
+}
+.mailings-new {
+  width: 90%;
+}
+.mailings-new .summernote {
+  height: 300px;
+}
+.mailings-new .panel-body {
+  padding-bottom: 0px;
+}
+.fade-in-left-fade-out,
+.fade-in-left-fade-out.ng-hide-remove {
+  -webkit-animation: fadeInLeft 1s;
+  -moz-animation: fadeInLeft 1s;
+  -ms-animation: fadeInLeft 1s;
+  animation: fadeInLeft 1s;
+}
+.fade-in-left-fade-out.ng-hide-add {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -ms-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+.fade-in-right-fade-out,
+.fade-in-right-fade-out.ng-hide-remove {
+  -webkit-animation: fadeInRight 1s;
+  -moz-animation: fadeInRight 1s;
+  -ms-animation: fadeInRight 1s;
+  animation: fadeInRight 1s;
+}
+.fade-in-right-fade-out.ng-hide-add {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -ms-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+.zoom-in-fade-out,
+.zoom-in-fade-out.ng-hide-remove {
+  -webkit-animation: zoomIn 1s;
+  -moz-animation: zoomIn 1s;
+  -ms-animation: zoomIn 1s;
+  animation: zoomIn 1s;
+}
+.zoom-in-fade-out.ng-hide-add {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -ms-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+.fade-in-up-fade-out,
+.fade-in-up-fade-out.ng-hide-remove {
+  -webkit-animation: fadeInUp 1s;
+  -moz-animation: fadeInUp 1s;
+  -ms-animation: fadeInUp 1s;
+  animation: fadeInUp 1s;
+}
+.fade-in-up-fade-out.ng-hide-add {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -ms-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+.fade-in-fade-out,
+.fade-in-fade-out.ng-hide-remove {
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.fade-in-fade-out.ng-hide-add {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -ms-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+.flip-in-x-flip-out-x,
+.flip-in-x-flip-out-x.ng-hide-remove {
+  -webkit-animation: flipInX 1s;
+  -moz-animation: flipInX 1s;
+  -ms-animation: flipInX 1s;
+  animation: flipInX 1s;
+}
+.flip-in-x-flip-out-x.ng-hide-add {
+  -webkit-animation: flipOutX 1s;
+  -moz-animation: flipOutX 1s;
+  -ms-animation: flipOutX 1s;
+  animation: flipOutX 1s;
+}

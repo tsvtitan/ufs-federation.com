@@ -1,0 +1,31 @@
+<module>
+	<rawname>fw_langpacks</rawname>
+	<name>FreePBX Localization Updates</name>
+	<version>2.8.1.1</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<changelog>
+		*2.8.1.1* language updates
+		*2.8.1.0* language updates
+		*2.8.0.1* language updates
+		*2.8.0.0* more language updates
+		*2.7.0.1* more language updates
+		*2.7.0.0* more language updates
+		*2.6.0.3* more language updates
+		*2.6.0.2* french and other updates
+		*2.6.0.1* updates
+		*2.6.0.0* localization updates
+		*2.5.1.1* Spanish, Italian, Bulgarian, Hungarian updates
+		*2.5.1* Swedish, Russian updates
+		*2.5.0.2* Swedish updates, Russian
+		*2.5.0.1* Swedish
+		*2.5.0* First release
+	</changelog>
+	<description>
+		This module provides a facility to install new and updated localization translations for all components in FreePBX. Localization i18n translations are still kept with each module and other components such as the User Portal (ARI). This provides an easy ability to bring all components up-to-date without the need of publishing dozens of modules for every minor change. The localization updates used will be the latest available for all modules and will not consider the current version you are running.
+	</description>
+	<type>setup</type>
+	<category>Basic</category>
+	<location>release/2.8/fw_langpacks-2.8.1.0.tgz</location>
+	<md5sum>f4e446d325a98f914e726f5a9a968085</md5sum>
+</module>

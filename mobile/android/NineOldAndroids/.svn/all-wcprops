@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/mobile/!svn/ver/207/android/NineOldAndroids
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/AndroidManifest.xml
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/pom.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/lint.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/.classpath
+END

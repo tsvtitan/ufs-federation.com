@@ -1,0 +1,3 @@
+<div class="content bgcolor6" th:if="${form.Errors.size()>0}">
+  <p th:each="error:${form.Errors}" th:utext="${error}"/>
+</div>

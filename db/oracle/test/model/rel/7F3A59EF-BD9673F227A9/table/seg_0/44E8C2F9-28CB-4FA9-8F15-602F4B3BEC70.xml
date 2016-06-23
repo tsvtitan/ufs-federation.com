@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44E8C2F9-28CB-4FA9-8F15-602F4B3BEC70" name="ACCOUNT_DEVICES">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:47:31 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACCOUNT_ID" id="36E774F7-4069-B334-8C1A-0D1B2AF39A70">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:48:35 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAD7079C-F43C-3C72-3447-8D719ECA191E" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="DEVICE_ID" id="D480E5FC-89BE-3ECE-75D0-EB0D869A1357">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:48:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>5490EF18-204B-4755-B8E3-B9E7E4C60E38</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BC82142-505D-B425-D2E8-AF5C4FC3D29D" referredColumn="5490EF18-204B-4755-B8E3-B9E7E4C60E38"/>
+</associations>
+</Column>
+<Column name="CREATED" id="D949B51E-E59E-2235-ACF1-3A7CE9FEA851">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:50:27 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="78B9BAEC-E05F-8E4E-9DB9-901360E5E358" name="ACCOUNT_DEVICES_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:48:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D480E5FC-89BE-3ECE-75D0-EB0D869A1357"/>
+<colUsage columnID="36E774F7-4069-B334-8C1A-0D1B2AF39A70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="597FF39D-C4EE-6EB2-45D4-CE1A07E42270" name="ACCOUNT_DEVICES_DEVICES_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:48:04 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D480E5FC-89BE-3ECE-75D0-EB0D869A1357"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCF5AAE5-E354-8E7D-C919-F84D7CF2624C" name="ACCOUNT_DEVICES_ACCOUNTS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:48:35 UTC</createdTime>
+<generatorID>CKY-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36E774F7-4069-B334-8C1A-0D1B2AF39A70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

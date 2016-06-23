@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common
+END
+PerspectiveTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/PerspectiveTransform.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/StringUtils.java
+END
+BitMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/BitMatrix.java
+END
+BitArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/BitArray.java
+END
+HybridBinarizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/HybridBinarizer.java
+END
+BitSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/BitSource.java
+END
+GlobalHistogramBinarizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/GlobalHistogramBinarizer.java
+END
+DetectorResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/DetectorResult.java
+END
+CharacterSetECI.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/CharacterSetECI.java
+END
+GridSampler.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/GridSampler.java
+END
+DecoderResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/DecoderResult.java
+END
+DefaultGridSampler.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/common/DefaultGridSampler.java
+END

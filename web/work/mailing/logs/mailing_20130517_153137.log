@@ -1,0 +1,18 @@
+17.05.2013 15:31:37.983 I: --------------------------------------------------
+17.05.2013 15:31:37.983 I: Connect to Database ...
+17.05.2013 15:31:37.985 I: Connected.
+17.05.2013 15:31:37.985 I: [Mysql->query] set names utf8
+17.05.2013 15:31:37.986 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY);
+17.05.2013 15:31:37.986 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing);
+17.05.2013 15:31:37.987 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+17.05.2013 15:31:38.076 I: Mailing 1227 has sent successfully at 2013-05-17 15:31:33...
+17.05.2013 15:31:38.076 I: [Mysql->query] UPDATE `mailing` SET `sent`='2013-05-17 15:31:33',`result`=NULL WHERE `mailing_id`='1227' AND `remote_id`='8253978AD1128DF3B75A770D4AD7E571'
+17.05.2013 15:31:38.086 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+17.05.2013 15:31:38.086 I: Mailing 1227 has updated successfully ...
+17.05.2013 15:31:38.086 I: Mailing 1228 has sent successfully at 2013-05-17 15:31:33...
+17.05.2013 15:31:38.087 I: [Mysql->query] UPDATE `mailing` SET `sent`='2013-05-17 15:31:33',`result`=NULL WHERE `mailing_id`='1228' AND `remote_id`='8253978AD1128DF3B75A770D4AD7E571'
+17.05.2013 15:31:38.088 I: [Mysql->query] Rows matched: 1  Changed: 1  Warnings: 0
+17.05.2013 15:31:38.088 I: Mailing 1228 has updated successfully ...
+17.05.2013 15:31:38.088 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+17.05.2013 15:31:38.089 I: There is nothing to worry about
+17.05.2013 15:31:38.089 I: Execution time is 0.1064670085907

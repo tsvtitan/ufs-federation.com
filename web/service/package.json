@@ -1,0 +1,62 @@
+{
+  "name": "service",
+  "private": true,
+  "version": "0.1.1",
+  "description": "Service",
+  "keywords": [],
+  "dependencies": { 
+    "MD5": "~1.2.1",
+    "agenda": "~0.6.28",
+    "bcrypt": "~0.8.5",
+    "buffer": "~3.1.2",
+    "canvas-captcha": "~2.0.0",
+    "connect-mongo": "~0.7.0",
+    "connect-redis": "~1.4.5",
+    "contentType": "~0.5.0",
+    "ejs": "~0.8.8",
+    "grunt": "0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-jst": "~0.6.0",
+    "grunt-contrib-less": "0.11.1",
+    "grunt-contrib-uglify": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sails-linker": "~0.9.6",
+    "grunt-sync": "~0.0.8",
+    "iconv": "~2.1.11",
+    "include-all": "~0.1.6",
+    "moment": "~2.9.0",
+    "node-firebird": "~0.6.0",
+    "node-redis-pubsub": "~0.5.0",
+    "rc": "~0.5.5",
+    "request": "~2.40.0",
+    "sails": "~0.11.0",
+    "sails-disk": "~0.10.7",
+    "sails-mongo": "~0.10.5",
+    "sails-mysql": "~0.10.11",
+    "soap": "~0.6.1",
+    "socket.io-redis": "~0.1.4",
+    "stack-trace": "~0.0.9",
+    "ua-parser-js": "~0.7.3",
+    "winston": "~0.9.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "./app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tsvtitan/service.git"
+  },
+  "author": {
+    "name": "tsv",
+    "email": "tsv@ufs-financial.ch"
+  },
+  "bugs": {
+    "url": "null"
+  }
+}

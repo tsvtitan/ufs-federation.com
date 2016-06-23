@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="006DA0E1-BBF0-6045-674B-EA80E113BAE8" name="SUBSCRIPTIONS">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:50:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUBSCRIPTION_ID" id="B389C08B-F3C5-A458-624E-9FBA28704C2B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:51:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNT_ID" id="24281FF8-5456-58EF-18B7-8CF1B015B172">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:51:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F032B66-72E4-4DA0-89FA-943D2F6D39A1" referredColumn="COL-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000"/>
+</associations>
+</Column>
+<Column name="LANG_ID" id="E5C94B0C-641B-F37C-DD43-A785AFB6216E">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:52:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D28B64FD-05FA-95D3-FF52-C183CD76B48F" referredColumn="COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000"/>
+</associations>
+</Column>
+<Column name="DELIVERY_TYPE" id="793C6CD2-1951-D9ED-97D4-8456A5838A49">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:56:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED" id="1A322072-5FCB-B6BE-193D-109810BDFA7F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:56:25 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STARTED" id="E54F680E-193C-768B-D093-C540CE2ECD2C">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:56:54 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FINISHED" id="812F11A7-8F0B-A0EA-C99A-DD834CA323DD">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:57:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KEYWORD" id="D8B1569B-67AC-1732-04A9-EAF02211FF04">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:58:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39561543-9D65-3FD0-19E2-1734A55FEC9A" name="SUBSCRIPTIONS_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:51:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B389C08B-F3C5-A458-624E-9FBA28704C2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F2E7F87-F1C8-321F-5353-F0634123150B" name="SUBSCRIPTIONS_ACCOUNTS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:51:54 UTC</createdTime>
+<generatorID>CKY-40BB7A49-ECCA-41EA-8A60-240DC5AD8829_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24281FF8-5456-58EF-18B7-8CF1B015B172"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EB5DF7E-2259-1943-A49A-EF58BA82CADC" name="SUBSCRIPTIONS_LANGS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 13:52:51 UTC</createdTime>
+<generatorID>CKY-7420FDEA-99B9-424A-9E40-179A7C9DF201_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5C94B0C-641B-F37C-DD43-A785AFB6216E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

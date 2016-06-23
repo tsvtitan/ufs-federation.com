@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/mobile/!svn/ver/244/android/UFS/res/layout
+END
+left_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/left_menu.xml
+END
+web_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/web_activity.xml
+END
+gallery_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/gallery_activity.xml
+END
+group_preview_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/group_preview_list_item.xml
+END
+branch_header_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/branch_header_list_item.xml
+END
+qrcode_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/276/android/UFS/res/layout/qrcode_activity.xml
+END
+branch_detail_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/branch_detail_activity.xml
+END
+list_only_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/144/android/UFS/res/layout/list_only_activity.xml
+END
+item_table_family.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/item_table_family.xml
+END
+table_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/table_fragment.xml
+END
+qrcode_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/276/android/UFS/res/layout/qrcode_fragment.xml
+END
+list_only_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/list_only_fragment.xml
+END
+item_table.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/item_table.xml
+END
+group_full_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/group_full_list_item.xml
+END
+html_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/html_fragment.xml
+END
+activity_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/activity_list_item.xml
+END
+new_keywords_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/244/android/UFS/res/layout/new_keywords_fragment.xml
+END
+splash_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/224/android/UFS/res/layout/splash_activity.xml
+END
+all_keywords_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/225/android/UFS/res/layout/all_keywords_fragment.xml
+END
+news_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/mobile/!svn/ver/230/android/UFS/res/layout/news_list_item.xml
+END
+tables_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/tables_activity.xml
+END
+promotion_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/276/android/UFS/res/layout/promotion_activity.xml
+END
+left_menu_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/left_menu_list_item.xml
+END
+file_select_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/file_select_activity.xml
+END
+calendar_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/calendar_activity.xml
+END
+subscription_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/219/android/UFS/res/layout/subscription_activity.xml
+END
+file_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/file_item.xml
+END
+left_menu_fragment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/left_menu_fragment.xml
+END
+item_table_header_first.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/item_table_header_first.xml
+END
+pdf_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/121/android/UFS/res/layout/pdf_activity.xml
+END
+list_row_dynamiclistview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/mobile/!svn/ver/220/android/UFS/res/layout/list_row_dynamiclistview.xml
+END
+group_detail_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/group_detail_activity.xml
+END
+undo_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/mobile/!svn/ver/219/android/UFS/res/layout/undo_row.xml
+END
+list_progress_bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/list_progress_bar.xml
+END
+item_table_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/item_table_header.xml
+END
+action_bar_ufs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/action_bar_ufs.xml
+END
+news_detail_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/mobile/!svn/ver/244/android/UFS/res/layout/news_detail_activity.xml
+END
+contact_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/contact_item.xml
+END
+map_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/map_activity.xml
+END
+subcategory_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/subcategory_list_item.xml
+END
+item_table_first.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/116/android/UFS/res/layout/item_table_first.xml
+END
+main_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/1/android/UFS/res/layout/main_activity.xml
+END
+registration_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/277/android/UFS/res/layout/registration_activity.xml
+END

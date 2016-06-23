@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/112/android/UFS/src/ru/ideast/ufs/activities
+END
+CalendarActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/CalendarActivity.java
+END
+MapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/MapActivity.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/94/android/UFS/src/ru/ideast/ufs/activities/MainActivity.java
+END
+FileSelectActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/87/android/UFS/src/ru/ideast/ufs/activities/FileSelectActivity.java
+END
+WebActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/WebActivity.java
+END
+BranchDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/BranchDetailActivity.java
+END
+PdfActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/112/android/UFS/src/ru/ideast/ufs/activities/PdfActivity.java
+END
+GalleryActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/GalleryActivity.java
+END
+GroupDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/GroupDetailActivity.java
+END
+QRCodeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/68/android/UFS/src/ru/ideast/ufs/activities/QRCodeActivity.java
+END
+GroupFullListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/GroupFullListActivity.java
+END
+SplashActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/102/android/UFS/src/ru/ideast/ufs/activities/SplashActivity.java
+END
+TablesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/52/android/UFS/src/ru/ideast/ufs/activities/TablesActivity.java
+END
+NewsDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/mobile/!svn/ver/1/android/UFS/src/ru/ideast/ufs/activities/NewsDetailActivity.java
+END
+PromotionActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/100/android/UFS/src/ru/ideast/ufs/activities/PromotionActivity.java
+END

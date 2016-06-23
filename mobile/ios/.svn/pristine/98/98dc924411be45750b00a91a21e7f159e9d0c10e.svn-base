@@ -1,0 +1,211 @@
+//
+//  AppDelegate.m
+//  UFS
+//
+//  Created by mihail on 10.07.13.
+//  Copyright (c) 2013 Moskovchenko M. All rights reserved.
+//
+
+#import "UFSAppDelegate.h"
+#import "SWRevealViewController.h"
+#import "UFSMainNewsVC.h"
+#import "SlideMenuViewController.h"
+/* tsv */
+#import "AnalyticsCounter.h"
+
+@interface UFSAppDelegate()<SWRevealViewControllerDelegate>
+@end
+
+@implementation UFSAppDelegate
+
+- (void)dealloc
+{
+    [_window release];
+
+    [super dealloc];
+    
+}
+
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    /* tsv */[AnalyticsCounter initialize:launchOptions];
+    
+    // Token for each session
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+	if (![userDef valueForKey:kTokenForSession])
+    {
+		[userDef setValue:@"" forKey:kTokenForSession];
+        [userDef setValue:@(0) forKey:kTokenExpiredTime];
+        [userDef synchronize];
+    }
+    if (![userDef valueForKey:kFirstTimeStart])
+    {
+        [userDef setValue:@(0) forKey:kFirstTimeStart];
+        [userDef synchronize];
+    }
+    
+    // Clean all link in news
+    [[CoreDataManager shared] removeLinkData];
+    // End configuring
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+   
+       
+    UFSMainNewsVC *frontViewController = [[UFSMainNewsVC alloc] initWithNibName:nil bundle:nil];
+    /* tsv */
+    NSMutableArray *titles = [[NSMutableArray alloc] init];
+    [titles addObject:@"Новости компании"];
+    frontViewController.titles = titles;
+    /* tsv */
+    frontViewController.catId = 16;
+    SlideMenuViewController *rearViewController = [[[SlideMenuViewController alloc] init]autorelease];
+    
+    /* tsv */
+    [userDef setBool:YES forKey:kFirstMenuShow];
+    //[userDef setInteger:frontViewController.catId forKey:kAuthMenuId];
+    //[userDef setInteger:1000 forKey:kAuthMenuDelay];
+    [userDef synchronize];
+    /* tsv */
+    
+    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
+    UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:rearViewController];
+    [rearNavigationController  setNavigationBarHidden:YES];
+    
+    SWRevealViewController *mainRevealController = [[SWRevealViewController alloc]
+                                                    initWithRearViewController:rearNavigationController frontViewController:frontNavigationController];
+    
+    mainRevealController.delegate = self;
+    [frontNavigationController release];
+    [rearNavigationController release];
+	self.viewController = mainRevealController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.viewController;
+    [mainRevealController release];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+- (NSString*)stringFromFrontViewPosition:(FrontViewPosition)position
+{
+    NSString *str = nil;
+    if ( position == FrontViewPositionLeft ) str = @"FrontViewPositionLeft";
+    if ( position == FrontViewPositionRight ) str = @"FrontViewPositionRight";
+    if ( position == FrontViewPositionRightMost ) str = @"FrontViewPositionRightMost";
+    if ( position == FrontViewPositionRightMostRemoved ) str = @"FrontViewPositionRightMostRemoved";
+    return str;
+}
+
+
+- (void)revealController:(SWRevealViewController *)revealController willMoveToPosition:(FrontViewPosition)position
+{
+    NSLog( @"%@: %@", NSStringFromSelector(_cmd), [self stringFromFrontViewPosition:position]);
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    NSLog( @"%@: %@", NSStringFromSelector(_cmd), [self stringFromFrontViewPosition:position]);
+}
+
+- (void)revealController:(SWRevealViewController *)revealController willRevealRearViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didRevealRearViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController willHideRearViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didHideRearViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController willShowFrontViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didShowFrontViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController willHideFrontViewController:(UIViewController *)rearViewController
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didHideFrontViewController:(UIViewController *)rearViewController
+
+{
+    NSLog( @"%@", NSStringFromSelector(_cmd));
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if (![[[NSUserDefaults standardUserDefaults] valueForKey:kFirstTimeStart] isEqual:@(0)])
+    {
+        double delayInSeconds = 3.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            
+            if (![UFSLoader reachable])
+            {
+                UIAlertView *notReachAlert = [[UIAlertView alloc] initWithTitle:@"Внимание" message:@"Отсутствует подключение к интернету. Часть данных может быть не доступна" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                [notReachAlert show];
+                [notReachAlert release];
+            }
+        });
+    }
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    // Saves changes in the application's managed object context before the application terminates.
+
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    UIViewController *vc = [((UINavigationController *)self.viewController.frontViewController) topViewController];
+    
+    if ([vc isKindOfClass:[ReaderViewController class]] || [vc isKindOfClass:[PhotoGalleryVC class]] || [vc isKindOfClass:[UFSEmitentsVC class]] || [vc isKindOfClass:[UFSFakeVC class]])
+    {
+        return UIInterfaceOrientationMaskAll;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+#pragma mark - Application's Documents directory
+
+// Returns the URL to the application's Documents directory.
+- (NSString *)applicationDocumentsDirectory
+{
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+@end

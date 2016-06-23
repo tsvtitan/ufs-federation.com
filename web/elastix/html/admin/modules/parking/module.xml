@@ -1,0 +1,44 @@
+<module>
+	<rawname>parking</rawname>
+	<name>Parking Lot</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<description>Manages parking lot extensions and other options.
+	Parking is a way of putting calls "on hold", and then picking them up from any extension.</description>
+	<menuitems>
+		<parking>Parking Lot</parking>
+	</menuitems>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* localizations
+		*2.6.0.2* #3815
+		*2.6.0.1* #3611, #3435, #3317, #3307
+		*2.6.0.0* localizations, misc
+		*2.5.1.3* localization fixes
+		*2.5.1.2* localization fixes
+		*2.5.1.1* #2718 fix orphaned call not going to destination
+		*2.5.1* #2067 change recording to recording id
+		*2.5.0* #2845 tabindex
+		*2.4.0.6* #2604, #2716, #2843 fix mal-formed html tags, localization fix, Russian Translation
+		*2.4.0.5* added depends on 2.4.0
+		*2.4.0.4* removed parkhints on Asterisk 1.2, metermaid already does and this creates undesired hints
+		*2.4.0.3* change to core_conf and features_general_addtional.conf, no more parking_additianal.inc
+		*2.4.0.2* create hints for Asterisk 1.4 and above
+		*2.4.0.1* add parking_conf class, support PARKINGPATCH config
+		*2.4.0* Destination registry, it translation
+		*2.1.2.1* bump for rc1
+		*2.1.2* merge findmefollow/core extension destinations if any
+		*2.1.1* fix pseudo hardcoded path issue (hardcoded form missing global)
+		*2.1* Remove settings on uninstall bug #1597
+		*2.0.2* Add he_IL translation
+	</changelog>
+	<depends>
+		<version>2.5.0alpha1</version>
+		<module>recordings ge 3.3.8</module>
+	</depends>
+	<location>release/2.7/parking-2.7.0.0.tgz</location>
+	<md5sum>8ac7ee92a4e13a668eaaf3a093e783bc</md5sum>
+</module>

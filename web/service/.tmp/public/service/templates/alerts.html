@@ -1,0 +1,5 @@
+<div class="alert-container">
+  <div class="row-table-cell-bottom">
+    <alert type="{{alert.type}}" close="alert.close()" class="fade-in-left-fade-out" data-ng-repeat="alert in alerts.slice().reverse()" data-ng-hide="alert.hide">{{alert.msg}}</alert>
+  </div>
+</div>

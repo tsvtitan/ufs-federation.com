@@ -1,0 +1,32 @@
+<module>
+	<rawname>fw_fop</rawname>
+	<name>FreePBX FOP Framework</name>
+	<version>2.8.0.6</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<candisable>no</candisable>
+	<canuninstall>no</canuninstall>
+	<changelog>
+		*2.8.0.6* #4602
+		*2.8.0.5* #4429, #4185
+		*2.8.0.4* reverting 2.8.0.3 fixed elsewhere
+		*2.8.0.3* #4388
+		*2.8.0.2* #4381
+		*2.8.0.1* #4269, remove uninitialized variable
+		*2.8.0.0* install script fixes when used with install_amp
+		*2.7.0.0* bumped
+		*2.6.0.3* #3883, #3278, #3295
+		*2.6.0.2* #3740 FOP 0.30 (Asterisk 1.6 compatible)
+		*2.6.0.1* changed to pull from 2.6 branch
+		*2.6.0.0* misc
+		*2.5.0.1* typo in install script
+		*2.5.0* First release of fw_fop
+	</changelog>
+	<description>
+		This module provides a facility to install bug fixes to the FOP code that is not otherwise housed in a module, it used to be part of framework but has been removed to isolate FOP from Framework updates.
+	</description>
+	<type>setup</type>
+	<category>Basic</category>
+	<location>release/2.8/fw_fop-2.8.0.5.tgz</location>
+	<md5sum>1d1544098f13fc8f644f297299e70d4a</md5sum>
+</module>

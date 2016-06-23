@@ -1,0 +1,7 @@
+12.09.2012 18:39:29.827 I: --------------------------------------------------
+12.09.2012 18:39:29.827 I: Starting ...
+12.09.2012 18:39:30.167 I: Bloomberg database is connected. Selecting data ...
+12.09.2012 18:39:30.168 I: [MSSql->getRecords] SELECT * FROM BLOOMBERG_XLS...FI$;
+12.09.2012 18:39:30.252 E: [MSSql->getRecords] Error: 
+12.09.2012 18:39:30.253 E: Quotes data is not found
+12.09.2012 18:39:30.253 I: Game over :-)

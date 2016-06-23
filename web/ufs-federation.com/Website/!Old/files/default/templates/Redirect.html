@@ -1,0 +1,7 @@
+<!--/*/<th:block th:if="${url}">/*/-->
+<link rel="canonical" th:href="${url}"/>
+<noscript>
+<meta http-equiv="refresh" th:content="'0;URL='+${url}"/>
+</noscript>
+<script th:inline="javascript">redirect([[${url}]]);</script>
+<!--/*/</th:block>/*/-->

@@ -1,0 +1,80 @@
+<div class="toolbar">
+  <div class="width">
+    <ul class="clean horizontal">
+      <li class="nested"><a href="#"><i class="icon ico-globe"></i><font th:text="${path.LANG}">RU</font>&nbsp;<i class="icon ico-caret"></i></a>
+        <ul class="clean lang">
+          <li th:class="${path.LANG=='RU'}?'current'" class="current">
+            <a th:if="${path.LANG!='RU'}" th:href="${path.getRootPath('/ru')}" href="/ru"><i class="icon ico-check"></i>RU</a>
+            <span th:if="${path.LANG=='RU'}"><i class="icon ico-check"></i>RU</span>
+          </li>
+          <li th:class="${path.LANG=='EN'}?'current'" class="current">
+            <a th:if="${path.LANG!='EN'}" th:href="${path.getRootPath('/en')}" href="/en"><i class="icon ico-check"></i>EN</a>
+            <span th:if="${path.LANG=='EN'}"><i class="icon ico-check"></i>EN</span>
+          </li>
+          <li th:class="${path.LANG=='FR'}?'current'" class="current">
+            <a th:if="${path.LANG!='FR'}" th:href="${path.getRootPath('/fr')}" href="/fr"><i class="icon ico-check"></i>FR</a>
+            <span th:if="${path.LANG=='FR'}"><i class="icon ico-check"></i>FR</span>
+          </li>
+          <li th:class="${path.LANG=='DE'}?'current'" class="current">
+            <a th:if="${path.LANG!='DE'}" th:href="${path.getRootPath('/de')}" href="/de"><i class="icon ico-check"></i>DE</a>
+            <span th:if="${path.LANG=='DE'}"><i class="icon ico-check"></i>DE</span>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="icon ico-phone"></i><font th:utext="#{CompanyPhone}">Телефон</font></a></li>
+      <li><a href="#"><i class="icon ico-headset"></i><font th:utext="#{CallFromSite}">Позвонить с сайта</font></a></li>
+      <li><a href="#"><i class="icon ico-balloon"></i><font th:utext="#{OnlineConsultant}">Online-консультант</font></a></li>
+      <li>
+        <ul class="clean horizontal social">
+          <li><a href="#"><i class="icon ico-facebook"></i></a></li>
+          <li><a href="#"><i class="icon ico-twitter"></i></a></li>
+          <li><a href="#"><i class="icon ico-youtube"></i></a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="clean horizontal fright clearfix">
+      <li class="search">
+        <!--<form id="search" th:action="${path.getRootPath('/search')}">-->
+        <form id="search" th:action="${path.getAddress(false)}+'/search.html'">
+          <i class="icon ico-lens"></i>
+          <input class="search-text" type="text" name="text" th:placeholder="#{SearchOnSite}" placeholder="Поиск по сайту" value="" role="search" />
+        </form>
+      </li>
+      <li th:if="${utils.isNull(account)}" class="nested"><a href="#"><i class="icon ico-person"></i><font th:utext="#{PrivateArea}">Личный кабинет</font>&nbsp;<i class="icon ico-caret"></i></a>
+        <div class="sign-in">
+          <form id="sign-in" class="clearfix" th:action="${path.getRootPath('/login')}" method="post">
+            <fieldset style="padding: 0; margin: 0; border: 0; display: block; position: relative">
+            <i class="icon ico-person" style="z-index: 99; position: absolute; background-color: rgba(31,31,35,0.8); margin-left: 1px; top: 6px; width: 31px; height: 31px; background-position: 7px -280px;"></i>
+            <input type="text" name="login" autocapitalize="off" autocorrect="off" th:placeholder="#{LoginCaption}" placeholder="Имя пользователя" value="" style="height: 33px; padding-left: 42px; padding-right: 10px;" />
+            </fieldset>
+            
+            <fieldset style="padding: 0; margin: 0; border: 0; display: block; position: relative">
+            <i class="icon ico-lock" style="z-index: 99; position: absolute; background-color: rgba(31,31,35,0.8); margin-left: 1px; top: 6px; width: 31px; height: 31px; background-position: 6px -378px;"></i>
+            <input type="password" name="password" th:placeholder="#{PasswordCaption}" placeholder="Пароль" value="" style="height: 33px; padding-left: 42px; padding-right: 10px;" />
+            
+            </fieldset>
+            
+            <input class="button" type="submit" th:value="#{ButtonPrivateAreaEnterCaption}" value="Войти" />
+            <a class="fright" th:href="${path.getRootPath('/register')}" href="/register"><font th:text="#{RegisterAccount}">Регистрация</font></a>
+            <a class="fleft" th:href="${path.getRootPath('/restore')}" href="/register"><font th:text="#{ForgotPassword}">Забыли пароль</font>?</a>
+          </form>
+          <div class="hidden sign-in-social clearfix">
+            <font class="fleft" th:text="#{PrivateAreaEnterVia}">Войти через</font>
+            <ul class="clean horizontal fright">
+              <li><a href="#"><i class="icon icon24 ico-facebook2"></i></a></li>
+              <li><a href="#"><i class="icon icon24 ico-twitter2"></i></a></li>
+              <li><a href="#"><i class="icon icon24 ico-googleplus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li th:if="${utils.isNotNull(account)}" class="nested"><a href="#" class="nowrap limit300"><i class="icon ico-person"></i><font th:utext="${account.LoginName}">Валерий Евгеньевич Преображенский</font>&nbsp;<i class="icon ico-caret"></i></a>
+        <ul class="account clean">
+          <li th:each="menu:${menus}"><a th:href="${path.getBasePath(menu.LINK)}" th:utext="${menu.NAME}" href="/">Элемент меню</a></li>
+          <li class="divider"></li>
+          <li><a th:href="${path.getRootPath('/logout')}" href="/logout"><font th:utext="#{ButtonPrivateAreaExitCaption}">Выход</font></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

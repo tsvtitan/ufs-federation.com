@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3518C9E4-F919-5EB8-77FA-09E3551142FB" name="Устройства учеток">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 12:38:09 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Ид устройства" id="FFFD3BCD-2118-9FA6-815F-A88A8BED08F1">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 12:38:54 UTC</createdTime>
+<generatorID>F5CCD376-21B2-A5A8-8F19-1B881F42FEC7</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<referedAttribute>A9F9634F-E661-C0C0-B8D1-FB49B2B2D3A0</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Ид учетной записи" id="79676381-6DEB-31C4-4770-7731BE80E356">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 12:40:00 UTC</createdTime>
+<generatorID>FAF9073B-E923-FB96-5B50-12BE5F282523</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<referedAttribute>ATT-77819D02-8CBE-42F4-AF85-86076FF85BEA_00000000</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+</Attribute>
+<Attribute name="Дата создания" id="A62CDCD4-AF50-C231-AE07-1171B853E7D1">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 12:41:15 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8D8626E0-651B-A385-73E7-A220E3F361F7" name="Устройства учеток PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-08-11 12:41:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="7F3A59EF-8829-228D-D5E6-BD9673F227A9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>79676381-6DEB-31C4-4770-7731BE80E356</attributeRef>
+<attributeRef>FFFD3BCD-2118-9FA6-815F-A88A8BED08F1</attributeRef>
+<attributeRef>FFFD3BCD-2118-9FA6-815F-A88A8BED08F1</attributeRef>
+<attributeRef>79676381-6DEB-31C4-4770-7731BE80E356</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

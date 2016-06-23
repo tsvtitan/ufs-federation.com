@@ -1,0 +1,47 @@
+<div class="pad" th:if="${account}">
+  <style>
+  .profile-photo {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    /* display: table; */
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+  }
+  .hr {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bebebe;
+    margin-bottom: 20px;
+  }
+  </style>
+
+  <div class="clearfix pad cutout">
+    <div class="fright profile-photo bgcolor7"></div>
+    <h2 th:utext="${account.FullName}">Худяков Игорь Викторович</h2>
+    <p th:with="agreements=${account.Agreements}"><font th:each="agreement:${agreements}" th:utext="${agreement.DESCRIPTION}"><br/>BO/0201-13/60 от 05.09.2013</font></p>
+  </div>
+
+  <div class="clearfix" style="margin-top: 22px">
+    <h3 class="hr" th:utext="#{GeneralInformation}">Общие сведения</h3>
+    <div class="half fleft">
+      <h4 th:utext="#{LoginCaption}">Логин:</h4>
+      <p th:utext="${account.LOGIN}">petrosjan1975</p>
+
+      <h4 th:utext="#{EmailCaption}">Email:</h4>
+      <p th:utext="${account.EMAIL}">petrosjan1975@mail.ru</p>
+
+      <h4 th:utext="#{PhoneCaption}">Телефон:</h4>
+      <p th:utext="${account.PHONE}">+7 (925) 048 25 15</p>
+    </div>
+
+    <div class="half fleft">
+      <h4 th:utext="#{BirthDateCaption}">Дата рождения:</h4>
+      <p>-</p>
+
+      <h4 th:utext="#{ResidencePlaceCaption}">Место проживания:</h4>
+      <p>-</p>
+
+    </div>
+  </div>
+</div>

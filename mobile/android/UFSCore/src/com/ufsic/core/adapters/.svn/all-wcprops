@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters
+END
+BranchListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/BranchListAdapter.java
+END
+NewsListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/NewsListAdapter.java
+END
+GalleryAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/GalleryAdapter.java
+END
+LeftMenuListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/LeftMenuListAdapter.java
+END
+GroupPreviewListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/GroupPreviewListAdapter.java
+END
+GroupFullListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/GroupFullListAdapter.java
+END
+SubcategoryListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/SubcategoryListAdapter.java
+END
+ActivityListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/ActivityListAdapter.java
+END
+TableAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/303/android/UFSCore/src/com/ufsic/core/adapters/TableAdapter.java
+END

@@ -1,0 +1,26 @@
+<module>
+	<rawname>restart</rawname>
+	<name>Bulk Phone Restart</name>
+	<version>2.8.0.1</version>
+	<publisher>Schmoozecom.com</publisher>
+	<license>GPLv2</license>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<changelog>
+		*2.8.0.1* #4426
+		*2.8.0.0* #4309
+		*2.7.0.0* localizations
+		*2.6.0.1* #3912
+		*2.6.0.0* Initial release
+	</changelog>
+	<depends>
+		<version>2.5.0</version>
+	</depends>
+	<description>This module allows users to restart one or multiple phones that support being restarted via a SIP NOTIFY command through Asterisk's sip_notify.conf 
+	</description>
+	<menuitems>
+		<restart>Phone Restart</restart>
+	</menuitems>
+	<location>release/2.8/restart-2.8.0.0.tgz</location>
+	<md5sum>821fc61510ca203c83e046ddd7bc4322</md5sum>
+</module>

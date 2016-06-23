@@ -1,0 +1,52 @@
+<module>
+	<rawname>daynight</rawname>
+	<name>Day Night Mode</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<category>Inbound Call Control</category>
+	<description>
+		Day / Night control - allows for two destinations to be chosen and provides a feature code
+		that toggles between the two destinations.
+	</description>
+	<changelog>
+		*2.8.0.0* #4309
+		*2.7.0.0* spelling errors, localizations
+		*2.6.0.2* #3585 custom recordings
+		*2.6.0.1* init tabindex
+		*2.6.0.0* #3650, #3651
+		*2.5.0.12* #3350
+		*2.5.0.11* localization updates
+		*2.5.0.10* #3318 set BLF in GUI
+		*2.5.0.9* localization string enclosures
+		*2.5.0.8* #3215
+		*2.5.0.7* #3214, #3222
+		*2.5.0.6* localization, Swedish
+		*2.5.0.5* #3138 Sqlite3 fixes
+		*2.5.0.4* #2998, #3004 fix link status to timecondition, spelling
+		*2.5.0.3* #2954 hint not getting written fixed
+		*2.5.0.2* #2903, #2882 more changes, depends on 2.5.0
+		*2.5.0.1* #2882: added hook to associated a timecondtion with a daynight mode condtion
+		*2.5.0* change to create feature code for each index, add func_devstate blf
+		*2.4.0.3* #2734 fixed issue creating index with no description made it disapear
+		*2.4.0.2* #2604, #2843 fix mal-formed html tags, Russian Translation
+		*2.4.0.1* #2591 added depends on 2.4.0
+		*2.4.0* extension/dest registry, it translation
+		*1.0.2.4* #2414 fix other unmatched ) syntax error
+		*1.0.2.3* #2414 fix unmatched ) syntax error
+		*1.0.2.2* bump for rc1
+		*1.0.2.1* added xml attribute needsenginedb, fixed some undefined vars
+		*1.0.2* Added red/green color coding of rnav to see current mode
+		*1.0.1* #2047 got day/night reversed
+		*1.0.0* First release for FreePBX 2.3 
+	</changelog>
+	<depends>
+		<version>2.5.0alpha1</version>
+	</depends>
+	<menuitems>
+		<daynight needsenginedb="yes">Day/Night Control</daynight>
+	</menuitems>
+	<location>release/2.7/daynight-2.7.0.0.tgz</location>
+	<md5sum>db85d5605fd72f43d9f3de8a1166774b</md5sum>
+</module>

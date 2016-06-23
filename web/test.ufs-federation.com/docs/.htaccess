@@ -1,0 +1,62 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule headers_module>
+  Header set X-UA-Compatible: IE=edge 
+</IfModule>
+
+ErrorDocument 404 /error-404.html
+ErrorDocument 403 /error-403.html
+ErrorDocument 400 /error-400.html
+ErrorDocument 500 /error-500.html
+
+RewriteEngine   On
+ 
+# задаем маски ресурсов, для которых обработка урлов не нужна
+RewriteCond     %{REQUEST_URI}          ^/code.*$          [OR]
+RewriteCond     %{REQUEST_URI}          ^/upload.*$        [OR]
+RewriteCond     %{REQUEST_URI}          ^/js.*$            [OR]
+RewriteCond     %{REQUEST_URI}          ^/images.*$        [OR]
+RewriteCond     %{REQUEST_URI}          ^/img.*$           [OR]
+RewriteCond     %{REQUEST_URI}          ^/css.*$           [OR]
+RewriteCond     %{REQUEST_URI}          ^/44b8baa73b59b3cc090.*$     [OR]
+RewriteCond     %{REQUEST_URI}          ^/smf.*$           [OR]
+RewriteCond     %{REQUEST_URI}          ^/index.php$       [OR]
+RewriteCond     %{REQUEST_URI}          ^/_index.html$       [OR]
+RewriteCond     %{REQUEST_URI}          ^/postinfo.html$       [OR]
+RewriteCond     %{REQUEST_URI}          ^/google[a-z0-9]+.html$  [OR]
+RewriteCond     %{REQUEST_URI}          ^/sitemap.xml$     [OR]
+RewriteCond     %{REQUEST_URI}          ^/iphone_icon.png$ [OR]
+RewriteCond     %{REQUEST_URI}          ^/favicon.ico$             
+RewriteRule     ^(.*)$                  -                  [L]
+
+# админка
+RewriteRule     ^backoffice(.*)$  /index.php?/backoffice$1 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+# мобилка
+RewriteRule     ^mobile(.*)$  /index.php?/mobile$1 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+# qwerty
+RewriteRule     ^qwerty(.*)$  /index.php?/qwerty$1 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+# data
+RewriteRule     ^data(.*)$  /index.php?/data$1 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+# ошибка
+RewriteRule     ^error\-([0-9]+)\.html$  /index.php?/front/error/$1 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+# правило для заруливания всего на index.php
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\.html$  /index.php?/front/$1_$2 [L,NS,QSA,T=application/x-httpd-php,PT]
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\.html$  /index.php?/front/$1_$2_$3 [L,NS,QSA,T=application/x-httpd-php,PT]
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\.html$  /index.php?/front/$1_$2_$3_$4 [L,NS,QSA,T=application/x-httpd-php,PT]
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\.html$  /index.php?/front/$1_$2_$3_$4_$5 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\/(.*)\.html$  /index.php?/front/$1_$2/$3 [L,NS,QSA,T=application/x-httpd-php,PT]
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\/(.*)\.html$  /index.php?/front/$1_$2_$3/$4 [L,NS,QSA,T=application/x-httpd-php,PT]
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\/(.*)\.html$  /index.php?/front/$1_$2_$3_$4/$5 [L,NS,QSA,T=application/x-httpd-php,PT]
+RewriteRule     ^([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\-([a-z0-9\_]+)\/(.*)\.html$  /index.php?/front/$1_$2_$3_$4_$5/$6 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+RewriteRule     ^(.*)\.html$  /index.php?/front/$1 [L,NS,QSA,T=application/x-httpd-php,PT]
+
+php_value session.gc_maxlifetime 3600
+php_value session.cookie_lifetime 3600

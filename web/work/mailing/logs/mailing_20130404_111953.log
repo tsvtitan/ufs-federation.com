@@ -1,0 +1,12 @@
+04.04.2013 11:19:53.732 I: --------------------------------------------------
+04.04.2013 11:19:53.734 I: Connect to Database ...
+04.04.2013 11:19:53.737 I: Connected.
+04.04.2013 11:19:53.738 I: [Mysql->query] set names utf8
+04.04.2013 11:19:56.002 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+04.04.2013 11:19:57.882 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL);
+04.04.2013 11:19:59.035 I: [Mysql->query] SELECT remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+04.04.2013 11:20:02.460 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+04.04.2013 11:20:04.009 I: There are 1 patterns.
+04.04.2013 11:20:09.121 I: Process pattern NULL / 1 emails.
+04.04.2013 11:20:10.745 I: [Mysql->query] SELECT * FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL AND mailing_pattern_id IS NULL ORDER BY created, priority LIMIT 0,10
+04.04.2013 11:20:15.944 I: There are 1 emails. Sending ...

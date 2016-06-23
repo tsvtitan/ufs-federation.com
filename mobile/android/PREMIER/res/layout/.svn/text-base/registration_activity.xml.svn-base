@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ufs="http://schemas.android.com/apk/res/ru.ideast.ufs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_vertical|left|top"
+    android:orientation="vertical" >
+
+    <ru.ideast.ufs.widgets.ActionBarUfs
+            android:id="@+id/rg_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            ufs:left_btn="@drawable/btn_back_selector" >
+        </ru.ideast.ufs.widgets.ActionBarUfs>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/base_margin"
+            android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/rg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusable="true"
+            android:focusableInTouchMode ="true"
+            android:orientation="vertical" >
+            
+            <EditText
+				        android:id="@+id/rg_name"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:ems="10"
+				        android:layout_marginTop="20dp"
+				        android:inputType="textPersonName|textCapWords"
+				        android:hint="@string/registration_name" />
+				    
+            <EditText
+                android:id="@+id/rg_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:inputType="phone"
+                android:hint="@string/registration_phone" />
+
+            <EditText
+               android:id="@+id/rg_email"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:layout_marginTop="15dp"
+               android:inputType="textEmailAddress"
+               android:hint="@string/registration_email" />
+    
+            <CheckBox
+                android:id="@+id/rg_brokerage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/registration_brokerage" />
+            
+            <CheckBox
+                android:id="@+id/rg_yield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|start"
+                android:text="@string/registration_yield" />
+
+            <Button
+                android:id="@+id/rg_next"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_default"
+                android:freezesText="false"
+                android:gravity="center"
+                android:padding="@dimen/shadow_size"
+                android:text="@string/registration_next"
+                android:textSize="15sp" />
+
+                
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

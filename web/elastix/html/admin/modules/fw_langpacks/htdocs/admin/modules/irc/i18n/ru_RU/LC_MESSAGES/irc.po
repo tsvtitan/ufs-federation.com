@@ -1,0 +1,103 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Russian freePBX ver. translation
+# Copyright (c) 2006-2008 PostMet Corporation
+# This file is distributed under the same license as the freePBX package.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+#
+# Использовать iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-04-19 21:45+0100\n"
+"PO-Revision-Date: 2010-01-23 00:00+0100\n"
+"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
+"Language-Team: Russian <faq@postmet.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.irc.php:121
+msgid "Start IRC"
+msgstr "Старт IRC"
+
+#: page.irc.php:122
+msgid "Online Resources"
+msgstr "Онлайн ресурсы"
+
+#: page.irc.php:128
+msgid "Online Support"
+msgstr "Онлайн поддержка"
+
+#: page.irc.php:138
+msgid ""
+"When you connect, you will be automatically be named 'FreePBX' and a random "
+"4 digit number, eg, FreePBX3486."
+msgstr ""
+"Когда соединитесь, ваше имя в сессии будет в виде 'FreePBX' и 4 цифры, типа FreePBX2216."
+
+#: page.irc.php:139
+msgid ""
+"If you wish to change this to your normal nickname, you can type '<b>/nick "
+"yournickname</b>', and your nick will change. This is an ENGLISH ONLY "
+"support channel. Sorry."
+msgstr ""
+"Если есть желание сменить на какой-то нормальный псевдоним, наберите <b>/nick "
+"myprefferednickname</b>', и, таким образом поменяете ник. Это только англоговорящий канал "
+"поддержки, так уж извините!"
+
+#: page.irc.php:181
+msgid "This allows you to contact the FreePBX channel on IRC."
+msgstr "Этот модуль даёт возможность соединится с каналом FreePBX в IRC."
+
+#: page.irc.php:183
+msgid ""
+"As IRC is an un-moderated international medium, AMP, FreePBX, Coalescent "
+"Systems, or any other party can not be held responsible for the actions or "
+"behavior of other people on the network"
+msgstr ""
+"IRC - это немодерируемая интернациональная среда общения, AMP, FreePBX, Coalescent "
+"Systems или какие-то другие системы не могут регулировать поведение людей в сети." 
+
+#: page.irc.php:185
+msgid ""
+"When you connect to IRC, to assist in support, the IRC client will "
+"automatically send the following information to everyone in the #freePBX "
+"channel:"
+msgstr ""
+"Когда вы подключаетесь к IRC для получения помощи, клиент IRC автоматически пошлёт "
+"следующую информацию в канал #freePBX:" 
+
+#: page.irc.php:188
+msgid "Your Linux Distribution:"
+msgstr "Ваш дистрибутив Линукс:"
+
+#: page.irc.php:191
+msgid "Your FreePBX version:"
+msgstr "Ваша версия FreePBX:"
+
+#: page.irc.php:194
+msgid "Your Kernel version:"
+msgstr "Ваша версия ядра:"
+
+#: page.irc.php:198
+msgid ""
+"If you do not want this information to be made public, please use another "
+"IRC client, or contact a commercial support provider"
+msgstr ""
+"Если не хотите делать эту информацию достоянием общественности, используйте просто "
+"любой другой клиент IRC, или свяжитесь со службой платной коммерческой поддержки."

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ufs="http://schemas.android.com/apk/res/ru.ideast.ufs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateOnly="true" />
+
+    <com.polites.android.GestureViewPager
+        android:id="@+id/ga_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <ru.ideast.ufs.widgets.ActionBarUfs
+        android:id="@+id/ga_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        ufs:background="@drawable/actionbar_gallery"
+        ufs:left_btn="@drawable/btn_back_selector" />
+
+</RelativeLayout>

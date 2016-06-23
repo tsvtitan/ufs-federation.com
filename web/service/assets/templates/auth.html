@@ -1,0 +1,67 @@
+<div data-ng-controller="auth">
+  <div class="table-container">
+    
+    <div class="table-cell-middle">
+      
+      <div class="panel panel-default center-block auth zoom-in-fade-out" data-ng-hide="state.hide">
+
+        <div class="panel-heading">
+          <h2 class="panel-title">{{ dic('Title') }}</h2>
+        </div>
+        
+        <form name="form" role="form" novalidate data-ng-submit="submit()">
+          <div class="panel-body">
+          
+            <div class="form-group" check-field>
+              <label class="sr-only" for="login">{{ dic('Login') }}</label>
+              <div class="input-group">
+                <span class="input-group-addon" id="login">
+                  <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="form-control" placeholder="{{ dic('Input login') }}" name="login" required data-ng-model="data.login" data-ng-disabled="state.entering">
+              </div>
+            </div>  
+
+            <div class="form-group">
+              <label class="sr-only" for="pass">{{ dic('Password') }}</label>
+              <div class="input-group">
+                <span class="input-group-addon" id="pass">
+                  <span class="glyphicon glyphicon-eye-close"></span>
+                </span>
+                <input type="password" class="form-control" placeholder="{{ dic('Input password') }}"  data-ng-model="data.pass" data-ng-disabled="state.entering">
+              </div>
+            </div> 
+            
+            <div class="form-group form-group-30" data-ng-show="auth.captcha">
+              <div class="text-center" data-ng-hide="state.spinner">
+                <a href="#" tabindex="-1" data-ng-click="captchaRefresh()">
+                  <img class="fade-in-fade-out" alt="{{ dic('Click to refresh') }}" after-load="captchaAfterLoad()" data-ng-src="{{ captchaUrl }}">
+                </a>
+              </div>
+              <div class="text-center" data-ng-show="state.spinner">
+                <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+              </div>
+            </div>
+            
+            <div class="form-group" check-field data-ng-show="auth.captcha">
+              <div class="col-xs-offset-3 col-xs-6">
+                <input type="text" class="form-control text-center" placeholder="{{ dic('Input code') }}" name="captcha" 
+                       data-ng-model="data.captcha" data-ng-disabled="state.entering" data-ng-pattern="captchaPattern"
+                       data-ng-change="captchaChange()">
+              </div>
+            </div>
+
+          </div>  
+          
+          <div class="panel-footer text-center">
+            <button type="submit" class="btn btn-primary" ladda="state.entering">
+              {{ dic('Enter') }}&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in glyphicon-align-right" aria-hidden="true"></span>
+            </button>
+          </div>
+          
+        </form> 
+        
+      </div>
+    </div>
+  </div>  
+</div>

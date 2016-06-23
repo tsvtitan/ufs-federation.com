@@ -1,0 +1,32 @@
+<module>
+	<rawname>callforward</rawname>
+	<name>Call Forward</name>
+	<version>2.8.0.4</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<changelog>
+		*2.8.0.4* #4578
+		*2.8.0.3* #4294
+		*2.8.0.2* #4114, #4115, #3605
+		*2.8.0.1* #4214
+		*2.8.0.0* #4116, #4105 again
+		*2.7.0.2* #4103, #4104, #4105
+		*2.7.0.1* localizations
+		*2.7.0.0* #4047 CF toggle + devstate and hint additions
+		*2.6.0.1* Added publisher/lic
+		*2.6.0.0* #3650, #3651, localizations
+		*2.5.0.1* localization fixes
+		*2.5.0* localization fixes, Swedish
+		*2.4.0* bumped for 2.4
+		*1.1.2* #2321 fixed CF AMPUSER(number) issue, syntax problem
+		*1.1.1.2* changed categories
+		*1.1.1.1* bump for rc1
+		*1.1.1* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
+		*1.1* First release for 2.2
+	</changelog>
+	<description>Provides callforward featurecodes</description>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<location>release/2.8/callforward-2.8.0.3.tgz</location>
+	<md5sum>f19293902cbaf162d27342743077e27b</md5sum>
+</module>

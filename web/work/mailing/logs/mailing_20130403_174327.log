@@ -1,0 +1,7 @@
+03.04.2013 17:43:27.841 I: --------------------------------------------------
+03.04.2013 17:43:27.845 I: Connect to Database ...
+03.04.2013 17:43:27.855 I: Connected.
+03.04.2013 17:43:27.856 I: [Mysql->query] set names utf8
+03.04.2013 17:43:35.199 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+03.04.2013 17:43:35.801 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing AND created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL);
+03.04.2013 17:43:35.802 E: [Mysql->query] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL)' at line 1

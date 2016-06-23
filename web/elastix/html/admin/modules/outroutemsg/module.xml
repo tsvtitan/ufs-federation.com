@@ -1,0 +1,29 @@
+<module>
+	<rawname>outroutemsg</rawname>
+	<name>Route Congestion Messages</name>
+	<version>2.8.0.0</version>
+	<publisher>Bandwidth.com</publisher>
+	<license>GPLv2</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>Configures message or congestion tones played when all trunks are busy in a route. Allows different messages for Emergency Routes and Intra-Company Routes
+	</description>
+	<menuitems>
+		<outroutemsg>Route Congestion Messages</outroutemsg>
+	</menuitems>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.2* localizations
+		*2.7.0.1* #4042
+		*2.7.0.0* #3805
+		*2.6.0.3* #3865
+		*2.6.0.2* minor tootlip tweaks
+		*2.6.0.1* init tabindex
+		*2.6.0* Initial Version
+	</changelog>
+	<depends>
+		<module>recordings ge 3.3.8</module>
+	</depends>
+	<location>release/2.7/outroutemsg-2.7.0.2.tgz</location>
+	<md5sum>0280f70ad7e261b49ceacc2ae8a128bf</md5sum>
+</module>

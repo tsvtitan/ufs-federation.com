@@ -1,0 +1,3 @@
+<h4 th:utext="${field.Caption}"/><select multiple="multiple" th:class="${field.Error}?'error'" th:name="${field.Name}" th:style="${field.Style}">
+  <option th:each="item:${field.Items}" th:selected="${item.Selected}" th:value="${item.Value}" th:utext="${item.Text}" th:style="${item.Style}"/>
+</select>

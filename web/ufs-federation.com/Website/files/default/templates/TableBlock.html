@@ -1,0 +1,15 @@
+<!--/*/<th:block th:with="table=${table},temp=${(table.Template=='')?'Table':table.Template}" th:if="${table}">/*/--><div th:id="${table.PageTableId}">
+<div id="table">  
+  <div th:replace="${temp}"/>
+</div>
+<div id="loader" class="ajax-loader-text" th:utext="#{ReceivingData}">Получение данных</div>
+<script th:inline="javascript">
+  $(document).ready(function(){
+    
+    var div[[${path.newJsIdent('div')}]] = /*[[${table.PageTableId}]]*/null;
+    var formIds[[${path.newJsIdent('formIds')}]] = /*[[${table.FormIds}]]*/null;
+    
+    tableSetEvents(div[[${path.lastJsIdent('div')}]],formIds[[${path.lastJsIdent('formIds')}]]);
+  });
+</script>
+</div><!--/*/</th:block>/*/-->

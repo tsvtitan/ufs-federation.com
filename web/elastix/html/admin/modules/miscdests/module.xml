@@ -1,0 +1,37 @@
+<module>
+	<rawname>miscdests</rawname>
+	<name>Misc Destinations</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<type>setup</type>
+	<category>Internal Options &amp; Configuration</category>
+	<description>Allows creating destinations that dial any local number (extensions, feature codes, outside phone numbers) that can be used by other modules (eg, IVR, time conditions) as a call destination.</description>
+	<changelog>
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* localizations
+		*2.6.0.0* localizations, misc
+		*2.5.0.2* localization string enclosures
+		*2.5.0.1* #3018, #3043 spelling and delete link does not show if not being used as dest
+		*2.5.0* #2845 tabindex, added delete and add icons
+		*2.4.0.2* #2843 Russian Translation
+		*2.4.0.1* added depends on 2.4.0
+		*2.4.0* Extension/dest registry, it translation
+		*1.3.4.3* changed categories
+		*1.3.4.2* bump for rc1
+		*1.3.4.1* changed freePBX to FreePBX
+		*1.3.4* destination changed from Dial(Local/nnn@from-internal) to Goto(from-internal,nnn,1), no reason a new channel should be created
+		*1.3.3* Minor formatting changes
+		*1.3.2* Add he_IL translation
+		*1.3.1* Updated help text
+		*1.3* First release for FreePBX 2.2 - Fixed GUI issues
+	</changelog>
+	<depends>
+		<version>2.5.0alpha1</version>
+	</depends>
+	<menuitems>
+		<miscdests>Misc Destinations</miscdests>
+	</menuitems>
+	<location>release/2.7/miscdests-2.7.0.0.tgz</location>
+	<md5sum>148c5e62663e167d2731c811fa624fee</md5sum>
+</module>

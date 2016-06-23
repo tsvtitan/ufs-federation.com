@@ -1,0 +1,95 @@
+<module>
+	<rawname>core</rawname>
+	<type>setup</type>
+	<category>Basic</category>
+	<name>Core</name>
+	<version>2.8.1.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<candisable>no</candisable>
+	<canuninstall>no</canuninstall>
+	<changelog>
+		*2.8.1.0* bump to 2.8.1 to match framework base
+		*2.8.0.8* #4749 (Avoid Asterisk Security Vulnerability)
+		*2.8.0.7* #4689, #4697, #4730
+		*2.8.0.6* #4634, #4453, #4563
+		*2.8.0.5* #4549, #4615 (Security Bug)
+		*2.8.0.4* #4574, #4572, #4575
+		*2.8.0.3* #4401, #4525, #4507, #4499
+		*2.8.0.2* #4443, #4444, #4460, #4414
+		*2.8.0.1* #4426
+		*2.8.0.0* #4396
+		*2.8.0.0RC1.4* #4390
+		*2.8.0.0RC1.3* #4380
+		*2.8.0.0RC1.2* #4379 again
+		*2.8.0.0RC1.1* #4378, #4379
+		*2.8.0.0RC1.0* #4374
+		*2.8.0.0beta2.4* #4350, #4357
+		*2.8.0.0beta2.3* #4338
+		*2.8.0.0beta2.2* #4309, remove legacy directory settings if no IVRs using them
+		*2.8.0.0beta2.1* #4293
+		*2.8.0.0beta2.0* #4273, #4230, #4242, #4196, #3519, #4288, #4270, #4219
+		*2.8.0.0beta1.9* #4205, #4208, #4155, #4212
+		*2.8.0.0beta1.8* #4202
+		*2.8.0.0beta1.7* #4174, #4190, #4201, #4161
+		*2.8.0.0beta1.6* #4181, #4184
+		*2.8.0.0beta1.5* #4155
+		*2.8.0.0beta1.4* #4071, #4152, #4156, #4159, #4160
+		*2.8.0.0beta1.3* #4151
+		*2.8.0.0beta1.2* #4146, #4148, triming local changelog
+		*2.8.0.0beta1.1* #4132, #2833, #4068, #4135, #4143, #4144
+		*2.8.0.0beta1.0* #4100, #4102, #4110 New Outbound Routing Schema and features
+		*2.7.0.2* really fix #4092
+		*2.7.0.1* #4093, #4094, #4095, #4092
+		*2.7.0.0* minor tweaks
+		*2.7.0RC1.5* #4075, #4078, #4080, #4053
+		*2.7.0RC1.4* #4072
+		*2.7.0RC1.3* #4068, (#4069 available but not used)
+		*2.7.0RC1.2* #4067
+		*2.7.0RC1.1* #4058, #4065, #4066
+		*2.7.0RC1.0* #4041, #4042, #4047, #4051 (requires MoH 2.7.0.0 or above)
+		*2.7.0beta1.3* #4037
+		*2.7.0beta1.2* #3993 (#3934, #3889)
+		*2.7.0beta1.1* #4020, #2389, #3980, #3992, #3939, #333, #3721, #3185
+		*2.7.0beta1.0* #3882, #4000, #1718, #3927, #3805, #4007, #3998, #3951, sql injections fixes
+		*2.6.0.1* #3889 reverted, #3900, #3962, #2787, #3793, #3377, #3386, #3717
+		*2.6.0.0* #3889, #3919
+		*2.6.0RC2.1* #3886, #3885, #3875 revisited
+		*2.6.0RC2.0* #3854, #3872, #3871, #3877
+		*2.6.0RC1.1* #3751
+		*2.6.0RC1.0* #3529, #3864, #3538
+		*2.6.0beta2.2* #3722, #3848, #3841, #3700
+		*2.6.0beta2.1* #3844 (revert #3423), #3846, #3849
+		*2.6.0beta2.0* #3075, #3501, #3636, #3581, #3266, #3701, #3545, #3430, #3798, #3609, #3836
+		*2.6.0beta1.3* trunk tab improvements
+		*2.6.0beta1.2* added more sql escape in devices
+		*2.6.0beta1.1* #3696, (needs framework updated), #3702, #3706, #3712, #3691, #3693, #3705, #3644, #3739, #3741, #3744, #3790 
+		*2.6.0beta1.0* #3478, #3423, #3648, #3685, #3686, #1380
+		*2.6.0alpha1.4* fixes re #3649
+		*2.6.0alpha1.3* #3653, #3591, #3650
+		*2.6.0alpha1.2* #3451, $932, #3426, #3474, #3439, #3526, #3534, $3648, #3649, #3517 moved macro-vm to auto-generation (WARNING: custom modification of macro-vm in extensions_custom.conf need to be moved to extensions_override_freepbx.conf
+		*2.6.0alpha1.1* #3380, #3358, #3387, localizations
+		*2.6.0alpha1.0* #3321, #3328, #3345 inbound CID routing fix, adds vm-callme voicemail access option
+		*2.5* CHANGELOG TRUNCATED See SVN Repository
+	</changelog>
+	<depends>
+		<version>2.6.0beta1</version>
+	</depends>
+	<requirements>
+		<file>/usr/sbin/asterisk</file>
+	</requirements>
+	<menuitems>
+		<extensions needsenginedb="yes" sort="-4">Extensions</extensions>
+		<users needsenginedb="yes" sort="-3">Users</users>
+		<devices needsenginedb="yes" sort="-4">Devices</devices>
+		<did category="Inbound Call Control" sort="-5">Inbound Routes</did>
+		<zapchandids category="Inbound Call Control" sort="-5">Zap Channel DIDs</zapchandids>
+		<routing>Outbound Routes</routing>
+		<trunks>Trunks</trunks>
+		<general>General Settings</general>
+		<ampusers sort="5">Administrators</ampusers>
+		<wiki type="tool" category="Support" sort="5" href="http://freepbx.org" target="_blank" access="all">FreePBX Support</wiki>
+	</menuitems>
+	<location>release/2.8/core-2.8.0.8.tgz</location>
+	<md5sum>ae9fd59075231858de7518a320e0a5af</md5sum>
+</module>

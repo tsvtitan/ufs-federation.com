@@ -1,0 +1,11 @@
+<!--/*/<th:block th:with="form=${form}" th:if="${form}">/*/-->
+<div th:if="${form.Redirect}"><div th:replace="Redirect(url=${form.Redirect})"/></div>
+<div th:if="${not form.Redirect}" class="panel bgcolor5 norightmargin" style="margin: 1em auto 0;">
+  <div class="caption" th:if="${form.Name!=''}" th:utext="${form.Name}"/>
+  <div th:replace="FormErrors"/>
+  <div class="content">
+    <div th:replace="FormFields"/>
+  </div>
+</div>
+<div th:replace="FormParams"/>
+<!--/*/</th:block>/*/-->

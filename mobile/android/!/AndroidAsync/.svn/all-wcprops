@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mobile/!svn/ver/82/android/AndroidAsync
+END
+proguard-project.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/mobile/!svn/ver/55/android/AndroidAsync/proguard-project.txt
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/mobile/!svn/ver/55/android/AndroidAsync/build.gradle
+END
+AndroidAsync.iml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/mobile/!svn/ver/55/android/AndroidAsync/AndroidAsync.iml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/mobile/!svn/ver/55/android/AndroidAsync/build.xml
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/55/android/AndroidAsync/AndroidManifest.xml
+END
+ic_launcher-web.png
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/mobile/!svn/ver/55/android/AndroidAsync/ic_launcher-web.png
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/55/android/AndroidAsync/project.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mobile/!svn/ver/55/android/AndroidAsync/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/mobile/!svn/ver/55/android/AndroidAsync/lint.xml
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mobile/!svn/ver/55/android/AndroidAsync/Android.mk
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mobile/!svn/ver/55/android/AndroidAsync/.classpath
+END

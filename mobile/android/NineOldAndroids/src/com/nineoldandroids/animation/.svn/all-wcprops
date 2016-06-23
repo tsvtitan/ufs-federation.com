@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation
+END
+Keyframe.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/Keyframe.java
+END
+Animator.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/Animator.java
+END
+ObjectAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/ObjectAnimator.java
+END
+IntKeyframeSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/IntKeyframeSet.java
+END
+ArgbEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/ArgbEvaluator.java
+END
+PropertyValuesHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/PropertyValuesHolder.java
+END
+IntEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/IntEvaluator.java
+END
+AnimatorSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/AnimatorSet.java
+END
+PreHoneycombCompat.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/PreHoneycombCompat.java
+END
+FloatKeyframeSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/FloatKeyframeSet.java
+END
+ValueAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/ValueAnimator.java
+END
+TypeEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/TypeEvaluator.java
+END
+AnimatorListenerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/AnimatorListenerAdapter.java
+END
+KeyframeSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/KeyframeSet.java
+END
+TimeAnimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/TimeAnimator.java
+END
+FloatEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/FloatEvaluator.java
+END
+AnimatorInflater.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobile/!svn/ver/208/android/NineOldAndroids/src/com/nineoldandroids/animation/AnimatorInflater.java
+END

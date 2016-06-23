@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/mobile/!svn/ver/125/android/ion
+END
+settings.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/mobile/!svn/ver/57/android/ion/settings.gradle
+END
+ion.iml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/mobile/!svn/ver/57/android/ion/ion.iml
+END
+stylesheet.css
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mobile/!svn/ver/57/android/ion/stylesheet.css
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/mobile/!svn/ver/57/android/ion/.gitignore
+END
+proguard-project.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/mobile/!svn/ver/57/android/ion/proguard-project.txt
+END
+build.gradle
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/mobile/!svn/ver/57/android/ion/build.gradle
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/mobile/!svn/ver/57/android/ion/build.xml
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mobile/!svn/ver/57/android/ion/AndroidManifest.xml
+END
+project.properties
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/mobile/!svn/ver/186/android/ion/project.properties
+END
+ant.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/mobile/!svn/ver/57/android/ion/ant.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mobile/!svn/ver/98/android/ion/.project
+END
+lint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/mobile/!svn/ver/57/android/ion/lint.xml
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/mobile/!svn/ver/57/android/ion/Android.mk
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/mobile/!svn/ver/186/android/ion/.classpath
+END

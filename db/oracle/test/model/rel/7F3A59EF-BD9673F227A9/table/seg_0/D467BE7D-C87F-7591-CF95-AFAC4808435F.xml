@@ -1,0 +1,252 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D467BE7D-C87F-7591-CF95-AFAC4808435F" name="MOBILE_MENUS">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-21 14:17:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MOBILE_MENU_ID" id="BCEC0CC4-FA50-4F29-BC71-9636088A37BF">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:48:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PARENT_ID" id="CB8F6A04-60DF-26CD-4939-3448E52DFCBE">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:48:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<delegate>BCEC0CC4-FA50-4F29-BC71-9636088A37BF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C011A0A9-CE4C-2A4E-1030-F88DC1F68AB5" referredColumn="BCEC0CC4-FA50-4F29-BC71-9636088A37BF"/>
+</associations>
+</Column>
+<Column name="LANG_ID" id="D60CA03E-6531-CD46-1B2B-4C70831D9EB7">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:49:20 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<delegate>COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8A704A7-0F1F-ADD5-A0F5-4470FB9F38BF" referredColumn="COL-802BA1C4-2463-4C43-AA0A-4A433CD62029_00000000"/>
+</associations>
+</Column>
+<Column name="LOCKED" id="B6239564-D8F3-D8DE-94AD-DF329995B106">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:53:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>DOM-C454F8DC-9EF4-4BBE-8B7A-3208A90CE926_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="187D72C1-9AF4-0D59-E1A5-869BE63EEF97">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:53:57 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="EFCB7F05-CEDC-9C11-D704-24088F68F485">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:54:06 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DOM-BB562D07-D9D0-4F9D-B4A3-CA2B8B0C2D12_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MENU_TYPE" id="C9AD9213-C7B6-AE8A-205D-BB94235ACB24">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:54:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIORITY" id="D9756E84-0FB0-BF7C-FFEE-A6651425C899">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:01:49 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFAULT_IMAGE" id="CF74C18F-CAFA-571B-3C58-09A86D384E1F">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:02:10 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIGHLIGHT_IMAGE" id="76E455FB-4CC3-D2D7-C55F-BFD35C0A4F4D">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:03:16 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NEWS_SQL" id="DF242058-946E-01DE-57A7-0BAE88CC0E48">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:03:37 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NEWS_ALL_COUNT_SQL" id="02A4DCFD-9EE8-4A2A-DB56-022AB3AF65CB">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:03:51 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NEWS_ACTUAL_COUNT_SQL" id="F42F839C-5A2A-A807-DF4A-933685FB2A5B">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:04:08 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILES_SQL" id="647C556E-0F54-C945-258A-5F3CB2E2E03E">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:05:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROUPS_SQL" id="51E36049-DAF3-9A6F-E301-327AFCF08B21">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:06:40 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LINKS_SQL" id="741ACBE2-485F-ABEF-71EC-AD95D2FFF61A">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:06:55 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HTML" id="D6369369-28CD-DFF7-A45B-51DA9FAFD053">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 11:10:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UFS" id="5E94DFB4-6245-F19C-AF9D-0228214DA142">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-24 11:51:17 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREMIER" id="C450AF1E-DD9D-F66B-5F8F-58C777B8C969">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-24 11:51:26 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>DOM-B584E6FB-C28A-4935-A1A2-4FE08DC2B8C9_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REPLACEMENTS" id="4250DED9-8AB8-049E-8723-01950DDEAEBA">
+<createdBy>tsv</createdBy>
+<createdTime>2015-08-26 09:35:38 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>DOM-2A6260F3-787B-478A-8592-682D8DD9D67E_00000000</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C43FC38-5033-B419-A711-5096B7BA8D6F" name="MOBILE_MENU_PK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:48:14 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCEC0CC4-FA50-4F29-BC71-9636088A37BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="816157EE-46F0-CED9-E1A2-73E04B449451" name="MOBILE_MENU_MOBILE_MENU_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:48:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB8F6A04-60DF-26CD-4939-3448E52DFCBE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AF790EF-5BD9-7ABA-062C-7444A16A888C" name="MOBILE_MENU_LANGS_FK">
+<createdBy>tsv</createdBy>
+<createdTime>2014-05-23 10:49:20 UTC</createdTime>
+<generatorID>CKY-7420FDEA-99B9-424A-9E40-179A7C9DF201_00000000</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D60CA03E-6531-CD46-1B2B-4C70831D9EB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

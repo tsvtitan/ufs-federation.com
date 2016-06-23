@@ -1,0 +1,52 @@
+12.09.2012 19:46:23.303 I: --------------------------------------------------
+12.09.2012 19:46:23.303 I: Starting ...
+12.09.2012 19:46:23.640 I: [MSSql->Query] SET ANSI_WARNINGS ON
+12.09.2012 19:46:23.723 I: [MSSql->Query] SET ANSI_NULLS ON
+12.09.2012 19:46:23.806 I: Bloomberg database is connected. Selecting data ...
+12.09.2012 19:46:23.806 I: [MSSql->getRecords] SELECT * FROM [BLOOMBERG_XLS]...[FI$]
+12.09.2012 19:46:23.945 I: There are 5 record(s)
+12.09.2012 19:46:23.947 I: Data is <?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <item>
+    <short_name>ALFA BANK</short_name>
+    <security_name>ALFARU 7 7/8 09/25/17</security_name>
+    <id_isin>XS0544362972</id_isin>
+    <bid></bid>
+    <ask></ask>
+    <px_close_1d>108.625</px_close_1d>
+  </item>
+  <item>
+    <short_name>REPUBLIC OF BELA</short_name>
+    <security_name>BELRUS 8 3/4 08/03/15</security_name>
+    <id_isin>XS0529394701</id_isin>
+    <bid>99.689</bid>
+    <ask>100.815</ask>
+    <px_close_1d>100.08</px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROM</short_name>
+    <security_name>GAZPRU 10 1/2 03/25/14</security_name>
+    <id_isin>XS0420135443</id_isin>
+    <bid>111.932</bid>
+    <ask>112.554</ask>
+    <px_close_1d>112.243</px_close_1d>
+  </item>
+  <item>
+    <short_name>GAZPROMBANK</short_name>
+    <security_name>GPBRU 6 1/4 12/15/14</security_name>
+    <id_isin>XS0531270964</id_isin>
+    <bid>105.974</bid>
+    <ask>106.579</ask>
+    <px_close_1d>106.002</px_close_1d>
+  </item>
+  <item>
+    <short_name>SBERBANK</short_name>
+    <security_name>SBERRU 5.4 03/24/17</security_name>
+    <id_isin>XS0543956717</id_isin>
+    <bid>108.083</bid>
+    <ask>108.764</ask>
+    <px_close_1d>108.322</px_close_1d>
+  </item>
+</data>
+
+12.09.2012 19:46:23.947 I: Game over :-)

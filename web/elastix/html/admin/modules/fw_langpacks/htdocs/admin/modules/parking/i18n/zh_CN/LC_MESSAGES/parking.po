@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-27 19:11+0200\n"
+"PO-Revision-Date: 2009-01-31 13:34+0800\n"
+"Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
+"Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:210
+msgid "day"
+msgstr "天"
+
+#: functions.inc.php:211
+msgid "hour"
+msgstr "小时"
+
+#: functions.inc.php:211
+msgid "hours"
+msgstr "小时"
+
+#: functions.inc.php:212
+msgid "minute"
+msgstr "分钟"
+
+#: functions.inc.php:212
+msgid "minutes"
+msgstr "分钟"
+
+#: functions.inc.php:213
+msgid "second"
+msgstr "秒"
+
+#: functions.inc.php:213
+msgid "seconds"
+msgstr "秒"
+
+#: install.php:53
+msgid "Migrating recordings if needed.."
+msgstr "正在检测需要迁移的录音并执行迁移。。。"
+
+#: install.php:70
+#: install.php:76
+#: install.php:83
+msgid "fatal error"
+msgstr "致命错误"
+
+#: install.php:86
+msgid "ok"
+msgstr "完成"
+
+#: install.php:88
+msgid "not needed"
+msgstr "无须迁移"
+
+#: page.parking.php:56
+msgid "Parking Lot Configuration"
+msgstr "呼叫停泊配置"
+
+#: page.parking.php:61
+msgid "Parking Lot Options"
+msgstr "呼叫停泊选项"
+
+#: page.parking.php:63
+msgid "Enable Parking Lot Feature"
+msgstr "启用呼叫停泊功能"
+
+#: page.parking.php:63
+msgid "Check this box to enable the parking feature"
+msgstr "钩选此项以启用呼叫停泊功能"
+
+#: page.parking.php:67
+msgid "Parking Lot Extension:"
+msgstr "停泊的分机："
+
+#: page.parking.php:68
+msgid "This is the extension where you will transfer a call to park it."
+msgstr "这是你把呼叫转移去的目的分机号。"
+
+#: page.parking.php:73
+msgid "Number of Slots:"
+msgstr "停泊槽的数量："
+
+#: page.parking.php:73
+msgid "The total number of parking lot spaces to configure. Example, if 70 is the extension and 8 slots are configured, the parking slots will be 71-79"
+msgstr "设置一共可以有多少呼叫可以进行停泊。比如，如果70是分机号，设置了8个停泊槽，那么号码71-79会被用于呼叫停泊"
+
+#: page.parking.php:86
+msgid "Parking Timeout:"
+msgstr "停泊时间"
+
+#: page.parking.php:86
+msgid "The timeout period that a parked call will attempt to ring back the original parker if not answered"
+msgstr "如果呼叫没有被接听，设置一个超时时间，在停泊超时后尝试再次呼叫原来的停泊者"
+
+#: page.parking.php:99
+msgid "Parking Lot Context:"
+msgstr "呼叫停泊上下文："
+
+#: page.parking.php:100
+msgid "This is the parking lot context. You should not change it from the default unless you know what you are doing."
+msgstr "设置呼叫停泊的上下文。你不可以改变它，除非你很明白自己在做什么。"
+
+#: page.parking.php:104
+msgid "Actions for Timed-Out Orphans"
+msgstr "对超时的“孤儿”呼叫的动作"
+
+#: page.parking.php:106
+msgid "Parking Alert-Info:"
+msgstr "停泊的警告信息："
+
+#: page.parking.php:107
+msgid "Alert-Info to put in channel before going to defined destination below. This can create distinct rings on some SIP phones and can serve to alert the recipients that the call is from an Orphaned parked call"
+msgstr "在转移到指定的目的之前，放到频道里的警告信息。这个功能可以为一些SIP电话创建独特的铃声，还可以用来提醒接待者这是一个停泊超时的“孤儿”呼叫"
+
+#: page.parking.php:112
+msgid "CallerID Prepend:"
+msgstr "主叫ID前加上字符串："
+
+#: page.parking.php:113
+msgid "String to pre-pend to the current Caller-ID associated with this call (if any), before going to defined destination below. This can serve to alert the recipients that the call is from an Orphaned parked call"
+msgstr "在与当前的呼叫相关联的主叫ID（如果有的话）之前添加字符串，字符串将在转移到下面的目的地前添加。这可以用来提醒接收者，这是一个停泊超时的“孤儿”呼叫"
+
+#: page.parking.php:119
+#: page.parking.php:138
+msgid "Announcement:"
+msgstr "公告："
+
+#: page.parking.php:119
+msgid "Optional message to be played to the orphaned caller prior to going on the to supplied destination below.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left"
+msgstr "在将“孤儿”呼叫转移到下面的目的地之前，要播放给主叫的可选的消息。<br /><br />要添加额外的录音，请使用左侧的“系统录音”菜单"
+
+#: page.parking.php:125
+msgid "None"
+msgstr "无"
+
+#: page.parking.php:138
+msgid "Optional message to be played to the orphaned caller prior to going on to the supplied destination below.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option"
+msgstr "在将“孤儿”呼叫转移到下面的目的地之前，要播放给主叫的可选的消息。<br /><br />要编辑这个选项，请安装并启用“系统录音”模块"
+
+#: page.parking.php:148
+msgid "Destination for Orphaned Parked Calls"
+msgstr "超时的“孤儿”呼叫的目的地"
+
+#: page.parking.php:154
+msgid "Submit Changes"
+msgstr "提交更改"
+
+#: page.parking.php:164
+msgid "Please enter a valid numeric parking lot extension"
+msgstr "请输入有效的呼叫停泊的分机"
+
+#: module.xml
+msgid "Parking Lot"
+msgstr "呼叫停泊"
+

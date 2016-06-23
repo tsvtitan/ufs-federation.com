@@ -1,0 +1,59 @@
+//
+//  UFSPromotionVC.h
+//  UFS
+//
+//  Created by Sergei Tomilov on 5/12/14.
+//  Copyright (c) 2014 UFS Investment Company. All rights reserved.
+//
+#import <UIKit/UIKit.h>
+#import "UIPickerActionSheet.h"
+
+@interface UFSPromotionVC : UFSRootVC<UIPickerActionSheetDelegate>
+{
+    
+    IBOutlet UIScrollView *scrollView;
+    IBOutlet UIButton *productNameButton;
+    IBOutlet UITextField *productName;
+    IBOutlet UIActivityIndicatorView *productImageIndicator;
+    IBOutlet UIView *productImageView;
+    IBOutlet UIImageView *productImage;
+    IBOutlet UILabel *productDesc;
+    IBOutlet UIButton *productCheck;
+    IBOutlet UILabel *productCheckCaption;
+    IBOutlet UILabel *productCountdown;
+    IBOutlet UIButton *productAccept;
+    IBOutlet UIButton *productReject;
+    IBOutlet NSLayoutConstraint *productImageViewTop;
+}
+
+@property (nonatomic, strong) UIPickerActionSheet *productNamePicker;
+@property (nonatomic, copy) NSString *titleNavBar;
+@property (nonatomic, assign) NSMutableArray *products;
+@property (nonatomic, assign) NSMutableDictionary *timers;
+@property (nonatomic, assign) NSInteger productIndex;
+@property (nonatomic, retain) UIAlertView *alertViewAgreement;
+@property (nonatomic, assign) NSNumber *acceptOrReject;
+@property (nonatomic, assign) BOOL productChecked;
+@property (nonatomic, copy) NSString *titleParent;
+
+@property (nonatomic, copy) NSString *regName;
+@property (nonatomic, copy) NSString *regPhone;
+@property (nonatomic, copy) NSString *regEmail;
+@property (nonatomic, assign) BOOL regBrokerage;
+@property (nonatomic, assign) BOOL regYield;
+
+@property (nonatomic, assign) BOOL accepted;
+
+- (id)initWithProductsEx:(NSMutableArray*)products timers:(NSMutableDictionary*)timers
+                   title:(NSString *)title titleParent:(NSString *)titleParent
+                 regName:(NSString*)regName regPhone:(NSString*)regPhone regEmail:(NSString*)regEmail
+            regBrokerage:(BOOL)regBrokerage regYield:(BOOL)regYield;
+- (id)initWithProducts:(NSMutableArray*)products title:(NSString *)title titleParent:(NSString *)titleParent;
+- (id)initWithPromotion:(NSDictionary*)promotion titleParent:(NSString *)titleParent;
+
+- (IBAction)productNameButtonTouch:(id)sender;
+- (IBAction)productCheckTouch:(id)sender;
+- (IBAction)productAcceptTouch:(id)sender;
+- (IBAction)productRejectTouch:(id)sender;
+
+@end

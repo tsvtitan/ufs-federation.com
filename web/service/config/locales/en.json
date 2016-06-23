@@ -1,0 +1,58 @@
+{
+  "Lang": "en-EN",
+  "Title": "UFS IC Service",
+  "Version": "v 1.2",
+  
+  "Home.Name": "Home",
+  
+  "Mailing.Name": "Mailing",
+
+  
+  "back": {
+    "Title": "Back",
+
+    "test": {
+      
+    }
+  },
+  
+  "front": {
+    
+    "mailings": {
+      "Previous": "prev",
+      "Next": "next"
+      
+    },
+    
+    "mailingsNew": {
+      
+      "Delay": "Delay (sec.)",
+      "Duration": "Duration (min.)",
+      
+      "defaultSender": "mailer@lists.ufs-financial.ch",
+      
+      "senderMenu": ["mailer@lists.ufs-financial.ch","mailer@lists.premier-broker.ru"],
+      
+      "replyToMenu": {
+        "Research": "research@ufs-federation.com",
+        "PR": "pr@ufs-federation.com"
+      },
+      
+      "defaultPattern": "Default pattern",
+      
+      "patterns": {
+        "Default pattern": "EmptyPattern",
+        "Pattern for emails": "EmailDefaultPattern"
+      },
+      
+      "defaultChannel": "UFS Exchange Outgoing",
+      
+      "channels": {
+        "Random channel": "",
+        "UFS Exchange Outgoing": "UFSExchangeOutgoing",
+        "Premier Exchange Outgoing": "PremierExchangeOutgoing"
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo
+END
+UndoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/UndoAdapter.java
+END
+UndoCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/UndoCallback.java
+END
+SwipeUndoTouchListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/SwipeUndoTouchListener.java
+END
+TimedUndoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/TimedUndoAdapter.java
+END
+SimpleSwipeUndoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/SimpleSwipeUndoAdapter.java
+END
+SwipeUndoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/SwipeUndoView.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/Util.java
+END
+SwipeUndoAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mobile/!svn/ver/212/android/ListViewAnimationsLibManipulation/src/com/nhaarman/listviewanimations/itemmanipulation/swipedismiss/undo/SwipeUndoAdapter.java
+END

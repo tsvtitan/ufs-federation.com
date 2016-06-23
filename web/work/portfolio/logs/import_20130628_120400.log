@@ -1,0 +1,16 @@
+28.06.2013 12:04:00.064 I: --------------------------------------------------
+28.06.2013 12:04:00.064 I: Connect to Database ...
+28.06.2013 12:04:00.065 I: Connected.
+28.06.2013 12:04:00.066 I: [Mysql->query] set names utf8
+28.06.2013 12:04:00.066 I: [Mysql->query] select * from portfolios where locked is null order by created
+28.06.2013 12:04:00.067 I: Portfolios are found (3)
+28.06.2013 12:04:00.067 I: Portfolio is Модельный портфель.
+28.06.2013 12:04:00.068 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=3) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=3 and t.cnt>0 order by ph.created desc 
+28.06.2013 12:04:00.069 I: Portfolio history id is 44.
+28.06.2013 12:04:00.069 I: Portfolio is Модельный портфель #21.
+28.06.2013 12:04:00.069 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=4) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=4 and t.cnt>0 order by ph.created desc 
+28.06.2013 12:04:00.070 E: Portfolio history is not found.
+28.06.2013 12:04:00.070 I: Portfolio is Модельный портфель #3.
+28.06.2013 12:04:00.071 I: [Mysql->query] select ph.portfolio_history_id, t.cnt from portfolio_history ph left join (select portfolio_history_id, count(*) as cnt from portfolio_history_parts where portfolio_history_id in (select portfolio_history_id from portfolio_history where portfolio_id=5) group by 1) t on t.portfolio_history_id=ph.portfolio_history_id where ph.portfolio_id=5 and t.cnt>0 order by ph.created desc 
+28.06.2013 12:04:00.071 E: Portfolio history is not found.
+28.06.2013 12:04:00.072 I: Execution time is 0.0080540180206299

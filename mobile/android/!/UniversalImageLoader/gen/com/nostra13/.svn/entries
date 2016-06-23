@@ -1,0 +1,31 @@
+10
+
+dir
+95
+http://apps.ufs-federation.com/svn/mobile/android/UniversalImageLoader/gen/com/nostra13
+http://apps.ufs-federation.com/svn/mobile
+
+
+
+2014-04-25T10:32:41.971207Z
+1
+tsv
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b9c3671d-bcd4-4ab9-98c7-6143888a2cfb
+
+universalimageloader
+dir
+

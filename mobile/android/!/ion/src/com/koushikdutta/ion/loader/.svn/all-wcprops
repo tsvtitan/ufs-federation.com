@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader
+END
+MediaFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/MediaFile.java
+END
+FileLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/FileLoader.java
+END
+AsyncHttpRequestFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/AsyncHttpRequestFactory.java
+END
+VideoLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/VideoLoader.java
+END
+ContentLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/ContentLoader.java
+END
+HttpLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/HttpLoader.java
+END
+MtpConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/MtpConstants.java
+END
+SimpleLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/SimpleLoader.java
+END
+PackageIconLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/57/android/ion/src/com/koushikdutta/ion/loader/PackageIconLoader.java
+END

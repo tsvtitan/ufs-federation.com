@@ -1,0 +1,29 @@
+<div th:each="accountFile:${accountFiles}" th:switch="${accountFile.getExtension().asString()}" th:class="fileList">
+    <!--/*/
+        <th:block th:with="pathURL = ${path.getRootPath(accountFile.getPathName().asString())},
+                           fileName = ${accountFile.getName().asString()},
+                           fileDataSizeKB = ${accountFile.getFileDataSize().asFloat()},
+                           fileDataSize = ${fileDataSizeKB} >= 1024 ? ${fileDataSizeKB} / 1024 : ${fileDataSizeKB},
+                           fileDataSizeString = ${#numbers.formatDecimal(fileDataSize, 1, 0)},
+                           langID = ${accountFile.getScheme().getLang().getLangId().asString()},
+                           typeDataSize = ${fileDataSizeKB} >= 1024 ? #{Megabytes} : #{Kilobyte},
+                           extension = ${accountFile.getExtension().asString()},
+                           created = ${accountFile.getDocCreatedString(2).asString()},
+                           uploaded = ${accountFile.getCreatedString(2).asString()},
+                           fileFormatLinkClass = 'file-' + ( ${extension} == 'pdf' ? ${extension} : ( ${extension} == 'docx' or ${extension} == 'doc' ? 'word' : ( ${extension} == 'xlsx' or ${extension} == 'xls' ? 'excel' : ' ' ) ) )">
+    /*/-->
+    <a 
+       th:href="${pathURL}" href="" 
+       th:class="${accountFile.getFileDownloaded().asString()}=='' ? 'file-link ' + ${fileFormatLinkClass} + ' file-unread' : 'file-link ' + ${fileFormatLinkClass}" 
+       class="file-link file-pdf file-unread">
+        <font th:utext="${fileName}">Отчет 08-04-2014.pdf</font>
+        <span th:utext="${fileDataSizeString} + ' ' + ${typeDataSize} + ', ' + ${extension}">1,3&nbsp;Mb, PDF</span>
+        <span th:utext="#{CreatedLabel} + ': ' + ${created}">Создан: 8 апреля 2014</span>
+        <span th:utext="#{UploadedLabel} + ': ' + ${uploaded}">Загружен 8 апреля 2014</span>
+    </a>
+    <!--/*/</th:block>/*/-->
+</div>
+<!-- <div class="pagination">
+    <div id="loader" class="ajax-loader-text" style="display: none;">Получение данных&hellip;</div>
+    <button id="showmore" class="loadItems">Показать еще</button>
+</div> -->

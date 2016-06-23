@@ -1,0 +1,15 @@
+05.04.2013 16:41:51.540 I: --------------------------------------------------
+05.04.2013 16:41:51.540 I: Connect to Database ...
+05.04.2013 16:41:51.542 I: Connected.
+05.04.2013 16:41:51.543 I: [Mysql->query] set names utf8
+05.04.2013 16:41:51.543 I: [Mysql->query] 1 records
+05.04.2013 16:41:51.545 I: [Mysql->query] DELETE FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL;
+05.04.2013 16:41:51.546 I: [Mysql->query] 1 records
+05.04.2013 16:41:51.547 I: [Mysql->query] DELETE FROM mailing_patterns WHERE mailing_pattern_id NOT IN (SELECT DISTINCT(mailing_pattern_id) FROM mailing WHERE created<=ADDDATE(CURRENT_TIMESTAMP, INTERVAL -7 DAY) AND sent IS NOT NULL);
+05.04.2013 16:41:51.591 E: [Mysql->query] Cannot delete or update a parent row: a foreign key constraint fails (`ufs-federa_artcs`.`mailing`, CONSTRAINT `mailing_ibfk_1` FOREIGN KEY (`mailing_pattern_id`) REFERENCES `mailing_patterns` (`mailing_pattern_id`))
+05.04.2013 16:41:51.592 I: [Mysql->query] SELECT mailing_id, remote_id FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND remote_id IS NOT NULL AND transferred IS NOT NULL AND sent IS NULL ORDER BY transferred
+05.04.2013 16:41:51.594 I: [Mysql->query] 1 records
+05.04.2013 16:41:51.595 I: [Mysql->query] SELECT mp.*, t.rest_count, t.min_created, t.min_priority FROM (SELECT mailing_pattern_id, COUNT(*) as rest_count, MIN(created) as min_created, MIN(priority) as min_priority FROM mailing WHERE (begin IS NULL OR begin<=CURRENT_TIMESTAMP) AND (end IS NULL OR end>=CURRENT_TIMESTAMP) AND transferred IS NULL AND sent IS NULL GROUP BY 1) t LEFT JOIN mailing_patterns mp on mp.mailing_pattern_id=t.mailing_pattern_id ORDER BY t.min_created, t.min_priority
+05.04.2013 16:41:51.596 I: [Mysql->query] 1 records
+05.04.2013 16:41:51.596 I: There is nothing to worry about
+05.04.2013 16:41:51.597 I: Execution time is 0.056951999664307

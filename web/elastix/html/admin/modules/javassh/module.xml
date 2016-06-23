@@ -1,0 +1,27 @@
+<module>
+	<rawname>javassh</rawname>
+	<name>Java SSH</name>
+	<version>2.8.0.1</version>
+	<publisher>FreePBX</publisher>
+	<license>FREEUSE</license>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>Provides a Java applet to access the system shell using SSH. SSH client is provided by Appgate (www.appgate.com) and licensed is Free Limited Use, http://www.appgate.com/index/products/mindterm/mindterm_end_user_lic.html</description>
+	<menuitems>
+		<javassh>Java SSH</javassh>
+	</menuitems>
+	<changelog>
+		*2.8.0.1* #4473
+		*2.8.0.0* published 2.8 version
+		*2.7.0.0* localizations
+		*2.6.0.0* localizations, misc
+		*2.5.0.2* security setting updates: r7432
+		*2.5.0.1* localization updates
+		*2.5.0* localization fixes, Swedish
+		*2.4.0* bump for 2.4
+		*1.0.1.1* bump for rc1
+		*1.0.1* First Changelog
+	</changelog>
+	<location>release/2.8/javassh-2.8.0.0.tgz</location>
+	<md5sum>8dc23cb942a94b77077837cd964a6e4f</md5sum>
+</module>

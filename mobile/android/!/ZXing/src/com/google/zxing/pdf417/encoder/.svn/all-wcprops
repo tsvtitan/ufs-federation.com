@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder
+END
+PDF417ErrorCorrection.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/PDF417ErrorCorrection.java
+END
+Dimensions.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/Dimensions.java
+END
+BarcodeRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/BarcodeRow.java
+END
+PDF417.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/PDF417.java
+END
+Compaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/Compaction.java
+END
+PDF417HighLevelEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/PDF417HighLevelEncoder.java
+END
+BarcodeMatrix.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/pdf417/encoder/BarcodeMatrix.java
+END

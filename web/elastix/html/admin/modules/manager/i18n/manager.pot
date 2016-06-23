@@ -1,0 +1,144 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for manager
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Error writing the manager additional file."
+msgstr ""
+
+msgid "This manager already exists"
+msgstr ""
+
+msgid "Choose Manager:"
+msgstr ""
+
+msgid "Choose the user that PHPAGI will use to connect the Asterisk API."
+msgstr ""
+
+msgid "Increasing read field size if needed.."
+msgstr ""
+
+msgid "error encountered, not altered"
+msgstr ""
+
+msgid "ok"
+msgstr ""
+
+msgid "Increasing write field size if needed.."
+msgstr ""
+
+msgid "Asterisk API"
+msgstr ""
+
+msgid "System Administration"
+msgstr ""
+
+msgid "Add Manager"
+msgstr ""
+
+msgid "Manager"
+msgstr ""
+
+msgid "deleted"
+msgstr ""
+
+msgid "Manager:"
+msgstr ""
+
+msgid "Delete Manager"
+msgstr ""
+
+msgid "Edit Manager"
+msgstr ""
+
+msgid "Manager name:"
+msgstr ""
+
+msgid "Name of the manager without space."
+msgstr ""
+
+msgid "Manager secret:"
+msgstr ""
+
+msgid "Password for the manager."
+msgstr ""
+
+msgid "Deny:"
+msgstr ""
+
+msgid ""
+"If you want to deny many hosts or networks, use & char as separator.<br/><br/"
+">Example: 192.168.1.0/255.255.255.0&10.0.0.0/255.0.0.0"
+msgstr ""
+
+msgid "Permit:"
+msgstr ""
+
+msgid ""
+"If you want to permit many hosts or networks, use & char as separator. Look "
+"at deny example."
+msgstr ""
+
+msgid "Rights"
+msgstr ""
+
+msgid "Read"
+msgstr ""
+
+msgid "Write"
+msgstr ""
+
+msgid "Check Asterisk documentation."
+msgstr ""
+
+msgid "Check All/None."
+msgstr ""
+
+msgid "Submit Changes"
+msgstr ""
+
+msgid "The manager name cannot be empty or may not have any space in it."
+msgstr ""
+
+msgid "The manager secret cannot be empty."
+msgstr ""
+
+msgid "The manager read and write properties cannot be empty."
+msgstr ""
+
+msgid "The manager deny is not well formated."
+msgstr ""
+
+msgid "The manager permit is not well formated."
+msgstr ""
+
+msgid "The manager read field is not well formated."
+msgstr ""
+
+msgid "The manager write field is not well formated."
+msgstr ""

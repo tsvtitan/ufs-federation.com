@@ -1,0 +1,9 @@
+23.05.2013 16:39:50.103 I: --------------------------------------------------
+23.05.2013 16:39:50.376 I: Connect to Database ...
+23.05.2013 16:39:51.900 I: Connected.
+23.05.2013 16:39:52.279 I: [Mysql->query] set names utf8
+23.05.2013 16:40:20.184 I: [Mysql->query] SELECT UPPER(CAST(MD5(RAND()) AS CHAR(32))) AS ID
+23.05.2013 16:40:39.439 I: [Mysql->query] INSERT INTO `exchange_rates` (`exchange_rate_id`,`from_currency_id`,`from_value`,`to_currency_id`,`to_value`) VALUES ('867E978C2AEFF01D10AB8C685FD9A3EF','USD','1','RUR','31.2280')
+23.05.2013 16:40:48.272 I: [Mysql->query] SELECT UPPER(CAST(MD5(RAND()) AS CHAR(32))) AS ID
+23.05.2013 16:40:48.273 I: [Mysql->query] INSERT INTO `exchange_rates` (`exchange_rate_id`,`from_currency_id`,`from_value`,`to_currency_id`,`to_value`) VALUES ('49A61FA07102F7719F22429ADA7700D1','EUR','1','RUR','40.3372')
+23.05.2013 16:40:48.276 I: Execution time is 58.471518993378

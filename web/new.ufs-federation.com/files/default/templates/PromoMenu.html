@@ -1,0 +1,3 @@
+<ul class="promo-nav clean">
+  <li th:each="menu:${menus}"><a th:href="${path.getBasePath(menu.LINK)}" href="/promo1"><font th:utext="${menu.NAME}">Элемент меню</font></a></li>
+</ul>

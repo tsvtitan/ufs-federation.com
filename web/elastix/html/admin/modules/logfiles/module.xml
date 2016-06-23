@@ -1,0 +1,27 @@
+<module>
+	<rawname>logfiles</rawname>
+	<name>Asterisk Logfiles</name>
+	<version>2.8.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
+	<changelog>
+		*2.8.0.0* #4309
+		*2.7.0.0* localizations
+		*2.6.1* #3763, #3978
+		*2.6.0.0* localizations, misc
+		*2.5.0.2* #3645
+		*2.5.0.1* localization updates
+		*2.5.0* #2776: filter out potentially bad html tags from log file
+		*2.4.0* bumped for 2.4
+		*1.1.1* bump for rc1
+		*1.1.0* #1442 remove access problem and have log display in same window
+		*1.0.2* #2070 fix proper use of script tags
+	</changelog>
+	<type>tool</type>
+	<category>Support</category>
+	<menuitems>
+		<logfiles>Asterisk Logfiles</logfiles>
+	</menuitems>
+	<location>release/2.7/logfiles-2.7.0.0.tgz</location>
+	<md5sum>d36680752d21f960aea2e197d9b8ef69</md5sum>
+</module>

@@ -1,0 +1,16 @@
+{
+  "apps": [{
+   
+    "name": "service-grunt",
+    "script": "/Users/tsv/Projects/web/service/app.js",
+    "instances": 1,
+    "max_memory_restart": "200M",
+    "merge_logs": true,
+    "exec_mode": "fork_mode",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": 1336,
+      "GRUNT": true
+    }
+  }]
+}

@@ -1,0 +1,6 @@
+01.04.2013 15:35:51.281 I: --------------------------------------------------
+01.04.2013 15:35:51.545 I: Connecting to Google ...
+01.04.2013 15:35:55.764 I: Connected. Create a group...
+01.04.2013 15:36:01.819 E: Expected response code 200, got 400
+Invalid request URI
+01.04.2013 15:36:01.820 I: Execution time is 11.058663845062

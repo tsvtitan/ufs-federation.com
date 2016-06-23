@@ -1,0 +1,15 @@
+<div class="main-banner">
+  <a class="left-arr" href="#"></a>
+  <a class="right-arr" href="#"></a>
+  <ul class="slider clean">
+    <li th:each="banner:${banners}" th:id="${'slide'+banner.getRecNum(2)}" th:style="${'background-image: url('+path.getBasePath(banner.IMAGE_PATH)+');'}">
+      <a th:href="${path.getBasePath(banner.LINK)}" href="/promo1">
+        <div class="banner-content" th:if="${banner.NAME!=''}">
+          <p class="banner-caption" th:utext="${banner.NAME}" />
+          <p class="banner-text" th:utext="${banner.DESCRIPTION}"/>
+          <button class="hidden banner-action">click</button>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>  

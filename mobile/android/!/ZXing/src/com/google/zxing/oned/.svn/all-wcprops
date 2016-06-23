@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned
+END
+UPCEANExtension5Support.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCEANExtension5Support.java
+END
+ITFWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/ITFWriter.java
+END
+EANManufacturerOrgSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/EANManufacturerOrgSupport.java
+END
+CodaBarReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/CodaBarReader.java
+END
+Code128Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/Code128Reader.java
+END
+UPCEANReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCEANReader.java
+END
+UPCAWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCAWriter.java
+END
+OneDimensionalCodeWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/OneDimensionalCodeWriter.java
+END
+Code93Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/Code93Reader.java
+END
+EAN8Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/EAN8Reader.java
+END
+EAN13Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/EAN13Writer.java
+END
+Code39Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/Code39Writer.java
+END
+OneDReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/OneDReader.java
+END
+UPCEReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCEReader.java
+END
+ITFReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/ITFReader.java
+END
+Code128Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/Code128Writer.java
+END
+UPCEANWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCEANWriter.java
+END
+MultiFormatUPCEANReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/MultiFormatUPCEANReader.java
+END
+CodaBarWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/CodaBarWriter.java
+END
+UPCAReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCAReader.java
+END
+UPCEANExtensionSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCEANExtensionSupport.java
+END
+EAN8Writer.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/EAN8Writer.java
+END
+EAN13Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/EAN13Reader.java
+END
+Code39Reader.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/Code39Reader.java
+END
+UPCEANExtension2Support.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/UPCEANExtension2Support.java
+END
+MultiFormatOneDReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobile/!svn/ver/59/android/ZXing/src/com/google/zxing/oned/MultiFormatOneDReader.java
+END

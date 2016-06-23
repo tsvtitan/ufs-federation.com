@@ -1,0 +1,4 @@
+// html:lang(en-us) q
+function fixIEQuotes(){var objQuotes=document.getElementsByTagName('q');var strOpen,strClose;for(var i=0;i<objQuotes.length;i++){if(isNested(objQuotes[i])){strOpen='\u2018';strClose='\u2019'}else{strOpen='\u201c';strClose='\u201d'}objQuotes[i].insertAdjacentHTML('afterBegin',strOpen);objQuotes[i].insertAdjacentHTML('beforeEnd',strClose)}objQuotes=null}function isNested(objElement){var objParent=objElement;do{objParent=objParent.parentNode;if(objParent.tagName&&objParent.tagName.toLowerCase()=='q')return true}while(objParent.parentNode);return false}
+
+window.attachEvent("onload",fixIEQuotes);

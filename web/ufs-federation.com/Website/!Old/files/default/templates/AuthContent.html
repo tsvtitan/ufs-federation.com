@@ -1,0 +1,33 @@
+<form id="sign-in" class="clearfix" th:action="${path.getRootPath('/login')}" method="post">
+  <div class="panel bgcolor1 half shadow" style="margin: 1em auto 0;">
+    <div class="caption" th:utext="${page.TITLE}">Вход в личный кабинет</div>
+
+    <div th:if="${path.AuthFailed}" class="content bgcolor6">
+      <p th:utext="#{WrongLoginOrPassword}">Логин или пароль указаны неверно</p>
+    </div>
+    
+    <div class="content">
+      <div class="half" style="margin: auto">
+
+        <h4 th:utext="#{LoginCaption}">Логин</h4>
+        <input type="text" name="login" autocapitalize="off" autocorrect="off" th:placeholder="#{LoginCaption}" placeholder="Имя пользователя" value=""/>
+
+        <h4 th:utext="#{PasswordCaption}">Пароль</h4>
+        <input type="password" name="password" th:placeholder="#{PasswordCaption}" placeholder="Пароль" value=""/>
+
+        <br/><br/>
+        <input type="checkbox" name="remember" id="remember" value=""/><label for="remember">&nbsp;<font th:utext="#{RememberMeCaption}">Запомнить меня</font></label>
+
+        <br/><br/>
+
+        <input class="button" type="submit" th:value="#{ButtonPrivateAreaEnterCaption}" value="Войти"/>
+        <br/><br/>
+      </div>
+    </div>
+    <div class="content bgcolor5">
+      <div class="half" style="margin: auto">
+        <a th:href="${path.getRootPath('/restore')}" href="/register"><font th:text="#{ForgotPassword}">Забыли пароль</font>?</a>
+      </div>
+    </div>
+  </div>
+</form>

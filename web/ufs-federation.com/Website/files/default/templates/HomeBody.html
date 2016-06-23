@@ -1,0 +1,31 @@
+<body>
+
+  <div class="header">
+    <div th:replace="Toolbar"/>
+    <div th:replace="Menu"/>
+  </div>
+
+  <div class="width">
+    <div th:replace="HomePromoBanner"/>
+    <div th:replace="PromoMenu"/>
+  </div>  
+ 
+  <div class="page bgcolor5 width">
+    <div class="row clearfix">
+      <div class="g784">
+        <div th:replace="HomePublications"/>
+      </div>
+      <aside class="g392">
+        <div th:replace="ModelPortfolioBlock"/>
+        <div th:replace="ResearchSubscribeBlock"/>
+        <div th:replace="ApplicationFormBlock"/>
+      </aside>
+    </div>
+  </div>
+    
+  <footer>
+    <div th:replace="Sitemap"/>
+    <div th:replace="Copyright"/>
+  </footer>
+
+</body>
